@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-03 14:50:49",
+    "last_updated": "2026-11-03 14:51:18",
     "today_date": "2026-11-03",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -9,9 +9,9 @@
   "today": {
     "date": "2026-11-03",
     "date_display": "Hôm nay, 03/11/2026",
-    "total_processed": 417,
-    "realtime_count": 13,
-    "realtime_created": 3,
+    "total_processed": 418,
+    "realtime_count": 14,
+    "realtime_created": 4,
     "realtime_updated": 10,
     "backlog_count": 404,
     "target_daily": 300,
@@ -39,7 +39,7 @@
       {
         "key": "afternoon",
         "label": "Ca Chiều (13:00 - 17:30)",
-        "count": 54,
+        "count": 55,
         "status": "in_progress",
         "badge": "Đang chạy"
       },
@@ -78,36 +78,47 @@
       },
       {
         "hour": "14:00",
-        "count": 50
+        "count": 51
       }
     ],
     "sources": {
-      "Consultants": 11,
+      "Consultants": 12,
       "Website": 2,
       "CRM Backlog": 404
     }
   },
   "totals": {
-    "all_time_realtime": 120,
-    "all_time_created": 35,
+    "all_time_realtime": 121,
+    "all_time_created": 36,
     "all_time_updated": 84,
     "all_time_backlog_done": 2223,
-    "total_system_processed": 2343,
+    "total_system_processed": 2344,
     "backlog_target": 2242,
     "backlog_remaining": 19,
     "backlog_completion_percentage": 99.2
   },
   "realtime": {
-    "total_today": 13,
-    "created_today": 3,
+    "total_today": 14,
+    "created_today": 4,
     "updated_today": 10,
     "pending_inbox": 0,
     "sources": {
-      "Consultants": 11,
+      "Consultants": 12,
       "Website": 2,
       "Other": 0
     },
     "candidates": [
+      {
+        "time": "14:51:13",
+        "timestamp": "2026-11-03T14:51:13.389591+07:00",
+        "candidate_name": "NGUYEN MINH TIEN",
+        "candidate_id": "107704",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107704",
+        "action": "created",
+        "source": "CV gửi từ email: thu.le@hr1vietnam.com",
+        "file_name": "040926 - CV NGUYEN MINH TIEN - EN_260904_212157.pdf",
+        "status": "success"
+      },
       {
         "time": "13:11:11",
         "timestamp": "2026-11-03T13:11:11.049673+07:00",
@@ -481,8 +492,8 @@
     },
     {
       "date": "2026-11-03",
-      "total_realtime": 13,
-      "created": 3,
+      "total_realtime": 14,
+      "created": 4,
       "updated": 10
     }
   ],
@@ -517,7 +528,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 1270+ hồ sơ toàn hệ thống (890 backlog + 120 real-time)."
+      "metrics": "Đạt mốc 1271+ hồ sơ toàn hệ thống (890 backlog + 121 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
@@ -530,11 +541,11 @@
   ],
   "system": {
     "daemon_status": "RUNNING",
-    "daemon_pid": 29523,
+    "daemon_pid": 29542,
     "current_task": "processing_realtime_cv",
-    "last_heartbeat_seconds_ago": 0.0,
+    "last_heartbeat_seconds_ago": 8.4,
     "supervisor_running": true,
-    "supervisor_healthy": false,
+    "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
     "search_grounding": "ONLINE (Google Search Grounding Active)"
   }
