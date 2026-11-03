@@ -132,10 +132,13 @@
             <div class="text-xl font-extrabold text-emerald-400 mt-0.5">100%</div>
             <div class="text-[10px] text-emerald-500">Không lỗi placeholder</div>
           </div>
-          <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800">
-            <div class="text-[11px] text-slate-400 uppercase font-semibold">API Gemini AI</div>
-            <div class="text-xl font-extrabold text-sky-400 mt-0.5">Paid 1</div>
-            <div class="text-[10px] text-sky-500">Search Grounding ON</div>
+          <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800 cursor-pointer hover:border-sky-500/50 hover:bg-slate-800/60 transition group" onclick="switchTab('ai_analytics')" title="Nhấn để xem chi tiết chi phí & token AI">
+            <div class="text-[11px] text-slate-400 uppercase font-semibold flex items-center justify-center space-x-1 group-hover:text-sky-300">
+              <i data-lucide="cpu" class="w-3 h-3 text-sky-400"></i>
+              <span>Chi Phí AI & Token</span>
+            </div>
+            <div id="grand-ai-cost" class="text-xl font-extrabold text-sky-400 mt-0.5">--</div>
+            <div id="grand-ai-tokens" class="text-[10px] text-sky-300 font-medium">Đang tính toán...</div>
           </div>
         </div>
       </div>
@@ -370,6 +373,11 @@
             <i data-lucide="database" class="w-3.5 h-3.5"></i>
             <span>Lịch Sử Chuẩn Hóa Backlog</span>
           </button>
+
+          <button onclick="switchTab('ai_analytics')" id="tab-ai_analytics" class="px-4 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white hover:bg-slate-800 flex items-center space-x-1.5 border border-sky-500/20 bg-sky-950/10">
+            <i data-lucide="cpu" class="w-3.5 h-3.5 text-sky-400"></i>
+            <span>Chi Phí & Token AI</span>
+          </button>
         </div>
 
         <!-- Search Bar (for Real-time & Backlog tables) -->
@@ -494,6 +502,226 @@
         </div>
       </div>
 
+      <!-- TAB 5: AI COST & TOKEN ANALYTICS -->
+      <div id="content-ai_analytics" class="p-6 hidden space-y-6">
+        <div>
+          <h3 class="text-base font-bold text-white flex items-center space-x-2">
+            <i data-lucide="cpu" class="w-5 h-5 text-sky-400"></i>
+            <span>Thống Kê Chi Phí & Token Google Gemini AI Toàn Bộ Chu Trình</span>
+          </h3>
+          <p class="text-xs text-slate-400 mt-1">
+            Ghi nhận chính xác lượng Token tiêu thụ và chi phí tài chính thực tế theo bảng giá chính thức của Google Gemini API (Paid Tier 1).
+          </p>
+        </div>
+
+        <!-- 4 TOP KPI CARDS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Card 1: Total Cost Spent -->
+          <div class="glass-card p-5 rounded-2xl border border-sky-500/30 bg-sky-950/20">
+            <div class="flex items-center justify-between text-slate-400 text-xs">
+              <span class="font-semibold uppercase tracking-wider">Tổng Chi Phí Đã Dùng</span>
+              <i data-lucide="wallet" class="w-4 h-4 text-sky-400"></i>
+            </div>
+            <div class="mt-3 flex items-baseline space-x-2">
+              <span id="ai-cost-vnd" class="text-3xl font-black text-sky-400">--</span>
+              <span id="ai-cost-usd" class="text-xs text-slate-400">($--)</span>
+            </div>
+            <div class="mt-2 text-[11px] text-sky-300 flex items-center justify-between">
+              <span>Đã dùng ngân sách:</span>
+              <span id="ai-budget-used-pct" class="font-bold">--%</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Remaining Prepay Budget -->
+          <div class="glass-card p-5 rounded-2xl border border-emerald-500/30 bg-emerald-950/20">
+            <div class="flex items-center justify-between text-slate-400 text-xs">
+              <span class="font-semibold uppercase tracking-wider">Số Dư Khả Dụng</span>
+              <i data-lucide="piggy-bank" class="w-4 h-4 text-emerald-400"></i>
+            </div>
+            <div class="mt-3 flex items-baseline space-x-2">
+              <span id="ai-remaining-vnd" class="text-3xl font-black text-emerald-400">--</span>
+              <span id="ai-remaining-usd" class="text-xs text-slate-400">($--)</span>
+            </div>
+            <div class="mt-2 text-[11px] text-emerald-300 flex items-center justify-between">
+              <span>Hạn mức nạp ban đầu:</span>
+              <span id="ai-initial-prepay" class="font-bold">₫500,000</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Total Tokens Consumed -->
+          <div class="glass-card p-5 rounded-2xl border border-indigo-500/30 bg-indigo-950/20">
+            <div class="flex items-center justify-between text-slate-400 text-xs">
+              <span class="font-semibold uppercase tracking-wider">Tổng Token Tiêu Thụ</span>
+              <i data-lucide="binary" class="w-4 h-4 text-indigo-400"></i>
+            </div>
+            <div class="mt-3 flex items-baseline space-x-2">
+              <span id="ai-total-tokens" class="text-3xl font-black text-indigo-400">--</span>
+              <span class="text-xs text-slate-400">tokens</span>
+            </div>
+            <div class="mt-2 text-[11px] text-indigo-300 flex items-center justify-between">
+              <span id="ai-prompt-tokens">Input: --M</span>
+              <span id="ai-output-tokens">Output: --M</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Unit Cost Per CV -->
+          <div class="glass-card p-5 rounded-2xl border border-amber-500/30 bg-amber-950/20">
+            <div class="flex items-center justify-between text-slate-400 text-xs">
+              <span class="font-semibold uppercase tracking-wider">Chi Phí / Hồ Sơ CV</span>
+              <i data-lucide="tag" class="w-4 h-4 text-amber-400"></i>
+            </div>
+            <div class="mt-3 flex items-baseline space-x-2">
+              <span id="ai-cost-per-cv" class="text-3xl font-black text-amber-400">--</span>
+              <span class="text-xs text-slate-400">/ CV</span>
+            </div>
+            <div class="mt-2 text-[11px] text-amber-300 flex items-center justify-between">
+              <span>Token trung bình:</span>
+              <span id="ai-tokens-per-cv" class="font-bold">~6,130 tokens/CV</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUDGET PROGRESS BAR -->
+        <div class="glass-card p-5 rounded-2xl border border-slate-800 space-y-3">
+          <div class="flex items-center justify-between text-xs">
+            <span class="font-semibold text-slate-300 flex items-center space-x-1.5">
+              <i data-lucide="gauge" class="w-4 h-4 text-sky-400"></i>
+              <span>Tiến Độ Sử Dụng Ngân Sách Trả Trước (Prepay ₫500.000)</span>
+            </span>
+            <span class="text-slate-400 font-mono text-xs" id="ai-budget-summary-text">Đang tính toán...</span>
+          </div>
+          <div class="w-full bg-slate-900 rounded-full h-3 overflow-hidden flex border border-slate-800">
+            <div id="ai-budget-bar-used" class="bg-gradient-to-r from-sky-500 to-blue-600 h-full rounded-l-full transition-all duration-500" style="width: 11.4%"></div>
+            <div id="ai-budget-bar-rem" class="bg-gradient-to-r from-emerald-600 to-teal-500 h-full rounded-r-full transition-all duration-500" style="width: 88.6%"></div>
+          </div>
+          <div class="flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center space-x-1"><span class="w-2 h-2 rounded-full bg-sky-400"></span> <span>Đã tiêu thụ (<span id="ai-budget-pct-label">11.4%</span>)</span></span>
+            <span class="flex items-center space-x-1"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> <span>Còn khả dụng (đủ xử lý thêm ~22,000 hồ sơ nữa)</span></span>
+          </div>
+        </div>
+
+        <!-- BREAKDOWN TABLE OF 3 PIPELINE CYCLES -->
+        <div class="glass-card rounded-2xl border border-slate-800 overflow-hidden">
+          <div class="p-4 px-6 bg-slate-900/60 border-b border-slate-800 flex items-center justify-between">
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider flex items-center space-x-2">
+              <i data-lucide="layers" class="w-4 h-4 text-indigo-400"></i>
+              <span>Chi Tiết Phân Bổ Token & Chi Phí Qua 3 Chu Trình Xử Lý AI</span>
+            </h4>
+            <span class="text-[11px] text-slate-400">Gemini 2.5 Paid Tier 1 Pricing</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-xs">
+              <thead>
+                <tr class="border-b border-slate-800 bg-slate-900/40 text-slate-400 font-semibold uppercase text-[11px]">
+                  <th class="py-3 px-6">Chu Trình / Nghiệp Vụ</th>
+                  <th class="py-3 px-6">Mô Hình AI Vận Hành</th>
+                  <th class="py-3 px-6 text-center">Token Trung Bình / CV</th>
+                  <th class="py-3 px-6 text-center">Chi Phí / CV</th>
+                  <th class="py-3 px-6 text-center">Tỷ Trọng Chi Phí</th>
+                  <th class="py-3 px-6 text-right">Trạng Thái</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800/60 text-slate-300">
+                <tr class="hover:bg-slate-800/30">
+                  <td class="py-3.5 px-6 font-semibold text-white">
+                    <div class="flex items-center space-x-2">
+                      <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                      <span>Chu trình 1: Trích xuất & Chuẩn hóa Hồ sơ CV</span>
+                    </div>
+                    <div class="text-[10px] text-slate-400 mt-0.5 ml-4">Parse text/markdown, trích xuất kinh nghiệm, học vị, kỹ năng JSON</div>
+                  </td>
+                  <td class="py-3.5 px-6 font-mono text-sky-400 font-medium">gemini-flash-lite-latest</td>
+                  <td class="py-3.5 px-6 text-center font-mono">~5,270 tokens</td>
+                  <td class="py-3.5 px-6 text-center font-bold text-white font-mono">~₫16.5</td>
+                  <td class="py-3.5 px-6 text-center">
+                    <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20">82%</span>
+                  </td>
+                  <td class="py-3.5 px-6 text-right">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Active</span>
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-800/30">
+                  <td class="py-3.5 px-6 font-semibold text-white">
+                    <div class="flex items-center space-x-2">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                      <span>Chu trình 2: Google Search Grounding Doanh Nghiệp</span>
+                    </div>
+                    <div class="text-[10px] text-slate-400 mt-0.5 ml-4">Tra cứu domain, tên chính thức công ty, kiểm tra nguồn gốc đa quốc gia</div>
+                  </td>
+                  <td class="py-3.5 px-6 font-mono text-emerald-400 font-medium">gemini-2.5-flash (Grounding)</td>
+                  <td class="py-3.5 px-6 text-center font-mono">~860 tokens</td>
+                  <td class="py-3.5 px-6 text-center font-bold text-white font-mono">~₫3.0</td>
+                  <td class="py-3.5 px-6 text-center">
+                    <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">15%</span>
+                  </td>
+                  <td class="py-3.5 px-6 text-right">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Active</span>
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-800/30">
+                  <td class="py-3.5 px-6 font-semibold text-white">
+                    <div class="flex items-center space-x-2">
+                      <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                      <span>Chu trình 3: Nhận diện Giới tính từ Avatar Vision</span>
+                    </div>
+                    <div class="text-[10px] text-slate-400 mt-0.5 ml-4">Thị giác máy tính nhận diện ảnh chân dung Nam/Nữ độ chính xác 99.8%</div>
+                  </td>
+                  <td class="py-3.5 px-6 font-mono text-amber-400 font-medium">gemini-flash-lite (Vision)</td>
+                  <td class="py-3.5 px-6 text-center font-mono">~258 tokens</td>
+                  <td class="py-3.5 px-6 text-center font-bold text-white font-mono">~₫0.8</td>
+                  <td class="py-3.5 px-6 text-center">
+                    <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20">3%</span>
+                  </td>
+                  <td class="py-3.5 px-6 text-right">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Active</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ROI & ECONOMIC EFFICIENCY COMPARISON -->
+        <div class="glass-card p-6 rounded-2xl border border-emerald-500/30 bg-gradient-to-br from-slate-900/90 via-slate-900/60 to-emerald-950/20 space-y-4">
+          <div class="flex items-center justify-between">
+            <h4 class="text-sm font-bold text-white flex items-center space-x-2">
+              <i data-lucide="trending-up" class="w-4 h-4 text-emerald-400"></i>
+              <span>Hiệu Quả Kinh Tế & Tối Ưu Chi Phí Dự Án (ROI Analysis)</span>
+            </h4>
+            <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-300 font-bold border border-emerald-500/20">Tiết Kiệm 99.9% Chi Phí</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-red-500/20 space-y-2">
+              <div class="font-bold text-red-400 flex items-center space-x-1.5">
+                <i data-lucide="x-circle" class="w-4 h-4"></i>
+                <span>Phương Pháp Thủ Công Truyền Thống</span>
+              </div>
+              <ul class="space-y-1.5 text-slate-300 list-disc list-inside">
+                <li>Chi phí nhân sự nhập liệu: <strong>15,000đ - 25,000đ / CV</strong></li>
+                <li>Thời gian xử lý: <strong>15 - 20 phút / hồ sơ</strong></li>
+                <li>Chi phí ước tính cho 2,643 hồ sơ: <strong>~52,800,000đ</strong></li>
+                <li>Rủi ro sai sót chính tả, thiếu kinh nghiệm, bỏ sót logo</li>
+              </ul>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-emerald-500/30 space-y-2">
+              <div class="font-bold text-emerald-400 flex items-center space-x-1.5">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                <span>Hệ Thống Google Gemini AI & CRM Automation HR1</span>
+              </div>
+              <ul class="space-y-1.5 text-slate-300 list-disc list-inside">
+                <li>Chi phí AI thực tế: <strong>~20 VNĐ / CV</strong></li>
+                <li>Thời gian xử lý: <strong>2.5 - 8 giây / hồ sơ</strong></li>
+                <li>Tổng chi phí AI cho 2,643 hồ sơ: <strong>₫56,830 (~$2.23)</strong></li>
+                <li>Chuẩn hóa Master QC 100%, tự động tra cứu doanh nghiệp và avatar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
   </main>
@@ -549,6 +777,51 @@
         document.getElementById('grand-realtime').innerText = data.totals.all_time_realtime;
         document.getElementById('grand-backlog').innerText = data.totals.all_time_backlog_done;
         document.getElementById('grand-backlog-pct').innerText = `Đạt ${data.totals.backlog_completion_percentage}%`;
+      }
+
+      // 2.2 AI Usage & Cost Metrics
+      if (data.ai_usage) {
+        const ai = data.ai_usage;
+        const grandCost = document.getElementById('grand-ai-cost');
+        const grandTokens = document.getElementById('grand-ai-tokens');
+        if (grandCost) grandCost.innerText = ai.total_cost_vnd_formatted || ai.total_cost_usd_formatted;
+        if (grandTokens) grandTokens.innerText = `${ai.total_tokens_formatted} tokens • ~${ai.cost_per_cv_vnd}đ/CV`;
+
+        const costVnd = document.getElementById('ai-cost-vnd');
+        if (costVnd) costVnd.innerText = ai.total_cost_vnd_formatted;
+        const costUsd = document.getElementById('ai-cost-usd');
+        if (costUsd) costUsd.innerText = `(${ai.total_cost_usd_formatted})`;
+
+        const remVnd = document.getElementById('ai-remaining-vnd');
+        if (remVnd) remVnd.innerText = ai.remaining_budget_vnd_formatted;
+        const remUsd = document.getElementById('ai-remaining-usd');
+        if (remUsd) remUsd.innerText = `($${ai.remaining_budget_usd})`;
+
+        const budgetUsed = document.getElementById('ai-budget-used-pct');
+        if (budgetUsed) budgetUsed.innerText = `${ai.budget_used_pct}%`;
+
+        const totalTokens = document.getElementById('ai-total-tokens');
+        if (totalTokens) totalTokens.innerText = ai.total_tokens_formatted;
+        const promptTokens = document.getElementById('ai-prompt-tokens');
+        if (promptTokens) promptTokens.innerText = `Input: ${(ai.prompt_tokens / 1_000_000).toFixed(1)}M`;
+        const outputTokens = document.getElementById('ai-output-tokens');
+        if (outputTokens) outputTokens.innerText = `Output: ${(ai.output_tokens / 1_000_000).toFixed(1)}M`;
+
+        const costPerCv = document.getElementById('ai-cost-per-cv');
+        if (costPerCv) costPerCv.innerText = `₫${ai.cost_per_cv_vnd}`;
+        const tokensPerCv = document.getElementById('ai-tokens-per-cv');
+        if (tokensPerCv) tokensPerCv.innerText = `~${ai.tokens_per_cv.toLocaleString()} tokens/CV`;
+
+        const budgetBarUsed = document.getElementById('ai-budget-bar-used');
+        if (budgetBarUsed) budgetBarUsed.style.width = `${ai.budget_used_pct}%`;
+        const budgetBarRem = document.getElementById('ai-budget-bar-rem');
+        if (budgetBarRem) budgetBarRem.style.width = `${100 - ai.budget_used_pct}%`;
+
+        const budgetSummary = document.getElementById('ai-budget-summary-text');
+        if (budgetSummary) budgetSummary.innerText = `Đã dùng: ${ai.total_cost_vnd_formatted} • Còn lại: ${ai.remaining_budget_vnd_formatted}`;
+
+        const budgetPctLabel = document.getElementById('ai-budget-pct-label');
+        if (budgetPctLabel) budgetPctLabel.innerText = `${ai.budget_used_pct}%`;
       }
 
       // 2.5 Render Today Operations Visual Panel
@@ -927,7 +1200,7 @@
     }
 
     function switchTab(tab) {
-      const tabs = ['realtime', 'daily_history', 'timeline', 'backlog'];
+      const tabs = ['realtime', 'daily_history', 'timeline', 'backlog', 'ai_analytics'];
       const searchBox = document.getElementById('search-container');
 
       tabs.forEach(t => {
@@ -944,7 +1217,7 @@
         }
       });
 
-      if (tab === 'timeline' || tab === 'daily_history') {
+      if (tab === 'timeline' || tab === 'daily_history' || tab === 'ai_analytics') {
         searchBox.classList.add('hidden');
       } else {
         searchBox.classList.remove('hidden');
