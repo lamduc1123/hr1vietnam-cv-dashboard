@@ -446,11 +446,22 @@
         <div class="p-4 px-6 bg-slate-900/60 border-b border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs">
           <div class="flex items-center space-x-2.5">
             <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
-            <span class="font-bold text-white">Lịch Sử Chuẩn Hóa Backlog Chi Tiết</span>
-            <span id="backlog-items-count-badge" class="px-2.5 py-0.5 rounded-full text-[11px] bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-mono">--</span>
+            <span class="font-bold text-white text-sm">Lịch Sử Chuẩn Hóa Backlog Chi Tiết</span>
+            <span id="backlog-items-count-badge" class="px-2.5 py-0.5 rounded-full text-[11px] bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-mono font-bold">--</span>
           </div>
-          <div class="text-slate-400 text-[11px]">
-            Hồ sơ hiển thị theo thứ tự mới nhất • Phân trang mượt mà không tải lại trang
+          <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-2">
+              <span class="text-slate-400 text-xs font-medium">Hiển thị mỗi trang:</span>
+              <select id="backlog-page-size-select" onchange="changeBacklogPageSize(this.value)" class="bg-slate-800 border border-slate-700 text-slate-200 rounded-lg px-2.5 py-1 text-xs focus:outline-none focus:border-indigo-500 font-bold cursor-pointer">
+                <option value="25">25 hồ sơ</option>
+                <option value="50" selected>50 hồ sơ</option>
+                <option value="100">100 hồ sơ</option>
+                <option value="200">200 hồ sơ</option>
+              </select>
+            </div>
+            <div class="hidden sm:block text-slate-400 text-[11px]">
+              Tự động cập nhật • Mượt mà không tải lại trang
+            </div>
           </div>
         </div>
 
@@ -692,8 +703,10 @@
 
       tbody.innerHTML = history.map(h => {
         const isToday = h.date === '2026-11-03';
-        const blCount = h.backlog_count || 0;
-        const grandTotal = h.grand_total || (h.total_realtime + blCount);
+        const blCount = h.backlog_count;
+        const hasBl = blCount !== null && blCount !== undefined && blCount > 0;
+        const grandTotal = hasBl ? (h.total_realtime + blCount) : h.total_realtime;
+
         return `
           <tr class="hover:bg-dark-hover transition duration-150 ${isToday ? 'bg-blue-950/20 font-medium' : ''}">
             <td class="py-3.5 px-6 font-mono text-slate-300 flex items-center space-x-2">
@@ -703,8 +716,8 @@
             <td class="py-3.5 px-6 text-center text-emerald-400 font-bold">+${h.created}</td>
             <td class="py-3.5 px-6 text-center text-blue-400 font-bold">+${h.updated}</td>
             <td class="py-3.5 px-6 text-center text-white font-extrabold text-sm">${h.total_realtime} hồ sơ</td>
-            <td class="py-3.5 px-6 text-center text-indigo-400 font-bold text-sm">
-              ${blCount > 0 ? `+${blCount} hồ sơ` : '<span class="text-slate-500 font-normal">--</span>'}
+            <td class="py-3.5 px-6 text-center font-bold text-sm ${hasBl ? 'text-indigo-400' : 'text-slate-500'}">
+              ${hasBl ? `+${blCount} hồ sơ` : '<span class="text-slate-500 font-normal">--</span>'}
             </td>
             <td class="py-3.5 px-6 text-center text-amber-300 font-black text-sm bg-amber-500/5">
               ${grandTotal} hồ sơ
@@ -762,8 +775,16 @@
     }
 
     let backlogCurrentPage = 1;
-    const backlogPageSize = 15;
+    let backlogPageSize = 50;
     let filteredBacklogList = [];
+
+    function changeBacklogPageSize(newSize) {
+      backlogPageSize = parseInt(newSize, 10) || 50;
+      backlogCurrentPage = 1;
+      if (globalData && globalData.backlog && globalData.backlog.recent_enriched) {
+        renderBacklogTable(globalData.backlog.recent_enriched);
+      }
+    }
 
     function renderBacklogTable(backlogItems) {
       if (!backlogItems) return;
@@ -790,13 +811,13 @@
       // Update badge
       const badge = document.getElementById('backlog-items-count-badge');
       if (badge) {
-        badge.innerText = `${totalItems} hồ sơ`;
+        badge.innerText = `${totalItems.toLocaleString()} hồ sơ`;
       }
 
       // Update page info
       const pageInfo = document.getElementById('backlog-page-info');
       if (pageInfo) {
-        pageInfo.innerHTML = `Hiển thị <span class="font-bold text-white font-mono">${totalItems > 0 ? startIndex + 1 : 0} - ${endIndex}</span> trên tổng số <span class="font-bold text-indigo-400 font-mono">${totalItems}</span> hồ sơ`;
+        pageInfo.innerHTML = `Hiển thị <span class="font-bold text-white font-mono">${totalItems > 0 ? (startIndex + 1).toLocaleString() : 0} - ${endIndex.toLocaleString()}</span> trên tổng số <span class="font-bold text-indigo-400 font-mono">${totalItems.toLocaleString()}</span> hồ sơ (Trang ${backlogCurrentPage}/${totalPages})`;
       }
 
       const tbody = document.getElementById('backlog-tbody');
@@ -819,7 +840,7 @@
             </td>
             <td class="py-3.5 px-6 text-slate-400 font-mono">${b.processed_at || '--'}</td>
             <td class="py-3.5 px-6 text-right">
-              <a href="${b.crm_url}" target="_blank" class="inline-flex items-center space-x-1 text-xs text-blue-400 hover:text-blue-300 hover:underline">
+              <a href="${b.crm_url}" target="_blank" class="inline-flex items-center space-x-1 text-xs text-blue-400 hover:text-blue-300 hover:underline font-medium">
                 <span>Xem CRM</span>
                 <i data-lucide="external-link" class="w-3 h-3"></i>
               </a>
@@ -833,33 +854,55 @@
       if (btnContainer) {
         let btnHtml = '';
         
-        // Prev button
+        // First & Prev buttons
         const prevDisabled = backlogCurrentPage === 1;
         btnHtml += `
-          <button onclick="gotoBacklogPage(${backlogCurrentPage - 1})" ${prevDisabled ? 'disabled' : ''} class="px-3 py-1.5 rounded-lg border text-xs font-medium transition ${prevDisabled ? 'border-slate-800 text-slate-600 cursor-not-allowed' : 'border-slate-700 bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white'}">
-            Trước
+          <button onclick="gotoBacklogPage(1)" ${prevDisabled ? 'disabled' : ''} title="Trang đầu" class="px-2.5 py-1.5 rounded-lg border text-xs font-medium transition ${prevDisabled ? 'border-slate-800 text-slate-600 cursor-not-allowed' : 'border-slate-700 bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white'}">
+            &laquo; Đầu
+          </button>
+          <button onclick="gotoBacklogPage(${backlogCurrentPage - 1})" ${prevDisabled ? 'disabled' : ''} title="Trang trước" class="px-3 py-1.5 rounded-lg border text-xs font-medium transition ${prevDisabled ? 'border-slate-800 text-slate-600 cursor-not-allowed' : 'border-slate-700 bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white'}">
+            &lsaquo; Trước
           </button>
         `;
 
-        // Page numbers
-        for (let p = 1; p <= totalPages; p++) {
-          if (p === 1 || p === totalPages || (p >= backlogCurrentPage - 2 && p <= backlogCurrentPage + 2)) {
-            const isActive = p === backlogCurrentPage;
-            btnHtml += `
-              <button onclick="gotoBacklogPage(${p})" class="px-3 py-1.5 rounded-lg border text-xs font-bold transition font-mono ${isActive ? 'bg-indigo-600 border-indigo-500 text-white shadow-sm shadow-indigo-500/30' : 'border-slate-800 bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-white'}">
-                ${p}
-              </button>
-            `;
-          } else if (p === backlogCurrentPage - 3 || p === backlogCurrentPage + 3) {
-            btnHtml += `<span class="px-1 text-slate-600">...</span>`;
-          }
+        // Smart page number window
+        let startP = Math.max(1, backlogCurrentPage - 2);
+        let endP = Math.min(totalPages, backlogCurrentPage + 2);
+        if (startP > 1) {
+          btnHtml += `
+            <button onclick="gotoBacklogPage(1)" class="px-3 py-1.5 rounded-lg border text-xs font-bold transition font-mono border-slate-800 bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-white">
+              1
+            </button>
+          `;
+          if (startP > 2) btnHtml += `<span class="px-1 text-slate-600 text-xs">...</span>`;
         }
 
-        // Next button
+        for (let p = startP; p <= endP; p++) {
+          const isActive = p === backlogCurrentPage;
+          btnHtml += `
+            <button onclick="gotoBacklogPage(${p})" class="px-3 py-1.5 rounded-lg border text-xs font-bold transition font-mono ${isActive ? 'bg-indigo-600 border-indigo-500 text-white shadow-sm shadow-indigo-500/30' : 'border-slate-800 bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-white'}">
+              ${p}
+            </button>
+          `;
+        }
+
+        if (endP < totalPages) {
+          if (endP < totalPages - 1) btnHtml += `<span class="px-1 text-slate-600 text-xs">...</span>`;
+          btnHtml += `
+            <button onclick="gotoBacklogPage(${totalPages})" class="px-3 py-1.5 rounded-lg border text-xs font-bold transition font-mono border-slate-800 bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-white">
+              ${totalPages}
+            </button>
+          `;
+        }
+
+        // Next & Last buttons
         const nextDisabled = backlogCurrentPage === totalPages;
         btnHtml += `
-          <button onclick="gotoBacklogPage(${backlogCurrentPage + 1})" ${nextDisabled ? 'disabled' : ''} class="px-3 py-1.5 rounded-lg border text-xs font-medium transition ${nextDisabled ? 'border-slate-800 text-slate-600 cursor-not-allowed' : 'border-slate-700 bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white'}">
-            Sau
+          <button onclick="gotoBacklogPage(${backlogCurrentPage + 1})" ${nextDisabled ? 'disabled' : ''} title="Trang sau" class="px-3 py-1.5 rounded-lg border text-xs font-medium transition ${nextDisabled ? 'border-slate-800 text-slate-600 cursor-not-allowed' : 'border-slate-700 bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white'}">
+            Sau &rsaquo;
+          </button>
+          <button onclick="gotoBacklogPage(${totalPages})" ${nextDisabled ? 'disabled' : ''} title="Trang cuối" class="px-2.5 py-1.5 rounded-lg border text-xs font-medium transition ${nextDisabled ? 'border-slate-800 text-slate-600 cursor-not-allowed' : 'border-slate-700 bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white'}">
+            Cuối &raquo;
           </button>
         `;
 
@@ -867,6 +910,13 @@
       }
 
       lucide.createIcons();
+    }
+
+    function gotoBacklogPage(page) {
+      backlogCurrentPage = page;
+      if (globalData && globalData.backlog && globalData.backlog.recent_enriched) {
+        renderBacklogTable(globalData.backlog.recent_enriched);
+      }
     }
 
     function gotoBacklogPage(page) {
