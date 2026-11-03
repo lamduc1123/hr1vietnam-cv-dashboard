@@ -1,22 +1,33 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-03 10:38:02",
+    "last_updated": "2026-11-03 10:39:28",
     "today_date": "2026-11-03",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
   },
   "realtime": {
-    "total_today": 10,
+    "total_today": 11,
     "created_today": 3,
-    "updated_today": 7,
+    "updated_today": 8,
     "pending_inbox": 0,
     "sources": {
-      "Consultants": 8,
+      "Consultants": 9,
       "Website": 2,
       "Other": 0
     },
     "candidates": [
+      {
+        "time": "10:39:26",
+        "timestamp": "2026-11-03T10:39:26.769220+07:00",
+        "candidate_name": "LE VAN TOAN",
+        "candidate_id": "107697",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107697",
+        "action": "updated",
+        "source": "CV gửi từ email: trang.cao@hr1vietnam.com",
+        "file_name": "CV_LÊ VĂN TOÀN_MARINE.pdf",
+        "status": "success"
+      },
       {
         "time": "10:16:41",
         "timestamp": "2026-11-03T10:16:41.185202+07:00",
@@ -276,8 +287,8 @@
   "system": {
     "daemon_status": "RUNNING",
     "daemon_pid": 24722,
-    "current_task": "backlog_batch_finished",
-    "last_heartbeat_seconds_ago": 0.0,
+    "current_task": "processing_realtime_cv",
+    "last_heartbeat_seconds_ago": 19.0,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
