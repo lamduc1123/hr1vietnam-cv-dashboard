@@ -141,6 +141,106 @@
       </div>
     </div>
 
+    <!-- TODAY'S OPERATIONS & PERFORMANCE VISUAL PANEL -->
+    <div class="glass-card rounded-2xl p-6 border border-emerald-500/30 bg-gradient-to-br from-slate-900/90 via-slate-900/70 to-emerald-950/20 shadow-xl space-y-6">
+      
+      <!-- Header with Live Mode -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-800">
+        <div>
+          <div class="flex items-center space-x-2 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-1">
+            <i data-lucide="zap" class="w-4 h-4 text-emerald-400"></i>
+            <span id="today-date-display">Tiến Độ Vận Hành Hôm Nay (03/11/2026)</span>
+          </div>
+          <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <span id="today-total-processed" class="text-4xl sm:text-5xl font-black text-white tracking-tight">--</span>
+            <span class="text-sm sm:text-base font-semibold text-slate-300">hồ sơ đã được xử lý trong ngày</span>
+            <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-300 font-bold border border-emerald-500/20" id="today-rate-badge">Đang cập nhật...</span>
+          </div>
+        </div>
+
+        <!-- Current Operating Mode Badge -->
+        <div class="flex items-center space-x-3 bg-slate-950/80 p-3 rounded-xl border border-slate-800 self-start sm:self-auto">
+          <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 pulse-ring"></div>
+          <div>
+            <div id="today-mode-badge" class="text-xs font-extrabold text-emerald-300">☀️ Turbo Giờ Nghỉ Trưa (12:00 - 13:00)</div>
+            <div id="today-mode-desc" class="text-[10px] text-slate-400">Tối đa công suất Backlog: Mẻ 25 CVs • Chu kỳ 15s</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid 3 Visual Blocks for Today -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        <!-- Block 1: Real-time vs Backlog Breakdown -->
+        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-3 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs mb-2">
+              <span class="font-bold text-slate-300 uppercase tracking-wide">Cơ cấu hồ sơ hôm nay</span>
+              <span class="text-[11px] text-slate-400">Real-time vs Backlog</span>
+            </div>
+
+            <!-- Dual Progress Bar -->
+            <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden flex my-2">
+              <div id="today-bar-realtime" class="bg-blue-500 h-3 transition-all duration-700" style="width: 5%" title="Real-time"></div>
+              <div id="today-bar-backlog" class="bg-indigo-500 h-3 transition-all duration-700" style="width: 95%" title="Backlog"></div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-3 rounded-lg bg-blue-500/10 border border-blue-500/20">
+              <div class="flex items-center space-x-1.5 text-blue-400 font-semibold text-[11px]">
+                <i data-lucide="inbox" class="w-3.5 h-3.5"></i>
+                <span>Real-Time Hôm Nay</span>
+              </div>
+              <div id="today-realtime-count" class="text-2xl font-black text-white mt-1">--</div>
+              <div class="text-[10px] text-slate-400 mt-0.5" id="today-realtime-sub">-- mới • -- update</div>
+            </div>
+
+            <div class="p-3 rounded-lg bg-indigo-500/10 border border-indigo-500/20">
+              <div class="flex items-center space-x-1.5 text-indigo-400 font-semibold text-[11px]">
+                <i data-lucide="database" class="w-3.5 h-3.5"></i>
+                <span>Backlog Hôm Nay</span>
+              </div>
+              <div id="today-backlog-count" class="text-2xl font-black text-white mt-1">--</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Làm giàu & Dọn rác 'a'</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 2: 4 Shift Timetable (Ca Sáng - Ca Trưa - Ca Chiều - Ca Đêm) -->
+        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-2.5">
+          <div class="flex items-center justify-between text-xs">
+            <span class="font-bold text-slate-300 uppercase tracking-wide">Tiến độ theo ca trong ngày</span>
+            <span class="text-[11px] text-slate-400">4 Ca vận hành</span>
+          </div>
+
+          <div id="today-shifts-container" class="space-y-1.5">
+            <!-- Dynamically populated from data.today.shifts -->
+          </div>
+        </div>
+
+        <!-- Block 3: Hourly Throughput Mini Chart -->
+        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 space-y-3 flex flex-col justify-between">
+          <div class="flex items-center justify-between text-xs">
+            <span class="font-bold text-slate-300 uppercase tracking-wide">Sản lượng theo giờ hôm nay</span>
+            <span class="text-[11px] text-emerald-400 font-mono font-semibold">Tốc độ ~2.8s/CV</span>
+          </div>
+
+          <div id="today-hourly-chart" class="flex items-end space-x-2 h-24 pt-2 pb-1 overflow-x-auto">
+            <!-- Dynamically rendered bar chart -->
+          </div>
+          <div class="text-[10px] text-slate-500 flex justify-between pt-1 border-t border-slate-800/80">
+            <span>08:00 Sáng</span>
+            <span>12:00 Trưa</span>
+            <span>17:30 Chiều</span>
+            <span>Đêm</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
     <!-- 4 HERO KPI CARDS -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
       
@@ -415,6 +515,69 @@
         document.getElementById('grand-realtime').innerText = data.totals.all_time_realtime;
         document.getElementById('grand-backlog').innerText = data.totals.all_time_backlog_done;
         document.getElementById('grand-backlog-pct').innerText = `Đạt ${data.totals.backlog_completion_percentage}%`;
+      }
+
+      // 2.5 Render Today Operations Visual Panel
+      if (data.today) {
+        const t = data.today;
+        document.getElementById('today-date-display').innerText = `Tiến Độ Vận Hành ${t.date_display}`;
+        document.getElementById('today-total-processed').innerText = `${t.total_processed}+`;
+        document.getElementById('today-rate-badge').innerText = `Đạt ${t.completion_rate_pct}% chỉ tiêu ngày (${t.total_processed}/${t.target_daily})`;
+        
+        document.getElementById('today-mode-badge').innerText = t.mode_badge;
+        document.getElementById('today-mode-desc').innerText = t.mode_desc;
+
+        document.getElementById('today-realtime-count').innerText = t.realtime_count;
+        document.getElementById('today-realtime-sub').innerText = `${t.realtime_created} mới • ${t.realtime_updated} update`;
+        document.getElementById('today-backlog-count').innerText = t.backlog_count;
+
+        const totalT = t.total_processed || 1;
+        const rtPct = Math.round((t.realtime_count / totalT) * 100);
+        const blPct = 100 - rtPct;
+        document.getElementById('today-bar-realtime').style.width = `${rtPct}%`;
+        document.getElementById('today-bar-backlog').style.width = `${blPct}%`;
+
+        // Render shifts
+        const shiftsContainer = document.getElementById('today-shifts-container');
+        if (shiftsContainer && t.shifts) {
+          shiftsContainer.innerHTML = t.shifts.map(s => {
+            let statusBadge = '';
+            if (s.status === 'completed') {
+              statusBadge = '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Hoàn thành</span>';
+            } else if (s.status === 'in_progress') {
+              statusBadge = '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20">Đang tăng tốc</span>';
+            } else {
+              statusBadge = '<span class="px-2 py-0.5 rounded text-[10px] font-medium bg-slate-800 text-slate-400">Sắp diễn ra</span>';
+            }
+            return `
+              <div class="flex items-center justify-between p-1.5 px-2.5 rounded-lg bg-slate-900/70 text-xs border border-slate-800/60">
+                <span class="text-slate-300 font-medium">${s.label}</span>
+                <div class="flex items-center space-x-2">
+                  <span class="font-bold text-white font-mono">${s.count} CV</span>
+                  ${statusBadge}
+                </div>
+              </div>
+            `;
+          }).join('');
+        }
+
+        // Render hourly mini bar chart
+        const hourlyChart = document.getElementById('today-hourly-chart');
+        if (hourlyChart && t.hourly_chart) {
+          const maxCount = Math.max(...t.hourly_chart.map(c => c.count), 1);
+          hourlyChart.innerHTML = t.hourly_chart.map(h => {
+            const heightPct = Math.max(12, Math.round((h.count / maxCount) * 100));
+            const isHigh = h.count >= 50;
+            const barBg = isHigh ? 'bg-gradient-to-t from-emerald-600 to-emerald-400' : 'bg-gradient-to-t from-blue-600 to-indigo-500';
+            return `
+              <div class="flex-1 flex flex-col items-center group relative h-full justify-end min-w-[20px]">
+                <span class="text-[9px] font-mono text-slate-300 mb-1 group-hover:text-emerald-400">${h.count}</span>
+                <div class="w-full ${barBg} rounded-t transition-all duration-500 hover:opacity-80" style="height: ${heightPct}%"></div>
+                <span class="text-[9px] text-slate-400 mt-1 font-mono">${h.hour.split(':')[0]}h</span>
+              </div>
+            `;
+          }).join('');
+        }
       }
 
       // 3. Real-Time Today KPIs
