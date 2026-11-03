@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-03 11:37:10",
+    "last_updated": "2026-11-03 11:39:11",
     "today_date": "2026-11-03",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -10,11 +10,11 @@
     "all_time_realtime": 118,
     "all_time_created": 35,
     "all_time_updated": 82,
-    "all_time_backlog_done": 991,
-    "total_system_processed": 1109,
+    "all_time_backlog_done": 1074,
+    "total_system_processed": 1192,
     "backlog_target": 1083,
-    "backlog_remaining": 88,
-    "backlog_completion_percentage": 91.5
+    "backlog_remaining": 9,
+    "backlog_completion_percentage": 99.2
   },
   "realtime": {
     "total_today": 11,
@@ -152,11 +152,29 @@
   },
   "backlog": {
     "total": 1083,
-    "completed": 991,
-    "remaining": 88,
+    "completed": 1074,
+    "remaining": 9,
     "errors": 4,
-    "completion_percentage": 91.5,
+    "completion_percentage": 99.2,
     "recent_enriched": [
+      {
+        "candidate_id": "106413",
+        "candidate_name": "PHẠM THỊ THÚY VI",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106413",
+        "experiences": 3,
+        "educations": 1,
+        "processed_at": "2026-11-03 11:38:58"
+      },
+      {
+        "candidate_id": "106431",
+        "candidate_name": "UM NAROATH",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106431",
+        "experiences": 3,
+        "educations": 3,
+        "processed_at": "2026-11-03 11:38:40"
+      },
       {
         "candidate_id": "106432",
         "candidate_name": "CHORN SAVOEURN",
@@ -318,24 +336,6 @@
         "experiences": 6,
         "educations": 2,
         "processed_at": "2026-11-03 11:26:47"
-      },
-      {
-        "candidate_id": "106450",
-        "candidate_name": "NGUYEN HOANG PHI",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106450",
-        "experiences": 1,
-        "educations": 0,
-        "processed_at": "2026-11-03 11:26:19"
-      },
-      {
-        "candidate_id": "106451",
-        "candidate_name": "JiHo Gam",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106451",
-        "experiences": 6,
-        "educations": 4,
-        "processed_at": "2026-11-03 11:26:03"
       }
     ]
   },
@@ -414,7 +414,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 1109+ hồ sơ toàn hệ thống (890 backlog + 118 real-time)."
+      "metrics": "Đạt mốc 1111+ hồ sơ toàn hệ thống (890 backlog + 118 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
@@ -428,8 +428,8 @@
   "system": {
     "daemon_status": "RUNNING",
     "daemon_pid": 25679,
-    "current_task": "backlog_batch_finished",
-    "last_heartbeat_seconds_ago": 0.0,
+    "current_task": "processing_backlog",
+    "last_heartbeat_seconds_ago": 8.6,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
