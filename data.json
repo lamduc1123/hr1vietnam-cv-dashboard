@@ -1,32 +1,43 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-03 11:59:29",
+    "last_updated": "2026-11-03 12:09:59",
     "today_date": "2026-11-03",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
   },
   "totals": {
-    "all_time_realtime": 118,
+    "all_time_realtime": 119,
     "all_time_created": 35,
-    "all_time_updated": 82,
+    "all_time_updated": 83,
     "all_time_backlog_done": 1074,
-    "total_system_processed": 1192,
+    "total_system_processed": 1193,
     "backlog_target": 1083,
     "backlog_remaining": 9,
     "backlog_completion_percentage": 99.2
   },
   "realtime": {
-    "total_today": 11,
+    "total_today": 12,
     "created_today": 3,
-    "updated_today": 8,
+    "updated_today": 9,
     "pending_inbox": 0,
     "sources": {
-      "Consultants": 9,
+      "Consultants": 10,
       "Website": 2,
       "Other": 0
     },
     "candidates": [
+      {
+        "time": "12:09:59",
+        "timestamp": "2026-11-03T12:09:59.643139+07:00",
+        "candidate_name": "LE DUC ANH",
+        "candidate_id": "105522",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/105522",
+        "action": "updated",
+        "source": "CV gửi từ email: chung.tran@hr1vietnam.com",
+        "file_name": "Le Duc Anh CV.pdf",
+        "status": "success"
+      },
       {
         "time": "10:39:26",
         "timestamp": "2026-11-03T10:39:26.769220+07:00",
@@ -378,9 +389,9 @@
     },
     {
       "date": "2026-11-03",
-      "total_realtime": 11,
+      "total_realtime": 12,
       "created": 3,
-      "updated": 8
+      "updated": 9
     }
   ],
   "timeline": [
@@ -414,7 +425,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 1111+ hồ sơ toàn hệ thống (890 backlog + 118 real-time)."
+      "metrics": "Đạt mốc 1112+ hồ sơ toàn hệ thống (890 backlog + 119 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
@@ -428,8 +439,8 @@
   "system": {
     "daemon_status": "RUNNING",
     "daemon_pid": 26008,
-    "current_task": "idle_sleep",
-    "last_heartbeat_seconds_ago": 30.6,
+    "current_task": "processing_realtime_cv",
+    "last_heartbeat_seconds_ago": 13.9,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
