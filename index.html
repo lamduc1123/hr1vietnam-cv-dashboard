@@ -404,8 +404,8 @@
       <!-- TAB 2: DAILY HISTORY (BẢNG THỐNG KÊ TOÀN TIẾN TRÌNH THEO NGÀY) -->
       <div id="content-daily_history" class="p-6 hidden space-y-6">
         <div>
-          <h3 class="text-base font-bold text-white tracking-tight">Thống Kê Tiến Trình Real-Time Qua Từng Ngày</h3>
-          <p class="text-xs text-slate-400 mt-0.5">Dữ liệu thực tế ghi nhận từ khi triển khai dự án tới hiện tại.</p>
+          <h3 class="text-base font-bold text-white tracking-tight">Thống Kê Tiến Trình Nạp & Chuẩn Hóa CV Theo Ngày</h3>
+          <p class="text-xs text-slate-400 mt-0.5">Dữ liệu thực tế ghi nhận song song 2 luồng: Tiếp nhận Real-Time và Chuẩn hóa Backlog từ khi triển khai dự án.</p>
         </div>
 
         <div class="overflow-x-auto border border-slate-800 rounded-xl">
@@ -413,9 +413,11 @@
             <thead>
               <tr class="border-b border-slate-800 bg-slate-900/80 text-slate-400 font-semibold uppercase tracking-wider text-[11px]">
                 <th class="py-3.5 px-6">Ngày Làm Việc</th>
-                <th class="py-3.5 px-6 text-center">Tạo Mới (Created)</th>
-                <th class="py-3.5 px-6 text-center">Cập Nhật (Updated)</th>
-                <th class="py-3.5 px-6 text-center">Tổng Real-Time</th>
+                <th class="py-3.5 px-6 text-center">Tạo Mới</th>
+                <th class="py-3.5 px-6 text-center">Cập Nhật</th>
+                <th class="py-3.5 px-6 text-center text-blue-400">Tổng Real-Time</th>
+                <th class="py-3.5 px-6 text-center text-indigo-400">Backlog Đã Chuẩn Hóa</th>
+                <th class="py-3.5 px-6 text-center text-amber-300 font-bold">Tổng Cộng (Real-Time + Backlog)</th>
                 <th class="py-3.5 px-6 text-center">Trạng Thái Báo Cáo</th>
                 <th class="py-3.5 px-6 text-right">Đánh Giá Tiến Độ</th>
               </tr>
@@ -439,11 +441,22 @@
         </div>
       </div>
 
-      <!-- TAB 4: BACKLOG TABLE -->
+      <!-- TAB 4: BACKLOG TABLE (VỚI PHÂN TRANG CLIENT-SIDE MƯỢT MÀ, KHÔNG LAG) -->
       <div id="content-backlog" class="p-0 overflow-x-auto hidden">
+        <div class="p-4 px-6 bg-slate-900/60 border-b border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div class="flex items-center space-x-2.5">
+            <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+            <span class="font-bold text-white">Lịch Sử Chuẩn Hóa Backlog Chi Tiết</span>
+            <span id="backlog-items-count-badge" class="px-2.5 py-0.5 rounded-full text-[11px] bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-mono">--</span>
+          </div>
+          <div class="text-slate-400 text-[11px]">
+            Hồ sơ hiển thị theo thứ tự mới nhất • Phân trang mượt mà không tải lại trang
+          </div>
+        </div>
+
         <table class="w-full text-left border-collapse text-xs">
           <thead>
-            <tr class="border-b border-slate-800 bg-slate-900/60 text-slate-400 font-semibold uppercase tracking-wider text-[11px]">
+            <tr class="border-b border-slate-800 bg-slate-900/40 text-slate-400 font-semibold uppercase tracking-wider text-[11px]">
               <th class="py-3 px-6">Mã Ứng Viên CRM</th>
               <th class="py-3 px-6">Họ Và Tên</th>
               <th class="py-3 px-6">Kinh Nghiệm Bổ Sung</th>
@@ -458,6 +471,16 @@
             </tr>
           </tbody>
         </table>
+
+        <!-- BACKLOG PAGINATION CONTROLS -->
+        <div id="backlog-pagination" class="p-4 px-6 bg-slate-900/80 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4 text-xs">
+          <div class="text-slate-400 text-xs" id="backlog-page-info">
+            Đang tải dữ liệu trang...
+          </div>
+          <div class="flex items-center space-x-1.5" id="backlog-pagination-buttons">
+            <!-- Buttons dynamically generated -->
+          </div>
+        </div>
       </div>
 
     </div>
@@ -669,6 +692,8 @@
 
       tbody.innerHTML = history.map(h => {
         const isToday = h.date === '2026-11-03';
+        const blCount = h.backlog_count || 0;
+        const grandTotal = h.grand_total || (h.total_realtime + blCount);
         return `
           <tr class="hover:bg-dark-hover transition duration-150 ${isToday ? 'bg-blue-950/20 font-medium' : ''}">
             <td class="py-3.5 px-6 font-mono text-slate-300 flex items-center space-x-2">
@@ -678,6 +703,12 @@
             <td class="py-3.5 px-6 text-center text-emerald-400 font-bold">+${h.created}</td>
             <td class="py-3.5 px-6 text-center text-blue-400 font-bold">+${h.updated}</td>
             <td class="py-3.5 px-6 text-center text-white font-extrabold text-sm">${h.total_realtime} hồ sơ</td>
+            <td class="py-3.5 px-6 text-center text-indigo-400 font-bold text-sm">
+              ${blCount > 0 ? `+${blCount} hồ sơ` : '<span class="text-slate-500 font-normal">--</span>'}
+            </td>
+            <td class="py-3.5 px-6 text-center text-amber-300 font-black text-sm bg-amber-500/5">
+              ${grandTotal} hồ sơ
+            </td>
             <td class="py-3.5 px-6 text-center">
               <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                 <i data-lucide="mail-check" class="w-3 h-3 mr-1"></i> Đã gửi báo cáo
@@ -730,28 +761,119 @@
       }).join('');
     }
 
+    let backlogCurrentPage = 1;
+    const backlogPageSize = 15;
+    let filteredBacklogList = [];
+
     function renderBacklogTable(backlogItems) {
-      const tbody = document.getElementById('backlog-tbody');
-      if (!backlogItems || backlogItems.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="6" class="py-8 text-center text-slate-500">Chưa có dữ liệu backlog gần đây.</td></tr>`;
-        return;
+      if (!backlogItems) return;
+      
+      const q = (document.getElementById('search-input')?.value || '').toLowerCase().trim();
+      if (q) {
+        filteredBacklogList = backlogItems.filter(b => 
+          (b.candidate_name || '').toLowerCase().includes(q) || 
+          (b.candidate_id || '').toString().includes(q)
+        );
+      } else {
+        filteredBacklogList = backlogItems;
       }
 
-      tbody.innerHTML = backlogItems.map(b => `
-        <tr class="hover:bg-dark-hover transition duration-150">
-          <td class="py-3.5 px-6 font-mono text-indigo-400 font-semibold">#${b.candidate_id}</td>
-          <td class="py-3.5 px-6 font-semibold text-white">${b.candidate_name}</td>
-          <td class="py-3.5 px-6 text-slate-300">+${b.experiences} đơn vị công tác</td>
-          <td class="py-3.5 px-6 text-slate-300">+${b.educations} học vị/trường</td>
-          <td class="py-3.5 px-6 text-slate-400 font-mono">${b.processed_at || '--'}</td>
-          <td class="py-3.5 px-6 text-right">
-            <a href="${b.crm_url}" target="_blank" class="inline-flex items-center space-x-1 text-xs text-blue-400 hover:underline">
-              <span>Xem CRM</span>
-              <i data-lucide="external-link" class="w-3 h-3"></i>
-            </a>
-          </td>
-        </tr>
-      `).join('');
+      const totalItems = filteredBacklogList.length;
+      const totalPages = Math.max(1, Math.ceil(totalItems / backlogPageSize));
+      if (backlogCurrentPage > totalPages) backlogCurrentPage = totalPages;
+      if (backlogCurrentPage < 1) backlogCurrentPage = 1;
+
+      const startIndex = (backlogCurrentPage - 1) * backlogPageSize;
+      const endIndex = Math.min(startIndex + backlogPageSize, totalItems);
+      const currentSlice = filteredBacklogList.slice(startIndex, endIndex);
+
+      // Update badge
+      const badge = document.getElementById('backlog-items-count-badge');
+      if (badge) {
+        badge.innerText = `${totalItems} hồ sơ`;
+      }
+
+      // Update page info
+      const pageInfo = document.getElementById('backlog-page-info');
+      if (pageInfo) {
+        pageInfo.innerHTML = `Hiển thị <span class="font-bold text-white font-mono">${totalItems > 0 ? startIndex + 1 : 0} - ${endIndex}</span> trên tổng số <span class="font-bold text-indigo-400 font-mono">${totalItems}</span> hồ sơ`;
+      }
+
+      const tbody = document.getElementById('backlog-tbody');
+      if (currentSlice.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" class="py-8 text-center text-slate-500">Không tìm thấy hồ sơ backlog phù hợp.</td></tr>`;
+      } else {
+        tbody.innerHTML = currentSlice.map(b => `
+          <tr class="hover:bg-dark-hover transition duration-150">
+            <td class="py-3.5 px-6 font-mono text-indigo-400 font-semibold">#${b.candidate_id}</td>
+            <td class="py-3.5 px-6 font-semibold text-white">${b.candidate_name}</td>
+            <td class="py-3.5 px-6 text-slate-300">
+              <span class="inline-flex items-center px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 font-medium">
+                +${b.experiences} đơn vị công tác
+              </span>
+            </td>
+            <td class="py-3.5 px-6 text-slate-300">
+              <span class="inline-flex items-center px-2 py-0.5 rounded bg-blue-500/10 text-blue-300 border border-blue-500/20 font-medium">
+                +${b.educations} học vị/trường
+              </span>
+            </td>
+            <td class="py-3.5 px-6 text-slate-400 font-mono">${b.processed_at || '--'}</td>
+            <td class="py-3.5 px-6 text-right">
+              <a href="${b.crm_url}" target="_blank" class="inline-flex items-center space-x-1 text-xs text-blue-400 hover:text-blue-300 hover:underline">
+                <span>Xem CRM</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </td>
+          </tr>
+        `).join('');
+      }
+
+      // Render pagination buttons
+      const btnContainer = document.getElementById('backlog-pagination-buttons');
+      if (btnContainer) {
+        let btnHtml = '';
+        
+        // Prev button
+        const prevDisabled = backlogCurrentPage === 1;
+        btnHtml += `
+          <button onclick="gotoBacklogPage(${backlogCurrentPage - 1})" ${prevDisabled ? 'disabled' : ''} class="px-3 py-1.5 rounded-lg border text-xs font-medium transition ${prevDisabled ? 'border-slate-800 text-slate-600 cursor-not-allowed' : 'border-slate-700 bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white'}">
+            Trước
+          </button>
+        `;
+
+        // Page numbers
+        for (let p = 1; p <= totalPages; p++) {
+          if (p === 1 || p === totalPages || (p >= backlogCurrentPage - 2 && p <= backlogCurrentPage + 2)) {
+            const isActive = p === backlogCurrentPage;
+            btnHtml += `
+              <button onclick="gotoBacklogPage(${p})" class="px-3 py-1.5 rounded-lg border text-xs font-bold transition font-mono ${isActive ? 'bg-indigo-600 border-indigo-500 text-white shadow-sm shadow-indigo-500/30' : 'border-slate-800 bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-white'}">
+                ${p}
+              </button>
+            `;
+          } else if (p === backlogCurrentPage - 3 || p === backlogCurrentPage + 3) {
+            btnHtml += `<span class="px-1 text-slate-600">...</span>`;
+          }
+        }
+
+        // Next button
+        const nextDisabled = backlogCurrentPage === totalPages;
+        btnHtml += `
+          <button onclick="gotoBacklogPage(${backlogCurrentPage + 1})" ${nextDisabled ? 'disabled' : ''} class="px-3 py-1.5 rounded-lg border text-xs font-medium transition ${nextDisabled ? 'border-slate-800 text-slate-600 cursor-not-allowed' : 'border-slate-700 bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white'}">
+            Sau
+          </button>
+        `;
+
+        btnContainer.innerHTML = btnHtml;
+      }
+
+      lucide.createIcons();
+    }
+
+    function gotoBacklogPage(page) {
+      backlogCurrentPage = page;
+      if (globalData && globalData.backlog && globalData.backlog.recent_enriched) {
+        renderBacklogTable(globalData.backlog.recent_enriched);
+      }
     }
 
     function switchTab(tab) {
@@ -783,11 +905,18 @@
 
     function filterTable() {
       const q = document.getElementById('search-input').value.toLowerCase();
-      const rows = document.querySelectorAll('#realtime-tbody tr, #backlog-tbody tr');
-      rows.forEach(r => {
+      // 1. Realtime table rows
+      const rtRows = document.querySelectorAll('#realtime-tbody tr');
+      rtRows.forEach(r => {
         const text = r.innerText.toLowerCase();
         r.style.display = text.includes(q) ? '' : 'none';
       });
+
+      // 2. Backlog paginated table
+      if (globalData && globalData.backlog && globalData.backlog.recent_enriched) {
+        backlogCurrentPage = 1;
+        renderBacklogTable(globalData.backlog.recent_enriched);
+      }
     }
 
     function resetCountdown() {
