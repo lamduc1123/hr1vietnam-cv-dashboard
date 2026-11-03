@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-03 14:51:18",
+    "last_updated": "2026-11-03 14:51:22",
     "today_date": "2026-11-03",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -11,8 +11,8 @@
     "date_display": "Hôm nay, 03/11/2026",
     "total_processed": 418,
     "realtime_count": 14,
-    "realtime_created": 4,
-    "realtime_updated": 10,
+    "realtime_created": 3,
+    "realtime_updated": 11,
     "backlog_count": 404,
     "target_daily": 300,
     "completion_rate_pct": 100.0,
@@ -89,7 +89,7 @@
   },
   "totals": {
     "all_time_realtime": 121,
-    "all_time_created": 36,
+    "all_time_created": 35,
     "all_time_updated": 84,
     "all_time_backlog_done": 2223,
     "total_system_processed": 2344,
@@ -99,8 +99,8 @@
   },
   "realtime": {
     "total_today": 14,
-    "created_today": 4,
-    "updated_today": 10,
+    "created_today": 3,
+    "updated_today": 11,
     "pending_inbox": 0,
     "sources": {
       "Consultants": 12,
@@ -114,7 +114,7 @@
         "candidate_name": "NGUYEN MINH TIEN",
         "candidate_id": "107704",
         "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107704",
-        "action": "created",
+        "action": "skipped_admin_inputted",
         "source": "CV gửi từ email: thu.le@hr1vietnam.com",
         "file_name": "040926 - CV NGUYEN MINH TIEN - EN_260904_212157.pdf",
         "status": "success"
@@ -493,7 +493,7 @@
     {
       "date": "2026-11-03",
       "total_realtime": 14,
-      "created": 4,
+      "created": 3,
       "updated": 10
     }
   ],
@@ -543,7 +543,7 @@
     "daemon_status": "RUNNING",
     "daemon_pid": 29542,
     "current_task": "processing_realtime_cv",
-    "last_heartbeat_seconds_ago": 8.4,
+    "last_heartbeat_seconds_ago": 11.9,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
