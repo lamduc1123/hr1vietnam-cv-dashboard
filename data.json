@@ -1,10 +1,20 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-03 11:00:10",
+    "last_updated": "2026-11-03 11:02:29",
     "today_date": "2026-11-03",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
+  },
+  "totals": {
+    "all_time_realtime": 118,
+    "all_time_created": 35,
+    "all_time_updated": 82,
+    "all_time_backlog_done": 934,
+    "total_system_processed": 1052,
+    "backlog_target": 993,
+    "backlog_remaining": 55,
+    "backlog_completion_percentage": 94.1
   },
   "realtime": {
     "total_today": 11,
@@ -141,12 +151,30 @@
     ]
   },
   "backlog": {
-    "total": 0,
-    "completed": 932,
-    "remaining": 0,
+    "total": 993,
+    "completed": 934,
+    "remaining": 55,
     "errors": 4,
-    "completion_percentage": 0.0,
+    "completion_percentage": 94.1,
     "recent_enriched": [
+      {
+        "candidate_id": "106489",
+        "candidate_name": "Arvind Kumar Yadav",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106489",
+        "experiences": 9,
+        "educations": 3,
+        "processed_at": "2026-11-03 11:02:03"
+      },
+      {
+        "candidate_id": "106490",
+        "candidate_name": "VU THI THU HOAI",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106490",
+        "experiences": 2,
+        "educations": 1,
+        "processed_at": "2026-11-03 11:01:37"
+      },
       {
         "candidate_id": "106491",
         "candidate_name": "NGUYEN THI THANH THAO",
@@ -281,17 +309,130 @@
         "experiences": 4,
         "educations": 1,
         "processed_at": "2026-11-03 10:52:41"
+      },
+      {
+        "candidate_id": "106506",
+        "candidate_name": "Mai Trung Kiên",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106506",
+        "experiences": 6,
+        "educations": 2,
+        "processed_at": "2026-11-03 10:51:13"
+      },
+      {
+        "candidate_id": "106507",
+        "candidate_name": "LÊ HOÀNG ANH QUỐC (IVAN)",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106507",
+        "experiences": 1,
+        "educations": 1,
+        "processed_at": "2026-11-03 10:50:53"
+      },
+      {
+        "candidate_id": "106508",
+        "candidate_name": "NGO HOANG VIET",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106508",
+        "experiences": 7,
+        "educations": 1,
+        "processed_at": "2026-11-03 10:50:35"
       }
     ]
   },
+  "daily_history": [
+    {
+      "date": "2026-10-26",
+      "total_realtime": 8,
+      "created": 4,
+      "updated": 4
+    },
+    {
+      "date": "2026-10-27",
+      "total_realtime": 17,
+      "created": 5,
+      "updated": 12
+    },
+    {
+      "date": "2026-10-28",
+      "total_realtime": 22,
+      "created": 8,
+      "updated": 14
+    },
+    {
+      "date": "2026-10-29",
+      "total_realtime": 19,
+      "created": 7,
+      "updated": 12
+    },
+    {
+      "date": "2026-10-30",
+      "total_realtime": 12,
+      "created": 0,
+      "updated": 12
+    },
+    {
+      "date": "2026-11-02",
+      "total_realtime": 29,
+      "created": 8,
+      "updated": 20
+    },
+    {
+      "date": "2026-11-03",
+      "total_realtime": 11,
+      "created": 3,
+      "updated": 8
+    }
+  ],
+  "timeline": [
+    {
+      "phase": "Giai đoạn 1: Nền Tảng & Đồng Bộ Web Form CRM",
+      "date_range": "21/10/2026 - 26/10/2026",
+      "status": "completed",
+      "badge": "Hoàn thành 100%",
+      "description": "Giải mã cấu trúc CRM HR1Vietnam, xây dựng module trích xuất văn bản (PDF, DOCX, DOC), kết nối hộp thư marketing@hr1vietnam.com.",
+      "metrics": "8 hồ sơ đầu tiên được đồng bộ CRM qua giao diện Web Form an toàn."
+    },
+    {
+      "phase": "Giai đoạn 2: Master QC Rules & Giám Sát Real-Time",
+      "date_range": "27/10/2026 - 30/10/2026",
+      "status": "completed",
+      "badge": "Hoàn thành 100%",
+      "description": "Mở rộng kết nối hòm thư consultant input4@hr1vietnam.com; tích hợp Avatar Vision AI (cắt ảnh chân dung 200x200, nhận diện giới tính), Industry Resolver tự động, dọn dẹp placeholder rác ký tự 'a' của consultant cũ, tự động gửi email phản hồi kết quả.",
+      "metrics": "70 hồ sơ consultant & website được xử lý sạch sẽ; chuẩn hóa 100% Master QC Rules."
+    },
+    {
+      "phase": "Giai đoạn 3: Bứt Tốc Backlog & Kiến Trúc Tự Phục Hồi (Watchdog)",
+      "date_range": "31/10/2026 - 02/11/2026",
+      "status": "completed",
+      "badge": "Hoàn thành 100%",
+      "description": "Triển khai kiến trúc tự phục hồi 24/7 (Supervisor Watchdog com.hr1vietnam.supervisor); tự động hồi sinh khi freeze/crash; thiết lập lịch báo cáo tự động 11:59 AM & 17:29 PM; cơ chế tự động re-sync khi Admin gộp trùng ID (QC Rule 4).",
+      "metrics": "800+ hồ sơ backlog cũ trên CRM được quét và làm giàu tự động; 29 CV Real-time trong ngày 02/11."
+    },
+    {
+      "phase": "Giai đoạn 4: Nâng Cấp Gemini API Trả Phí & Executive Dashboard",
+      "date_range": "03/11/2026 (Hôm nay)",
+      "status": "in_progress",
+      "badge": "Đang vận hành (Live)",
+      "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
+      "metrics": "Đạt mốc 1052+ hồ sơ toàn hệ thống (890 backlog + 118 real-time)."
+    },
+    {
+      "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
+      "date_range": "04/11/2026 - Tiếp theo",
+      "status": "upcoming",
+      "badge": "Mục tiêu kế tiếp",
+      "description": "Xử lý sạch 67 hồ sơ backlog còn lại; duy trì hệ thống chạy 24/7 autonomous 0% lỗi nghẽn; nâng cấp tra cứu thương hiệu chuyên sâu và đối soát dữ liệu định kỳ.",
+      "metrics": "Mục tiêu: 100% hồ sơ ứng viên trên CRM HR1 đạt chuẩn chuyên nghiệp cao nhất."
+    }
+  ],
   "system": {
     "daemon_status": "RUNNING",
     "daemon_pid": 24722,
-    "current_task": "backlog_batch_finished",
-    "last_heartbeat_seconds_ago": 0.0,
+    "current_task": "processing_backlog",
+    "last_heartbeat_seconds_ago": 22.2,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
-    "search_grounding": "ONLINE (Google Search API Active)"
+    "search_grounding": "ONLINE (Google Search Grounding Active)"
   }
 }
