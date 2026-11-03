@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-03 11:16:37",
+    "last_updated": "2026-11-03 11:19:19",
     "today_date": "2026-11-03",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -10,11 +10,11 @@
     "all_time_realtime": 118,
     "all_time_created": 35,
     "all_time_updated": 82,
-    "all_time_backlog_done": 959,
-    "total_system_processed": 1077,
+    "all_time_backlog_done": 961,
+    "total_system_processed": 1079,
     "backlog_target": 1083,
-    "backlog_remaining": 120,
-    "backlog_completion_percentage": 88.6
+    "backlog_remaining": 118,
+    "backlog_completion_percentage": 88.7
   },
   "realtime": {
     "total_today": 11,
@@ -152,11 +152,29 @@
   },
   "backlog": {
     "total": 1083,
-    "completed": 959,
-    "remaining": 120,
+    "completed": 961,
+    "remaining": 118,
     "errors": 4,
-    "completion_percentage": 88.6,
+    "completion_percentage": 88.7,
     "recent_enriched": [
+      {
+        "candidate_id": "106462",
+        "candidate_name": "M R . SEIHA BO",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106462",
+        "experiences": 4,
+        "educations": 2,
+        "processed_at": "2026-11-03 11:18:31"
+      },
+      {
+        "candidate_id": "106463",
+        "candidate_name": "KHIN BUNLORN",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106463",
+        "experiences": 3,
+        "educations": 1,
+        "processed_at": "2026-11-03 11:18:11"
+      },
       {
         "candidate_id": "106464",
         "candidate_name": "PHAM THI KIM LOAN",
@@ -318,24 +336,6 @@
         "experiences": 4,
         "educations": 1,
         "processed_at": "2026-11-03 11:06:38"
-      },
-      {
-        "candidate_id": "106482",
-        "candidate_name": "RINDY LONG",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106482",
-        "experiences": 4,
-        "educations": 2,
-        "processed_at": "2026-11-03 11:06:12"
-      },
-      {
-        "candidate_id": "106483",
-        "candidate_name": "DINH THI THUY TRANG",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106483",
-        "experiences": 4,
-        "educations": 1,
-        "processed_at": "2026-11-03 11:05:52"
       }
     ]
   },
@@ -414,7 +414,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 1077+ hồ sơ toàn hệ thống (890 backlog + 118 real-time)."
+      "metrics": "Đạt mốc 1079+ hồ sơ toàn hệ thống (890 backlog + 118 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
@@ -427,11 +427,11 @@
   ],
   "system": {
     "daemon_status": "RUNNING",
-    "daemon_pid": 25438,
-    "current_task": "backlog_batch_finished",
-    "last_heartbeat_seconds_ago": 0.0,
-    "supervisor_running": true,
-    "supervisor_healthy": true,
+    "daemon_pid": 25679,
+    "current_task": "processing_backlog",
+    "last_heartbeat_seconds_ago": 7.5,
+    "supervisor_running": false,
+    "supervisor_healthy": false,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
     "search_grounding": "ONLINE (Google Search Grounding Active)"
   }
