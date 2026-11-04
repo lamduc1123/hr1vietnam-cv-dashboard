@@ -114,54 +114,97 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-8">
 
     <!-- ALL-TIME GRAND TOTAL HERO BANNER -->
-    <div class="glass-card rounded-2xl p-6 relative overflow-hidden border border-blue-500/30 bg-gradient-to-r from-blue-950/40 via-indigo-950/30 to-slate-900/60 shadow-xl">
-      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+    <div class="glass-card rounded-2xl p-6 relative overflow-hidden border border-blue-500/30 bg-gradient-to-r from-blue-950/40 via-indigo-950/30 to-slate-900/60 shadow-xl space-y-6">
+      
+      <!-- HÀNG 1: TIÊU ĐỀ & TỔNG SẢN LƯỢNG HỆ THỐNG -->
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <div>
           <div class="flex items-center space-x-2 text-blue-400 text-xs font-bold uppercase tracking-wider mb-1">
             <i data-lucide="sparkles" class="w-4 h-4"></i>
             <span>Tổng Kết Lũy Kế Toàn Dự Án (Từ Khởi Động Đến Hiện Tại)</span>
           </div>
           <div class="flex items-baseline space-x-3 mt-1">
-            <span id="grand-total-processed" class="text-5xl font-black text-white tracking-tight">1,009+</span>
-            <span class="text-base font-semibold text-slate-300">Hồ sơ ứng viên đã được xử lý vào CRM</span>
+            <span id="grand-total-processed" class="text-4xl sm:text-5xl font-black text-white tracking-tight">2,016+</span>
+            <span class="text-base sm:text-lg font-semibold text-slate-300">Hồ sơ ứng viên đã được xử lý vào CRM</span>
           </div>
-          <p class="text-xs text-slate-400 mt-2">Bao gồm toàn bộ hồ sơ tiếp nhận Real-time (Mailbox + Website) và toàn bộ hồ sơ Backlog cũ được chuẩn hóa (Tổng kho CRM đã quét rà soát sạch: 5,434 hồ sơ).</p>
+          <p class="text-xs text-slate-400 mt-2">Bao gồm toàn bộ hồ sơ tiếp nhận Real-time (Mailbox + Website) và toàn bộ hồ sơ Backlog cũ được chuẩn hóa (Tổng kho CRM đã quét rà soát sạch: 5,434 hồ sơ qua 58 trang).</p>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 text-center">
-          <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800">
-            <div class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Real-Time Lũy Kế</div>
-            <div id="grand-realtime" class="text-xl font-extrabold text-blue-400 mt-0.5 whitespace-nowrap">136</div>
-            <div class="text-[10px] text-slate-500 whitespace-nowrap">41 mới • 95 update</div>
-          </div>
-          <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800">
-            <div class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Backlog Đã Chuẩn Hóa</div>
-            <div id="grand-backlog" class="text-xl font-extrabold text-indigo-400 mt-0.5 whitespace-nowrap">1,860</div>
-            <div id="grand-backlog-pct" class="text-[10px] text-indigo-300 whitespace-nowrap">Đạt 100%</div>
-          </div>
-          <!-- Ô MỚI: CHUẨN HÓA TRÊN CRM (ADMIN + AI) TRÊN TỔNG DATA CRM -->
-          <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800 col-span-2 sm:col-span-1">
-            <div class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Đã Chuẩn Hóa / Tổng CRM</div>
-            <div class="flex items-baseline justify-center space-x-1 mt-0.5 whitespace-nowrap">
-              <span id="grand-std-count" class="text-xl font-extrabold text-emerald-400 whitespace-nowrap">6,500</span>
-              <span class="text-[11px] font-medium text-slate-400 whitespace-nowrap">/ <span id="grand-crm-total">105,698</span></span>
-            </div>
-            <div id="grand-std-sub" class="text-[10px] text-emerald-400/90 whitespace-nowrap font-medium">4,504 Admin + 1,996 AI (6.1%)</div>
-          </div>
-          <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800">
-            <div class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Tỷ Lệ Master QC</div>
-            <div class="text-xl font-extrabold text-emerald-400 mt-0.5 whitespace-nowrap">100%</div>
-            <div class="text-[10px] text-emerald-500 whitespace-nowrap">Không lỗi placeholder</div>
-          </div>
-          <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800 cursor-pointer hover:border-sky-500/50 hover:bg-slate-800/60 transition group col-span-2 sm:col-span-1" onclick="switchTab('ai_analytics')" title="Nhấn để xem chi tiết chi phí & token AI">
-            <div class="text-[11px] text-slate-400 uppercase font-semibold flex items-center justify-center space-x-1 group-hover:text-sky-300 whitespace-nowrap">
-              <i data-lucide="cpu" class="w-3 h-3 text-sky-400"></i>
-              <span>Chi Phí AI & Token</span>
-            </div>
-            <div id="grand-ai-cost" class="text-xl font-extrabold text-sky-400 mt-0.5 whitespace-nowrap">--</div>
-            <div id="grand-ai-tokens" class="text-[10px] text-sky-300 font-medium whitespace-nowrap">Đang tính toán...</div>
-          </div>
+        <div class="flex items-center space-x-3 self-start lg:self-center">
+          <span class="inline-flex items-center px-3 py-1.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-bold whitespace-nowrap">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2 animate-pulse"></span> Vận Hành Tự Động 24/7
+          </span>
+          <button onclick="switchTab('ai_analytics')" class="px-3 py-1.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 text-xs font-semibold flex items-center space-x-1.5 transition whitespace-nowrap">
+            <i data-lucide="cpu" class="w-3.5 h-3.5 text-sky-400"></i>
+            <span>Đối Soát Token & Chi Phí</span>
+          </button>
         </div>
+      </div>
+
+      <!-- HÀNG 2: 5 Ô CHỈ SỐ RIÊNG BIỆT - RỘNG RÃI, MINH BẠCH, KHÔNG CHEN CHÚC -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 pt-6 border-t border-slate-800/80">
+        
+        <!-- Ô 1: REAL-TIME LŨY KẾ -->
+        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 hover:border-blue-500/40 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Real-Time Lũy Kế</span>
+            <div class="w-6 h-6 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center border border-blue-500/20">
+              <i data-lucide="inbox" class="w-3.5 h-3.5"></i>
+            </div>
+          </div>
+          <div id="grand-realtime" class="text-2xl font-black text-blue-400 mt-2 whitespace-nowrap">136</div>
+          <div class="text-[11px] text-slate-500 mt-1 whitespace-nowrap">41 mới • 95 update</div>
+        </div>
+
+        <!-- Ô 2: BACKLOG AI CHUẨN HÓA -->
+        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 hover:border-indigo-500/40 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Backlog AI Chuẩn Hóa</span>
+            <div class="w-6 h-6 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center border border-indigo-500/20">
+              <i data-lucide="database" class="w-3.5 h-3.5"></i>
+            </div>
+          </div>
+          <div id="grand-backlog" class="text-2xl font-black text-indigo-400 mt-2 whitespace-nowrap">1,880</div>
+          <div id="grand-backlog-pct" class="text-[11px] text-indigo-300 mt-1 whitespace-nowrap font-medium">Đạt 98.9% mẻ quét CRM</div>
+        </div>
+
+        <!-- Ô 3 (MỚI): ĐÃ CHUẨN HÓA TRÊN CRM (ADMIN + AI) TRÊN TỔNG DATA CRM -->
+        <div class="bg-gradient-to-br from-emerald-950/40 via-slate-900/90 to-slate-900/90 p-4 rounded-xl border border-emerald-500/40 shadow-inner hover:border-emerald-500/60 transition sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] text-emerald-300 uppercase font-bold whitespace-nowrap">Đã Chuẩn Hóa / Tổng CRM</span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] bg-emerald-500/20 text-emerald-400 font-bold whitespace-nowrap">Real-time</span>
+          </div>
+          <div class="flex items-baseline space-x-1 mt-2 whitespace-nowrap">
+            <span id="grand-std-count" class="text-2xl font-black text-emerald-400 whitespace-nowrap">6,673</span>
+            <span class="text-xs font-semibold text-slate-400 whitespace-nowrap">/ <span id="grand-crm-total" class="text-slate-300">105,698</span></span>
+          </div>
+          <div id="grand-std-sub" class="text-[11px] text-emerald-400/90 font-medium mt-1 whitespace-nowrap">4,657 Admin + 2,016 AI (6.31%)</div>
+        </div>
+
+        <!-- Ô 4: TỶ LỆ MASTER QC -->
+        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 hover:border-teal-500/40 transition">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Tỷ Lệ Master QC</span>
+            <div class="w-6 h-6 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center border border-teal-500/20">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+            </div>
+          </div>
+          <div class="text-2xl font-black text-teal-400 mt-2 whitespace-nowrap">100%</div>
+          <div class="text-[11px] text-teal-400/80 mt-1 whitespace-nowrap">Không lỗi placeholder 'a'</div>
+        </div>
+
+        <!-- Ô 5: CHI PHÍ AI & TOKEN -->
+        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800/50 transition cursor-pointer group sm:col-span-2 lg:col-span-1" onclick="switchTab('ai_analytics')" title="Nhấn để xem chi tiết chi phí & token AI">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 uppercase font-semibold group-hover:text-sky-300 whitespace-nowrap">Chi Phí AI & Token</span>
+            <div class="w-6 h-6 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center border border-sky-500/20">
+              <i data-lucide="cpu" class="w-3.5 h-3.5 text-sky-400"></i>
+            </div>
+          </div>
+          <div id="grand-ai-cost" class="text-2xl font-black text-sky-400 mt-2 whitespace-nowrap">₫67,621</div>
+          <div id="grand-ai-tokens" class="text-[11px] text-sky-300 font-medium mt-1 whitespace-nowrap">20.2M tokens • ~33.5đ/CV</div>
+        </div>
+
       </div>
     </div>
 
