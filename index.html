@@ -181,16 +181,16 @@
           <div id="grand-std-sub" class="text-[11px] text-emerald-400/90 font-medium mt-1 whitespace-nowrap">4,657 Admin + 2,016 AI (6.31%)</div>
         </div>
 
-        <!-- Ô 4: CHI PHÍ AI & TOKEN -->
-        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800/50 transition cursor-pointer group" onclick="switchTab('ai_analytics')" title="Nhấn để xem chi tiết chi phí & token AI">
+        <!-- Ô 4: SỐ DƯ & CHI PHÍ AI -->
+        <div id="card-ai-overview" class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800/50 transition cursor-pointer group" onclick="switchTab('ai_analytics')" title="Nhấn để xem chi tiết số dư & chi phí AI">
           <div class="flex items-center justify-between">
-            <span class="text-[11px] text-slate-400 uppercase font-semibold group-hover:text-sky-300 whitespace-nowrap">Chi Phí AI & Token</span>
-            <div class="w-6 h-6 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center border border-sky-500/20">
-              <i data-lucide="cpu" class="w-3.5 h-3.5 text-sky-400"></i>
+            <span class="text-[11px] text-slate-400 uppercase font-semibold group-hover:text-sky-300 whitespace-nowrap">Số Dư AI Studio</span>
+            <div id="grand-ai-badge" class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 whitespace-nowrap">
+              An toàn
             </div>
           </div>
-          <div id="grand-ai-cost" class="text-2xl font-black text-sky-400 mt-2 whitespace-nowrap">₫386,129</div>
-          <div id="grand-ai-tokens" class="text-[11px] text-sky-300 font-medium mt-1 whitespace-nowrap">23.3M tokens • ~175đ/CV</div>
+          <div id="grand-ai-cost" class="text-2xl font-black text-emerald-400 mt-2 whitespace-nowrap">₫1,015,459</div>
+          <div id="grand-ai-tokens" class="text-[11px] text-slate-400 font-medium mt-1 whitespace-nowrap">Tổng nạp ₫1.5M • Còn 67.7%</div>
         </div>
 
       </div>
@@ -539,8 +539,25 @@
             <span>Thống Kê Chi Phí & Token Google Gemini AI Toàn Bộ Chu Trình</span>
           </h3>
           <p class="text-xs text-slate-400 mt-1">
-            Ghi nhận chính xác lượng Token tiêu thụ và chi phí tài chính thực tế theo bảng giá chính thức của Google Gemini API (Paid Tier 1).
+            Ghi nhận chính xác lượng Token tiêu thụ và đối soát số dư thời gian thực với Google AI Studio Prepay (Paid Tier 1).
           </p>
+        </div>
+
+        <!-- LOW BALANCE CRITICAL WARNING BANNER (AUTO TRIGGER WHEN < 50,000đ) -->
+        <div id="ai-low-balance-banner" class="hidden p-4 rounded-2xl border border-red-500/40 bg-red-950/40 text-red-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xl shadow-red-950/30">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-red-500/20 border border-red-500/30 flex items-center justify-center text-red-400 shrink-0 animate-pulse">
+              <i data-lucide="alert-triangle" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="font-bold text-sm text-red-300">🚨 CẢNH BÁO: SỐ DƯ GOOGLE AI STUDIO DƯỚI 50.000đ</div>
+              <div class="text-xs text-red-200/80 mt-0.5" id="ai-low-balance-msg">Số dư khả dụng hiện tại sắp hết. Vui lòng topup thêm credit để tránh gián đoạn tiến trình chuẩn hóa CV!</div>
+            </div>
+          </div>
+          <a href="https://aistudio.google.com/billing" target="_blank" class="px-4 py-2 rounded-xl text-xs font-bold bg-red-600 hover:bg-red-500 text-white shadow-lg shadow-red-600/30 whitespace-nowrap transition flex items-center space-x-1.5 self-end sm:self-auto">
+            <span>Topup Credit Ngay</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
         </div>
 
         <!-- 4 TOP KPI CARDS -->
@@ -561,10 +578,10 @@
             </div>
           </div>
 
-          <!-- Card 2: Remaining Prepay Budget -->
+          <!-- Card 2: Remaining Prepay Budget (AI Studio Live Balance) -->
           <div class="glass-card p-5 rounded-2xl border border-emerald-500/30 bg-emerald-950/20">
             <div class="flex items-center justify-between text-slate-400 text-xs">
-              <span class="font-semibold uppercase tracking-wider whitespace-nowrap">Số Dư Khả Dụng</span>
+              <span class="font-semibold uppercase tracking-wider whitespace-nowrap">Số Dư AI Studio</span>
               <i data-lucide="piggy-bank" class="w-4 h-4 text-emerald-400"></i>
             </div>
             <div class="mt-3 flex items-baseline space-x-2">
@@ -572,8 +589,8 @@
               <span id="ai-remaining-usd" class="text-xs text-slate-400 whitespace-nowrap">($--)</span>
             </div>
             <div class="mt-2 text-[11px] text-emerald-300 flex items-center justify-between whitespace-nowrap">
-              <span>Hạn mức nạp ban đầu:</span>
-              <span id="ai-initial-prepay" class="font-bold">₫500,000</span>
+              <span>Tổng ngân sách đã nạp:</span>
+              <span id="ai-initial-prepay" class="font-bold">₫1,500,000</span>
             </div>
           </div>
 
@@ -615,17 +632,17 @@
           <div class="flex items-center justify-between text-xs flex-wrap gap-2">
             <span class="font-semibold text-slate-300 flex items-center space-x-1.5 whitespace-nowrap">
               <i data-lucide="gauge" class="w-4 h-4 text-sky-400"></i>
-              <span>Tiến Độ Sử Dụng Ngân Sách Trả Trước (Prepay ₫500.000)</span>
+              <span id="ai-budget-title">Tiến Độ Sử Dụng Ngân Sách Trả Trước (Tổng Nạp ₫1.500.000)</span>
             </span>
             <span class="text-slate-400 font-mono text-xs whitespace-nowrap" id="ai-budget-summary-text">Đang tính toán...</span>
           </div>
           <div class="w-full bg-slate-900 rounded-full h-3 overflow-hidden flex border border-slate-800">
-            <div id="ai-budget-bar-used" class="bg-gradient-to-r from-sky-500 to-blue-600 h-full rounded-l-full transition-all duration-500" style="width: 11.4%"></div>
-            <div id="ai-budget-bar-rem" class="bg-gradient-to-r from-emerald-600 to-teal-500 h-full rounded-r-full transition-all duration-500" style="width: 88.6%"></div>
+            <div id="ai-budget-bar-used" class="bg-gradient-to-r from-sky-500 to-blue-600 h-full rounded-l-full transition-all duration-500" style="width: 32.3%"></div>
+            <div id="ai-budget-bar-rem" class="bg-gradient-to-r from-emerald-600 to-teal-500 h-full rounded-r-full transition-all duration-500" style="width: 67.7%"></div>
           </div>
           <div class="flex items-center justify-between text-[11px] text-slate-500 flex-wrap gap-2">
-            <span class="flex items-center space-x-1 whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-sky-400"></span> <span>Đã tiêu thụ (<span id="ai-budget-pct-label">11.4%</span>)</span></span>
-            <span class="flex items-center space-x-1 whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> <span>Còn khả dụng (đủ xử lý thêm ~22,000 hồ sơ nữa)</span></span>
+            <span class="flex items-center space-x-1 whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-sky-400"></span> <span>Đã tiêu thụ (<span id="ai-budget-pct-label">32.3%</span>)</span></span>
+            <span class="flex items-center space-x-1 whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> <span id="ai-budget-rem-note">Còn khả dụng (đủ xử lý thêm ~45,000 hồ sơ nữa)</span></span>
           </div>
         </div>
 
@@ -805,9 +822,49 @@
         const ai = data.ai_usage;
         const grandCost = document.getElementById('grand-ai-cost');
         const grandTokens = document.getElementById('grand-ai-tokens');
-        if (grandCost) grandCost.innerText = ai.total_cost_vnd_formatted || ai.total_cost_usd_formatted || '--';
-        if (grandTokens) grandTokens.innerText = `${ai.total_tokens_formatted || '20.2M'} tokens • ~${ai.cost_per_cv_vnd || 33}đ/CV`;
+        const grandBadge = document.getElementById('grand-ai-badge');
+        const cardOverview = document.getElementById('card-ai-overview');
+        const lowBanner = document.getElementById('ai-low-balance-banner');
+        const lowBannerMsg = document.getElementById('ai-low-balance-msg');
 
+        // Hero Card Ô 4
+        if (grandCost) grandCost.innerText = ai.remaining_budget_vnd_formatted || '--';
+        if (grandTokens) {
+          grandTokens.innerText = `Tổng nạp: ${ai.initial_prepay_vnd_formatted || '₫1,500,000'} • Dùng: ${ai.total_cost_vnd_formatted || '--'}`;
+        }
+
+        // Alert handling (< 50,000đ)
+        const alertInfo = ai.alert || {};
+        if (alertInfo.is_critical_low) {
+          if (cardOverview) cardOverview.className = 'bg-red-950/40 p-4 rounded-xl border border-red-500/80 shadow-lg shadow-red-950/50 animate-pulse cursor-pointer group transition';
+          if (grandBadge) {
+            grandBadge.className = 'px-2 py-0.5 rounded text-[10px] font-bold bg-red-500/20 text-red-400 border border-red-500/40 whitespace-nowrap animate-pulse';
+            grandBadge.innerText = '🚨 SẮP HẾT (<50K)';
+          }
+          if (grandCost) grandCost.className = 'text-2xl font-black text-red-400 mt-2 whitespace-nowrap';
+          if (lowBanner) {
+            lowBanner.classList.remove('hidden');
+            if (lowBannerMsg) lowBannerMsg.innerText = alertInfo.message || `Số dư khả dụng hiện tại còn ${ai.remaining_budget_vnd_formatted} (dưới ngưỡng 50.000đ). Vui lòng topup thêm credit!`;
+          }
+        } else if (alertInfo.is_warning) {
+          if (cardOverview) cardOverview.className = 'bg-amber-950/30 p-4 rounded-xl border border-amber-500/50 hover:bg-slate-800/50 cursor-pointer group transition';
+          if (grandBadge) {
+            grandBadge.className = 'px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 whitespace-nowrap';
+            grandBadge.innerText = '⚠️ DƯỚI 100K';
+          }
+          if (grandCost) grandCost.className = 'text-2xl font-black text-amber-300 mt-2 whitespace-nowrap';
+          if (lowBanner) lowBanner.classList.add('hidden');
+        } else {
+          if (cardOverview) cardOverview.className = 'bg-slate-900/80 p-4 rounded-xl border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800/50 transition cursor-pointer group';
+          if (grandBadge) {
+            grandBadge.className = 'px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 whitespace-nowrap';
+            grandBadge.innerText = 'An toàn';
+          }
+          if (grandCost) grandCost.className = 'text-2xl font-black text-emerald-400 mt-2 whitespace-nowrap';
+          if (lowBanner) lowBanner.classList.add('hidden');
+        }
+
+        // Tab 5 KPI Cards
         const costVnd = document.getElementById('ai-cost-vnd');
         if (costVnd) costVnd.innerText = ai.total_cost_vnd_formatted || '--';
         const costUsd = document.getElementById('ai-cost-usd');
@@ -817,6 +874,9 @@
         if (remVnd) remVnd.innerText = ai.remaining_budget_vnd_formatted || '--';
         const remUsd = document.getElementById('ai-remaining-usd');
         if (remUsd) remUsd.innerText = `($${ai.remaining_budget_usd || '0.00'})`;
+
+        const initPrepay = document.getElementById('ai-initial-prepay');
+        if (initPrepay) initPrepay.innerText = ai.initial_prepay_vnd_formatted || '₫1,500,000';
 
         const budgetUsed = document.getElementById('ai-budget-used-pct');
         if (budgetUsed) budgetUsed.innerText = `${ai.budget_used_pct || 0}%`;
@@ -838,11 +898,20 @@
         const budgetBarRem = document.getElementById('ai-budget-bar-rem');
         if (budgetBarRem) budgetBarRem.style.width = `${100 - (ai.budget_used_pct || 0)}%`;
 
+        const budgetTitle = document.getElementById('ai-budget-title');
+        if (budgetTitle) budgetTitle.innerText = `Tiến Độ Sử Dụng Ngân Sách Trả Trước (Tổng Nạp ${ai.initial_prepay_vnd_formatted || '₫1,500,000'})`;
+
         const budgetSummary = document.getElementById('ai-budget-summary-text');
         if (budgetSummary) budgetSummary.innerText = `Đã dùng: ${ai.total_cost_vnd_formatted || '--'} • Còn lại: ${ai.remaining_budget_vnd_formatted || '--'}`;
 
         const budgetPctLabel = document.getElementById('ai-budget-pct-label');
         if (budgetPctLabel) budgetPctLabel.innerText = `${ai.budget_used_pct || 0}%`;
+
+        const remNote = document.getElementById('ai-budget-rem-note');
+        if (remNote && ai.remaining_budget_vnd) {
+          const candsLeft = Math.round(ai.remaining_budget_vnd / (ai.cost_per_cv_vnd || 18));
+          remNote.innerText = `Còn khả dụng (đủ xử lý thêm ~${candsLeft.toLocaleString()} hồ sơ)`;
+        }
       }
 
       // 2.5 Render Today Operations Visual Panel
