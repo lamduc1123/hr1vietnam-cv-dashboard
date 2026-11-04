@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-04 14:15:55",
+    "last_updated": "2026-11-04 14:35:01",
     "today_date": "2026-11-04",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -11,14 +11,14 @@
     "date_display": "Hôm nay, 04/11/2026",
     "total_processed": 623,
     "realtime_count": 13,
-    "realtime_created": 7,
-    "realtime_updated": 6,
+    "realtime_created": 6,
+    "realtime_updated": 7,
     "backlog_count": 610,
     "target_daily": 300,
     "completion_rate_pct": 100.0,
-    "current_mode": "PAUSED_CRM_MAINTENANCE",
-    "mode_badge": "🛑 CRM Đang Lỗi / Bảo Trì (Tạm Ngưng Luồng)",
-    "mode_desc": "CRM phản hồi HTTP 500. Đã tạm dừng 100% tiến trình tự động theo chỉ đạo để chờ thông báo mới.",
+    "current_mode": "NORMAL_HOURS",
+    "mode_badge": "⚡ Ca Làm Việc (08:30 - 17:30)",
+    "mode_desc": "Ưu tiên phản hồi Real-time 60s • Xử lý Backlog khi rảnh",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
@@ -89,8 +89,8 @@
   },
   "totals": {
     "all_time_realtime": 145,
-    "all_time_created": 45,
-    "all_time_updated": 93,
+    "all_time_created": 44,
+    "all_time_updated": 94,
     "all_time_backlog_done": 2422,
     "total_system_processed": 2567,
     "backlog_target": 2422,
@@ -100,17 +100,17 @@
     "admin_pre_inputted": 6014,
     "ai_total_processed": 2567,
     "total_standardized": 8581,
-    "total_crm_candidates": 105698,
+    "total_crm_candidates": 105712,
     "standardized_percentage": 8.12
   },
   "ai_usage": {
     "status": "Paid 1 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 1",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 29313371,
+    "total_tokens": 29322604,
     "total_tokens_formatted": "29.3M",
-    "prompt_tokens": 22480266,
-    "output_tokens": 6833105,
+    "prompt_tokens": 22486825,
+    "output_tokens": 6835779,
     "total_cost_usd": 19.07,
     "total_cost_usd_formatted": "$19.07",
     "total_cost_vnd": 485454,
@@ -123,7 +123,7 @@
     "budget_used_pct": 32.4,
     "cost_per_cv_vnd": 189.1,
     "cost_per_cv_usd": 0.0074,
-    "tokens_per_cv": 11419,
+    "tokens_per_cv": 11423,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -160,8 +160,8 @@
   },
   "realtime": {
     "total_today": 13,
-    "created_today": 7,
-    "updated_today": 6,
+    "created_today": 6,
+    "updated_today": 7,
     "pending_inbox": 0,
     "sources": {
       "Consultants": 8,
@@ -173,12 +173,12 @@
         "time": "14:07:28",
         "timestamp": "2026-11-04T14:07:28.550619+07:00",
         "candidate_name": "CAO TRAN THANH THANH",
-        "candidate_id": "N/A",
-        "crm_url": "",
-        "action": "created",
+        "candidate_id": "90614",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/90614",
+        "action": "updated",
         "source": "CV gửi từ email: chung.tran@hr1vietnam.com",
         "file_name": "Resume_Cao Tran Thanh Thanh.pdf",
-        "status": "error"
+        "status": "success"
       },
       {
         "time": "12:15:41",
@@ -323,15 +323,15 @@
     "crm_pool_audited": 7777,
     "recent_enriched": [
       {
-        "candidate_id": "N/A",
+        "candidate_id": "90614",
         "candidate_name": "CAO TRAN THANH THANH",
         "type": "Real-Time",
-        "action": "Tạo mới",
+        "action": "Cập nhật",
         "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/N/A",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/90614",
         "experiences": 1,
         "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: chung.tran@hr1vietnam.com",
+        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: chung.tran@hr1vietnam.com",
         "processed_at": "2026-11-04 14:07:28"
       },
       {
@@ -31132,8 +31132,8 @@
     {
       "date": "2026-11-04",
       "total_realtime": 13,
-      "created": 7,
-      "updated": 3,
+      "created": 6,
+      "updated": 4,
       "backlog_count": 610,
       "grand_total": 623
     },
@@ -31237,13 +31237,13 @@
     }
   ],
   "system": {
-    "daemon_status": "PAUSED",
-    "daemon_pid": null,
-    "current_task": "Tạm dừng luồng tự động (Chờ CRM khôi phục)",
-    "crm_online": false,
-    "crm_error": "HTTP 500",
-    "last_heartbeat_seconds_ago": 216.6,
-    "supervisor_running": false,
+    "daemon_status": "RUNNING",
+    "daemon_pid": 43030,
+    "current_task": "scan_cycle_start",
+    "crm_online": true,
+    "crm_error": "",
+    "last_heartbeat_seconds_ago": 23.6,
+    "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
     "search_grounding": "ONLINE (Google Search Grounding Active)"
