@@ -507,15 +507,15 @@
             <tr class="border-b border-slate-800 bg-slate-900/40 text-slate-400 font-semibold uppercase tracking-wider text-[11px] whitespace-nowrap">
               <th class="py-3 px-6 whitespace-nowrap">Mã Ứng Viên CRM</th>
               <th class="py-3 px-6 whitespace-nowrap">Họ Và Tên</th>
-              <th class="py-3 px-6 whitespace-nowrap">Phân Loại / Nguồn</th>
-              <th class="py-3 px-6 whitespace-nowrap">Nội Dung Chuẩn Hóa</th>
-              <th class="py-3 px-6 whitespace-nowrap">Thời Điểm Xử Lý</th>
+              <th class="py-3 px-6 whitespace-nowrap">Kinh Nghiệm Bổ Sung</th>
+              <th class="py-3 px-6 whitespace-nowrap">Học Vấn Bổ Sung</th>
+              <th class="py-3 px-6 whitespace-nowrap">Thời Điểm Chuẩn Hóa</th>
               <th class="py-3 px-6 text-right whitespace-nowrap">Chi Tiết CRM</th>
             </tr>
           </thead>
           <tbody id="backlog-tbody" class="divide-y divide-slate-800/60 text-slate-300">
             <tr>
-              <td colspan="6" class="py-8 text-center text-slate-500">Đang tải danh sách hồ sơ chuẩn hóa...</td>
+              <td colspan="6" class="py-8 text-center text-slate-500">Đang tải danh sách hồ sơ backlog...</td>
             </tr>
           </tbody>
         </table>
@@ -1231,39 +1231,31 @@
 
       const tbody = document.getElementById('backlog-tbody');
       if (currentSlice.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="6" class="py-8 text-center text-slate-500">Không tìm thấy hồ sơ phù hợp.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="6" class="py-8 text-center text-slate-500">Không tìm thấy hồ sơ backlog phù hợp.</td></tr>`;
       } else {
-        tbody.innerHTML = currentSlice.map(b => {
-          const isRealTime = (b.type === 'Real-Time');
-          const typeBadge = isRealTime
-            ? `<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 whitespace-nowrap">⚡ Real-Time</span>`
-            : `<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 whitespace-nowrap">🔄 Backlog</span>`;
-
-          const detailContent = isRealTime
-            ? `<span class="text-slate-300 text-xs">${b.detail_summary || b.action || 'Nhập liệu Real-time'}</span>`
-            : `<div class="flex items-center space-x-1.5 whitespace-nowrap">
-                <span class="inline-flex items-center px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 font-medium text-[11px]">+${b.experiences} kinh nghiệm</span>
-                <span class="inline-flex items-center px-2 py-0.5 rounded bg-blue-500/10 text-blue-300 border border-blue-500/20 font-medium text-[11px]">+${b.educations} học vấn</span>
-               </div>`;
-
-          const idColor = isRealTime ? 'text-emerald-400' : 'text-indigo-400';
-
-          return `
-            <tr class="hover:bg-dark-hover transition duration-150">
-              <td class="py-3.5 px-6 font-mono ${idColor} font-semibold whitespace-nowrap">#${b.candidate_id}</td>
-              <td class="py-3.5 px-6 font-semibold text-white whitespace-nowrap">${b.candidate_name}</td>
-              <td class="py-3.5 px-6 whitespace-nowrap">${typeBadge}</td>
-              <td class="py-3.5 px-6">${detailContent}</td>
-              <td class="py-3.5 px-6 text-slate-400 font-mono whitespace-nowrap">${b.processed_at || '--'}</td>
-              <td class="py-3.5 px-6 text-right whitespace-nowrap">
-                <a href="${b.crm_url}" target="_blank" class="inline-flex items-center space-x-1 text-xs text-blue-400 hover:text-blue-300 hover:underline font-medium whitespace-nowrap">
-                  <span>Xem CRM</span>
-                  <i data-lucide="external-link" class="w-3 h-3"></i>
-                </a>
-              </td>
-            </tr>
-          `;
-        }).join('');
+        tbody.innerHTML = currentSlice.map(b => `
+          <tr class="hover:bg-dark-hover transition duration-150">
+            <td class="py-3.5 px-6 font-mono text-indigo-400 font-semibold whitespace-nowrap">#${b.candidate_id}</td>
+            <td class="py-3.5 px-6 font-semibold text-white whitespace-nowrap">${b.candidate_name}</td>
+            <td class="py-3.5 px-6 text-slate-300 whitespace-nowrap">
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 font-medium whitespace-nowrap">
+                +${b.experiences} đơn vị công tác
+              </span>
+            </td>
+            <td class="py-3.5 px-6 text-slate-300 whitespace-nowrap">
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded bg-blue-500/10 text-blue-300 border border-blue-500/20 font-medium whitespace-nowrap">
+                +${b.educations} học vị/trường
+              </span>
+            </td>
+            <td class="py-3.5 px-6 text-slate-400 font-mono whitespace-nowrap">${b.processed_at || '--'}</td>
+            <td class="py-3.5 px-6 text-right whitespace-nowrap">
+              <a href="${b.crm_url}" target="_blank" class="inline-flex items-center space-x-1 text-xs text-blue-400 hover:text-blue-300 hover:underline font-medium whitespace-nowrap">
+                <span>Xem CRM</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </td>
+          </tr>
+        `).join('');
       }
 
       // Render pagination buttons
