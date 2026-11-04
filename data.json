@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-04 11:48:22",
+    "last_updated": "2026-11-04 11:49:37",
     "today_date": "2026-11-04",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -81,9 +81,9 @@
     "all_time_updated": 93,
     "all_time_backlog_done": 2055,
     "total_system_processed": 2198,
-    "backlog_target": 2160,
-    "backlog_remaining": 105,
-    "backlog_completion_percentage": 95.1,
+    "backlog_target": 2150,
+    "backlog_remaining": 95,
+    "backlog_completion_percentage": 95.6,
     "crm_pool_audited": 6597,
     "admin_pre_inputted": 5170,
     "ai_total_processed": 2198,
@@ -273,13 +273,103 @@
     ]
   },
   "backlog": {
-    "total": 2160,
+    "total": 2150,
     "completed": 2055,
-    "remaining": 105,
-    "errors": 216,
-    "completion_percentage": 95.1,
+    "remaining": 95,
+    "errors": 226,
+    "completion_percentage": 95.6,
     "crm_pool_audited": 6597,
     "recent_enriched": [
+      {
+        "candidate_id": "100852",
+        "candidate_name": "Candidate #100852",
+        "status": "error_skipped",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100852",
+        "experiences": 0,
+        "educations": 0,
+        "processed_at": "2026-11-04 11:49:35"
+      },
+      {
+        "candidate_id": "100853",
+        "candidate_name": "Candidate #100853",
+        "status": "error_skipped",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100853",
+        "experiences": 0,
+        "educations": 0,
+        "processed_at": "2026-11-04 11:49:33"
+      },
+      {
+        "candidate_id": "100854",
+        "candidate_name": "Candidate #100854",
+        "status": "error_skipped",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100854",
+        "experiences": 0,
+        "educations": 0,
+        "processed_at": "2026-11-04 11:49:32"
+      },
+      {
+        "candidate_id": "100855",
+        "candidate_name": "Candidate #100855",
+        "status": "error_skipped",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100855",
+        "experiences": 0,
+        "educations": 0,
+        "processed_at": "2026-11-04 11:49:30"
+      },
+      {
+        "candidate_id": "100856",
+        "candidate_name": "Candidate #100856",
+        "status": "error_skipped",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100856",
+        "experiences": 0,
+        "educations": 0,
+        "processed_at": "2026-11-04 11:49:28"
+      },
+      {
+        "candidate_id": "100857",
+        "candidate_name": "Candidate #100857",
+        "status": "error_skipped",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100857",
+        "experiences": 0,
+        "educations": 0,
+        "processed_at": "2026-11-04 11:49:26"
+      },
+      {
+        "candidate_id": "100859",
+        "candidate_name": "Candidate #100859",
+        "status": "error_skipped",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100859",
+        "experiences": 0,
+        "educations": 0,
+        "processed_at": "2026-11-04 11:49:25"
+      },
+      {
+        "candidate_id": "100860",
+        "candidate_name": "Candidate #100860",
+        "status": "error_skipped",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100860",
+        "experiences": 0,
+        "educations": 0,
+        "processed_at": "2026-11-04 11:49:23"
+      },
+      {
+        "candidate_id": "100861",
+        "candidate_name": "Candidate #100861",
+        "status": "error_skipped",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100861",
+        "experiences": 0,
+        "educations": 0,
+        "processed_at": "2026-11-04 11:49:21"
+      },
+      {
+        "candidate_id": "100862",
+        "candidate_name": "Candidate #100862",
+        "status": "error_skipped",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100862",
+        "experiences": 0,
+        "educations": 0,
+        "processed_at": "2026-11-04 11:49:19"
+      },
       {
         "candidate_id": "100863",
         "candidate_name": "Candidate #100863",
@@ -20832,8 +20922,8 @@
   "system": {
     "daemon_status": "RUNNING",
     "daemon_pid": 39856,
-    "current_task": "processing_realtime_cv",
-    "last_heartbeat_seconds_ago": 21.8,
+    "current_task": "backlog_batch_finished",
+    "last_heartbeat_seconds_ago": 0.3,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
