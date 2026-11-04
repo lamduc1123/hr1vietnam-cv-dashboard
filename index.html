@@ -128,23 +128,32 @@
           <p class="text-xs text-slate-400 mt-2">Bao gồm toàn bộ hồ sơ tiếp nhận Real-time (Mailbox + Website) và toàn bộ hồ sơ Backlog cũ được chuẩn hóa (Tổng kho CRM đã quét rà soát sạch: 5,434 hồ sơ).</p>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 text-center">
           <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800">
             <div class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Real-Time Lũy Kế</div>
-            <div id="grand-realtime" class="text-xl font-extrabold text-blue-400 mt-0.5 whitespace-nowrap">117</div>
-            <div class="text-[10px] text-slate-500 whitespace-nowrap">35 mới • 82 update</div>
+            <div id="grand-realtime" class="text-xl font-extrabold text-blue-400 mt-0.5 whitespace-nowrap">136</div>
+            <div class="text-[10px] text-slate-500 whitespace-nowrap">41 mới • 95 update</div>
           </div>
           <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800">
             <div class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Backlog Đã Chuẩn Hóa</div>
-            <div id="grand-backlog" class="text-xl font-extrabold text-indigo-400 mt-0.5 whitespace-nowrap">892</div>
-            <div id="grand-backlog-pct" class="text-[10px] text-indigo-300 whitespace-nowrap">Đạt 89.8%</div>
+            <div id="grand-backlog" class="text-xl font-extrabold text-indigo-400 mt-0.5 whitespace-nowrap">1,860</div>
+            <div id="grand-backlog-pct" class="text-[10px] text-indigo-300 whitespace-nowrap">Đạt 100%</div>
+          </div>
+          <!-- Ô MỚI: CHUẨN HÓA TRÊN CRM (ADMIN + AI) TRÊN TỔNG DATA CRM -->
+          <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800 col-span-2 sm:col-span-1">
+            <div class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Đã Chuẩn Hóa / Tổng CRM</div>
+            <div class="flex items-baseline justify-center space-x-1 mt-0.5 whitespace-nowrap">
+              <span id="grand-std-count" class="text-xl font-extrabold text-emerald-400 whitespace-nowrap">6,500</span>
+              <span class="text-[11px] font-medium text-slate-400 whitespace-nowrap">/ <span id="grand-crm-total">105,698</span></span>
+            </div>
+            <div id="grand-std-sub" class="text-[10px] text-emerald-400/90 whitespace-nowrap font-medium">4,504 Admin + 1,996 AI (6.1%)</div>
           </div>
           <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800">
             <div class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Tỷ Lệ Master QC</div>
             <div class="text-xl font-extrabold text-emerald-400 mt-0.5 whitespace-nowrap">100%</div>
             <div class="text-[10px] text-emerald-500 whitespace-nowrap">Không lỗi placeholder</div>
           </div>
-          <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800 cursor-pointer hover:border-sky-500/50 hover:bg-slate-800/60 transition group" onclick="switchTab('ai_analytics')" title="Nhấn để xem chi tiết chi phí & token AI">
+          <div class="bg-slate-900/70 p-3 rounded-xl border border-slate-800 cursor-pointer hover:border-sky-500/50 hover:bg-slate-800/60 transition group col-span-2 sm:col-span-1" onclick="switchTab('ai_analytics')" title="Nhấn để xem chi tiết chi phí & token AI">
             <div class="text-[11px] text-slate-400 uppercase font-semibold flex items-center justify-center space-x-1 group-hover:text-sky-300 whitespace-nowrap">
               <i data-lucide="cpu" class="w-3 h-3 text-sky-400"></i>
               <span>Chi Phí AI & Token</span>
@@ -789,6 +798,23 @@
         document.getElementById('grand-realtime').innerText = data.totals.all_time_realtime;
         document.getElementById('grand-backlog').innerText = data.totals.all_time_backlog_done;
         document.getElementById('grand-backlog-pct').innerText = `Đạt ${data.totals.backlog_completion_percentage}%`;
+
+        // Standardized CVs (Admin pre-inputted + AI processed) vs Live CRM Pool
+        const stdCount = document.getElementById('grand-std-count');
+        const crmTotal = document.getElementById('grand-crm-total');
+        const stdSub = document.getElementById('grand-std-sub');
+        if (stdCount && data.totals.total_standardized) {
+          stdCount.innerText = data.totals.total_standardized.toLocaleString();
+        }
+        if (crmTotal && data.totals.total_crm_candidates) {
+          crmTotal.innerText = data.totals.total_crm_candidates.toLocaleString();
+        }
+        if (stdSub && data.totals.admin_pre_inputted !== undefined) {
+          const adm = (data.totals.admin_pre_inputted || 0).toLocaleString();
+          const ai = (data.totals.ai_total_processed || data.totals.total_system_processed || 0).toLocaleString();
+          const pct = data.totals.standardized_percentage || 6.15;
+          stdSub.innerText = `${adm} Admin + ${ai} AI (${pct}%)`;
+        }
       }
 
       // 2.2 AI Usage & Cost Metrics
