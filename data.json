@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-04 10:20:59",
+    "last_updated": "2026-11-04 10:25:20",
     "today_date": "2026-11-04",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -95,18 +95,20 @@
     "total_tokens_formatted": "21.5M",
     "prompt_tokens": 16669202,
     "output_tokens": 4829690,
-    "total_cost_usd": 2.834,
-    "total_cost_usd_formatted": "$2.83",
-    "total_cost_vnd": 72125,
-    "total_cost_vnd_formatted": "₫72,125",
+    "token_cost_vnd": 72127,
+    "grounding_cost_vnd": 286468,
+    "total_cost_usd": 14.09,
+    "total_cost_usd_formatted": "$14.09",
+    "total_cost_vnd": 358595,
+    "total_cost_vnd_formatted": "₫358,595",
     "initial_prepay_vnd": 500000.0,
     "initial_prepay_vnd_formatted": "₫500,000",
-    "remaining_budget_vnd": 427875.0,
-    "remaining_budget_vnd_formatted": "₫427,875",
-    "remaining_budget_usd": 16.81,
-    "budget_used_pct": 14.4,
-    "cost_per_cv_vnd": 34.5,
-    "cost_per_cv_usd": 0.00136,
+    "remaining_budget_vnd": 141405.0,
+    "remaining_budget_vnd_formatted": "₫141,405",
+    "remaining_budget_usd": 5.56,
+    "budget_used_pct": 71.7,
+    "cost_per_cv_vnd": 171.7,
+    "cost_per_cv_usd": 0.0067,
     "tokens_per_cv": 10291,
     "cycles": [
       {
@@ -114,21 +116,21 @@
         "model": "gemini-flash-lite-latest",
         "avg_tokens": "~5,270 tokens / CV",
         "avg_cost": "~₫16 / CV",
-        "share_pct": 82
+        "share_pct": 9
       },
       {
         "name": "Chu trình 2: Google Search Grounding Doanh Nghiệp",
-        "model": "gemini-2.5-flash",
+        "model": "gemini-2.5-flash (Grounding $35/1k)",
         "avg_tokens": "~860 tokens / CV",
-        "avg_cost": "~₫3 / CV",
-        "share_pct": 15
+        "avg_cost": "~₫154 / CV",
+        "share_pct": 90
       },
       {
         "name": "Chu trình 3: Nhận diện Giới tính từ Avatar Vision",
         "model": "gemini-flash-lite-latest (Vision)",
         "avg_tokens": "~258 tokens / CV",
         "avg_cost": "~₫0.8 / CV",
-        "share_pct": 3
+        "share_pct": 1
       }
     ]
   },
@@ -18073,8 +18075,8 @@
   "system": {
     "daemon_status": "RUNNING",
     "daemon_pid": 37853,
-    "current_task": "processing_realtime_cv",
-    "last_heartbeat_seconds_ago": 22.7,
+    "current_task": "idle_sleep",
+    "last_heartbeat_seconds_ago": 12.4,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
