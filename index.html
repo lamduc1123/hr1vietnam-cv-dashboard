@@ -1027,13 +1027,24 @@
           if (daemonStatus === 'RUNNING') {
             statusBadge.className = 'px-3 py-1 rounded-lg text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 uppercase tracking-wide';
             statusBadge.innerText = 'OPERATIONAL';
+          } else if (daemonStatus && daemonStatus.includes('PAUSED')) {
+            statusBadge.className = 'px-3 py-1 rounded-lg text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 uppercase tracking-wide';
+            statusBadge.innerText = 'PAUSED (CRM BẢO TRÌ)';
           } else {
             statusBadge.className = 'px-3 py-1 rounded-lg text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 uppercase tracking-wide';
             statusBadge.innerText = 'PAUSED / IDLE';
           }
         }
         const sysSup = document.getElementById('sys-supervisor');
-        if (sysSup) sysSup.innerText = data.system.supervisor_running ? 'Live Watchdog' : 'Warning';
+        if (sysSup) {
+          if (!data.system.crm_online && data.system.crm_online !== undefined) {
+            sysSup.innerText = 'Tạm dừng (CRM 500)';
+            sysSup.className = 'font-semibold text-amber-400 whitespace-nowrap';
+          } else {
+            sysSup.innerText = data.system.supervisor_running ? 'Live Watchdog' : 'Warning';
+            sysSup.className = data.system.supervisor_running ? 'font-semibold text-emerald-400 whitespace-nowrap' : 'font-semibold text-amber-400 whitespace-nowrap';
+          }
+        }
         const sysApi = document.getElementById('sys-api-tier');
         if (sysApi && data.system.api_tier) sysApi.innerText = data.system.api_tier.replace('Google Gemini ', '');
       }
