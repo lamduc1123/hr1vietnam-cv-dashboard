@@ -1,31 +1,31 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-04 08:19:46",
+    "last_updated": "2026-11-04 08:36:11",
     "today_date": "2026-11-04",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
-    "is_working_hours": false
+    "is_working_hours": true
   },
   "today": {
     "date": "2026-11-04",
     "date_display": "Hôm nay, 04/11/2026",
-    "total_processed": 0,
-    "realtime_count": 0,
-    "realtime_created": 0,
+    "total_processed": 1,
+    "realtime_count": 1,
+    "realtime_created": 1,
     "realtime_updated": 0,
     "backlog_count": 0,
     "target_daily": 300,
-    "completion_rate_pct": 0.0,
-    "current_mode": "OVERNIGHT_MODE",
-    "mode_badge": "🌙 Cày Đêm Tự Động (Overnight Turbo Active)",
-    "mode_desc": "Vận hành cày backlog xuyên đêm khi mở máy: Mẻ 20 CVs • Chu kỳ 30s",
+    "completion_rate_pct": 0.3,
+    "current_mode": "NORMAL_HOURS",
+    "mode_badge": "⚡ Ca Làm Việc (08:30 - 17:30)",
+    "mode_desc": "Ưu tiên phản hồi Real-time 60s • Xử lý Backlog khi rảnh",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
       {
         "key": "morning",
         "label": "Ca Sáng (08:30 - 11:59)",
-        "count": 0,
+        "count": 1,
         "status": "in_progress",
         "badge": "Đang chạy"
       },
@@ -47,28 +47,28 @@
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
         "count": 0,
-        "status": "in_progress",
-        "badge": "Đang cày đêm"
+        "status": "upcoming",
+        "badge": "Sẵn sàng (Khi mở máy đêm)"
       }
     ],
     "hourly_chart": [
       {
         "hour": "08:00",
-        "count": 0
+        "count": 1
       }
     ],
     "sources": {
-      "Consultants": 0,
+      "Consultants": 1,
       "Website": 0,
       "CRM Backlog": 0
     }
   },
   "totals": {
-    "all_time_realtime": 132,
-    "all_time_created": 38,
+    "all_time_realtime": 133,
+    "all_time_created": 39,
     "all_time_updated": 90,
     "all_time_backlog_done": 5229,
-    "total_system_processed": 5361,
+    "total_system_processed": 5362,
     "backlog_target": 5239,
     "backlog_remaining": 10,
     "backlog_completion_percentage": 99.8
@@ -77,23 +77,23 @@
     "status": "Paid 1 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 1",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 39782223,
+    "total_tokens": 39798623,
     "total_tokens_formatted": "39.8M",
-    "prompt_tokens": 31017029,
-    "output_tokens": 8765194,
-    "total_cost_usd": 5.204,
-    "total_cost_usd_formatted": "$5.20",
-    "total_cost_vnd": 132442,
-    "total_cost_vnd_formatted": "₫132,442",
+    "prompt_tokens": 31028510,
+    "output_tokens": 8770113,
+    "total_cost_usd": 5.206,
+    "total_cost_usd_formatted": "$5.21",
+    "total_cost_vnd": 132493,
+    "total_cost_vnd_formatted": "₫132,493",
     "initial_prepay_vnd": 500000.0,
     "initial_prepay_vnd_formatted": "₫500,000",
-    "remaining_budget_vnd": 367558.0,
-    "remaining_budget_vnd_formatted": "₫367,558",
+    "remaining_budget_vnd": 367507.0,
+    "remaining_budget_vnd_formatted": "₫367,507",
     "remaining_budget_usd": 14.44,
     "budget_used_pct": 26.5,
     "cost_per_cv_vnd": 24.7,
     "cost_per_cv_usd": 0.00097,
-    "tokens_per_cv": 7421,
+    "tokens_per_cv": 7422,
     "cycles": [
       {
         "name": "Chu trình 1: Trích xuất & Chuẩn hóa CV",
@@ -119,16 +119,28 @@
     ]
   },
   "realtime": {
-    "total_today": 0,
-    "created_today": 0,
+    "total_today": 1,
+    "created_today": 1,
     "updated_today": 0,
     "pending_inbox": 0,
     "sources": {
-      "Consultants": 0,
+      "Consultants": 1,
       "Website": 0,
       "Other": 0
     },
-    "candidates": []
+    "candidates": [
+      {
+        "time": "08:36:11",
+        "timestamp": "2026-11-04T08:36:11.088415+07:00",
+        "candidate_name": "SHAHZAIB SODHAR",
+        "candidate_id": "107719",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107719",
+        "action": "created",
+        "source": "CV gửi từ email: info@hr1vietnam.com",
+        "file_name": "Shahzaib_Sodhar_CV.pdf",
+        "status": "success"
+      }
+    ]
   },
   "backlog": {
     "total": 5239,
@@ -16611,6 +16623,14 @@
   },
   "daily_history": [
     {
+      "date": "2026-11-04",
+      "total_realtime": 1,
+      "created": 1,
+      "updated": 0,
+      "backlog_count": null,
+      "grand_total": 1
+    },
+    {
       "date": "2026-11-03",
       "total_realtime": 25,
       "created": 6,
@@ -16698,7 +16718,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 1944+ hồ sơ toàn hệ thống (890 backlog + 132 real-time)."
+      "metrics": "Đạt mốc 1945+ hồ sơ toàn hệ thống (890 backlog + 133 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
@@ -16710,10 +16730,10 @@
     }
   ],
   "system": {
-    "daemon_status": "STALE",
+    "daemon_status": "RUNNING",
     "daemon_pid": 31900,
     "current_task": "processing_realtime_cv",
-    "last_heartbeat_seconds_ago": 5913.6,
+    "last_heartbeat_seconds_ago": 14.2,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
