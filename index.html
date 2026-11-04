@@ -986,8 +986,10 @@
       const tbody = document.getElementById('daily-history-tbody');
       if (!history || history.length === 0) return;
 
+      const todayStr = (globalData && globalData.today && globalData.today.date) || new Date().toISOString().slice(0, 10);
+
       tbody.innerHTML = history.map(h => {
-        const isToday = h.date === '2026-11-03';
+        const isToday = h.date === todayStr;
         const blCount = h.backlog_count;
         const hasBl = blCount !== null && blCount !== undefined && blCount > 0;
         const grandTotal = hasBl ? (h.total_realtime + blCount) : h.total_realtime;
