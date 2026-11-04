@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-04 18:02:37",
+    "last_updated": "2026-11-04 19:02:57",
     "today_date": "2026-11-04",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -16,9 +16,9 @@
     "backlog_count": 1102,
     "target_daily": 300,
     "completion_rate_pct": 100.0,
-    "current_mode": "OVERNIGHT_MODE",
-    "mode_badge": "🌙 Cày Đêm Tự Động (Overnight Turbo Active)",
-    "mode_desc": "Vận hành cày backlog xuyên đêm khi mở máy: Mẻ 20 CVs • Chu kỳ 30s",
+    "current_mode": "PAUSED_CRM_MAINTENANCE",
+    "mode_badge": "🛑 CRM Đang Lỗi / Bảo Trì (Tạm Ngưng Luồng)",
+    "mode_desc": "CRM phản hồi HTTP 403. Đã tạm dừng 100% tiến trình tự động theo chỉ đạo để chờ thông báo mới.",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
@@ -95,6 +95,10 @@
       {
         "hour": "18:00",
         "count": 0
+      },
+      {
+        "hour": "19:00",
+        "count": 0
       }
     ],
     "sources": {
@@ -116,7 +120,7 @@
     "admin_pre_inputted": 7301,
     "ai_total_processed": 3068,
     "total_standardized": 10369,
-    "total_crm_candidates": 105722,
+    "total_crm_candidates": 105698,
     "standardized_percentage": 9.81
   },
   "ai_usage": {
@@ -35505,13 +35509,13 @@
     }
   ],
   "system": {
-    "daemon_status": "RUNNING",
-    "daemon_pid": 44062,
-    "current_task": "backlog_batch_finished",
-    "crm_online": true,
-    "crm_error": "",
-    "last_heartbeat_seconds_ago": 0.4,
-    "supervisor_running": true,
+    "daemon_status": "PAUSED",
+    "daemon_pid": null,
+    "current_task": "Tạm dừng luồng tự động (Chờ CRM khôi phục)",
+    "crm_online": false,
+    "crm_error": "HTTP 403",
+    "last_heartbeat_seconds_ago": 1426.4,
+    "supervisor_running": false,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
     "search_grounding": "ONLINE (Google Search Grounding Active)"
