@@ -141,8 +141,8 @@
         </div>
       </div>
 
-      <!-- HÀNG 2: 5 Ô CHỈ SỐ RIÊNG BIỆT - RỘNG RÃI, MINH BẠCH, KHÔNG CHEN CHÚC -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 pt-6 border-t border-slate-800/80">
+      <!-- HÀNG 2: 4 Ô CHỈ SỐ RIÊNG BIỆT - RỘNG RÃI, MINH BẠCH, KHÔNG CHEN CHÚC -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 pt-6 border-t border-slate-800/80">
         
         <!-- Ô 1: REAL-TIME LŨY KẾ -->
         <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 hover:border-blue-500/40 transition">
@@ -168,8 +168,8 @@
           <div id="grand-backlog-pct" class="text-[11px] text-indigo-300 mt-1 whitespace-nowrap font-medium">Đạt 98.9% mẻ quét CRM</div>
         </div>
 
-        <!-- Ô 3 (MỚI): ĐÃ CHUẨN HÓA TRÊN CRM (ADMIN + AI) TRÊN TỔNG DATA CRM -->
-        <div class="bg-gradient-to-br from-emerald-950/40 via-slate-900/90 to-slate-900/90 p-4 rounded-xl border border-emerald-500/40 shadow-inner hover:border-emerald-500/60 transition sm:col-span-2 lg:col-span-1">
+        <!-- Ô 3: ĐÃ CHUẨN HÓA TRÊN CRM (ADMIN + AI) TRÊN TỔNG DATA CRM -->
+        <div class="bg-gradient-to-br from-emerald-950/40 via-slate-900/90 to-slate-900/90 p-4 rounded-xl border border-emerald-500/40 shadow-inner hover:border-emerald-500/60 transition">
           <div class="flex items-center justify-between">
             <span class="text-[11px] text-emerald-300 uppercase font-bold whitespace-nowrap">Đã Chuẩn Hóa / Tổng CRM</span>
             <span class="px-1.5 py-0.5 rounded text-[10px] bg-emerald-500/20 text-emerald-400 font-bold whitespace-nowrap">Real-time</span>
@@ -181,20 +181,8 @@
           <div id="grand-std-sub" class="text-[11px] text-emerald-400/90 font-medium mt-1 whitespace-nowrap">4,657 Admin + 2,016 AI (6.31%)</div>
         </div>
 
-        <!-- Ô 4: TỶ LỆ MASTER QC -->
-        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 hover:border-teal-500/40 transition">
-          <div class="flex items-center justify-between">
-            <span class="text-[11px] text-slate-400 uppercase font-semibold whitespace-nowrap">Tỷ Lệ Master QC</span>
-            <div class="w-6 h-6 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center border border-teal-500/20">
-              <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
-            </div>
-          </div>
-          <div class="text-2xl font-black text-teal-400 mt-2 whitespace-nowrap">100%</div>
-          <div class="text-[11px] text-teal-400/80 mt-1 whitespace-nowrap">Không lỗi placeholder 'a'</div>
-        </div>
-
-        <!-- Ô 5: CHI PHÍ AI & TOKEN -->
-        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800/50 transition cursor-pointer group sm:col-span-2 lg:col-span-1" onclick="switchTab('ai_analytics')" title="Nhấn để xem chi tiết chi phí & token AI">
+        <!-- Ô 4: CHI PHÍ AI & TOKEN -->
+        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 hover:border-sky-500/50 hover:bg-slate-800/50 transition cursor-pointer group" onclick="switchTab('ai_analytics')" title="Nhấn để xem chi tiết chi phí & token AI">
           <div class="flex items-center justify-between">
             <span class="text-[11px] text-slate-400 uppercase font-semibold group-hover:text-sky-300 whitespace-nowrap">Chi Phí AI & Token</span>
             <div class="w-6 h-6 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center border border-sky-500/20">
@@ -308,8 +296,8 @@
 
     </div>
 
-    <!-- 4 HERO KPI CARDS -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+    <!-- 3 HERO KPI CARDS -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       
       <!-- CARD 1: REALTIME TODAY -->
       <div class="glass-card rounded-2xl p-5 relative overflow-hidden group hover:border-blue-500/40 transition duration-300">
@@ -360,30 +348,7 @@
         </div>
       </div>
 
-      <!-- CARD 3: QC & COMPLIANCE -->
-      <div class="glass-card rounded-2xl p-5 relative overflow-hidden group hover:border-emerald-500/40 transition duration-300">
-        <div class="flex items-center justify-between">
-          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Chuẩn Hóa & QC Rules</span>
-          <div class="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center border border-emerald-500/20">
-            <i data-lucide="shield-check" class="w-5 h-5"></i>
-          </div>
-        </div>
-        <div class="mt-4 flex items-baseline space-x-2">
-          <span class="text-4xl font-extrabold text-emerald-400 tracking-tight">100%</span>
-          <span class="text-sm font-medium text-slate-400">Master QC</span>
-        </div>
-        <div class="mt-3 flex flex-wrap gap-1.5 text-[11px]">
-          <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">📸 Avatar Vision</span>
-          <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">🔍 Google Search</span>
-          <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">🧹 Xóa rác 'a'</span>
-        </div>
-        <div class="mt-3 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
-          <span class="whitespace-nowrap">Định dạng xuất bản:</span>
-          <span class="font-semibold text-slate-200 whitespace-nowrap">Word HR1 Standard</span>
-        </div>
-      </div>
-
-      <!-- CARD 4: SYSTEM HEALTH -->
+      <!-- CARD 3: SYSTEM HEALTH -->
       <div class="glass-card rounded-2xl p-5 relative overflow-hidden group hover:border-amber-500/40 transition duration-300">
         <div class="flex items-center justify-between">
           <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 whitespace-nowrap">Trạng Thái Vận Hành</span>
@@ -542,15 +507,15 @@
             <tr class="border-b border-slate-800 bg-slate-900/40 text-slate-400 font-semibold uppercase tracking-wider text-[11px] whitespace-nowrap">
               <th class="py-3 px-6 whitespace-nowrap">Mã Ứng Viên CRM</th>
               <th class="py-3 px-6 whitespace-nowrap">Họ Và Tên</th>
-              <th class="py-3 px-6 whitespace-nowrap">Kinh Nghiệm Bổ Sung</th>
-              <th class="py-3 px-6 whitespace-nowrap">Học Vấn Bổ Sung</th>
-              <th class="py-3 px-6 whitespace-nowrap">Thời Điểm Chuẩn Hóa</th>
+              <th class="py-3 px-6 whitespace-nowrap">Phân Loại / Nguồn</th>
+              <th class="py-3 px-6 whitespace-nowrap">Nội Dung Chuẩn Hóa</th>
+              <th class="py-3 px-6 whitespace-nowrap">Thời Điểm Xử Lý</th>
               <th class="py-3 px-6 text-right whitespace-nowrap">Chi Tiết CRM</th>
             </tr>
           </thead>
           <tbody id="backlog-tbody" class="divide-y divide-slate-800/60 text-slate-300">
             <tr>
-              <td colspan="6" class="py-8 text-center text-slate-500">Đang tải danh sách hồ sơ backlog...</td>
+              <td colspan="6" class="py-8 text-center text-slate-500">Đang tải danh sách hồ sơ chuẩn hóa...</td>
             </tr>
           </tbody>
         </table>
@@ -742,45 +707,6 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-        </div>
-
-        <!-- ROI & ECONOMIC EFFICIENCY COMPARISON -->
-        <div class="glass-card p-6 rounded-2xl border border-emerald-500/30 bg-gradient-to-br from-slate-900/90 via-slate-900/60 to-emerald-950/20 space-y-4">
-          <div class="flex items-center justify-between">
-            <h4 class="text-sm font-bold text-white flex items-center space-x-2">
-              <i data-lucide="trending-up" class="w-4 h-4 text-emerald-400"></i>
-              <span>Hiệu Quả Kinh Tế & Tối Ưu Chi Phí Dự Án (ROI Analysis)</span>
-            </h4>
-            <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-300 font-bold border border-emerald-500/20">Tiết Kiệm 99.9% Chi Phí</span>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-red-500/20 space-y-2">
-              <div class="font-bold text-red-400 flex items-center space-x-1.5">
-                <i data-lucide="x-circle" class="w-4 h-4"></i>
-                <span>Phương Pháp Thủ Công Truyền Thống</span>
-              </div>
-              <ul class="space-y-1.5 text-slate-300 list-disc list-inside">
-                <li>Chi phí nhân sự nhập liệu: <strong>15,000đ - 25,000đ / CV</strong></li>
-                <li>Thời gian xử lý: <strong>15 - 20 phút / hồ sơ</strong></li>
-                <li>Chi phí ước tính cho 2,643 hồ sơ: <strong>~52,800,000đ</strong></li>
-                <li>Rủi ro sai sót chính tả, thiếu kinh nghiệm, bỏ sót logo</li>
-              </ul>
-            </div>
-
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-emerald-500/30 space-y-2">
-              <div class="font-bold text-emerald-400 flex items-center space-x-1.5">
-                <i data-lucide="check-circle" class="w-4 h-4"></i>
-                <span>Hệ Thống Google Gemini AI & CRM Automation HR1</span>
-              </div>
-              <ul class="space-y-1.5 text-slate-300 list-disc list-inside">
-                <li>Chi phí AI thực tế: <strong>~20 VNĐ / CV</strong></li>
-                <li>Thời gian xử lý: <strong>2.5 - 8 giây / hồ sơ</strong></li>
-                <li>Tổng chi phí AI cho 2,643 hồ sơ: <strong>₫56,830 (~$2.23)</strong></li>
-                <li>Chuẩn hóa Master QC 100%, tự động tra cứu doanh nghiệp và avatar</li>
-              </ul>
-            </div>
           </div>
         </div>
 
@@ -1193,7 +1119,10 @@
       if (q) {
         filteredBacklogList = backlogItems.filter(b => 
           (b.candidate_name || '').toLowerCase().includes(q) || 
-          (b.candidate_id || '').toString().includes(q)
+          (b.candidate_id || '').toString().includes(q) ||
+          (b.type || '').toLowerCase().includes(q) ||
+          (b.action || '').toLowerCase().includes(q) ||
+          (b.detail_summary || '').toLowerCase().includes(q)
         );
       } else {
         filteredBacklogList = backlogItems;
@@ -1222,31 +1151,39 @@
 
       const tbody = document.getElementById('backlog-tbody');
       if (currentSlice.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="6" class="py-8 text-center text-slate-500">Không tìm thấy hồ sơ backlog phù hợp.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="6" class="py-8 text-center text-slate-500">Không tìm thấy hồ sơ phù hợp.</td></tr>`;
       } else {
-        tbody.innerHTML = currentSlice.map(b => `
-          <tr class="hover:bg-dark-hover transition duration-150">
-            <td class="py-3.5 px-6 font-mono text-indigo-400 font-semibold whitespace-nowrap">#${b.candidate_id}</td>
-            <td class="py-3.5 px-6 font-semibold text-white whitespace-nowrap">${b.candidate_name}</td>
-            <td class="py-3.5 px-6 text-slate-300 whitespace-nowrap">
-              <span class="inline-flex items-center px-2.5 py-0.5 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 font-medium whitespace-nowrap">
-                +${b.experiences} đơn vị công tác
-              </span>
-            </td>
-            <td class="py-3.5 px-6 text-slate-300 whitespace-nowrap">
-              <span class="inline-flex items-center px-2.5 py-0.5 rounded bg-blue-500/10 text-blue-300 border border-blue-500/20 font-medium whitespace-nowrap">
-                +${b.educations} học vị/trường
-              </span>
-            </td>
-            <td class="py-3.5 px-6 text-slate-400 font-mono whitespace-nowrap">${b.processed_at || '--'}</td>
-            <td class="py-3.5 px-6 text-right whitespace-nowrap">
-              <a href="${b.crm_url}" target="_blank" class="inline-flex items-center space-x-1 text-xs text-blue-400 hover:text-blue-300 hover:underline font-medium whitespace-nowrap">
-                <span>Xem CRM</span>
-                <i data-lucide="external-link" class="w-3 h-3"></i>
-              </a>
-            </td>
-          </tr>
-        `).join('');
+        tbody.innerHTML = currentSlice.map(b => {
+          const isRealTime = (b.type === 'Real-Time');
+          const typeBadge = isRealTime
+            ? `<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 whitespace-nowrap">⚡ Real-Time</span>`
+            : `<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 whitespace-nowrap">🔄 Backlog</span>`;
+
+          const detailContent = isRealTime
+            ? `<span class="text-slate-300 text-xs">${b.detail_summary || b.action || 'Nhập liệu Real-time'}</span>`
+            : `<div class="flex items-center space-x-1.5 whitespace-nowrap">
+                <span class="inline-flex items-center px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 font-medium text-[11px]">+${b.experiences} kinh nghiệm</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded bg-blue-500/10 text-blue-300 border border-blue-500/20 font-medium text-[11px]">+${b.educations} học vấn</span>
+               </div>`;
+
+          const idColor = isRealTime ? 'text-emerald-400' : 'text-indigo-400';
+
+          return `
+            <tr class="hover:bg-dark-hover transition duration-150">
+              <td class="py-3.5 px-6 font-mono ${idColor} font-semibold whitespace-nowrap">#${b.candidate_id}</td>
+              <td class="py-3.5 px-6 font-semibold text-white whitespace-nowrap">${b.candidate_name}</td>
+              <td class="py-3.5 px-6 whitespace-nowrap">${typeBadge}</td>
+              <td class="py-3.5 px-6">${detailContent}</td>
+              <td class="py-3.5 px-6 text-slate-400 font-mono whitespace-nowrap">${b.processed_at || '--'}</td>
+              <td class="py-3.5 px-6 text-right whitespace-nowrap">
+                <a href="${b.crm_url}" target="_blank" class="inline-flex items-center space-x-1 text-xs text-blue-400 hover:text-blue-300 hover:underline font-medium whitespace-nowrap">
+                  <span>Xem CRM</span>
+                  <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </td>
+            </tr>
+          `;
+        }).join('');
       }
 
       // Render pagination buttons
@@ -1319,13 +1256,6 @@
       }
     }
 
-    function gotoBacklogPage(page) {
-      backlogCurrentPage = page;
-      if (globalData && globalData.backlog && globalData.backlog.recent_enriched) {
-        renderBacklogTable(globalData.backlog.recent_enriched);
-      }
-    }
-
     function switchTab(tab) {
       const tabs = ['realtime', 'daily_history', 'timeline', 'backlog', 'ai_analytics'];
       const searchBox = document.getElementById('search-container');
@@ -1348,6 +1278,12 @@
         searchBox.classList.add('hidden');
       } else {
         searchBox.classList.remove('hidden');
+      }
+
+      if (tab === 'backlog') {
+        if (globalData && globalData.backlog && globalData.backlog.recent_enriched) {
+          renderBacklogTable(globalData.backlog.recent_enriched);
+        }
       }
 
       lucide.createIcons();
