@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-04 14:35:01",
+    "last_updated": "2026-11-04 14:39:41",
     "today_date": "2026-11-04",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -9,11 +9,11 @@
   "today": {
     "date": "2026-11-04",
     "date_display": "Hôm nay, 04/11/2026",
-    "total_processed": 623,
+    "total_processed": 633,
     "realtime_count": 13,
     "realtime_created": 6,
     "realtime_updated": 7,
-    "backlog_count": 610,
+    "backlog_count": 620,
     "target_daily": 300,
     "completion_rate_pct": 100.0,
     "current_mode": "NORMAL_HOURS",
@@ -39,7 +39,7 @@
       {
         "key": "afternoon",
         "label": "Ca Chiều (13:00 - 17:30)",
-        "count": 150,
+        "count": 160,
         "status": "in_progress",
         "badge": "Đang chạy"
       },
@@ -78,52 +78,52 @@
       },
       {
         "hour": "14:00",
-        "count": 1
+        "count": 11
       }
     ],
     "sources": {
       "Consultants": 8,
       "Website": 4,
-      "CRM Backlog": 610
+      "CRM Backlog": 620
     }
   },
   "totals": {
     "all_time_realtime": 145,
     "all_time_created": 44,
     "all_time_updated": 94,
-    "all_time_backlog_done": 2422,
-    "total_system_processed": 2567,
-    "backlog_target": 2422,
-    "backlog_remaining": 0,
-    "backlog_completion_percentage": 100.0,
-    "crm_pool_audited": 7777,
-    "admin_pre_inputted": 6014,
-    "ai_total_processed": 2567,
-    "total_standardized": 8581,
-    "total_crm_candidates": 105712,
-    "standardized_percentage": 8.12
+    "all_time_backlog_done": 2432,
+    "total_system_processed": 2577,
+    "backlog_target": 2498,
+    "backlog_remaining": 66,
+    "backlog_completion_percentage": 97.4,
+    "crm_pool_audited": 7974,
+    "admin_pre_inputted": 6135,
+    "ai_total_processed": 2577,
+    "total_standardized": 8712,
+    "total_crm_candidates": 105713,
+    "standardized_percentage": 8.24
   },
   "ai_usage": {
     "status": "Paid 1 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 1",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 29322604,
-    "total_tokens_formatted": "29.3M",
-    "prompt_tokens": 22486825,
-    "output_tokens": 6835779,
-    "total_cost_usd": 19.07,
-    "total_cost_usd_formatted": "$19.07",
-    "total_cost_vnd": 485454,
-    "total_cost_vnd_formatted": "₫485,454",
+    "total_tokens": 29581561,
+    "total_tokens_formatted": "29.6M",
+    "prompt_tokens": 22675557,
+    "output_tokens": 6906004,
+    "total_cost_usd": 19.08,
+    "total_cost_usd_formatted": "$19.08",
+    "total_cost_vnd": 485674,
+    "total_cost_vnd_formatted": "₫485,674",
     "initial_prepay_vnd": 1500000.0,
     "initial_prepay_vnd_formatted": "₫1,500,000",
-    "remaining_budget_vnd": 1014546.25,
-    "remaining_budget_vnd_formatted": "₫1,014,546",
+    "remaining_budget_vnd": 1014326.25,
+    "remaining_budget_vnd_formatted": "₫1,014,326",
     "remaining_budget_usd": 39.86,
     "budget_used_pct": 32.4,
-    "cost_per_cv_vnd": 189.1,
+    "cost_per_cv_vnd": 188.5,
     "cost_per_cv_usd": 0.0074,
-    "tokens_per_cv": 11423,
+    "tokens_per_cv": 11479,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -315,24 +315,132 @@
     ]
   },
   "backlog": {
-    "total": 2422,
-    "completed": 2422,
-    "remaining": 0,
+    "total": 2498,
+    "completed": 2432,
+    "remaining": 66,
     "errors": 287,
-    "completion_percentage": 100.0,
-    "crm_pool_audited": 7777,
+    "completion_percentage": 97.4,
+    "crm_pool_audited": 7974,
     "recent_enriched": [
       {
-        "candidate_id": "90614",
-        "candidate_name": "CAO TRAN THANH THANH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
+        "candidate_id": "99434",
+        "candidate_name": "PHAM KIM NGAN",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
         "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/90614",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/99434",
         "experiences": 1,
         "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: chung.tran@hr1vietnam.com",
-        "processed_at": "2026-11-04 14:07:28"
+        "detail_summary": "+1 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-04 14:38:26"
+      },
+      {
+        "candidate_id": "99436",
+        "candidate_name": "VASU",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/99436",
+        "experiences": 8,
+        "educations": 1,
+        "detail_summary": "+8 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-04 14:38:15"
+      },
+      {
+        "candidate_id": "99437",
+        "candidate_name": "NGUYEN HUYNH HIEU",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/99437",
+        "experiences": 5,
+        "educations": 2,
+        "detail_summary": "+5 kinh nghiệm, +2 học vấn",
+        "processed_at": "2026-11-04 14:37:55"
+      },
+      {
+        "candidate_id": "99439",
+        "candidate_name": "LE PHAN THUY DUONG",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/99439",
+        "experiences": 3,
+        "educations": 1,
+        "detail_summary": "+3 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-04 14:37:39"
+      },
+      {
+        "candidate_id": "99440",
+        "candidate_name": "HUYNH THI TU NHU",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/99440",
+        "experiences": 2,
+        "educations": 0,
+        "detail_summary": "+2 kinh nghiệm, +0 học vấn",
+        "processed_at": "2026-11-04 14:37:27"
+      },
+      {
+        "candidate_id": "99441",
+        "candidate_name": "DINH THI MINH THU",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/99441",
+        "experiences": 2,
+        "educations": 2,
+        "detail_summary": "+2 kinh nghiệm, +2 học vấn",
+        "processed_at": "2026-11-04 14:37:17"
+      },
+      {
+        "candidate_id": "99442",
+        "candidate_name": "SAMIT ROYCHOWDHURY",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/99442",
+        "experiences": 6,
+        "educations": 2,
+        "detail_summary": "+6 kinh nghiệm, +2 học vấn",
+        "processed_at": "2026-11-04 14:37:06"
+      },
+      {
+        "candidate_id": "99443",
+        "candidate_name": "PHAM THI HUYNH CHI",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/99443",
+        "experiences": 3,
+        "educations": 1,
+        "detail_summary": "+3 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-04 14:36:53"
+      },
+      {
+        "candidate_id": "99444",
+        "candidate_name": "HA VAN NINH",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/99444",
+        "experiences": 4,
+        "educations": 3,
+        "detail_summary": "+4 kinh nghiệm, +3 học vấn",
+        "processed_at": "2026-11-04 14:36:40"
+      },
+      {
+        "candidate_id": "99455",
+        "candidate_name": "LUONG NGOC THU HA",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/99455",
+        "experiences": 4,
+        "educations": 1,
+        "detail_summary": "+4 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-04 14:36:30"
       },
       {
         "candidate_id": "99461",
@@ -4043,18 +4151,6 @@
         "processed_at": "2026-11-04 12:16:01"
       },
       {
-        "candidate_id": "107734",
-        "candidate_name": "AMILA RUWAN HEWAWASAN ASARAPPULIGE",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107734",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-11-04 12:15:41"
-      },
-      {
         "candidate_id": "100560",
         "candidate_name": "DUONG NGUYEN",
         "type": "Backlog",
@@ -4751,30 +4847,6 @@
         "processed_at": "2026-11-04 11:52:14"
       },
       {
-        "candidate_id": "107718",
-        "candidate_name": "NOUR EDDINE EL ATOUGA",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107718",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-11-04 11:48:22"
-      },
-      {
-        "candidate_id": "107730",
-        "candidate_name": "TRAN THI THAO",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107730",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: cuong@hr1vietnam.com",
-        "processed_at": "2026-11-04 11:11:50"
-      },
-      {
         "candidate_id": "101072",
         "candidate_name": "LE NGOC HUONG",
         "type": "Backlog",
@@ -4881,18 +4953,6 @@
         "educations": 1,
         "detail_summary": "+2 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-04 11:05:53"
-      },
-      {
-        "candidate_id": "107728",
-        "candidate_name": "BUI THAI AN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107728",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-11-04 11:04:18"
       },
       {
         "candidate_id": "101118",
@@ -5433,18 +5493,6 @@
         "educations": 1,
         "detail_summary": "+3 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-04 10:49:19"
-      },
-      {
-        "candidate_id": "57316",
-        "candidate_name": "LY VO",
-        "type": "Real-Time",
-        "action": "Bảo lưu Admin",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/57316",
-        "experiences": 0,
-        "educations": 0,
-        "detail_summary": "Real-Time (Bảo lưu Admin) • CV gửi từ email: thu.nguyen@hr1vietnam.com",
-        "processed_at": "2026-11-04 10:47:57"
       },
       {
         "candidate_id": "101265",
@@ -6059,18 +6107,6 @@
         "processed_at": "2026-11-04 10:28:32"
       },
       {
-        "candidate_id": "94641",
-        "candidate_name": "NGUYEN HOANG MINH",
-        "type": "Real-Time",
-        "action": "Bảo lưu Admin",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/94641",
-        "experiences": 0,
-        "educations": 0,
-        "detail_summary": "Real-Time (Bảo lưu Admin) • CV Apply Job Website",
-        "processed_at": "2026-11-04 10:20:58"
-      },
-      {
         "candidate_id": "101491",
         "candidate_name": "DANG THI UYEN",
         "type": "Backlog",
@@ -6129,18 +6165,6 @@
         "educations": 1,
         "detail_summary": "+2 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-04 10:09:14"
-      },
-      {
-        "candidate_id": "107725",
-        "candidate_name": "DUONG THI NHUNG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107725",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: linh.do@hr1vietnam.com",
-        "processed_at": "2026-11-04 10:07:51"
       },
       {
         "candidate_id": "101503",
@@ -6609,18 +6633,6 @@
         "educations": 1,
         "detail_summary": "+2 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-04 09:51:29"
-      },
-      {
-        "candidate_id": "107724",
-        "candidate_name": "NGUYEN THI MY DUYEN",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107724",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: ha.nguyen@hr1vietnam.com",
-        "processed_at": "2026-11-04 09:50:03"
       },
       {
         "candidate_id": "101662",
@@ -7175,18 +7187,6 @@
         "processed_at": "2026-11-04 09:21:34"
       },
       {
-        "candidate_id": "107721",
-        "candidate_name": "NGO HOANG TRONG",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107721",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: cuong@hr1vietnam.com",
-        "processed_at": "2026-11-04 09:09:32"
-      },
-      {
         "candidate_id": "101887",
         "candidate_name": "HALIMAH",
         "type": "Backlog",
@@ -7523,30 +7523,6 @@
         "processed_at": "2026-11-04 08:49:40"
       },
       {
-        "candidate_id": "107720",
-        "candidate_name": "RAKSHITH PUTTAIAH RAMESHADITYA",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107720",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-11-04 08:48:05"
-      },
-      {
-        "candidate_id": "58655",
-        "candidate_name": "TRAN THI MINH PHUONG",
-        "type": "Real-Time",
-        "action": "Bảo lưu Admin",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/58655",
-        "experiences": 0,
-        "educations": 0,
-        "detail_summary": "Real-Time (Bảo lưu Admin) • CV Apply Job Website",
-        "processed_at": "2026-11-04 08:47:49"
-      },
-      {
         "candidate_id": "102057",
         "candidate_name": "NGUYEN VAN DIEP",
         "type": "Backlog",
@@ -7785,18 +7761,6 @@
         "educations": 2,
         "detail_summary": "+4 kinh nghiệm, +2 học vấn",
         "processed_at": "2026-11-04 08:36:37"
-      },
-      {
-        "candidate_id": "107719",
-        "candidate_name": "SHAHZAIB SODHAR",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107719",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: info@hr1vietnam.com",
-        "processed_at": "2026-11-04 08:36:11"
       },
       {
         "candidate_id": "102199",
@@ -11135,18 +11099,6 @@
         "processed_at": "2026-11-03 20:50:31"
       },
       {
-        "candidate_id": "42366",
-        "candidate_name": "LE THE CONG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/42366",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-11-03 20:50:03"
-      },
-      {
         "candidate_id": "103408",
         "candidate_name": "TRAN MINH KHOI",
         "type": "Backlog",
@@ -11961,18 +11913,6 @@
         "educations": 1,
         "detail_summary": "+4 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-03 20:18:38"
-      },
-      {
-        "candidate_id": "107717",
-        "candidate_name": "NGUYEN DIEU AN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107717",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-11-03 20:18:08"
       },
       {
         "candidate_id": "103714",
@@ -12899,18 +12839,6 @@
         "processed_at": "2026-11-03 18:04:14"
       },
       {
-        "candidate_id": "107715",
-        "candidate_name": "VAN THAO VY",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107715",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: hang.bui@hr1vietnam.com",
-        "processed_at": "2026-11-03 18:02:12"
-      },
-      {
         "candidate_id": "104090",
         "candidate_name": "NGUYEN THANH BACH",
         "type": "Backlog",
@@ -13125,30 +13053,6 @@
         "educations": 2,
         "detail_summary": "+7 kinh nghiệm, +2 học vấn",
         "processed_at": "2026-11-03 17:54:21"
-      },
-      {
-        "candidate_id": "87984",
-        "candidate_name": "NGUYEN TUAN DIEP",
-        "type": "Real-Time",
-        "action": "Bảo lưu Admin",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/87984",
-        "experiences": 0,
-        "educations": 0,
-        "detail_summary": "Real-Time (Bảo lưu Admin) • CV gửi từ email: thu.le@hr1vietnam.com",
-        "processed_at": "2026-11-03 17:53:46"
-      },
-      {
-        "candidate_id": "19194",
-        "candidate_name": "CHAU THANH THIEN",
-        "type": "Real-Time",
-        "action": "Bảo lưu Admin",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/19194",
-        "experiences": 0,
-        "educations": 0,
-        "detail_summary": "Real-Time (Bảo lưu Admin) • CV gửi từ email: anh.tran@hr1vietnam.com",
-        "processed_at": "2026-11-03 17:53:21"
       },
       {
         "candidate_id": "104136",
@@ -13871,18 +13775,6 @@
         "processed_at": "2026-11-03 17:31:08"
       },
       {
-        "candidate_id": "107714",
-        "candidate_name": "VU QUANG MINH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107714",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: trang.cao@hr1vietnam.com",
-        "processed_at": "2026-11-03 17:27:03"
-      },
-      {
         "candidate_id": "104492",
         "candidate_name": "NGUYEN HOANG KHANH NGAN",
         "type": "Backlog",
@@ -14433,66 +14325,6 @@
         "educations": 1,
         "detail_summary": "+4 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-03 16:56:44"
-      },
-      {
-        "candidate_id": "107710",
-        "candidate_name": "TRAN THI TU HUYEN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107710",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: linh.do@hr1vietnam.com",
-        "processed_at": "2026-11-03 16:44:13"
-      },
-      {
-        "candidate_id": "107706",
-        "candidate_name": "PHAM TUAN ANH DUSTIN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107706",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-11-03 16:33:09"
-      },
-      {
-        "candidate_id": "107709",
-        "candidate_name": "MAI TRUONG BAO THY",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107709",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: ha.nguyen@hr1vietnam.com",
-        "processed_at": "2026-11-03 16:22:15"
-      },
-      {
-        "candidate_id": "107708",
-        "candidate_name": "NGUYEN DIEU KHANH",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107708",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: dieu.hoang@hr1vietnam.com",
-        "processed_at": "2026-11-03 16:11:26"
-      },
-      {
-        "candidate_id": "107707",
-        "candidate_name": "VO THUY QUYNH",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107707",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: dieu.hoang@hr1vietnam.com",
-        "processed_at": "2026-11-03 16:11:09"
       },
       {
         "candidate_id": "104685",
@@ -15875,18 +15707,6 @@
         "processed_at": "2026-11-03 14:52:40"
       },
       {
-        "candidate_id": "107704",
-        "candidate_name": "NGUYEN MINH TIEN",
-        "type": "Real-Time",
-        "action": "Bảo lưu Admin",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107704",
-        "experiences": 0,
-        "educations": 0,
-        "detail_summary": "Real-Time (Bảo lưu Admin) • CV gửi từ email: thu.le@hr1vietnam.com",
-        "processed_at": "2026-11-03 14:51:13"
-      },
-      {
         "candidate_id": "105289",
         "candidate_name": "TONG SAM",
         "type": "Backlog",
@@ -16485,18 +16305,6 @@
         "educations": 1,
         "detail_summary": "+3 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-03 14:17:01"
-      },
-      {
-        "candidate_id": "107702",
-        "candidate_name": "TRAN NGOC TAN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107702",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thach.nguyen@hr1vietnam.com",
-        "processed_at": "2026-11-03 13:11:11"
       },
       {
         "candidate_id": "105574",
@@ -17783,18 +17591,6 @@
         "processed_at": "2026-11-03 12:19:58"
       },
       {
-        "candidate_id": "105522",
-        "candidate_name": "LE DUC ANH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/105522",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: chung.tran@hr1vietnam.com",
-        "processed_at": "2026-11-03 12:09:59"
-      },
-      {
         "candidate_id": "106413",
         "candidate_name": "PHẠM THỊ THÚY VI",
         "type": "Backlog",
@@ -18947,18 +18743,6 @@
         "processed_at": "2026-11-03 10:41:04"
       },
       {
-        "candidate_id": "107697",
-        "candidate_name": "LE VAN TOAN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107697",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: trang.cao@hr1vietnam.com",
-        "processed_at": "2026-11-03 10:39:26"
-      },
-      {
         "candidate_id": "106526",
         "candidate_name": "TRAN TIEN DAT",
         "type": "Backlog",
@@ -19377,18 +19161,6 @@
         "educations": 1,
         "detail_summary": "+4 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-03 10:18:26"
-      },
-      {
-        "candidate_id": "107695",
-        "candidate_name": "NGÔ THỊ NGỌC THANH",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107695",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: thu.le@hr1vietnam.com",
-        "processed_at": "2026-11-03 10:16:41"
       },
       {
         "candidate_id": "106561",
@@ -20315,30 +20087,6 @@
         "processed_at": "2026-11-03 09:18:08"
       },
       {
-        "candidate_id": "66382",
-        "candidate_name": "LE XUAN KHOAI",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/66382",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: cuong@hr1vietnam.com",
-        "processed_at": "2026-11-03 09:16:31"
-      },
-      {
-        "candidate_id": "107693",
-        "candidate_name": "TRẦN NGÔ NGỌC HÀ",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107693",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thu.nguyen@hr1vietnam.com",
-        "processed_at": "2026-11-03 09:16:06"
-      },
-      {
         "candidate_id": "106641",
         "candidate_name": "Mai Hữu Phúc",
         "type": "Backlog",
@@ -20529,18 +20277,6 @@
         "educations": 1,
         "detail_summary": "+3 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-03 09:03:59"
-      },
-      {
-        "candidate_id": "107694",
-        "candidate_name": "HUYNH NGOC MY PHUONG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107694",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: nhung.nguyen@hr1vietnam.com",
-        "processed_at": "2026-11-03 09:02:14"
       },
       {
         "candidate_id": "106658",
@@ -20817,78 +20553,6 @@
         "educations": 1,
         "detail_summary": "+3 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-03 08:33:32"
-      },
-      {
-        "candidate_id": "107692",
-        "candidate_name": "NGUYEN NGOC MANH",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107692",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-11-03 08:31:57"
-      },
-      {
-        "candidate_id": "107691",
-        "candidate_name": "HUYNH TUYET MAN",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107691",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-11-03 08:31:39"
-      },
-      {
-        "candidate_id": "107690",
-        "candidate_name": "ĐẶNG THỊ KIỀU TRINH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107690",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-11-03 08:31:26"
-      },
-      {
-        "candidate_id": "107690",
-        "candidate_name": "DANG THI KIEU TRINH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107690",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-11-03 08:31:06"
-      },
-      {
-        "candidate_id": "107689",
-        "candidate_name": "NGÔ THỊ THÙY TRANG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107689",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-11-03 08:30:46"
-      },
-      {
-        "candidate_id": "107687",
-        "candidate_name": "HÙNG NGUYỄN MẠNH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107687",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thu.le@hr1vietnam.com",
-        "processed_at": "2026-11-03 08:30:21"
       },
       {
         "candidate_id": "106681",
@@ -21275,18 +20939,6 @@
         "processed_at": "2026-11-02 17:10:51"
       },
       {
-        "candidate_id": "107686",
-        "candidate_name": "NGUYỄN THÙY TRANG",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107686",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: cuong@hr1vietnam.com",
-        "processed_at": "2026-11-02 17:08:32"
-      },
-      {
         "candidate_id": "106713",
         "candidate_name": "LE VU ANH THU",
         "type": "Backlog",
@@ -21575,18 +21227,6 @@
         "processed_at": "2026-11-02 16:52:26"
       },
       {
-        "candidate_id": "107683",
-        "candidate_name": "MANH HUNG NGUYEN",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107683",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: duc.lam@hr1vietnam.com",
-        "processed_at": "2026-11-02 16:50:41"
-      },
-      {
         "candidate_id": "106738",
         "candidate_name": "CAO TUAN MINH",
         "type": "Backlog",
@@ -21633,42 +21273,6 @@
         "educations": 1,
         "detail_summary": "+3 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-02 16:40:56"
-      },
-      {
-        "candidate_id": "101506",
-        "candidate_name": "NGUYEN THUC ANH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/101506",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: trang.cao@hr1vietnam.com",
-        "processed_at": "2026-11-02 16:38:22"
-      },
-      {
-        "candidate_id": "107682",
-        "candidate_name": "ĐỖ VINH HIỂN",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107682",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: ha.nguyen@hr1vietnam.com",
-        "processed_at": "2026-11-02 16:26:36"
-      },
-      {
-        "candidate_id": "107680",
-        "candidate_name": "HUYNH QUANG CHUONG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107680",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-11-02 16:09:18"
       },
       {
         "candidate_id": "106745",
@@ -22727,18 +22331,6 @@
         "processed_at": "2026-11-02 15:03:09"
       },
       {
-        "candidate_id": "107668",
-        "candidate_name": "TA THANH PHUC",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107668",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: linh.do@hr1vietnam.com",
-        "processed_at": "2026-11-02 15:01:18"
-      },
-      {
         "candidate_id": "106836",
         "candidate_name": "NGUYEN HUU LONG",
         "type": "Backlog",
@@ -22833,102 +22425,6 @@
         "educations": 0,
         "detail_summary": "+4 kinh nghiệm, +0 học vấn",
         "processed_at": "2026-11-02 14:47:18"
-      },
-      {
-        "candidate_id": "107674",
-        "candidate_name": "HOANG NGOC THANG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107674",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: hang.bui@hr1vietnam.com",
-        "processed_at": "2026-11-02 14:45:42"
-      },
-      {
-        "candidate_id": "107673",
-        "candidate_name": "DƯƠNG QUANG HIỀN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107673",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: linh.do@hr1vietnam.com",
-        "processed_at": "2026-11-02 14:45:16"
-      },
-      {
-        "candidate_id": "47168",
-        "candidate_name": "LARS HÅRD",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/47168",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-11-02 14:44:52"
-      },
-      {
-        "candidate_id": "107672",
-        "candidate_name": "NGUYEN VU SAO BIEN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107672",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: cuong@hr1vietnam.com",
-        "processed_at": "2026-11-02 14:44:17"
-      },
-      {
-        "candidate_id": "107667",
-        "candidate_name": "NGUYỄN THỊ BÍCH TUYỂN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107667",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-11-02 14:43:50"
-      },
-      {
-        "candidate_id": "104010",
-        "candidate_name": "TRẦN THỊ DIỆP",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/104010",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-11-02 14:43:01"
-      },
-      {
-        "candidate_id": "107675",
-        "candidate_name": "TRẦN THỊ THÙY TRANG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107675",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-11-02 14:42:39"
-      },
-      {
-        "candidate_id": "97729",
-        "candidate_name": "TA THANH VY",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/97729",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-11-02 14:42:15"
       },
       {
         "candidate_id": "106845",
@@ -23495,18 +22991,6 @@
         "processed_at": "2026-11-02 11:41:32"
       },
       {
-        "candidate_id": "107666",
-        "candidate_name": "TRAN THI NGA",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107666",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: cuong@hr1vietnam.com",
-        "processed_at": "2026-11-02 11:40:01"
-      },
-      {
         "candidate_id": "106894",
         "candidate_name": "NGUYEN THI LOAN",
         "type": "Backlog",
@@ -23937,30 +23421,6 @@
         "educations": 2,
         "detail_summary": "+3 kinh nghiệm, +2 học vấn",
         "processed_at": "2026-11-02 11:16:31"
-      },
-      {
-        "candidate_id": "66523",
-        "candidate_name": "LE XUAN KHOAI",
-        "type": "Real-Time",
-        "action": "Bảo lưu Admin",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/66523",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Bảo lưu Admin) • CV gửi từ email: cuong@hr1vietnam.com",
-        "processed_at": "2026-11-02 11:15:11"
-      },
-      {
-        "candidate_id": "23477",
-        "candidate_name": "HO THI THU CHUNG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/23477",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-11-02 11:14:48"
       },
       {
         "candidate_id": "106933",
@@ -25043,18 +24503,6 @@
         "processed_at": "2026-11-02 10:25:16"
       },
       {
-        "candidate_id": "107661",
-        "candidate_name": "TRÚC MAI",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107661",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-11-02 10:23:31"
-      },
-      {
         "candidate_id": "107040",
         "candidate_name": "TRAN DIEU YEN",
         "type": "Backlog",
@@ -25295,18 +24743,6 @@
         "processed_at": "2026-11-02 10:10:14"
       },
       {
-        "candidate_id": "107658",
-        "candidate_name": "NGUYỄN NGỌC YẾN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107658",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: trang.cao@hr1vietnam.com",
-        "processed_at": "2026-11-02 10:08:45"
-      },
-      {
         "candidate_id": "107060",
         "candidate_name": "Nguyen Viet Anh",
         "type": "Backlog",
@@ -25365,30 +24801,6 @@
         "educations": 2,
         "detail_summary": "+4 kinh nghiệm, +2 học vấn",
         "processed_at": "2026-11-02 10:06:12"
-      },
-      {
-        "candidate_id": "107660",
-        "candidate_name": "NGUYEN LE DUY",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107660",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thach.nguyen@hr1vietnam.com",
-        "processed_at": "2026-11-02 10:04:36"
-      },
-      {
-        "candidate_id": "107657",
-        "candidate_name": "NGUYEN THI HONG PHAN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107657",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thach.nguyen@hr1vietnam.com",
-        "processed_at": "2026-11-02 10:04:09"
       },
       {
         "candidate_id": "107065",
@@ -25461,114 +24873,6 @@
         "educations": 1,
         "detail_summary": "+7 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-02 09:46:47"
-      },
-      {
-        "candidate_id": "107659",
-        "candidate_name": "NGUYEN THI MINH NGOC",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107659",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: mai.nguyen@hr1vietnam.com",
-        "processed_at": "2026-11-02 09:46:28"
-      },
-      {
-        "candidate_id": "107648",
-        "candidate_name": "TRẦN HIỀN TRIẾT",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107648",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-11-02 09:05:33"
-      },
-      {
-        "candidate_id": "107647",
-        "candidate_name": "TRAN QUYNH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107647",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-11-02 09:05:12"
-      },
-      {
-        "candidate_id": "107653",
-        "candidate_name": "MINWOO CHO",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107653",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-11-02 09:04:57"
-      },
-      {
-        "candidate_id": "95149",
-        "candidate_name": "LIRA DINH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/95149",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-11-02 09:04:34"
-      },
-      {
-        "candidate_id": "107652",
-        "candidate_name": "TA KIEU OANH",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107652",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-11-02 09:03:47"
-      },
-      {
-        "candidate_id": "65639",
-        "candidate_name": "LE THI LIEU",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/65639",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-11-02 09:03:32"
-      },
-      {
-        "candidate_id": "107651",
-        "candidate_name": "VUONG QUYNH",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107651",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-11-02 09:02:53"
-      },
-      {
-        "candidate_id": "46933",
-        "candidate_name": "SAO NGUYEN VIET",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/46933",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: ngoc.duong@hr1vietnam.com",
-        "processed_at": "2026-10-30 17:13:32"
       },
       {
         "candidate_id": "107071",
@@ -28439,18 +27743,6 @@
         "processed_at": "2026-10-30 12:31:48"
       },
       {
-        "candidate_id": "107599",
-        "candidate_name": "VU TRONG DAT",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107599",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thu.le@hr1vietnam.com",
-        "processed_at": "2026-10-30 12:31:11"
-      },
-      {
         "candidate_id": "107323",
         "candidate_name": "NGUYỄN LÊ PHƯƠNG LINH",
         "type": "Backlog",
@@ -28677,18 +27969,6 @@
         "educations": 1,
         "detail_summary": "+4 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-10-30 11:47:34"
-      },
-      {
-        "candidate_id": "107631",
-        "candidate_name": "LƯƠNG MY KIM 梁湄金",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107631",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: chung.tran@hr1vietnam.com",
-        "processed_at": "2026-10-30 11:45:34"
       },
       {
         "candidate_id": "107344",
@@ -29771,66 +29051,6 @@
         "processed_at": "2026-10-30 10:37:20"
       },
       {
-        "candidate_id": "107628",
-        "candidate_name": "ĐẶNG NHẬT HƯNG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107628",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: hanh.tran@hr1vietnam.com",
-        "processed_at": "2026-10-30 10:35:23"
-      },
-      {
-        "candidate_id": "107627",
-        "candidate_name": "ĐỖ CÔNG MỪNG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107627",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: hanh.tran@hr1vietnam.com",
-        "processed_at": "2026-10-30 10:34:50"
-      },
-      {
-        "candidate_id": "107623",
-        "candidate_name": "NGUYỄN THỊ THU THẢO",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107623",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: hanh.tran@hr1vietnam.com",
-        "processed_at": "2026-10-30 10:34:27"
-      },
-      {
-        "candidate_id": "107624",
-        "candidate_name": "PHẠM ANH KIỆT",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107624",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: hanh.tran@hr1vietnam.com",
-        "processed_at": "2026-10-30 10:33:50"
-      },
-      {
-        "candidate_id": "107625",
-        "candidate_name": "ĐẶNG NGỌC LỰC",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107625",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: hanh.tran@hr1vietnam.com",
-        "processed_at": "2026-10-30 10:33:24"
-      },
-      {
         "candidate_id": "107468",
         "candidate_name": "Hoang Phuong Thanh",
         "type": "Backlog",
@@ -29915,18 +29135,6 @@
         "processed_at": "2026-10-30 10:14:50"
       },
       {
-        "candidate_id": "40369",
-        "candidate_name": "TRUONG LAM THANH CONG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/40369",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: hang.bui@hr1vietnam.com",
-        "processed_at": "2026-10-30 10:03:47"
-      },
-      {
         "candidate_id": "107480",
         "candidate_name": "NGUYỄN THỊ NGỌC SEN",
         "type": "Backlog",
@@ -29987,42 +29195,6 @@
         "processed_at": "2026-10-30 09:08:53"
       },
       {
-        "candidate_id": "75051",
-        "candidate_name": "KIỀU VĂN SƠN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/75051",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: cuong@hr1vietnam.com",
-        "processed_at": "2026-10-30 08:56:43"
-      },
-      {
-        "candidate_id": "107619",
-        "candidate_name": "TRẦN THỊ MỸ LAN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107619",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: chung.tran@hr1vietnam.com",
-        "processed_at": "2026-10-30 08:56:21"
-      },
-      {
-        "candidate_id": "107618",
-        "candidate_name": "MUHAMMAD JAWAD",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107618",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV Apply Job Website",
-        "processed_at": "2026-10-30 08:45:27"
-      },
-      {
         "candidate_id": "107485",
         "candidate_name": "THAI BINH DUY",
         "type": "Backlog",
@@ -30071,18 +29243,6 @@
         "processed_at": "2026-10-29 17:17:38"
       },
       {
-        "candidate_id": "N/A",
-        "candidate_name": "PHAM VU TINH",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/N/A",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-10-29 17:05:16"
-      },
-      {
         "candidate_id": "107490",
         "candidate_name": "LE TAN THINH",
         "type": "Backlog",
@@ -30105,18 +29265,6 @@
         "educations": 1,
         "detail_summary": "+4 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-10-29 16:34:54"
-      },
-      {
-        "candidate_id": "107613",
-        "candidate_name": "TRẦN NGỌC THANH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107613",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: nhung.nguyen@hr1vietnam.com",
-        "processed_at": "2026-10-29 16:21:42"
       },
       {
         "candidate_id": "107492",
@@ -30143,30 +29291,6 @@
         "processed_at": "2026-10-29 15:59:10"
       },
       {
-        "candidate_id": "105653",
-        "candidate_name": "ĐINH KIM CƯƠNG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/105653",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-29 15:47:47"
-      },
-      {
-        "candidate_id": "107612",
-        "candidate_name": "ĐỖ YẾN LINH",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107612",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: cuong@hr1vietnam.com",
-        "processed_at": "2026-10-29 15:47:15"
-      },
-      {
         "candidate_id": "107494",
         "candidate_name": "HIEN CHUNG",
         "type": "Backlog",
@@ -30189,42 +29313,6 @@
         "educations": 1,
         "detail_summary": "+4 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-10-29 15:24:34"
-      },
-      {
-        "candidate_id": "107608",
-        "candidate_name": "NGUYỄN HÀ YẾN LY",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107608",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: trang.cao@hr1vietnam.com",
-        "processed_at": "2026-10-29 15:13:21"
-      },
-      {
-        "candidate_id": "107611",
-        "candidate_name": "NGUYỄN QUỐC TUẤN",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107611",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: dieu.hoang@hr1vietnam.com",
-        "processed_at": "2026-10-29 15:12:24"
-      },
-      {
-        "candidate_id": "107610",
-        "candidate_name": "VU THANH DUC",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107610",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: dieu.hoang@hr1vietnam.com",
-        "processed_at": "2026-10-29 15:11:57"
       },
       {
         "candidate_id": "107496",
@@ -30261,66 +29349,6 @@
         "educations": 5,
         "detail_summary": "+3 kinh nghiệm, +5 học vấn",
         "processed_at": "2026-10-29 14:10:50"
-      },
-      {
-        "candidate_id": "107602",
-        "candidate_name": "VO LY NHU DUYEN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107602",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: trang.cao@hr1vietnam.com",
-        "processed_at": "2026-10-29 14:10:28"
-      },
-      {
-        "candidate_id": "107603",
-        "candidate_name": "NGO TAN KHA",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107603",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: cuong@hr1vietnam.com",
-        "processed_at": "2026-10-29 14:09:26"
-      },
-      {
-        "candidate_id": "107601",
-        "candidate_name": "ĐỒNG HỮU TIẾN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107601",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-29 13:43:41"
-      },
-      {
-        "candidate_id": "107595",
-        "candidate_name": "HA TUNG LAM",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107595",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: toquyen.nguyen@hr1vietnam.com",
-        "processed_at": "2026-10-29 13:40:27"
-      },
-      {
-        "candidate_id": "99356",
-        "candidate_name": "DANG HUYNH THU AN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/99356",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: toquyen.nguyen@hr1vietnam.com",
-        "processed_at": "2026-10-29 13:39:06"
       },
       {
         "candidate_id": "107499",
@@ -30455,30 +29483,6 @@
         "processed_at": "2026-10-29 11:24:18"
       },
       {
-        "candidate_id": "51494",
-        "candidate_name": "HA PHUONG NGUYEN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/51494",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: dieu.hoang@hr1vietnam.com",
-        "processed_at": "2026-10-29 11:16:04"
-      },
-      {
-        "candidate_id": "107596",
-        "candidate_name": "ĐINH HƯƠNG GIANG",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107596",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: dieu.hoang@hr1vietnam.com",
-        "processed_at": "2026-10-29 11:15:46"
-      },
-      {
         "candidate_id": "107507",
         "candidate_name": "Dang Dang Quang",
         "type": "Backlog",
@@ -30491,18 +29495,6 @@
         "processed_at": "2026-10-29 11:06:19"
       },
       {
-        "candidate_id": "66112",
-        "candidate_name": "ĐINH THỊ THU HUYỀN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/66112",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-10-29 11:05:02"
-      },
-      {
         "candidate_id": "107508",
         "candidate_name": "NGUYEN NGOC YEN NHI",
         "type": "Backlog",
@@ -30513,618 +29505,6 @@
         "educations": 1,
         "detail_summary": "+2 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-10-29 10:53:58"
-      },
-      {
-        "candidate_id": "106346",
-        "candidate_name": "PHAN THI CAM TU",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/106346",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thu.nguyen@hr1vietnam.com",
-        "processed_at": "2026-10-29 10:46:01"
-      },
-      {
-        "candidate_id": "107590",
-        "candidate_name": "LY NGUYEN",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107590",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: ha.hoang@hr1vietnam.com",
-        "processed_at": "2026-10-29 10:24:46"
-      },
-      {
-        "candidate_id": "107589",
-        "candidate_name": "NGUYỄN CHUNG TÌNH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107589",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: linh.do@hr1vietnam.com",
-        "processed_at": "2026-10-29 10:24:18"
-      },
-      {
-        "candidate_id": "107588",
-        "candidate_name": "Lưu Tan Tai",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107588",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • Ứng viên submit CV",
-        "processed_at": "2026-10-29 08:47:51"
-      },
-      {
-        "candidate_id": "107587",
-        "candidate_name": "LINH NGUYEN",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107587",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: mai.nguyen@hr1vietnam.com",
-        "processed_at": "2026-10-28 18:20:22"
-      },
-      {
-        "candidate_id": "107278",
-        "candidate_name": "LÊ NHẬT TÂN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107278",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: toquyen.nguyen@hr1vietnam.com",
-        "processed_at": "2026-10-28 17:30:18"
-      },
-      {
-        "candidate_id": "107573",
-        "candidate_name": "LUU YEN HONG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107573",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: toquyen.nguyen@hr1vietnam.com",
-        "processed_at": "2026-10-28 17:29:54"
-      },
-      {
-        "candidate_id": "70803",
-        "candidate_name": "MAYANK DIXIT",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/70803",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-28 17:10:30"
-      },
-      {
-        "candidate_id": "102261",
-        "candidate_name": "LOC NGUYEN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/102261",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-28 14:57:01"
-      },
-      {
-        "candidate_id": "107581",
-        "candidate_name": "TRAN NGOC THIEN KIM",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107581",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-28 14:46:01"
-      },
-      {
-        "candidate_id": "107580",
-        "candidate_name": "HUYEN NGUYEN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107580",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-28 14:35:05"
-      },
-      {
-        "candidate_id": "107579",
-        "candidate_name": "VU ANH NGOC",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107579",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-28 14:08:16"
-      },
-      {
-        "candidate_id": "107579",
-        "candidate_name": "VU, ANH NGOC",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107579",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-28 14:08:07"
-      },
-      {
-        "candidate_id": "107579",
-        "candidate_name": "VU ANH NGOC",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107579",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: anh.tran@hr1vietnam.com",
-        "processed_at": "2026-10-28 14:07:48"
-      },
-      {
-        "candidate_id": "85676",
-        "candidate_name": "DINH THI KIEU ANH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/85676",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-10-28 14:05:59"
-      },
-      {
-        "candidate_id": "107577",
-        "candidate_name": "ĐỒNG HƯƠNG THANH THẢO",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107577",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: duc.lam@hr1vietnam.com",
-        "processed_at": "2026-10-28 13:54:48"
-      },
-      {
-        "candidate_id": "107571",
-        "candidate_name": "NGUYỄN CÔNG TUÂN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107571",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-28 10:51:52"
-      },
-      {
-        "candidate_id": "107568",
-        "candidate_name": "NGUYEN MINH TRUNG DUC",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107568",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: trang.cao@hr1vietnam.com",
-        "processed_at": "2026-10-28 10:40:51"
-      },
-      {
-        "candidate_id": "75575",
-        "candidate_name": "TRUONG HOANG ANH KHOA",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/75575",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV Apply Website (SR Operations Manager)",
-        "processed_at": "2026-10-28 10:29:09"
-      },
-      {
-        "candidate_id": "3586",
-        "candidate_name": "HOANG LE HANG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/3586",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Email Consultant (Thùy Phan <thuy.phan@hr1vietnam.com>)",
-        "processed_at": "2026-10-28 10:29:09"
-      },
-      {
-        "candidate_id": "107565",
-        "candidate_name": "NGÔ HỮU HẢI",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107565",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: duc.lam@hr1vietnam.com",
-        "processed_at": "2026-10-28 09:23:40"
-      },
-      {
-        "candidate_id": "47002",
-        "candidate_name": "DUONG ANH VU",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/47002",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-28 09:12:49"
-      },
-      {
-        "candidate_id": "107563",
-        "candidate_name": "DOAN HOANG PHUC",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107563",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-10-28 09:12:10"
-      },
-      {
-        "candidate_id": "107562",
-        "candidate_name": "DO THUY ANH",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107562",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: ha.hoang@hr1vietnam.com",
-        "processed_at": "2026-10-28 09:11:20"
-      },
-      {
-        "candidate_id": "107561",
-        "candidate_name": "DIPTIRANJAN BEHERA",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107561",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-10-28 09:10:55"
-      },
-      {
-        "candidate_id": "107560",
-        "candidate_name": "NGUYỄN VĂN SỬ",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107560",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: dieu.hoang@hr1vietnam.com",
-        "processed_at": "2026-10-28 09:10:37"
-      },
-      {
-        "candidate_id": "107558",
-        "candidate_name": "LUONG THI THANH HIEN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107558",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-27 16:20:14"
-      },
-      {
-        "candidate_id": "45586",
-        "candidate_name": "HOÀNG HẢI ĐĂNG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/45586",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: ha.hoang@hr1vietnam.com",
-        "processed_at": "2026-10-27 16:08:43"
-      },
-      {
-        "candidate_id": "107557",
-        "candidate_name": "VĂN NGUYỄN THỊ THU NGA",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107557",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: ha.hoang@hr1vietnam.com",
-        "processed_at": "2026-10-27 16:08:12"
-      },
-      {
-        "candidate_id": "107556",
-        "candidate_name": "NGUYỄN NGỌC ANH THƯ",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107556",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: ha.hoang@hr1vietnam.com",
-        "processed_at": "2026-10-27 16:07:48"
-      },
-      {
-        "candidate_id": "107555",
-        "candidate_name": "NGUYEN PHAN HOAI THUONG",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107555",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: ha.hoang@hr1vietnam.com",
-        "processed_at": "2026-10-27 16:07:19"
-      },
-      {
-        "candidate_id": "49817",
-        "candidate_name": "MAI VUONG KHANG",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/49817",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: thuy.phan@hr1vietnam.com",
-        "processed_at": "2026-10-27 15:50:03"
-      },
-      {
-        "candidate_id": "107553",
-        "candidate_name": "LE DANG QUYNH HOA",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107553",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: trang.cao@hr1vietnam.com",
-        "processed_at": "2026-10-27 15:30:00"
-      },
-      {
-        "candidate_id": "107552",
-        "candidate_name": "NINH PHAM",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107552",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: duc.lam@hr1vietnam.com",
-        "processed_at": "2026-10-27 14:26:29"
-      },
-      {
-        "candidate_id": "107547",
-        "candidate_name": "NGUYEN HUNG LINH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107547",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: ngoc.duong@hr1vietnam.com",
-        "processed_at": "2026-10-27 13:07:52"
-      },
-      {
-        "candidate_id": "107548",
-        "candidate_name": "NGUYỄN THỊ CẨM TÚ",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107548",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-10-27 12:08:13"
-      },
-      {
-        "candidate_id": "55206",
-        "candidate_name": "GIANG PHẠM",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/55206",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-27 11:20:34"
-      },
-      {
-        "candidate_id": "107541",
-        "candidate_name": "DUONG THI THUY",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107541",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-27 10:37:38"
-      },
-      {
-        "candidate_id": "107540",
-        "candidate_name": "THANH HUONG PHAM",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107540",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-27 10:37:13"
-      },
-      {
-        "candidate_id": "98841",
-        "candidate_name": "DO TRUNG KIEN",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/98841",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-27 10:36:49"
-      },
-      {
-        "candidate_id": "107546",
-        "candidate_name": "MICHAEL ANTONY",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107546",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-27 10:32:13"
-      },
-      {
-        "candidate_id": "107544",
-        "candidate_name": "PHẠM HỒNG PHÁT",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107544",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-27 09:40:28"
-      },
-      {
-        "candidate_id": "91858",
-        "candidate_name": "PHAM QUANG HIEU",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/91858",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-27 08:38:31"
-      },
-      {
-        "candidate_id": "95541",
-        "candidate_name": "CAO QUOC KHANH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/95541",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV gửi từ email: nga.vu@hr1vietnam.com",
-        "processed_at": "2026-10-26 13:45:15"
-      },
-      {
-        "candidate_id": "107521",
-        "candidate_name": "VO THANH DAT",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107521",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-26 13:19:29"
-      },
-      {
-        "candidate_id": "107522",
-        "candidate_name": "TRANG NGUYEN THI MINH",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107522",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-10-26 13:19:29"
-      },
-      {
-        "candidate_id": "107523",
-        "candidate_name": "LẠI HUY TUẤN ANH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107523",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • CV Apply Job Website",
-        "processed_at": "2026-10-26 13:19:29"
-      },
-      {
-        "candidate_id": "107524",
-        "candidate_name": "MARASINGHE MUDIYANSELAGE DENAPITIYA GEDARA DANUSHKA NIHAL",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107524",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-10-26 13:19:29"
-      },
-      {
-        "candidate_id": "107525",
-        "candidate_name": "NGUYEN HIEN NAM",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107525",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV Apply Job Website",
-        "processed_at": "2026-10-26 13:19:29"
-      },
-      {
-        "candidate_id": "107526",
-        "candidate_name": "PHẠM GIA QUYỀN",
-        "type": "Real-Time",
-        "action": "Tạo mới",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107526",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Tạo mới) • CV gửi từ email: info@hr1vietnam.com",
-        "processed_at": "2026-10-26 13:19:29"
-      },
-      {
-        "candidate_id": "79435",
-        "candidate_name": "HỒ THỊ HIẾU HẠNH",
-        "type": "Real-Time",
-        "action": "Cập nhật",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/79435",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "Real-Time (Cập nhật) • Ứng viên submit CV",
-        "processed_at": "2026-10-26 13:19:29"
       }
     ]
   },
@@ -31134,8 +29514,8 @@
       "total_realtime": 13,
       "created": 6,
       "updated": 4,
-      "backlog_count": 610,
-      "grand_total": 623
+      "backlog_count": 620,
+      "grand_total": 633
     },
     {
       "date": "2026-11-03",
@@ -31225,7 +29605,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 2567+ hồ sơ toàn hệ thống (890 backlog + 145 real-time)."
+      "metrics": "Đạt mốc 2577+ hồ sơ toàn hệ thống (890 backlog + 145 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
@@ -31238,11 +29618,11 @@
   ],
   "system": {
     "daemon_status": "RUNNING",
-    "daemon_pid": 43030,
-    "current_task": "scan_cycle_start",
+    "daemon_pid": 43023,
+    "current_task": "processing_realtime_cv",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 23.6,
+    "last_heartbeat_seconds_ago": 12.9,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
