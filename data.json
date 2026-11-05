@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-05 19:23:59",
+    "last_updated": "2026-11-05 19:40:36",
     "today_date": "2026-11-05",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -18,7 +18,7 @@
     "completion_rate_pct": 100.0,
     "current_mode": "PAUSED_CRM_MAINTENANCE",
     "mode_badge": "🛑 CRM Đang Lỗi / Bảo Trì (Tạm Ngưng Luồng)",
-    "mode_desc": "CRM phản hồi HTTPSConnectionPool(host='crm.hr1vietnam.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='crm.hr1vietnam.com', port=443): Failed to resolve 'crm.hr1vietnam.com' ([Errno 8] nodename nor servname provided, or not known)\")). Đã tạm dừng 100% tiến trình tự động theo chỉ đạo để chờ thông báo mới.",
+    "mode_desc": "CRM phản hồi HTTP 403. Đã tạm dừng 100% tiến trình tự động theo chỉ đạo để chờ thông báo mới.",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
@@ -54836,8 +54836,8 @@
     "daemon_pid": null,
     "current_task": "Tạm dừng luồng tự động (Chờ CRM khôi phục)",
     "crm_online": false,
-    "crm_error": "HTTPSConnectionPool(host='crm.hr1vietnam.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='crm.hr1vietnam.com', port=443): Failed to resolve 'crm.hr1vietnam.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
-    "last_heartbeat_seconds_ago": 1713.1,
+    "crm_error": "HTTP 403",
+    "last_heartbeat_seconds_ago": 657.8,
     "supervisor_running": false,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
