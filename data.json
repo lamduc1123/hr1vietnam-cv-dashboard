@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-05 20:38:20",
+    "last_updated": "2026-11-05 20:38:42",
     "today_date": "2026-11-05",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -107,14 +107,14 @@
     ],
     "sources": {
       "Consultants": 17,
-      "Website": 8,
+      "Website": 7,
       "CRM Backlog": 1173
     }
   },
   "totals": {
     "all_time_realtime": 183,
     "all_time_created": 51,
-    "all_time_updated": 124,
+    "all_time_updated": 125,
     "all_time_backlog_done": 4675,
     "total_system_processed": 4858,
     "backlog_target": 4745,
@@ -131,10 +131,10 @@
     "status": "Paid 1 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 1",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 67177912,
+    "total_tokens": 67185258,
     "total_tokens_formatted": "67.2M",
-    "prompt_tokens": 51111587,
-    "output_tokens": 16066325,
+    "prompt_tokens": 51117600,
+    "output_tokens": 16067658,
     "total_cost_usd": 32.36,
     "total_cost_usd_formatted": "$32.36",
     "total_cost_vnd": 823685,
@@ -147,7 +147,7 @@
     "budget_used_pct": 54.9,
     "cost_per_cv_vnd": 169.6,
     "cost_per_cv_usd": 0.0067,
-    "tokens_per_cv": 13828,
+    "tokens_per_cv": 13830,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -189,8 +189,8 @@
     "pending_inbox": 0,
     "sources": {
       "Consultants": 17,
-      "Website": 8,
-      "Other": 2
+      "Website": 7,
+      "Other": 3
     },
     "candidates": [
       {
@@ -199,10 +199,10 @@
         "candidate_name": "DINH THI THUY TRANG",
         "candidate_id": "107782",
         "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107782",
-        "action": "hold_duplicate_conflict",
-        "source": "CV Apply Job Website",
+        "action": "updated",
+        "source": "Ứng viên submit CV",
         "file_name": "thuy-trang-hrm-under-2mb.pdf",
-        "status": "pending_admin_resolution"
+        "status": "success"
       },
       {
         "time": "16:48:11",
@@ -56607,7 +56607,7 @@
       "date": "2026-11-05",
       "total_realtime": 27,
       "created": 5,
-      "updated": 21,
+      "updated": 22,
       "backlog_count": 1173,
       "grand_total": 1200
     },
@@ -56724,7 +56724,7 @@
     "current_task": "processing_realtime_cv",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 16.8,
+    "last_heartbeat_seconds_ago": 12.1,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
