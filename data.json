@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-05 11:40:06",
+    "last_updated": "2026-11-05 11:44:12",
     "today_date": "2026-11-05",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -9,13 +9,13 @@
   "today": {
     "date": "2026-11-05",
     "date_display": "Hôm nay, 05/11/2026",
-    "total_processed": 107,
+    "total_processed": 117,
     "realtime_count": 14,
     "realtime_created": 2,
     "realtime_updated": 12,
-    "backlog_count": 93,
+    "backlog_count": 103,
     "target_daily": 300,
-    "completion_rate_pct": 35.7,
+    "completion_rate_pct": 39.0,
     "current_mode": "NORMAL_HOURS",
     "mode_badge": "⚡ Ca Làm Việc (08:30 - 17:30)",
     "mode_desc": "Ưu tiên phản hồi Real-time 60s • Xử lý Backlog khi rảnh",
@@ -25,7 +25,7 @@
       {
         "key": "morning",
         "label": "Ca Sáng (08:30 - 11:59)",
-        "count": 107,
+        "count": 117,
         "status": "in_progress",
         "badge": "Đang chạy"
       },
@@ -66,52 +66,52 @@
       },
       {
         "hour": "11:00",
-        "count": 94
+        "count": 104
       }
     ],
     "sources": {
       "Consultants": 10,
       "Website": 2,
-      "CRM Backlog": 93
+      "CRM Backlog": 103
     }
   },
   "totals": {
     "all_time_realtime": 170,
     "all_time_created": 48,
     "all_time_updated": 115,
-    "all_time_backlog_done": 3595,
-    "total_system_processed": 3765,
-    "backlog_target": 3601,
-    "backlog_remaining": 6,
-    "backlog_completion_percentage": 99.8,
-    "crm_pool_audited": 12345,
-    "admin_pre_inputted": 9399,
-    "ai_total_processed": 3765,
-    "total_standardized": 13164,
+    "all_time_backlog_done": 3605,
+    "total_system_processed": 3775,
+    "backlog_target": 3633,
+    "backlog_remaining": 28,
+    "backlog_completion_percentage": 99.2,
+    "crm_pool_audited": 12544,
+    "admin_pre_inputted": 9566,
+    "ai_total_processed": 3775,
+    "total_standardized": 13341,
     "total_crm_candidates": 105740,
-    "standardized_percentage": 12.45
+    "standardized_percentage": 12.62
   },
   "ai_usage": {
     "status": "Paid 1 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 1",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 49273724,
-    "total_tokens_formatted": "49.3M",
-    "prompt_tokens": 37440078,
-    "output_tokens": 11833646,
+    "total_tokens": 49417372,
+    "total_tokens_formatted": "49.4M",
+    "prompt_tokens": 37552804,
+    "output_tokens": 11864568,
     "total_cost_usd": 20.92,
     "total_cost_usd_formatted": "$20.92",
-    "total_cost_vnd": 532297,
-    "total_cost_vnd_formatted": "₫532,297",
+    "total_cost_vnd": 532517,
+    "total_cost_vnd_formatted": "₫532,517",
     "initial_prepay_vnd": 1500000.0,
     "initial_prepay_vnd_formatted": "₫1,500,000",
-    "remaining_budget_vnd": 967703.0,
-    "remaining_budget_vnd_formatted": "₫967,703",
+    "remaining_budget_vnd": 967483.0,
+    "remaining_budget_vnd_formatted": "₫967,483",
     "remaining_budget_usd": 38.02,
     "budget_used_pct": 35.5,
-    "cost_per_cv_vnd": 141.4,
-    "cost_per_cv_usd": 0.0056,
-    "tokens_per_cv": 13087,
+    "cost_per_cv_vnd": 141.1,
+    "cost_per_cv_usd": 0.0055,
+    "tokens_per_cv": 13091,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -314,13 +314,133 @@
     ]
   },
   "backlog": {
-    "total": 3601,
-    "completed": 3595,
-    "remaining": 6,
+    "total": 3633,
+    "completed": 3605,
+    "remaining": 28,
     "errors": 289,
-    "completion_percentage": 99.8,
-    "crm_pool_audited": 12345,
+    "completion_percentage": 99.2,
+    "crm_pool_audited": 12544,
     "recent_enriched": [
+      {
+        "candidate_id": "92994",
+        "candidate_name": "NGUYEN THI HUYEN TRANG",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/92994",
+        "experiences": 5,
+        "educations": 1,
+        "detail_summary": "+5 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-05 11:44:10"
+      },
+      {
+        "candidate_id": "92995",
+        "candidate_name": "DAO THU HUONG",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/92995",
+        "experiences": 2,
+        "educations": 2,
+        "detail_summary": "+2 kinh nghiệm, +2 học vấn",
+        "processed_at": "2026-11-05 11:43:57"
+      },
+      {
+        "candidate_id": "93009",
+        "candidate_name": "NGUYEN THI THANH NGAN",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/93009",
+        "experiences": 1,
+        "educations": 1,
+        "detail_summary": "+1 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-05 11:43:48"
+      },
+      {
+        "candidate_id": "93010",
+        "candidate_name": "PHAN PHUONG NGOC",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/93010",
+        "experiences": 4,
+        "educations": 1,
+        "detail_summary": "+4 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-05 11:43:35"
+      },
+      {
+        "candidate_id": "93040",
+        "candidate_name": "VAN THONG NGUYEN",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/93040",
+        "experiences": 2,
+        "educations": 0,
+        "detail_summary": "+2 kinh nghiệm, +0 học vấn",
+        "processed_at": "2026-11-05 11:43:21"
+      },
+      {
+        "candidate_id": "93086",
+        "candidate_name": "TRAN XUAN HUY",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/93086",
+        "experiences": 1,
+        "educations": 1,
+        "detail_summary": "+1 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-05 11:43:09"
+      },
+      {
+        "candidate_id": "93087",
+        "candidate_name": "TRAN PHU CUONG",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/93087",
+        "experiences": 3,
+        "educations": 0,
+        "detail_summary": "+3 kinh nghiệm, +0 học vấn",
+        "processed_at": "2026-11-05 11:43:00"
+      },
+      {
+        "candidate_id": "93092",
+        "candidate_name": "NGUYEN VAN NAM",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/93092",
+        "experiences": 1,
+        "educations": 1,
+        "detail_summary": "+1 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-05 11:42:45"
+      },
+      {
+        "candidate_id": "93095",
+        "candidate_name": "THACH NGO HOANG MAI",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/93095",
+        "experiences": 3,
+        "educations": 1,
+        "detail_summary": "+3 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-05 11:42:35"
+      },
+      {
+        "candidate_id": "93102",
+        "candidate_name": "MAI VIET PHONG",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/93102",
+        "experiences": 2,
+        "educations": 2,
+        "detail_summary": "+2 kinh nghiệm, +2 học vấn",
+        "processed_at": "2026-11-05 11:42:20"
+      },
       {
         "candidate_id": "93104",
         "candidate_name": "DUONG XUAN TRIEU",
@@ -43469,8 +43589,8 @@
       "total_realtime": 14,
       "created": 2,
       "updated": 12,
-      "backlog_count": 93,
-      "grand_total": 107
+      "backlog_count": 103,
+      "grand_total": 117
     },
     {
       "date": "2026-11-04",
@@ -43568,7 +43688,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 3765+ hồ sơ toàn hệ thống (890 backlog + 170 real-time)."
+      "metrics": "Đạt mốc 3775+ hồ sơ toàn hệ thống (890 backlog + 170 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
