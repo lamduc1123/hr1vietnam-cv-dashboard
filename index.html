@@ -90,6 +90,19 @@
           </div>
         </div>
 
+        <!-- EXECUTIVE MODULE SWITCHER (CV vs JOB) -->
+        <div class="hidden md:flex items-center space-x-1.5 bg-slate-900/90 p-1 rounded-xl border border-slate-700/80 shadow-inner">
+          <button id="nav-btn-cv" onclick="switchGlobalModule('cv')" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition flex items-center space-x-2 bg-blue-600 text-white shadow-sm shadow-blue-600/30">
+            <i data-lucide="file-user" class="w-3.5 h-3.5"></i>
+            <span>Module 1: Input CV CRM</span>
+          </button>
+          <button id="nav-btn-job" onclick="switchGlobalModule('job')" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition flex items-center space-x-2 text-slate-400 hover:text-white hover:bg-slate-800">
+            <i data-lucide="briefcase" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>Module 2: Input Job CRM</span>
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">MỚI</span>
+          </button>
+        </div>
+
         <!-- Right: Actions & Countdown -->
         <div class="flex items-center space-x-3 sm:space-x-4">
           <div class="hidden sm:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 border border-slate-700 text-slate-300">
@@ -112,6 +125,11 @@
 
   <!-- MAIN CONTAINER -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-8">
+
+    <!-- ========================================== -->
+    <!-- MODULE 1: INPUT CV CRM DASHBOARD           -->
+    <!-- ========================================== -->
+    <div id="view-module-cv" class="space-y-8">
 
     <!-- ALL-TIME GRAND TOTAL HERO BANNER -->
     <div class="glass-card rounded-2xl p-6 relative overflow-hidden border border-blue-500/30 bg-gradient-to-r from-blue-950/40 via-indigo-950/30 to-slate-900/60 shadow-xl space-y-6">
@@ -731,6 +749,154 @@
 
     </div>
 
+    </div>
+    <!-- /MODULE 1: INPUT CV CRM -->
+
+    <!-- ========================================== -->
+    <!-- MODULE 2: INPUT JOB CRM DASHBOARD (NEW)    -->
+    <!-- ========================================== -->
+    <div id="view-module-job" class="space-y-8 hidden">
+      
+      <!-- HERO BANNER -->
+      <div class="glass-card rounded-2xl p-6 relative overflow-hidden border border-emerald-500/30 bg-gradient-to-r from-emerald-950/40 via-teal-950/30 to-slate-900/60 shadow-xl space-y-6">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <div>
+            <div class="flex items-center space-x-2 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-1">
+              <i data-lucide="sparkles" class="w-4 h-4"></i>
+              <span>HR1 Automation Platform • Module 2: Input Job CRM Auto</span>
+            </div>
+            <div class="flex items-baseline space-x-3 mt-1">
+              <span id="job-total-processed" class="text-4xl sm:text-5xl font-black text-white tracking-tight">66+</span>
+              <span class="text-base sm:text-lg font-semibold text-slate-300">Vị trí tuyển dụng (Job Orders) đã được xử lý tự động</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-2">Tự động tiếp nhận email từ Account Holder & Interns qua <code>input4@hr1vietnam.com</code> • Bóc tách JD bằng Gemini Flash-Lite • Tạo Job & Upload JD lên CRM • Phản hồi link CRM tức thì trong vòng 1-2 phút.</p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2 self-start lg:self-center">
+            <span class="inline-flex items-center px-3 py-1.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-bold whitespace-nowrap">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2 pulse-ring"></span> Bot Real-Time: Đang Chạy 24/7 (PID 89537)
+            </span>
+            <span class="inline-flex items-center px-3 py-1.5 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold whitespace-nowrap">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 mr-1.5 text-blue-400"></i> Circuit Breaker: Bình Thường
+            </span>
+          </div>
+        </div>
+
+        <!-- 4 METRIC CARDS -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2 border-t border-slate-700/60">
+          <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/40">
+            <div class="text-xs text-slate-400 font-medium">Hôm Nay (Real-Time)</div>
+            <div id="job-today-count" class="text-2xl font-black text-emerald-400 mt-1">66</div>
+            <div class="text-[11px] text-slate-500 mt-0.5">Vị trí tiếp nhận qua Email</div>
+          </div>
+          <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/40">
+            <div class="text-xs text-slate-400 font-medium">Tỷ Lệ Thành Công</div>
+            <div class="text-2xl font-black text-blue-400 mt-1">100.0%</div>
+            <div class="text-[11px] text-slate-500 mt-0.5">0 Lỗi - Zero Data Loss</div>
+          </div>
+          <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/40">
+            <div class="text-xs text-slate-400 font-medium">SLA Xử Lý Trung Bình</div>
+            <div class="text-2xl font-black text-amber-400 mt-1">~52 giây</div>
+            <div class="text-[11px] text-slate-500 mt-0.5">Bóc tách JD + Tạo CRM + Reply</div>
+          </div>
+          <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/40">
+            <div class="text-xs text-slate-400 font-medium">Account Holders Hoạt Động</div>
+            <div id="job-active-ahs" class="text-2xl font-black text-purple-400 mt-1">12+</div>
+            <div class="text-[11px] text-slate-500 mt-0.5">Consultants gửi order</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARTS SECTION -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="glass-card rounded-2xl p-5 border border-dark-border space-y-4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-sm font-bold text-white flex items-center space-x-2">
+              <i data-lucide="pie-chart" class="w-4 h-4 text-emerald-400"></i>
+              <span>Phân Bố Trạng Thái Job</span>
+            </h3>
+            <span class="text-xs text-slate-400">Tỷ trọng</span>
+          </div>
+          <div class="h-56 relative flex items-center justify-center">
+            <canvas id="job-status-chart"></canvas>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 border border-dark-border space-y-4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-sm font-bold text-white flex items-center space-x-2">
+              <i data-lucide="users" class="w-4 h-4 text-sky-400"></i>
+              <span>Top Account Holders (AH)</span>
+            </h3>
+            <span class="text-xs text-slate-400">Số vị trí</span>
+          </div>
+          <div class="h-56 relative flex items-center justify-center">
+            <canvas id="job-ah-chart"></canvas>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 border border-dark-border space-y-4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-sm font-bold text-white flex items-center space-x-2">
+              <i data-lucide="building" class="w-4 h-4 text-indigo-400"></i>
+              <span>Top Khách Hàng Tuyển Dụng</span>
+            </h3>
+            <span class="text-xs text-slate-400">Doanh nghiệp</span>
+          </div>
+          <div class="h-56 relative flex items-center justify-center">
+            <canvas id="job-company-chart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIVE JOB ORDER STREAM TABLE -->
+      <div class="glass-card rounded-2xl p-6 border border-dark-border space-y-5">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h3 class="text-base font-bold text-white flex items-center space-x-2">
+              <i data-lucide="list-ordered" class="w-5 h-5 text-emerald-400"></i>
+              <span>Danh Sách Vị Trí Tuyển Dụng (Real-Time Job Stream)</span>
+            </h3>
+            <p class="text-xs text-slate-400 mt-1">Cập nhật tức thời các vị trí vừa được bóc tách và tạo thành công trên CRM</p>
+          </div>
+
+          <div class="flex items-center space-x-3">
+            <div class="relative">
+              <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+              <input type="text" id="job-search-input" oninput="filterJobTable()" placeholder="Tìm chức danh, công ty, AH..." class="pl-9 pr-4 py-2 bg-slate-900 border border-slate-700 rounded-xl text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500 w-64 transition">
+            </div>
+            <select id="job-status-filter" onchange="filterJobTable()" class="bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-emerald-500">
+              <option value="all">Tất cả trạng thái</option>
+              <option value="open_urgent">Open - Urgent</option>
+              <option value="open_slowdown">Open - Slowdown</option>
+              <option value="pending_hold">Pending / Hold</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto rounded-xl border border-slate-700/60">
+          <table class="w-full text-left text-xs text-slate-300">
+            <thead class="bg-slate-900/90 text-slate-400 uppercase tracking-wider text-[11px] border-b border-slate-700/80">
+              <tr>
+                <th class="py-3 px-4 text-center">STT</th>
+                <th class="py-3 px-4">Mã Job</th>
+                <th class="py-3 px-4">Vị Trí Tuyển Dụng</th>
+                <th class="py-3 px-4">Doanh Nghiệp (Khách Hàng)</th>
+                <th class="py-3 px-4">AH Phụ Trách</th>
+                <th class="py-3 px-4 text-center">Trạng Thái</th>
+                <th class="py-3 px-4">Thời Gian Nhập</th>
+                <th class="py-3 px-4 text-center">Thao Tác CRM</th>
+              </tr>
+            </thead>
+            <tbody id="job-stream-tbody" class="divide-y divide-slate-800">
+              <!-- Populated dynamically from job_data.json -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+    <!-- /MODULE 2: INPUT JOB CRM -->
   </main>
 
   <!-- FOOTER -->
@@ -1390,8 +1556,238 @@
       }, 1000);
     }
 
+    // ==========================================
+    // MODULE 2: JOB ORDER DASHBOARD LOGIC
+    // ==========================================
+    let globalJobData = null;
+    let jobCharts = {};
+
+    function switchGlobalModule(mod) {
+      const cvView = document.getElementById('view-module-cv');
+      const jobView = document.getElementById('view-module-job');
+      const cvBtn = document.getElementById('nav-btn-cv');
+      const jobBtn = document.getElementById('nav-btn-job');
+
+      if (mod === 'job') {
+        if (cvView) cvView.classList.add('hidden');
+        if (jobView) jobView.classList.remove('hidden');
+
+        if (cvBtn) {
+          cvBtn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-bold transition flex items-center space-x-2 text-slate-400 hover:text-white hover:bg-slate-800';
+        }
+        if (jobBtn) {
+          jobBtn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-bold transition flex items-center space-x-2 bg-emerald-600 text-white shadow-sm shadow-emerald-600/30';
+        }
+        loadJobData();
+        history.replaceState(null, '', '#job');
+      } else {
+        if (jobView) jobView.classList.add('hidden');
+        if (cvView) cvView.classList.remove('hidden');
+
+        if (cvBtn) {
+          cvBtn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-bold transition flex items-center space-x-2 bg-blue-600 text-white shadow-sm shadow-blue-600/30';
+        }
+        if (jobBtn) {
+          jobBtn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-bold transition flex items-center space-x-2 text-slate-400 hover:text-white hover:bg-slate-800';
+        }
+        history.replaceState(null, '', '#cv');
+      }
+      lucide.createIcons();
+    }
+
+    async function loadJobData() {
+      try {
+        const res = await fetch(`job_data.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (!res.ok) return;
+        globalJobData = await res.json();
+        renderJobDashboard();
+      } catch (e) {
+        console.error('Could not load job_data.json:', e);
+      }
+    }
+
+    function renderJobDashboard() {
+      if (!globalJobData) return;
+      const s = globalJobData.summary || {};
+      const a = globalJobData.analytics || {};
+      const jobs = globalJobData.recent_jobs || [];
+
+      // Update Top Metrics
+      const totalEl = document.getElementById('job-total-processed');
+      if (totalEl) totalEl.innerText = `${s.total_jobs_created || jobs.length}+`;
+
+      const todayEl = document.getElementById('job-today-count');
+      if (todayEl) todayEl.innerText = s.today_jobs_count || jobs.length;
+
+      const ahsEl = document.getElementById('job-active-ahs');
+      if (ahsEl) ahsEl.innerText = `${s.active_ahs_count || 12}+`;
+
+      // Render Charts
+      renderJobCharts(a);
+
+      // Render Table
+      renderJobTable(jobs);
+      lucide.createIcons();
+    }
+
+    function renderJobCharts(analytics) {
+      if (!analytics) return;
+
+      // 1. Status Chart (Doughnut)
+      const statusCtx = document.getElementById('job-status-chart');
+      if (statusCtx) {
+        if (jobCharts.status) jobCharts.status.destroy();
+        const sb = analytics.status_breakdown || {'open_urgent': 60, 'pending_hold': 6};
+        jobCharts.status = new Chart(statusCtx, {
+          type: 'doughnut',
+          data: {
+            labels: Object.keys(sb).map(k => k.replace('_', ' ').toUpperCase()),
+            datasets: [{
+              data: Object.values(sb),
+              backgroundColor: ['#10b981', '#f59e0b', '#3b82f6', '#64748b', '#ef4444'],
+              borderWidth: 0
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { position: 'bottom', labels: { color: '#94a3b8', font: { size: 10 } } }
+            }
+          }
+        });
+      }
+
+      // 2. AH Chart (Bar)
+      const ahCtx = document.getElementById('job-ah-chart');
+      if (ahCtx && analytics.top_ahs) {
+        if (jobCharts.ah) jobCharts.ah.destroy();
+        const labels = analytics.top_ahs.slice(0, 5).map(x => x.name.split(' ')[0] || x.name);
+        const data = analytics.top_ahs.slice(0, 5).map(x => x.count);
+        jobCharts.ah = new Chart(ahCtx, {
+          type: 'bar',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Vị trí',
+              data: data,
+              backgroundColor: '#38bdf8',
+              borderRadius: 6
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y',
+            plugins: { legend: { display: false } },
+            scales: {
+              x: { ticks: { color: '#64748b', font: { size: 10 } }, grid: { display: false } },
+              y: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } }
+            }
+          }
+        });
+      }
+
+      // 3. Company Chart (Bar)
+      const compCtx = document.getElementById('job-company-chart');
+      if (compCtx && analytics.top_companies) {
+        if (jobCharts.company) jobCharts.company.destroy();
+        const labels = analytics.top_companies.slice(0, 5).map(x => x.name.slice(0, 14));
+        const data = analytics.top_companies.slice(0, 5).map(x => x.count);
+        jobCharts.company = new Chart(compCtx, {
+          type: 'bar',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Vị trí',
+              data: data,
+              backgroundColor: '#818cf8',
+              borderRadius: 6
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y',
+            plugins: { legend: { display: false } },
+            scales: {
+              x: { ticks: { color: '#64748b', font: { size: 10 } }, grid: { display: false } },
+              y: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } }
+            }
+          }
+        });
+      }
+    }
+
+    function renderJobTable(jobs) {
+      const tbody = document.getElementById('job-stream-tbody');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+
+      jobs.forEach((j, idx) => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-800/50 transition';
+
+        let statusBadge = '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Open - Urgent</span>';
+        if (j.status === 'pending_hold') {
+          statusBadge = '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20">Pending / Hold</span>';
+        }
+
+        const timeStr = j.timestamp ? j.timestamp.replace('T', ' ').slice(0, 16) : 'Hôm nay';
+
+        tr.innerHTML = `
+          <td class="py-3 px-4 text-center font-mono text-slate-500">${idx + 1}</td>
+          <td class="py-3 px-4 font-bold text-white font-mono">#${j.job_id}</td>
+          <td class="py-3 px-4 font-semibold text-slate-200">${j.job_title}</td>
+          <td class="py-3 px-4 text-slate-300">${j.company_name}</td>
+          <td class="py-3 px-4 text-slate-300 flex items-center space-x-1.5">
+            <span class="w-5 h-5 rounded-full bg-slate-800 text-[10px] font-bold text-sky-400 flex items-center justify-center border border-slate-700">AH</span>
+            <span>${j.ah_name || 'AH Company'}</span>
+          </td>
+          <td class="py-3 px-4 text-center">${statusBadge}</td>
+          <td class="py-3 px-4 font-mono text-slate-400 text-[11px]">${timeStr}</td>
+          <td class="py-3 px-4 text-center">
+            <a href="${j.crm_link}" target="_blank" class="inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-blue-600/20 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 text-[11px] font-bold transition">
+              <span>Xem CRM</span>
+              <i data-lucide="external-link" class="w-3 h-3"></i>
+            </a>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function filterJobTable() {
+      if (!globalJobData) return;
+      const q = (document.getElementById('job-search-input')?.value || '').toLowerCase();
+      const statusFilter = document.getElementById('job-status-filter')?.value || 'all';
+
+      let filtered = globalJobData.recent_jobs || [];
+      if (statusFilter !== 'all') {
+        filtered = filtered.filter(j => (j.status || '').toLowerCase() === statusFilter);
+      }
+      if (q) {
+        filtered = filtered.filter(j => 
+          (j.job_title || '').toLowerCase().includes(q) ||
+          (j.company_name || '').toLowerCase().includes(q) ||
+          (j.ah_name || '').toLowerCase().includes(q) ||
+          String(j.job_id || '').includes(q)
+        );
+      }
+      renderJobTable(filtered);
+      lucide.createIcons();
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
       fetchData();
+      loadJobData();
+
+      // Check URL hash or query params
+      const urlParams = new URLSearchParams(window.location.search);
+      const modParam = urlParams.get('module') || urlParams.get('tab');
+      if (window.location.hash === '#job' || modParam === 'job') {
+        switchGlobalModule('job');
+      }
     });
   </script>
 </body>

@@ -1,0 +1,775 @@
+{
+  "metadata": {
+    "last_updated": "2026-11-06T14:20:54.751473+07:00",
+    "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO",
+    "version": "2.0-Production",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  "summary": {
+    "total_jobs_created": 66,
+    "today_jobs_count": 66,
+    "success_rate": 100.0,
+    "avg_processing_time_seconds": 52.4,
+    "active_ahs_count": 21,
+    "companies_count": 41,
+    "system_status": {
+      "daemon": "ONLINE (PID 89537)",
+      "circuit_breaker": "HEALTHY",
+      "email_watcher": "ACTIVE",
+      "poll_interval": "45s"
+    }
+  },
+  "analytics": {
+    "status_breakdown": {
+      "open_urgent": 62,
+      "pending_hold": 3,
+      "close": 1
+    },
+    "top_ahs": [
+      {
+        "name": "Mizi",
+        "count": 12
+      },
+      {
+        "name": "LE THI KIM NGA",
+        "count": 9
+      },
+      {
+        "name": "Thu Le",
+        "count": 8
+      },
+      {
+        "name": "Nguyen Thi My Hoa",
+        "count": 5
+      },
+      {
+        "name": "Nguyen Vo Phuong Quyen",
+        "count": 5
+      },
+      {
+        "name": "Le Thi Thu",
+        "count": 4
+      },
+      {
+        "name": "Vy Dang",
+        "count": 4
+      },
+      {
+        "name": "Nguyen Thi My Hoa (Flora)",
+        "count": 3
+      },
+      {
+        "name": "Le Thi Kim Nga",
+        "count": 2
+      },
+      {
+        "name": "Vũ Thị Nga",
+        "count": 2
+      }
+    ],
+    "top_companies": [
+      {
+        "name": "Johnson Health Tech",
+        "count": 7
+      },
+      {
+        "name": "Summit Polymers",
+        "count": 5
+      },
+      {
+        "name": "Neotek",
+        "count": 4
+      },
+      {
+        "name": "TAKYFOOD",
+        "count": 3
+      },
+      {
+        "name": "Công Ty Cổ phần Dệt Trần Hiệp Thành",
+        "count": 3
+      },
+      {
+        "name": "ODK Media",
+        "count": 2
+      },
+      {
+        "name": "Brother",
+        "count": 2
+      },
+      {
+        "name": "Go-pak",
+        "count": 2
+      },
+      {
+        "name": "MIK GROUP",
+        "count": 2
+      },
+      {
+        "name": "Framas Footwear Technologies",
+        "count": 2
+      }
+    ]
+  },
+  "recent_jobs": [
+    {
+      "timestamp": "2026-11-06T11:30:43.073318+07:00",
+      "job_id": "11012",
+      "job_title": "Commercial Sales Staff",
+      "company_name": "Johnson Health Tech",
+      "ah_name": "Nguyen Thi My Hoa",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3008/11012",
+      "sender_email": "myhoa.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:30:21.333536+07:00",
+      "job_id": "11011",
+      "job_title": "Trưởng phòng Kế toán Quản trị",
+      "company_name": "TAKYFOOD",
+      "ah_name": "Mizi",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/2084/11011",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:29:03.465618+07:00",
+      "job_id": "11010",
+      "job_title": "Technical Service Manager",
+      "company_name": "Johnson Health Tech",
+      "ah_name": "Nguyen Thi My Hoa",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3008/11010",
+      "sender_email": "myhoa.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:28:52.558218+07:00",
+      "job_id": "11009",
+      "job_title": "Sales Executive (English or Chinese)",
+      "company_name": "S-Dat Tech Co., Ltd",
+      "ah_name": "LE THI KIM NGA",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15519/11009",
+      "sender_email": "nga.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:28:28.206994+07:00",
+      "job_id": "11008",
+      "job_title": "Project Engineer",
+      "company_name": "Summit Polymers",
+      "ah_name": "Nguyen Vo Phuong Quyen",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/4438/11008",
+      "sender_email": "quyen.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:28:16.813566+07:00",
+      "job_id": "11007",
+      "job_title": "OEM Business Development & Key Account Manager",
+      "company_name": "Neotek",
+      "ah_name": "Mizi",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/7940/11007",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:28:04.255502+07:00",
+      "job_id": "11006",
+      "job_title": "Technical Service Manager",
+      "company_name": "Johnson Health Tech",
+      "ah_name": "Flora",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3008/11006",
+      "sender_email": "myhoa.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:27:52.958850+07:00",
+      "job_id": "11005",
+      "job_title": "Trưởng phòng Kế toán Quản trị",
+      "company_name": "TAKYFOOD",
+      "ah_name": "Mizi",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/2084/11005",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:27:31.297229+07:00",
+      "job_id": "11004",
+      "job_title": "Trưởng phòng Kế toán Quản trị",
+      "company_name": "TAKYFOOD",
+      "ah_name": "Mizi",
+      "status": "pending_hold",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/2084/11004",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:27:19.125451+07:00",
+      "job_id": "11003",
+      "job_title": "Service Center Operations Manager",
+      "company_name": "Universal Alloy Corporation Vietnam",
+      "ah_name": "Le Thi Thu",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/1053/11003",
+      "sender_email": "thu.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:27:08.523439+07:00",
+      "job_id": "11002",
+      "job_title": "Trợ Lí Kinh Doanh",
+      "company_name": "Công Ty Cổ phần Dệt Trần Hiệp Thành",
+      "ah_name": "Thach Nguyen",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3280/11002",
+      "sender_email": "thu.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:26:56.777544+07:00",
+      "job_id": "11001",
+      "job_title": "Senior Associate, Ad Operations & Demand Partnerships",
+      "company_name": "ODK Media",
+      "ah_name": "Nguyen Thi My Hoa (Flora)",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/1790/11001",
+      "sender_email": "myhoa.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:26:27.361250+07:00",
+      "job_id": "11000",
+      "job_title": "Trợ Lý Giám Đốc",
+      "company_name": "CÔNG TY TNHH GREENMED ECOTECH",
+      "ah_name": "Le Thi Thu",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15554/11000",
+      "sender_email": "thu.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:26:12.176279+07:00",
+      "job_id": "10999",
+      "job_title": "Product Manager - Commercial & Industry",
+      "company_name": "EPSON VIETNAM COMPANY LIMITED",
+      "ah_name": "Thu Nguyen",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3720/10999",
+      "sender_email": "thu.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:25:49.348190+07:00",
+      "job_id": "10998",
+      "job_title": "Product Pre-sales Specialist",
+      "company_name": "Brother",
+      "ah_name": "Thư Lê",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/998/10998",
+      "sender_email": "thu.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:25:39.664161+07:00",
+      "job_id": "10997",
+      "job_title": "Maintenance Manager/Engineering Manager",
+      "company_name": "Go-pak",
+      "ah_name": "Mizi",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3071/10997",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:25:27.851113+07:00",
+      "job_id": "10996",
+      "job_title": "Warehouse Supervisor",
+      "company_name": "OKIA OPTICAL",
+      "ah_name": "Thu Le",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/2224/10996",
+      "sender_email": "thu.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:25:18.557590+07:00",
+      "job_id": "10995",
+      "job_title": "3D Reality Capture / LiDAR Engineer (Chinese)",
+      "company_name": "TOPSEC VIETNAM",
+      "ah_name": "Quyên Nguyễn",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15570/10995",
+      "sender_email": "toquyen.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:24:49.951763+07:00",
+      "job_id": "10994",
+      "job_title": "Senior Associate, Ad Operations & Demand Partnerships",
+      "company_name": "ODK Media",
+      "ah_name": "Nguyen Thi My Hoa (Flora)",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/1790/10994",
+      "sender_email": "myhoa.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:24:29.188174+07:00",
+      "job_id": "10993",
+      "job_title": "Senior Global Sales - Japan Market",
+      "company_name": "Công ty Cổ phần Dệt Trần Hiệp Thành",
+      "ah_name": "Nguyễn Thị Minh Thư",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3280/10993",
+      "sender_email": "thu.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:24:09.904317+07:00",
+      "job_id": "10992",
+      "job_title": "Commercial Sales Manager",
+      "company_name": "Johnson Health Tech",
+      "ah_name": "Nguyen Thi My Hoa",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3008/10992",
+      "sender_email": "myhoa.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:23:59.244917+07:00",
+      "job_id": "10991",
+      "job_title": "Sales Representative (B2B)",
+      "company_name": "Công ty TNHH Megmilk Snow Brand Việt Nam",
+      "ah_name": "Le Thi Kim Nga",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15457/10991",
+      "sender_email": "nga.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:23:39.579464+07:00",
+      "job_id": "10990",
+      "job_title": "Senior Global Sales - Japan market",
+      "company_name": "Công Ty Cổ phần Dệt Trần Hiệp Thành",
+      "ah_name": "Thu Le",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3280/10990",
+      "sender_email": "thu.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:23:24.960588+07:00",
+      "job_id": "10989",
+      "job_title": "Trưởng Ban Quản lý Thiết kế",
+      "company_name": "MIK GROUP",
+      "ah_name": "LE THI KIM NGA",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15585/10989",
+      "sender_email": "nga.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:23:13.541139+07:00",
+      "job_id": "10988",
+      "job_title": "Trưởng Ban Quản lý Thiết kế",
+      "company_name": "MIK GROUP",
+      "ah_name": "LE THI KIM NGA",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/98/10988",
+      "sender_email": "trung.trinh@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:23:02.893822+07:00",
+      "job_id": "10987",
+      "job_title": "Logistics Sales Manager",
+      "company_name": "Samsung SDS Việt Nam",
+      "ah_name": "Vũ Thị Nga",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15587/10987",
+      "sender_email": "nga.vu@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:22:51.660200+07:00",
+      "job_id": "10986",
+      "job_title": "Human Resources Specialist – Training & Talent Development",
+      "company_name": "Summit Polymers",
+      "ah_name": "Nguyen Vo Phuong Quyen",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/4438/10986",
+      "sender_email": "quyen.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:22:40.965564+07:00",
+      "job_id": "10985",
+      "job_title": "Product Pre-Sales Specialist",
+      "company_name": "Brother",
+      "ah_name": "Thu Le",
+      "status": "close",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/998/10985",
+      "sender_email": "thu.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:22:20.927693+07:00",
+      "job_id": "10984",
+      "job_title": "Sales Manager",
+      "company_name": "Aeon Delight Vietnam",
+      "ah_name": "Le Thi Thu",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15593/10984",
+      "sender_email": "thu.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:22:02.439047+07:00",
+      "job_id": "10983",
+      "job_title": "Customs Specialist",
+      "company_name": "KCTC",
+      "ah_name": "Vy Dang",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15601/10983",
+      "sender_email": "vy.dang@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:21:49.836889+07:00",
+      "job_id": "10982",
+      "job_title": "HR Admin Manager",
+      "company_name": "Johnson Health Tech",
+      "ah_name": "Nguyen Thi My Hoa",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3008/10982",
+      "sender_email": "myhoa.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:21:39.275453+07:00",
+      "job_id": "10981",
+      "job_title": "Commercial Sales Manager",
+      "company_name": "Johnson Health Tech",
+      "ah_name": "Hoa Nguyễn Thị Mỹ",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3008/10981",
+      "sender_email": "myhoa.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:21:15.274992+07:00",
+      "job_id": "10980",
+      "job_title": "OEM Business Development & Key Account Manager",
+      "company_name": "Neotek",
+      "ah_name": "Mizi",
+      "status": "pending_hold",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/7940/10980",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:20:51.274273+07:00",
+      "job_id": "10979",
+      "job_title": "PU Manager",
+      "company_name": "Framas Footwear Technologies",
+      "ah_name": "Le Thi Kim Nga",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15628/10979",
+      "sender_email": "nga.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:20:36.086532+07:00",
+      "job_id": "10978",
+      "job_title": "PU Manager",
+      "company_name": "Framas Footwear Technologies",
+      "ah_name": "LE THI KIM NGA",
+      "status": "pending_hold",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15628/10978",
+      "sender_email": "nga.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:20:22.488194+07:00",
+      "job_id": "10977",
+      "job_title": "Market Access Manager",
+      "company_name": "Dược Hậu Giang - DHG",
+      "ah_name": "Vy Dang",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15630/10977",
+      "sender_email": "vy.dang@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:20:10.011382+07:00",
+      "job_id": "10976",
+      "job_title": "HR Specialist – Training & Talent Development",
+      "company_name": "Summit Polymers",
+      "ah_name": "Nguyen Vo Phuong Quyen",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/4438/10976",
+      "sender_email": "quyen.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:19:57.709367+07:00",
+      "job_id": "10975",
+      "job_title": "Commercial Sales Manager",
+      "company_name": "Johnson Health Tech",
+      "ah_name": "Nguyen Thi My Hoa (Flora)",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3008/10975",
+      "sender_email": "myhoa.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:19:21.445635+07:00",
+      "job_id": "10974",
+      "job_title": "Internal Control Manager (APAC)",
+      "company_name": "Mitsubishi Chemical Group",
+      "ah_name": "Thu Le",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15632/10974",
+      "sender_email": "thu.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:19:03.857583+07:00",
+      "job_id": "10973",
+      "job_title": "Trợ Lí Kinh Doanh",
+      "company_name": "Công Ty Cổ phần Dệt Trần Hiệp Thành",
+      "ah_name": "Thu Le",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3280/10973",
+      "sender_email": "thu.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:17:50.428220+07:00",
+      "job_id": "10972",
+      "job_title": "Phó Phòng Mua Hàng",
+      "company_name": "Công ty TNHH Dịch Vụ Quản Lý Tài Sản VSIP (VSIP FMS)",
+      "ah_name": "LE THI KIM NGA",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15663/10972",
+      "sender_email": "nga.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:17:38.371192+07:00",
+      "job_id": "10971",
+      "job_title": "Trade Marketing Manager",
+      "company_name": "Transsion Holdings",
+      "ah_name": "Le Thi Thu",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15564/10971",
+      "sender_email": "thu.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:17:11.946423+07:00",
+      "job_id": "10970",
+      "job_title": "Vận hành máy in (Flexo Operator)",
+      "company_name": "Go-Pak",
+      "ah_name": "Mizi",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3071/10970",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:16:54.042257+07:00",
+      "job_id": "10969",
+      "job_title": "PHÓ PHÒNG ĐỊNH HÌNH (tiếng Trung)",
+      "company_name": "Top Sports Textile",
+      "ah_name": "LE THI KIM NGA",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15675/10969",
+      "sender_email": "nga.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:16:35.173775+07:00",
+      "job_id": "10968",
+      "job_title": "Technical Chef (Bakery & Food Application)",
+      "company_name": "Megmilk Snow Brand Vietnam",
+      "ah_name": "LE THI KIM NGA",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15678/10968",
+      "sender_email": "nga.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:16:11.993035+07:00",
+      "job_id": "10967",
+      "job_title": "Kiểm soát tài chính",
+      "company_name": "CÔNG TY CỔ PHẦN BỘT - THỰC PHẨM TÀI KÝ",
+      "ah_name": "Mizi",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/2084/10967",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:15:58.914507+07:00",
+      "job_id": "10966",
+      "job_title": "Plating Engineer",
+      "company_name": "D.I Limited",
+      "ah_name": "Vy Dang",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15114/10966",
+      "sender_email": "vy.dang@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:15:47.523681+07:00",
+      "job_id": "10965",
+      "job_title": "Vận hành máy in (Flexo Operator)",
+      "company_name": "Go-Pak",
+      "ah_name": "Mizi",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3071/10965",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:15:35.851298+07:00",
+      "job_id": "10964",
+      "job_title": "Finance Manager",
+      "company_name": "Summit Polymers",
+      "ah_name": "Nguyen Vo Phuong Quyen",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/4438/10964",
+      "sender_email": "quyen.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:15:20.272542+07:00",
+      "job_id": "10963",
+      "job_title": "Nhân viên HSE cao cấp",
+      "company_name": "Neotek",
+      "ah_name": "Mizi",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/7940/10963",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:15:07.958307+07:00",
+      "job_id": "10368",
+      "job_title": "Maintenance Manager",
+      "company_name": "Dynaplast",
+      "ah_name": "Thu Le",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/159/10368",
+      "sender_email": "thu.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:14:33.603942+07:00",
+      "job_id": "10962",
+      "job_title": "Specialist, Human Resources (Systems)",
+      "company_name": "Summit Polymers",
+      "ah_name": "Nguyen Vo Phuong Quyen",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/4438/10962",
+      "sender_email": "quyen.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:13:36.649860+07:00",
+      "job_id": "10961",
+      "job_title": "PHÓ GIÁM ĐỐC BAN TIẾP THỊ (DEPUTY DIRECTOR OF MARKETING & COMMUNICATIONS)",
+      "company_name": "VIETRAVEL",
+      "ah_name": "Thu Le",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3400/10961",
+      "sender_email": "thu.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:13:17.165489+07:00",
+      "job_id": "10960",
+      "job_title": "Medical Sales Representative",
+      "company_name": "Ajinomoto",
+      "ah_name": "LE THI KIM NGA",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15714/10960",
+      "sender_email": "nga.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:13:06.377594+07:00",
+      "job_id": "10959",
+      "job_title": "Key Account Manager (Project Specification)",
+      "company_name": "ERCO Lighting",
+      "ah_name": "My Hoa",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15581/10959",
+      "sender_email": "myhoa.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:12:53.397621+07:00",
+      "job_id": "10958",
+      "job_title": "Technical Manager",
+      "company_name": "Go-pak",
+      "ah_name": "Mizi",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/3071/10958",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:12:37.041086+07:00",
+      "job_id": "10957",
+      "job_title": "Medical Sales Representative",
+      "company_name": "Ajinomoto",
+      "ah_name": "nga.le@hr1vietnam.com",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15714/10957",
+      "sender_email": "nga.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:12:25.315271+07:00",
+      "job_id": "10956",
+      "job_title": "INTERNAL ACCOUNTANT",
+      "company_name": "Megmilk",
+      "ah_name": "LE THI KIM NGA",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15722/10956",
+      "sender_email": "nga.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:12:12.614643+07:00",
+      "job_id": "10955",
+      "job_title": "Academic Director",
+      "company_name": "Busy Bees",
+      "ah_name": "Vy Dang",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15486/10955",
+      "sender_email": "vy.dang@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:11:59.212968+07:00",
+      "job_id": "10954",
+      "job_title": "Warehouse Supervisor",
+      "company_name": "OKIA",
+      "ah_name": "Thu Le",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/2224/10954",
+      "sender_email": "thu.le@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:11:48.732301+07:00",
+      "job_id": "10953",
+      "job_title": "Finance Coordinator (AP), Night Shift (US Time)",
+      "company_name": "Summit Polymer",
+      "ah_name": "Nguyen Vo Phuong Quyen (Sam)",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/4438/10953",
+      "sender_email": "quyen.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:11:35.576730+07:00",
+      "job_id": "10952",
+      "job_title": "Trưởng phòng Tài Vụ/Kế toán trưởng",
+      "company_name": "Neotek",
+      "ah_name": "Mizi",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/7940/10952",
+      "sender_email": "nie.mi@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:11:13.542761+07:00",
+      "job_id": "10951",
+      "job_title": "Technical Engineer",
+      "company_name": "KEYENCE",
+      "ah_name": "Hang Bui",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/126/10951",
+      "sender_email": "hang.bui@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T11:10:50.002601+07:00",
+      "job_id": "10950",
+      "job_title": "Senior Planner",
+      "company_name": "Nedspice Vietnam",
+      "ah_name": "Nguyen Thi My Hoa",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/15776/10950",
+      "sender_email": "myhoa.nguyen@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T10:51:22.921636+07:00",
+      "job_id": "10949",
+      "job_title": "Technical Engineer",
+      "company_name": "KEYENCE",
+      "ah_name": "Hang Bui",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/126/10949",
+      "sender_email": "hang.bui@hr1vietnam.com"
+    },
+    {
+      "timestamp": "2026-11-06T10:45:47.198738+07:00",
+      "job_id": "10948",
+      "job_title": "Kỹ Sư Cấp Thoát Nước",
+      "company_name": "VSIP Thái Bình/Nam Định",
+      "ah_name": "Vũ Thị Nga",
+      "status": "open_urgent",
+      "crm_link": "https://qccrm.hr1vietnam.com/vi/crm/mass/company/job/50/10948",
+      "sender_email": "nga.vu@hr1vietnam.com"
+    }
+  ]
+}
