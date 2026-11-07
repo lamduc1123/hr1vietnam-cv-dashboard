@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-07 16:50:44",
+    "last_updated": "2026-11-07 18:40:32",
     "today_date": "2026-11-07",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -40,15 +40,15 @@
         "key": "afternoon",
         "label": "Ca Chiều (13:00 - 17:30)",
         "count": 0,
-        "status": "in_progress",
-        "badge": "Đang chạy"
+        "status": "completed",
+        "badge": "Đã hoàn tất"
       },
       {
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
         "count": 0,
-        "status": "upcoming",
-        "badge": "Sẵn sàng (Khi mở máy đêm)"
+        "status": "in_progress",
+        "badge": "Đang cày đêm"
       }
     ],
     "hourly_chart": [
@@ -86,6 +86,14 @@
       },
       {
         "hour": "16:00",
+        "count": 0
+      },
+      {
+        "hour": "17:00",
+        "count": 0
+      },
+      {
+        "hour": "18:00",
         "count": 0
       }
     ],
@@ -92562,7 +92570,7 @@
     "current_task": "Tạm dừng luồng tự động (Chờ CRM khôi phục)",
     "crm_online": false,
     "crm_error": "HTTP 403",
-    "last_heartbeat_seconds_ago": 2448.3,
+    "last_heartbeat_seconds_ago": 4622.5,
     "supervisor_running": false,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
