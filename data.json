@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-07 11:32:45",
+    "last_updated": "2026-11-07 14:18:09",
     "today_date": "2026-11-07",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -26,22 +26,22 @@
         "key": "morning",
         "label": "Ca Sáng (08:30 - 11:59)",
         "count": 0,
-        "status": "in_progress",
-        "badge": "Đang chạy"
+        "status": "completed",
+        "badge": "Đã hoàn tất"
       },
       {
         "key": "lunch",
         "label": "Ca Trưa Turbo (12:00 - 13:00)",
         "count": 0,
-        "status": "upcoming",
-        "badge": "Sắp diễn ra"
+        "status": "completed",
+        "badge": "Đã kết thúc"
       },
       {
         "key": "afternoon",
         "label": "Ca Chiều (13:00 - 17:30)",
         "count": 0,
-        "status": "upcoming",
-        "badge": "Sắp diễn ra"
+        "status": "in_progress",
+        "badge": "Đang chạy"
       },
       {
         "key": "overnight",
@@ -66,6 +66,18 @@
       },
       {
         "hour": "11:00",
+        "count": 0
+      },
+      {
+        "hour": "12:00",
+        "count": 0
+      },
+      {
+        "hour": "13:00",
+        "count": 0
+      },
+      {
+        "hour": "14:00",
         "count": 0
       }
     ],
@@ -95,23 +107,23 @@
     "status": "Paid 1 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 1",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 116639415,
-    "total_tokens_formatted": "116.6M",
-    "prompt_tokens": 88707663,
-    "output_tokens": 27931752,
-    "total_cost_usd": 70.74,
-    "total_cost_usd_formatted": "$70.74",
-    "total_cost_vnd": 1800416,
-    "total_cost_vnd_formatted": "₫1,800,416",
+    "total_tokens": 116650948,
+    "total_tokens_formatted": "116.7M",
+    "prompt_tokens": 88715841,
+    "output_tokens": 27935107,
+    "total_cost_usd": 70.78,
+    "total_cost_usd_formatted": "$70.78",
+    "total_cost_vnd": 1801307,
+    "total_cost_vnd_formatted": "₫1,801,307",
     "initial_prepay_vnd": 2500000.0,
     "initial_prepay_vnd_formatted": "₫2,500,000",
-    "remaining_budget_vnd": 699583.5,
-    "remaining_budget_vnd_formatted": "₫699,584",
-    "remaining_budget_usd": 27.49,
-    "budget_used_pct": 72.0,
-    "cost_per_cv_vnd": 228.0,
+    "remaining_budget_vnd": 698692.75,
+    "remaining_budget_vnd_formatted": "₫698,693",
+    "remaining_budget_usd": 27.45,
+    "budget_used_pct": 72.1,
+    "cost_per_cv_vnd": 228.1,
     "cost_per_cv_usd": 0.009,
-    "tokens_per_cv": 14768,
+    "tokens_per_cv": 14770,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -92542,7 +92554,7 @@
     "current_task": "Tạm dừng luồng tự động (Chờ CRM khôi phục)",
     "crm_online": false,
     "crm_error": "HTTP 403",
-    "last_heartbeat_seconds_ago": 6387.6,
+    "last_heartbeat_seconds_ago": 506.8,
     "supervisor_running": false,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
