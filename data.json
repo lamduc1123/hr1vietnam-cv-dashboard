@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-08 09:22:22",
+    "last_updated": "2026-11-08 22:47:56",
     "today_date": "2026-11-08",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -26,29 +26,29 @@
         "key": "morning",
         "label": "Ca Sáng (08:30 - 11:59)",
         "count": 0,
-        "status": "in_progress",
-        "badge": "Đang chạy"
+        "status": "completed",
+        "badge": "Đã hoàn tất"
       },
       {
         "key": "lunch",
         "label": "Ca Trưa Turbo (12:00 - 13:00)",
         "count": 0,
-        "status": "upcoming",
-        "badge": "Sắp diễn ra"
+        "status": "completed",
+        "badge": "Đã kết thúc"
       },
       {
         "key": "afternoon",
         "label": "Ca Chiều (13:00 - 17:30)",
         "count": 0,
-        "status": "upcoming",
-        "badge": "Sắp diễn ra"
+        "status": "completed",
+        "badge": "Đã hoàn tất"
       },
       {
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
         "count": 0,
-        "status": "upcoming",
-        "badge": "Sẵn sàng (Khi mở máy đêm)"
+        "status": "in_progress",
+        "badge": "Đang cày đêm"
       }
     ],
     "hourly_chart": [
@@ -58,6 +58,58 @@
       },
       {
         "hour": "09:00",
+        "count": 0
+      },
+      {
+        "hour": "10:00",
+        "count": 0
+      },
+      {
+        "hour": "11:00",
+        "count": 0
+      },
+      {
+        "hour": "12:00",
+        "count": 0
+      },
+      {
+        "hour": "13:00",
+        "count": 0
+      },
+      {
+        "hour": "14:00",
+        "count": 0
+      },
+      {
+        "hour": "15:00",
+        "count": 0
+      },
+      {
+        "hour": "16:00",
+        "count": 0
+      },
+      {
+        "hour": "17:00",
+        "count": 0
+      },
+      {
+        "hour": "18:00",
+        "count": 0
+      },
+      {
+        "hour": "19:00",
+        "count": 0
+      },
+      {
+        "hour": "20:00",
+        "count": 0
+      },
+      {
+        "hour": "21:00",
+        "count": 0
+      },
+      {
+        "hour": "22:00",
         "count": 0
       }
     ],
@@ -87,10 +139,10 @@
     "status": "Paid 1 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 1",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 116650948,
+    "total_tokens": 116661403,
     "total_tokens_formatted": "116.7M",
-    "prompt_tokens": 88715841,
-    "output_tokens": 27935107,
+    "prompt_tokens": 88723087,
+    "output_tokens": 27938316,
     "total_cost_usd": 70.78,
     "total_cost_usd_formatted": "$70.78",
     "total_cost_vnd": 1801307,
@@ -103,7 +155,7 @@
     "budget_used_pct": 72.1,
     "cost_per_cv_vnd": 228.1,
     "cost_per_cv_usd": 0.009,
-    "tokens_per_cv": 14770,
+    "tokens_per_cv": 14771,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -92534,7 +92586,7 @@
     "current_task": "Tạm dừng luồng tự động (Chờ CRM khôi phục)",
     "crm_online": false,
     "crm_error": "HTTP 403",
-    "last_heartbeat_seconds_ago": 2145.5,
+    "last_heartbeat_seconds_ago": 46184.5,
     "supervisor_running": false,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
