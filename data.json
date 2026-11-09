@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-09 07:38:39",
+    "last_updated": "2026-11-09 08:25:24",
     "today_date": "2026-11-09",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -9,16 +9,16 @@
   "today": {
     "date": "2026-11-09",
     "date_display": "Hôm nay, 09/11/2026",
-    "total_processed": 0,
-    "realtime_count": 0,
+    "total_processed": 1,
+    "realtime_count": 1,
     "realtime_created": 0,
-    "realtime_updated": 0,
+    "realtime_updated": 1,
     "backlog_count": 0,
     "target_daily": 300,
-    "completion_rate_pct": 0.0,
-    "current_mode": "PAUSED_CRM_MAINTENANCE",
-    "mode_badge": "🛑 CRM Đang Lỗi / Bảo Trì (Tạm Ngưng Luồng)",
-    "mode_desc": "CRM phản hồi HTTPSConnectionPool(host='crm.hr1vietnam.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='crm.hr1vietnam.com', port=443): Failed to resolve 'crm.hr1vietnam.com' ([Errno 8] nodename nor servname provided, or not known)\")). Đã tạm dừng 100% tiến trình tự động theo chỉ đạo để chờ thông báo mới.",
+    "completion_rate_pct": 0.3,
+    "current_mode": "OVERNIGHT_MODE",
+    "mode_badge": "🌙 Cày Đêm Tự Động (Overnight Turbo Active)",
+    "mode_desc": "Vận hành cày backlog xuyên đêm khi mở máy: Mẻ 20 CVs • Chu kỳ 30s",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
@@ -46,55 +46,60 @@
       {
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
-        "count": 0,
+        "count": 1,
         "status": "in_progress",
         "badge": "Đang cày đêm"
       }
     ],
-    "hourly_chart": [],
+    "hourly_chart": [
+      {
+        "hour": "08:00",
+        "count": 1
+      }
+    ],
     "sources": {
-      "Consultants": 0,
+      "Consultants": 1,
       "Website": 0,
       "CRM Backlog": 0
     }
   },
   "totals": {
-    "all_time_realtime": 211,
+    "all_time_realtime": 212,
     "all_time_created": 56,
-    "all_time_updated": 148,
+    "all_time_updated": 149,
     "all_time_backlog_done": 7687,
-    "total_system_processed": 7898,
+    "total_system_processed": 7899,
     "backlog_target": 7768,
     "backlog_remaining": 81,
     "backlog_completion_percentage": 99.0,
     "crm_pool_audited": 44337,
     "admin_pre_inputted": 36758,
-    "ai_total_processed": 7898,
-    "total_standardized": 44656,
-    "total_crm_candidates": 105698,
-    "standardized_percentage": 42.25
+    "ai_total_processed": 7899,
+    "total_standardized": 44657,
+    "total_crm_candidates": 105800,
+    "standardized_percentage": 42.21
   },
   "ai_usage": {
     "status": "Paid 1 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 1",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 116721658,
+    "total_tokens": 116745509,
     "total_tokens_formatted": "116.7M",
-    "prompt_tokens": 88764344,
-    "output_tokens": 27957314,
-    "total_cost_usd": 70.95,
-    "total_cost_usd_formatted": "$70.95",
-    "total_cost_vnd": 1805761,
-    "total_cost_vnd_formatted": "₫1,805,761",
+    "prompt_tokens": 88780985,
+    "output_tokens": 27964524,
+    "total_cost_usd": 70.99,
+    "total_cost_usd_formatted": "$70.99",
+    "total_cost_vnd": 1806674,
+    "total_cost_vnd_formatted": "₫1,806,674",
     "initial_prepay_vnd": 2500000.0,
     "initial_prepay_vnd_formatted": "₫2,500,000",
-    "remaining_budget_vnd": 694239.0,
-    "remaining_budget_vnd_formatted": "₫694,239",
-    "remaining_budget_usd": 27.28,
-    "budget_used_pct": 72.2,
-    "cost_per_cv_vnd": 228.6,
+    "remaining_budget_vnd": 693326.25,
+    "remaining_budget_vnd_formatted": "₫693,326",
+    "remaining_budget_usd": 27.24,
+    "budget_used_pct": 72.3,
+    "cost_per_cv_vnd": 228.7,
     "cost_per_cv_usd": 0.009,
-    "tokens_per_cv": 14779,
+    "tokens_per_cv": 14780,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -130,16 +135,28 @@
     ]
   },
   "realtime": {
-    "total_today": 0,
+    "total_today": 1,
     "created_today": 0,
-    "updated_today": 0,
+    "updated_today": 1,
     "pending_inbox": 0,
     "sources": {
-      "Consultants": 0,
+      "Consultants": 1,
       "Website": 0,
       "Other": 0
     },
-    "candidates": []
+    "candidates": [
+      {
+        "time": "08:25:19",
+        "timestamp": "2026-11-09T08:25:19.736932+07:00",
+        "candidate_name": "NGUYEN THI THANH TRUC",
+        "candidate_id": "77043",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/77043",
+        "action": "updated",
+        "source": "CV gửi từ email: cuong@hr1vietnam.com",
+        "file_name": "CV's Nguyen Thi Thanh Truc 2026.pdf",
+        "status": "success"
+      }
+    ]
   },
   "backlog": {
     "total": 7768,
@@ -92397,6 +92414,14 @@
   },
   "daily_history": [
     {
+      "date": "2026-11-09",
+      "total_realtime": 1,
+      "created": 0,
+      "updated": 1,
+      "backlog_count": null,
+      "grand_total": 1
+    },
+    {
       "date": "2026-11-06",
       "total_realtime": 25,
       "created": 5,
@@ -92508,7 +92533,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 7898+ hồ sơ toàn hệ thống (890 backlog + 211 real-time)."
+      "metrics": "Đạt mốc 7899+ hồ sơ toàn hệ thống (890 backlog + 212 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
@@ -92520,13 +92545,13 @@
     }
   ],
   "system": {
-    "daemon_status": "PAUSED",
-    "daemon_pid": null,
-    "current_task": "Tạm dừng luồng tự động (Chờ CRM khôi phục)",
-    "crm_online": false,
-    "crm_error": "HTTPSConnectionPool(host='crm.hr1vietnam.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='crm.hr1vietnam.com', port=443): Failed to resolve 'crm.hr1vietnam.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
-    "last_heartbeat_seconds_ago": 9062.4,
-    "supervisor_running": false,
+    "daemon_status": "RUNNING",
+    "daemon_pid": 89602,
+    "current_task": "processing_realtime_cv",
+    "crm_online": true,
+    "crm_error": "",
+    "last_heartbeat_seconds_ago": 35.4,
+    "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
     "search_grounding": "ONLINE (Google Search Grounding Active)"
