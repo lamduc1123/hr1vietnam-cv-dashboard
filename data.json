@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-09 19:21:50",
+    "last_updated": "2026-11-09 19:23:00",
     "today_date": "2026-11-09",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -9,16 +9,16 @@
   "today": {
     "date": "2026-11-09",
     "date_display": "Hôm nay, 09/11/2026",
-    "total_processed": 1599,
-    "realtime_count": 46,
+    "total_processed": 1600,
+    "realtime_count": 47,
     "realtime_created": 12,
-    "realtime_updated": 34,
+    "realtime_updated": 35,
     "backlog_count": 1553,
     "target_daily": 300,
     "completion_rate_pct": 100.0,
-    "current_mode": "PAUSED_CRM_MAINTENANCE",
-    "mode_badge": "🛑 CRM Đang Lỗi / Bảo Trì (Tạm Ngưng Luồng)",
-    "mode_desc": "CRM phản hồi HTTP 403. Đã tạm dừng 100% tiến trình tự động theo chỉ đạo để chờ thông báo mới.",
+    "current_mode": "OVERNIGHT_MODE",
+    "mode_badge": "🌙 Cày Đêm Tự Động (Overnight Turbo Active)",
+    "mode_desc": "Vận hành cày backlog xuyên đêm khi mở máy: Mẻ 20 CVs • Chu kỳ 30s",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
@@ -46,7 +46,7 @@
       {
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
-        "count": 229,
+        "count": 230,
         "status": "in_progress",
         "badge": "Đang cày đêm"
       }
@@ -98,50 +98,50 @@
       },
       {
         "hour": "19:00",
-        "count": 0
+        "count": 1
       }
     ],
     "sources": {
       "Consultants": 25,
-      "Website": 13,
+      "Website": 14,
       "CRM Backlog": 1553
     }
   },
   "totals": {
-    "all_time_realtime": 260,
+    "all_time_realtime": 261,
     "all_time_created": 68,
-    "all_time_updated": 185,
+    "all_time_updated": 186,
     "all_time_backlog_done": 9236,
-    "total_system_processed": 9496,
+    "total_system_processed": 9497,
     "backlog_target": 9270,
     "backlog_remaining": 34,
     "backlog_completion_percentage": 99.6,
     "crm_pool_audited": 47134,
     "admin_pre_inputted": 38555,
-    "ai_total_processed": 9496,
-    "total_standardized": 48051,
-    "total_crm_candidates": 105698,
-    "standardized_percentage": 45.46
+    "ai_total_processed": 9497,
+    "total_standardized": 48052,
+    "total_crm_candidates": 105835,
+    "standardized_percentage": 45.4
   },
   "ai_usage": {
     "status": "Paid 1 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 1",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 145163746,
+    "total_tokens": 145184859,
     "total_tokens_formatted": "145.2M",
-    "prompt_tokens": 110282184,
-    "output_tokens": 34881562,
-    "total_cost_usd": 88.95,
-    "total_cost_usd_formatted": "$88.95",
-    "total_cost_vnd": 2263760,
-    "total_cost_vnd_formatted": "₫2,263,760",
+    "prompt_tokens": 110295751,
+    "output_tokens": 34889108,
+    "total_cost_usd": 88.99,
+    "total_cost_usd_formatted": "$88.99",
+    "total_cost_vnd": 2264673,
+    "total_cost_vnd_formatted": "₫2,264,673",
     "initial_prepay_vnd": 2500000.0,
     "initial_prepay_vnd_formatted": "₫2,500,000",
-    "remaining_budget_vnd": 236240.0,
-    "remaining_budget_vnd_formatted": "₫236,240",
-    "remaining_budget_usd": 9.28,
+    "remaining_budget_vnd": 235327.25,
+    "remaining_budget_vnd_formatted": "₫235,327",
+    "remaining_budget_usd": 9.25,
     "budget_used_pct": 90.6,
-    "cost_per_cv_vnd": 238.4,
+    "cost_per_cv_vnd": 238.5,
     "cost_per_cv_usd": 0.0094,
     "tokens_per_cv": 15287,
     "alert": {
@@ -179,16 +179,27 @@
     ]
   },
   "realtime": {
-    "total_today": 46,
+    "total_today": 47,
     "created_today": 12,
-    "updated_today": 34,
+    "updated_today": 35,
     "pending_inbox": 0,
     "sources": {
       "Consultants": 25,
-      "Website": 13,
+      "Website": 14,
       "Other": 8
     },
     "candidates": [
+      {
+        "time": "19:23:00",
+        "timestamp": "2026-11-09T19:23:00.330425+07:00",
+        "candidate_name": "DR AYSE ASLIHAN ERBASI",
+        "candidate_id": "107859",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107859",
+        "action": "updated",
+        "source": "CV Apply Job Website",
+        "file_name": "asl-han-erba-resume.pdf",
+        "status": "success"
+      },
       {
         "time": "17:04:15",
         "timestamp": "2026-11-09T17:04:15.849106+07:00",
@@ -111542,11 +111553,11 @@
   "daily_history": [
     {
       "date": "2026-11-09",
-      "total_realtime": 49,
+      "total_realtime": 50,
       "created": 12,
-      "updated": 37,
+      "updated": 38,
       "backlog_count": 1553,
-      "grand_total": 1602
+      "grand_total": 1603
     },
     {
       "date": "2026-11-06",
@@ -111660,7 +111671,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 9496+ hồ sơ toàn hệ thống (890 backlog + 260 real-time)."
+      "metrics": "Đạt mốc 9497+ hồ sơ toàn hệ thống (890 backlog + 261 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
@@ -111672,13 +111683,13 @@
     }
   ],
   "system": {
-    "daemon_status": "PAUSED",
-    "daemon_pid": null,
-    "current_task": "Tạm dừng luồng tự động (Chờ CRM khôi phục)",
-    "crm_online": false,
-    "crm_error": "HTTP 403",
-    "last_heartbeat_seconds_ago": 0.4,
-    "supervisor_running": false,
+    "daemon_status": "RUNNING",
+    "daemon_pid": 8485,
+    "current_task": "processing_realtime_cv",
+    "crm_online": true,
+    "crm_error": "",
+    "last_heartbeat_seconds_ago": 28.9,
+    "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
     "search_grounding": "ONLINE (Google Search Grounding Active)"
