@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-10 08:17:52",
+    "last_updated": "2026-11-10 08:20:31",
     "today_date": "2026-11-10",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -11,8 +11,8 @@
     "date_display": "Hôm nay, 10/11/2026",
     "total_processed": 11,
     "realtime_count": 1,
-    "realtime_created": 1,
-    "realtime_updated": 0,
+    "realtime_created": 0,
+    "realtime_updated": 1,
     "backlog_count": 10,
     "target_daily": 300,
     "completion_rate_pct": 3.7,
@@ -58,15 +58,15 @@
       }
     ],
     "sources": {
-      "Consultants": 0,
-      "Website": 1,
+      "Consultants": 1,
+      "Website": 0,
       "CRM Backlog": 10
     }
   },
   "totals": {
     "all_time_realtime": 263,
-    "all_time_created": 69,
-    "all_time_updated": 187,
+    "all_time_created": 68,
+    "all_time_updated": 188,
     "all_time_backlog_done": 9726,
     "total_system_processed": 9989,
     "backlog_target": 9726,
@@ -83,23 +83,23 @@
     "status": "Paid 1 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 1",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 153384814,
+    "total_tokens": 153405724,
     "total_tokens_formatted": "153.4M",
-    "prompt_tokens": 116458084,
-    "output_tokens": 36926730,
-    "total_cost_usd": 96.68,
-    "total_cost_usd_formatted": "$96.68",
-    "total_cost_vnd": 2460421,
-    "total_cost_vnd_formatted": "₫2,460,421",
+    "prompt_tokens": 116472435,
+    "output_tokens": 36933289,
+    "total_cost_usd": 96.71,
+    "total_cost_usd_formatted": "$96.71",
+    "total_cost_vnd": 2461312,
+    "total_cost_vnd_formatted": "₫2,461,312",
     "initial_prepay_vnd": 3000000.0,
     "initial_prepay_vnd_formatted": "₫3,000,000",
-    "remaining_budget_vnd": 539579.25,
-    "remaining_budget_vnd_formatted": "₫539,579",
-    "remaining_budget_usd": 21.2,
+    "remaining_budget_vnd": 538688.5,
+    "remaining_budget_vnd_formatted": "₫538,688",
+    "remaining_budget_usd": 21.17,
     "budget_used_pct": 82.0,
-    "cost_per_cv_vnd": 246.3,
+    "cost_per_cv_vnd": 246.4,
     "cost_per_cv_usd": 0.0097,
-    "tokens_per_cv": 15355,
+    "tokens_per_cv": 15357,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -136,12 +136,12 @@
   },
   "realtime": {
     "total_today": 1,
-    "created_today": 1,
-    "updated_today": 0,
+    "created_today": 0,
+    "updated_today": 1,
     "pending_inbox": 0,
     "sources": {
-      "Consultants": 0,
-      "Website": 1,
+      "Consultants": 1,
+      "Website": 0,
       "Other": 0
     },
     "candidates": [
@@ -151,8 +151,8 @@
         "candidate_name": "ALLEN CLAUDIUS",
         "candidate_id": "107861",
         "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107861",
-        "action": "created",
-        "source": "CV Apply Job Website",
+        "action": "updated",
+        "source": "CV gửi từ email: cuong@hr1vietnam.com",
         "file_name": "allen-claudius-cv.pdf",
         "status": "success"
       }
@@ -116884,8 +116884,8 @@
     {
       "date": "2026-11-10",
       "total_realtime": 1,
-      "created": 1,
-      "updated": 0,
+      "created": 0,
+      "updated": 1,
       "backlog_count": 10,
       "grand_total": 11
     },
@@ -117023,10 +117023,10 @@
   "system": {
     "daemon_status": "RUNNING",
     "daemon_pid": 12546,
-    "current_task": "backlog_batch_finished",
+    "current_task": "processing_realtime_cv",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 0.7,
+    "last_heartbeat_seconds_ago": 29.5,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
