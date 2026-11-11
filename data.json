@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-11 16:27:26",
+    "last_updated": "2026-11-11 16:27:48",
     "today_date": "2026-11-11",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -9,10 +9,10 @@
   "today": {
     "date": "2026-11-11",
     "date_display": "Hôm nay, 11/11/2026",
-    "total_processed": 2679,
-    "realtime_count": 35,
+    "total_processed": 2680,
+    "realtime_count": 36,
     "realtime_created": 10,
-    "realtime_updated": 25,
+    "realtime_updated": 26,
     "backlog_count": 2644,
     "target_daily": 300,
     "completion_rate_pct": 100.0,
@@ -39,7 +39,7 @@
       {
         "key": "afternoon",
         "label": "Ca Chiều (13:00 - 17:30)",
-        "count": 402,
+        "count": 403,
         "status": "in_progress",
         "badge": "Đang chạy"
       },
@@ -86,28 +86,28 @@
       },
       {
         "hour": "16:00",
-        "count": 34
+        "count": 35
       }
     ],
     "sources": {
-      "Consultants": 31,
+      "Consultants": 32,
       "Website": 4,
       "CRM Backlog": 2644
     }
   },
   "totals": {
-    "all_time_realtime": 327,
+    "all_time_realtime": 328,
     "all_time_created": 85,
-    "all_time_updated": 235,
+    "all_time_updated": 236,
     "all_time_backlog_done": 14309,
-    "total_system_processed": 14636,
+    "total_system_processed": 14637,
     "backlog_target": 14538,
     "backlog_remaining": 229,
     "backlog_completion_percentage": 98.4,
     "crm_pool_audited": 59120,
     "admin_pre_inputted": 53378,
-    "ai_total_processed": 14636,
-    "total_standardized": 68014,
+    "ai_total_processed": 14637,
+    "total_standardized": 68015,
     "total_crm_candidates": 105894,
     "standardized_percentage": 64.23
   },
@@ -115,21 +115,21 @@
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 230048213,
-    "total_tokens_formatted": "230.0M",
-    "prompt_tokens": 174232251,
-    "output_tokens": 55815962,
-    "total_cost_usd": 150.39,
-    "total_cost_usd_formatted": "$150.39",
-    "total_cost_vnd": 3827340,
-    "total_cost_vnd_formatted": "₫3,827,340",
+    "total_tokens": 230065588,
+    "total_tokens_formatted": "230.1M",
+    "prompt_tokens": 174244880,
+    "output_tokens": 55820708,
+    "total_cost_usd": 150.43,
+    "total_cost_usd_formatted": "$150.43",
+    "total_cost_vnd": 3828515,
+    "total_cost_vnd_formatted": "₫3,828,515",
     "initial_prepay_vnd": 5000000.0,
     "initial_prepay_vnd_formatted": "₫5,000,000",
-    "remaining_budget_vnd": 1172660.5,
-    "remaining_budget_vnd_formatted": "₫1,172,660",
-    "remaining_budget_usd": 46.08,
-    "budget_used_pct": 76.5,
-    "cost_per_cv_vnd": 261.5,
+    "remaining_budget_vnd": 1171484.75,
+    "remaining_budget_vnd_formatted": "₫1,171,485",
+    "remaining_budget_usd": 46.03,
+    "budget_used_pct": 76.6,
+    "cost_per_cv_vnd": 261.6,
     "cost_per_cv_usd": 0.0103,
     "tokens_per_cv": 15718,
     "alert": {
@@ -167,16 +167,27 @@
     ]
   },
   "realtime": {
-    "total_today": 35,
+    "total_today": 36,
     "created_today": 10,
-    "updated_today": 25,
+    "updated_today": 26,
     "pending_inbox": 0,
     "sources": {
-      "Consultants": 31,
+      "Consultants": 32,
       "Website": 4,
       "Other": 0
     },
     "candidates": [
+      {
+        "time": "16:27:48",
+        "timestamp": "2026-11-11T16:27:48.169607+07:00",
+        "candidate_name": "NGUYEN THI KIEU TRAM",
+        "candidate_id": "96305",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/96305",
+        "action": "updated",
+        "source": "CV gửi từ email: toquyen.nguyen@hr1vietnam.com",
+        "file_name": "CV_Nguyen Thi Kieu Tram -chief acocuntant- manufacturing -binh dinh (Updated).pdf",
+        "status": "success"
+      },
       {
         "time": "16:27:26",
         "timestamp": "2026-11-11T16:27:26.104250+07:00",
@@ -172285,11 +172296,11 @@
   "daily_history": [
     {
       "date": "2026-11-11",
-      "total_realtime": 36,
+      "total_realtime": 37,
       "created": 10,
-      "updated": 26,
+      "updated": 27,
       "backlog_count": 2644,
-      "grand_total": 2680
+      "grand_total": 2681
     },
     {
       "date": "2026-11-10",
@@ -172419,7 +172430,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 14636+ hồ sơ toàn hệ thống (890 backlog + 327 real-time)."
+      "metrics": "Đạt mốc 14637+ hồ sơ toàn hệ thống (890 backlog + 328 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
@@ -172436,7 +172447,7 @@
     "current_task": "processing_realtime_cv",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 12.5,
+    "last_heartbeat_seconds_ago": 18.5,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
