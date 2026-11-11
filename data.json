@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-12 00:39:44",
+    "last_updated": "2026-11-12 00:40:45",
     "today_date": "2026-11-12",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -9,13 +9,13 @@
   "today": {
     "date": "2026-11-12",
     "date_display": "Hôm nay, 12/11/2026",
-    "total_processed": 153,
+    "total_processed": 154,
     "realtime_count": 0,
     "realtime_created": 0,
     "realtime_updated": 0,
-    "backlog_count": 153,
+    "backlog_count": 154,
     "target_daily": 300,
-    "completion_rate_pct": 51.0,
+    "completion_rate_pct": 51.3,
     "current_mode": "OVERNIGHT_MODE",
     "mode_badge": "🌙 Cày Đêm Tự Động (Overnight Turbo Active)",
     "mode_desc": "Vận hành cày backlog xuyên đêm khi mở máy: Mẻ 20 CVs • Chu kỳ 30s",
@@ -46,7 +46,7 @@
       {
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
-        "count": 153,
+        "count": 154,
         "status": "in_progress",
         "badge": "Đang cày đêm"
       }
@@ -55,22 +55,22 @@
     "sources": {
       "Consultants": 0,
       "Website": 0,
-      "CRM Backlog": 153
+      "CRM Backlog": 154
     }
   },
   "totals": {
     "all_time_realtime": 433,
     "all_time_created": 86,
     "all_time_updated": 340,
-    "all_time_backlog_done": 15335,
-    "total_system_processed": 15768,
+    "all_time_backlog_done": 15336,
+    "total_system_processed": 15769,
     "backlog_target": 15336,
-    "backlog_remaining": 1,
+    "backlog_remaining": 0,
     "backlog_completion_percentage": 100.0,
     "crm_pool_audited": 60620,
     "admin_pre_inputted": 56856,
-    "ai_total_processed": 15768,
-    "total_standardized": 72624,
+    "ai_total_processed": 15769,
+    "total_standardized": 72625,
     "total_crm_candidates": 105902,
     "standardized_percentage": 68.58
   },
@@ -78,19 +78,19 @@
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 248422436,
+    "total_tokens": 248436908,
     "total_tokens_formatted": "248.4M",
-    "prompt_tokens": 188140349,
-    "output_tokens": 60282087,
-    "total_cost_usd": 166.42,
-    "total_cost_usd_formatted": "$166.42",
-    "total_cost_vnd": 4235472,
-    "total_cost_vnd_formatted": "₫4,235,472",
+    "prompt_tokens": 188151427,
+    "output_tokens": 60285481,
+    "total_cost_usd": 166.43,
+    "total_cost_usd_formatted": "$166.43",
+    "total_cost_vnd": 4235756,
+    "total_cost_vnd_formatted": "₫4,235,756",
     "initial_prepay_vnd": 5000000.0,
     "initial_prepay_vnd_formatted": "₫5,000,000",
-    "remaining_budget_vnd": 764528.5,
-    "remaining_budget_vnd_formatted": "₫764,528",
-    "remaining_budget_usd": 30.04,
+    "remaining_budget_vnd": 764243.5,
+    "remaining_budget_vnd_formatted": "₫764,244",
+    "remaining_budget_usd": 30.03,
     "budget_used_pct": 84.7,
     "cost_per_cv_vnd": 268.6,
     "cost_per_cv_usd": 0.0106,
@@ -143,12 +143,24 @@
   },
   "backlog": {
     "total": 15336,
-    "completed": 15335,
-    "remaining": 1,
+    "completed": 15336,
+    "remaining": 0,
     "errors": 450,
     "completion_percentage": 100.0,
     "crm_pool_audited": 60620,
     "recent_enriched": [
+      {
+        "candidate_id": "43969",
+        "candidate_name": "PHUONG VO",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/43969",
+        "experiences": 5,
+        "educations": 2,
+        "detail_summary": "+5 kinh nghiệm, +2 học vấn",
+        "processed_at": "2026-11-12 00:40:44"
+      },
       {
         "candidate_id": "43970",
         "candidate_name": "DANG THUY ANH",
@@ -184308,7 +184320,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 15768+ hồ sơ toàn hệ thống (890 backlog + 433 real-time)."
+      "metrics": "Đạt mốc 15769+ hồ sơ toàn hệ thống (890 backlog + 433 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
