@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-12 03:13:44",
+    "last_updated": "2026-11-12 03:20:57",
     "today_date": "2026-11-12",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -64,15 +64,15 @@
     "all_time_updated": 340,
     "all_time_backlog_done": 15883,
     "total_system_processed": 16316,
-    "backlog_target": 15883,
-    "backlog_remaining": 0,
-    "backlog_completion_percentage": 100.0,
-    "crm_pool_audited": 61620,
-    "admin_pre_inputted": 57293,
+    "backlog_target": 16130,
+    "backlog_remaining": 247,
+    "backlog_completion_percentage": 98.5,
+    "crm_pool_audited": 62120,
+    "admin_pre_inputted": 57546,
     "ai_total_processed": 16316,
-    "total_standardized": 73609,
+    "total_standardized": 73862,
     "total_crm_candidates": 105902,
-    "standardized_percentage": 69.51
+    "standardized_percentage": 69.75
   },
   "ai_usage": {
     "status": "Paid 2 (Prepay Active)",
@@ -142,12 +142,12 @@
     "candidates": []
   },
   "backlog": {
-    "total": 15883,
+    "total": 16130,
     "completed": 15883,
-    "remaining": 0,
+    "remaining": 247,
     "errors": 466,
-    "completion_percentage": 100.0,
-    "crm_pool_audited": 61620,
+    "completion_percentage": 98.5,
+    "crm_pool_audited": 62120,
     "recent_enriched": [
       {
         "candidate_id": "42947",
@@ -190896,12 +190896,12 @@
     }
   ],
   "system": {
-    "daemon_status": "RUNNING",
+    "daemon_status": "STALE",
     "daemon_pid": 33072,
-    "current_task": "backlog_batch_finished",
+    "current_task": "scan_cycle_start",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 0.6,
+    "last_heartbeat_seconds_ago": 308.3,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
