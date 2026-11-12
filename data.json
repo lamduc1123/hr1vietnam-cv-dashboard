@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-13 02:18:20",
+    "last_updated": "2026-11-13 02:19:06",
     "today_date": "2026-11-13",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -9,11 +9,11 @@
   "today": {
     "date": "2026-11-13",
     "date_display": "Hôm nay, 13/11/2026",
-    "total_processed": 305,
+    "total_processed": 307,
     "realtime_count": 0,
     "realtime_created": 0,
     "realtime_updated": 0,
-    "backlog_count": 305,
+    "backlog_count": 307,
     "target_daily": 300,
     "completion_rate_pct": 100.0,
     "current_mode": "OVERNIGHT_MODE",
@@ -46,7 +46,7 @@
       {
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
-        "count": 305,
+        "count": 307,
         "status": "in_progress",
         "badge": "Đang cày đêm"
       }
@@ -55,22 +55,22 @@
     "sources": {
       "Consultants": 0,
       "Website": 0,
-      "CRM Backlog": 305
+      "CRM Backlog": 307
     }
   },
   "totals": {
     "all_time_realtime": 452,
     "all_time_created": 96,
     "all_time_updated": 349,
-    "all_time_backlog_done": 18445,
-    "total_system_processed": 18897,
+    "all_time_backlog_done": 18447,
+    "total_system_processed": 18899,
     "backlog_target": 18599,
-    "backlog_remaining": 154,
+    "backlog_remaining": 152,
     "backlog_completion_percentage": 99.2,
     "crm_pool_audited": 67613,
     "admin_pre_inputted": 60610,
-    "ai_total_processed": 18897,
-    "total_standardized": 79507,
+    "ai_total_processed": 18899,
+    "total_standardized": 79509,
     "total_crm_candidates": 105923,
     "standardized_percentage": 75.06
   },
@@ -78,23 +78,23 @@
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 302058516,
+    "total_tokens": 302092982,
     "total_tokens_formatted": "302.1M",
-    "prompt_tokens": 228824792,
-    "output_tokens": 73233724,
-    "total_cost_usd": 201.97,
-    "total_cost_usd_formatted": "$201.97",
-    "total_cost_vnd": 5140072,
-    "total_cost_vnd_formatted": "₫5,140,072",
+    "prompt_tokens": 228849939,
+    "output_tokens": 73243043,
+    "total_cost_usd": 201.99,
+    "total_cost_usd_formatted": "$201.99",
+    "total_cost_vnd": 5140692,
+    "total_cost_vnd_formatted": "₫5,140,692",
     "initial_prepay_vnd": 6000000.0,
     "initial_prepay_vnd_formatted": "₫6,000,000",
-    "remaining_budget_vnd": 859928.5,
-    "remaining_budget_vnd_formatted": "₫859,928",
-    "remaining_budget_usd": 33.79,
+    "remaining_budget_vnd": 859308.5,
+    "remaining_budget_vnd_formatted": "₫859,308",
+    "remaining_budget_usd": 33.76,
     "budget_used_pct": 85.7,
     "cost_per_cv_vnd": 272.0,
     "cost_per_cv_usd": 0.0107,
-    "tokens_per_cv": 15984,
+    "tokens_per_cv": 15985,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -143,12 +143,36 @@
   },
   "backlog": {
     "total": 18599,
-    "completed": 18445,
-    "remaining": 154,
+    "completed": 18447,
+    "remaining": 152,
     "errors": 579,
     "completion_percentage": 99.2,
     "crm_pool_audited": 67613,
     "recent_enriched": [
+      {
+        "candidate_id": "37147",
+        "candidate_name": "DONG TRUONG",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/37147",
+        "experiences": 6,
+        "educations": 3,
+        "detail_summary": "+6 kinh nghiệm, +3 học vấn",
+        "processed_at": "2026-11-13 02:19:06"
+      },
+      {
+        "candidate_id": "37148",
+        "candidate_name": "BJORN VANG JENSEN",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/37148",
+        "experiences": 5,
+        "educations": 5,
+        "detail_summary": "+5 kinh nghiệm, +5 học vấn",
+        "processed_at": "2026-11-13 02:18:43"
+      },
       {
         "candidate_id": "37149",
         "candidate_name": "NONG VAN TAM",
@@ -3124,30 +3148,6 @@
         "educations": 0,
         "detail_summary": "+4 kinh nghiệm, +0 học vấn",
         "processed_at": "2026-11-13 00:30:49"
-      },
-      {
-        "candidate_id": "37686",
-        "candidate_name": "TA VAN MINH",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/37686",
-        "experiences": 8,
-        "educations": 7,
-        "detail_summary": "+8 kinh nghiệm, +7 học vấn",
-        "processed_at": "2026-11-13 00:30:29"
-      },
-      {
-        "candidate_id": "37687",
-        "candidate_name": "HO THI HUYEN TRAM",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/37687",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "+1 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-13 00:30:04"
       }
     ]
   },
@@ -3296,7 +3296,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 18897+ hồ sơ toàn hệ thống (890 backlog + 452 real-time)."
+      "metrics": "Đạt mốc 18899+ hồ sơ toàn hệ thống (890 backlog + 452 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
@@ -3313,7 +3313,7 @@
     "current_task": "processing_backlog",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 16.3,
+    "last_heartbeat_seconds_ago": 21.3,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
