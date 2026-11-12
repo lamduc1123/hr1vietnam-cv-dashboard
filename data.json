@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-12 18:27:49",
+    "last_updated": "2026-11-12 19:09:53",
     "today_date": "2026-11-12",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -18,7 +18,7 @@
     "completion_rate_pct": 100.0,
     "current_mode": "PAUSED_CRM_MAINTENANCE",
     "mode_badge": "🛑 CRM Đang Lỗi / Bảo Trì (Tạm Ngưng Luồng)",
-    "mode_desc": "CRM phản hồi HTTPSConnectionPool(host='crm.hr1vietnam.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='crm.hr1vietnam.com', port=443): Failed to resolve 'crm.hr1vietnam.com' ([Errno 8] nodename nor servname provided, or not known)\")). Đã tạm dừng 100% tiến trình tự động theo chỉ đạo để chờ thông báo mới.",
+    "mode_desc": "CRM phản hồi HTTP 403. Đã tạm dừng 100% tiến trình tự động theo chỉ đạo để chờ thông báo mới.",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
@@ -95,6 +95,10 @@
       {
         "hour": "18:00",
         "count": 3
+      },
+      {
+        "hour": "19:00",
+        "count": 0
       }
     ],
     "sources": {
@@ -123,23 +127,23 @@
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 287098247,
+    "total_tokens": 287108913,
     "total_tokens_formatted": "287.1M",
-    "prompt_tokens": 217383381,
-    "output_tokens": 69714866,
-    "total_cost_usd": 192.81,
-    "total_cost_usd_formatted": "$192.81",
-    "total_cost_vnd": 4907030,
-    "total_cost_vnd_formatted": "₫4,907,030",
+    "prompt_tokens": 217390882,
+    "output_tokens": 69718031,
+    "total_cost_usd": 192.85,
+    "total_cost_usd_formatted": "$192.85",
+    "total_cost_vnd": 4907921,
+    "total_cost_vnd_formatted": "₫4,907,921",
     "initial_prepay_vnd": 6000000.0,
     "initial_prepay_vnd_formatted": "₫6,000,000",
-    "remaining_budget_vnd": 1092970.0,
-    "remaining_budget_vnd_formatted": "₫1,092,970",
-    "remaining_budget_usd": 42.95,
+    "remaining_budget_vnd": 1092079.25,
+    "remaining_budget_vnd_formatted": "₫1,092,079",
+    "remaining_budget_usd": 42.91,
     "budget_used_pct": 81.8,
-    "cost_per_cv_vnd": 270.3,
+    "cost_per_cv_vnd": 270.4,
     "cost_per_cv_usd": 0.0106,
-    "tokens_per_cv": 15817,
+    "tokens_per_cv": 15818,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -3556,8 +3560,8 @@
     "daemon_pid": null,
     "current_task": "Tạm dừng luồng tự động (Chờ CRM khôi phục)",
     "crm_online": false,
-    "crm_error": "HTTPSConnectionPool(host='crm.hr1vietnam.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='crm.hr1vietnam.com', port=443): Failed to resolve 'crm.hr1vietnam.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
-    "last_heartbeat_seconds_ago": 1556.8,
+    "crm_error": "HTTP 403",
+    "last_heartbeat_seconds_ago": 16.5,
     "supervisor_running": false,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
