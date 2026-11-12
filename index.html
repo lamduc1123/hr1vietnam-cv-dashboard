@@ -800,9 +800,9 @@
             <div class="text-[11px] text-slate-500 mt-0.5">Bóc tách JD + Tạo CRM + Reply</div>
           </div>
           <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/40">
-            <div class="text-xs text-slate-400 font-medium">Account Holders Hoạt Động</div>
+            <div class="text-xs text-slate-400 font-medium">Người Yêu Cầu Hoạt Động</div>
             <div id="job-active-ahs" class="text-2xl font-black text-purple-400 mt-1">12+</div>
-            <div class="text-[11px] text-slate-500 mt-0.5">Consultants gửi order</div>
+            <div class="text-[11px] text-slate-500 mt-0.5">Thành viên gửi yêu cầu</div>
           </div>
         </div>
       </div>
@@ -826,7 +826,7 @@
           <div class="flex items-center justify-between">
             <h3 class="text-sm font-bold text-white flex items-center space-x-2">
               <i data-lucide="users" class="w-4 h-4 text-sky-400"></i>
-              <span>Top Account Holders (AH)</span>
+              <span>Top Người Yêu Cầu</span>
             </h3>
             <span class="text-xs text-slate-400">Số vị trí</span>
           </div>
@@ -863,7 +863,7 @@
           <div class="flex items-center space-x-3">
             <div class="relative">
               <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
-              <input type="text" id="job-search-input" oninput="filterJobTable()" placeholder="Tìm chức danh, công ty, AH..." class="pl-9 pr-4 py-2 bg-slate-900 border border-slate-700 rounded-xl text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500 w-64 transition">
+              <input type="text" id="job-search-input" oninput="filterJobTable()" placeholder="Tìm chức danh, công ty, người yêu cầu..." class="pl-9 pr-4 py-2 bg-slate-900 border border-slate-700 rounded-xl text-xs text-white placeholder-slate-400 focus:outline-none focus:border-emerald-500 w-64 transition">
             </div>
             <select id="job-status-filter" onchange="filterJobTable()" class="bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-emerald-500">
               <option value="all">Tất cả trạng thái</option>
@@ -882,7 +882,7 @@
                 <th class="py-3 px-4">Mã Job</th>
                 <th class="py-3 px-4">Vị Trí Tuyển Dụng</th>
                 <th class="py-3 px-4">Doanh Nghiệp (Khách Hàng)</th>
-                <th class="py-3 px-4">AH Phụ Trách</th>
+                <th class="py-3 px-4">Người Yêu Cầu</th>
                 <th class="py-3 px-4 text-center">Trạng Thái</th>
                 <th class="py-3 px-4">Thời Gian Nhập</th>
                 <th class="py-3 px-4 text-center">Thao Tác CRM</th>
@@ -1658,12 +1658,16 @@
         });
       }
 
-      // 2. AH Chart (Bar)
+      // 2. Requester Chart (Bar)
       const ahCtx = document.getElementById('job-ah-chart');
-      if (ahCtx && analytics.top_ahs) {
+      const requestersList = analytics.top_requesters || analytics.top_ahs;
+      if (ahCtx && requestersList) {
         if (jobCharts.ah) jobCharts.ah.destroy();
-        const labels = analytics.top_ahs.slice(0, 5).map(x => x.name.split(' ')[0] || x.name);
-        const data = analytics.top_ahs.slice(0, 5).map(x => x.count);
+        const labels = requestersList.slice(0, 5).map(x => {
+          const parts = (x.name || '').trim().split(' ');
+          return parts.length >= 2 ? parts.slice(-2).join(' ') : x.name;
+        });
+        const data = requestersList.slice(0, 5).map(x => x.count);
         jobCharts.ah = new Chart(ahCtx, {
           type: 'bar',
           data: {
@@ -1741,8 +1745,10 @@
           <td class="py-3 px-4 font-semibold text-slate-200">${j.job_title}</td>
           <td class="py-3 px-4 text-slate-300">${j.company_name}</td>
           <td class="py-3 px-4 text-slate-300 flex items-center space-x-1.5">
-            <span class="w-5 h-5 rounded-full bg-slate-800 text-[10px] font-bold text-sky-400 flex items-center justify-center border border-slate-700">AH</span>
-            <span>${j.ah_name || 'AH Company'}</span>
+            <span class="w-5 h-5 rounded-full bg-slate-800 text-[10px] font-bold text-sky-400 flex items-center justify-center border border-slate-700" title="Người yêu cầu">
+              <i data-lucide="user" class="w-3 h-3 text-sky-400"></i>
+            </span>
+            <span>${j.requester_name || j.ah_name || 'Người yêu cầu'}</span>
           </td>
           <td class="py-3 px-4 text-center">${statusBadge}</td>
           <td class="py-3 px-4 font-mono text-slate-400 text-[11px]">${timeStr}</td>
@@ -1770,7 +1776,9 @@
         filtered = filtered.filter(j => 
           (j.job_title || '').toLowerCase().includes(q) ||
           (j.company_name || '').toLowerCase().includes(q) ||
+          (j.requester_name || '').toLowerCase().includes(q) ||
           (j.ah_name || '').toLowerCase().includes(q) ||
+          (j.requester_email || '').toLowerCase().includes(q) ||
           String(j.job_id || '').includes(q)
         );
       }

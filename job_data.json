@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-11-12T10:28:31.958343+07:00",
+    "last_updated": "2026-11-12T13:19:13.337444+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO",
     "version": "2.0-Production",
     "timezone": "Asia/Ho_Chi_Minh"
@@ -10,38 +10,45 @@
     "today_jobs_count": 1,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
-    "active_ahs_count": 5,
+    "active_requesters_count": 3,
+    "active_ahs_count": 3,
     "companies_count": 4,
     "system_status": {
       "daemon": "ONLINE (LaunchAgent 24/7)",
       "circuit_breaker": "HEALTHY",
       "email_watcher": "ACTIVE",
-      "poll_interval": "45s"
+      "poll_interval": "15s"
     }
   },
   "analytics": {
     "status_breakdown": {
       "open_urgent": 5
     },
-    "top_ahs": [
+    "top_requesters": [
       {
-        "name": "Ha Nguyen",
-        "count": 1
-      },
-      {
-        "name": "thach.nguyen@hr1vietnam.com",
-        "count": 1
-      },
-      {
-        "name": "NGUYỄN THỊ THANH THẠCH",
-        "count": 1
-      },
-      {
-        "name": "TRAN THI THANH CHUNG",
-        "count": 1
+        "name": "Nguyễn Thị Thanh Thạch",
+        "count": 2
       },
       {
         "name": "Trần Thị Thanh Chung",
+        "count": 2
+      },
+      {
+        "name": "Nguyễn Thị Hà",
+        "count": 1
+      }
+    ],
+    "top_ahs": [
+      {
+        "name": "Nguyễn Thị Thanh Thạch",
+        "count": 2
+      },
+      {
+        "name": "Trần Thị Thanh Chung",
+        "count": 2
+      },
+      {
+        "name": "Nguyễn Thị Hà",
         "count": 1
       }
     ],
@@ -70,7 +77,9 @@
       "job_id": "15803",
       "job_title": "Talent Acquisition Specialist",
       "company_name": "Straive",
-      "ah_name": "Ha Nguyen",
+      "requester_name": "Nguyễn Thị Hà",
+      "requester_email": "ha.nguyen@hr1vietnam.com",
+      "ah_name": "Nguyễn Thị Hà",
       "status": "open_urgent",
       "crm_link": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5287/15803",
       "sender_email": "ha.nguyen@hr1vietnam.com"
@@ -80,7 +89,9 @@
       "job_id": "15800",
       "job_title": "Trưởng phòng Marketing",
       "company_name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN GIÁO DỤC TÂN KHAI",
-      "ah_name": "thach.nguyen@hr1vietnam.com",
+      "requester_name": "Nguyễn Thị Thanh Thạch",
+      "requester_email": "thach.nguyen@hr1vietnam.com",
+      "ah_name": "Nguyễn Thị Thanh Thạch",
       "status": "open_urgent",
       "crm_link": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8138/15800",
       "sender_email": "thach.nguyen@hr1vietnam.com"
@@ -90,7 +101,9 @@
       "job_id": "15797",
       "job_title": "Development Project Leader",
       "company_name": "Samsung Electro-Mechanics Vietnam (SEMV)  (SAMSUNG THAI NGUYEN)",
-      "ah_name": "NGUYỄN THỊ THANH THẠCH",
+      "requester_name": "Nguyễn Thị Thanh Thạch",
+      "requester_email": "thach.nguyen@hr1vietnam.com",
+      "ah_name": "Nguyễn Thị Thanh Thạch",
       "status": "open_urgent",
       "crm_link": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5929/15797",
       "sender_email": "thach.nguyen@hr1vietnam.com"
@@ -100,7 +113,9 @@
       "job_id": "15790",
       "job_title": "Chuyên viên Hành chính - Nhân sự",
       "company_name": "CÔNG TY TNHH THƯƠNG MẠI - DỊCH VỤ ĐẠI THỐNG",
-      "ah_name": "TRAN THI THANH CHUNG",
+      "requester_name": "Trần Thị Thanh Chung",
+      "requester_email": "chung.tran@hr1vietnam.com",
+      "ah_name": "Trần Thị Thanh Chung",
       "status": "open_urgent",
       "crm_link": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6296/15790",
       "sender_email": "chung.tran@hr1vietnam.com"
@@ -110,6 +125,8 @@
       "job_id": "15788",
       "job_title": "Kế toán mua hàng – Tính giá thành",
       "company_name": "CÔNG TY TNHH THƯƠNG MẠI - DỊCH VỤ ĐẠI THỐNG",
+      "requester_name": "Trần Thị Thanh Chung",
+      "requester_email": "chung.tran@hr1vietnam.com",
       "ah_name": "Trần Thị Thanh Chung",
       "status": "open_urgent",
       "crm_link": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6296/15788",
