@@ -1,21 +1,21 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-13 23:55:00",
-    "today_date": "2026-11-13",
+    "last_updated": "2026-11-14 00:02:49",
+    "today_date": "2026-11-14",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
   },
   "today": {
-    "date": "2026-11-13",
-    "date_display": "Hôm nay, 13/11/2026",
-    "total_processed": 2366,
-    "realtime_count": 21,
-    "realtime_created": 8,
-    "realtime_updated": 13,
-    "backlog_count": 2345,
+    "date": "2026-11-14",
+    "date_display": "Hôm nay, 14/11/2026",
+    "total_processed": 0,
+    "realtime_count": 0,
+    "realtime_created": 0,
+    "realtime_updated": 0,
+    "backlog_count": 0,
     "target_daily": 300,
-    "completion_rate_pct": 100.0,
+    "completion_rate_pct": 0.0,
     "current_mode": "OVERNIGHT_MODE",
     "mode_badge": "🌙 Cày Đêm Tự Động (Overnight Turbo Active)",
     "mode_desc": "Vận hành cày backlog xuyên đêm khi mở máy: Mẻ 20 CVs • Chu kỳ 30s",
@@ -25,102 +25,37 @@
       {
         "key": "morning",
         "label": "Ca Sáng (08:30 - 11:59)",
-        "count": 242,
-        "status": "completed",
-        "badge": "Đã hoàn tất"
+        "count": 0,
+        "status": "in_progress",
+        "badge": "Đang chạy"
       },
       {
         "key": "lunch",
         "label": "Ca Trưa Turbo (12:00 - 13:00)",
-        "count": 121,
-        "status": "completed",
-        "badge": "Đã kết thúc"
+        "count": 0,
+        "status": "upcoming",
+        "badge": "Sắp diễn ra"
       },
       {
         "key": "afternoon",
         "label": "Ca Chiều (13:00 - 17:30)",
-        "count": 214,
-        "status": "completed",
-        "badge": "Đã hoàn tất"
+        "count": 0,
+        "status": "upcoming",
+        "badge": "Sắp diễn ra"
       },
       {
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
-        "count": 1789,
+        "count": 0,
         "status": "in_progress",
         "badge": "Đang cày đêm"
       }
     ],
-    "hourly_chart": [
-      {
-        "hour": "08:00",
-        "count": 66
-      },
-      {
-        "hour": "09:00",
-        "count": 63
-      },
-      {
-        "hour": "10:00",
-        "count": 69
-      },
-      {
-        "hour": "11:00",
-        "count": 70
-      },
-      {
-        "hour": "12:00",
-        "count": 121
-      },
-      {
-        "hour": "13:00",
-        "count": 70
-      },
-      {
-        "hour": "14:00",
-        "count": 66
-      },
-      {
-        "hour": "15:00",
-        "count": 40
-      },
-      {
-        "hour": "16:00",
-        "count": 32
-      },
-      {
-        "hour": "17:00",
-        "count": 68
-      },
-      {
-        "hour": "18:00",
-        "count": 38
-      },
-      {
-        "hour": "19:00",
-        "count": 101
-      },
-      {
-        "hour": "20:00",
-        "count": 131
-      },
-      {
-        "hour": "21:00",
-        "count": 144
-      },
-      {
-        "hour": "22:00",
-        "count": 129
-      },
-      {
-        "hour": "23:00",
-        "count": 110
-      }
-    ],
+    "hourly_chart": [],
     "sources": {
-      "Consultants": 15,
-      "Website": 5,
-      "CRM Backlog": 2345
+      "Consultants": 0,
+      "Website": 0,
+      "CRM Backlog": 0
     }
   },
   "totals": {
@@ -129,15 +64,15 @@
     "all_time_updated": 362,
     "all_time_backlog_done": 20485,
     "total_system_processed": 20958,
-    "backlog_target": 20485,
-    "backlog_remaining": 0,
-    "backlog_completion_percentage": 100.0,
-    "crm_pool_audited": 73843,
-    "admin_pre_inputted": 51623,
+    "backlog_target": 20523,
+    "backlog_remaining": 38,
+    "backlog_completion_percentage": 99.8,
+    "crm_pool_audited": 74343,
+    "admin_pre_inputted": 51901,
     "ai_total_processed": 20958,
-    "total_standardized": 72581,
+    "total_standardized": 72859,
     "total_crm_candidates": 105949,
-    "standardized_percentage": 68.51
+    "standardized_percentage": 68.77
   },
   "ai_usage": {
     "status": "Paid 2 (Prepay Active)",
@@ -195,256 +130,24 @@
     ]
   },
   "realtime": {
-    "total_today": 21,
-    "created_today": 8,
-    "updated_today": 13,
+    "total_today": 0,
+    "created_today": 0,
+    "updated_today": 0,
     "pending_inbox": 0,
     "sources": {
-      "Consultants": 15,
-      "Website": 5,
-      "Other": 1
+      "Consultants": 0,
+      "Website": 0,
+      "Other": 0
     },
-    "candidates": [
-      {
-        "time": "17:55:29",
-        "timestamp": "2026-11-13T17:55:29.992956+07:00",
-        "candidate_name": "NGUYEN VINH TUNG",
-        "candidate_id": "107975",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107975",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "nguyen-vinh-tung-executive-cv.pdf",
-        "status": "success"
-      },
-      {
-        "time": "17:11:02",
-        "timestamp": "2026-11-13T17:11:02.992497+07:00",
-        "candidate_name": "TRAN LE DA LINH",
-        "candidate_id": "107974",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107974",
-        "action": "created",
-        "source": "CV gửi từ email: ha.nguyen@hr1vietnam.com",
-        "file_name": "OFFER13_Bui-Nguyen-Thuy-VAN (2026.7).pdf",
-        "status": "success"
-      },
-      {
-        "time": "17:09:33",
-        "timestamp": "2026-11-13T17:09:33.691840+07:00",
-        "candidate_name": "NGUYEN BA KHANH VINH",
-        "candidate_id": "65178",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/65178",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "cv-vinh-procurement.pdf",
-        "status": "success"
-      },
-      {
-        "time": "17:02:05",
-        "timestamp": "2026-11-13T17:02:05.471805+07:00",
-        "candidate_name": "NGUYEN VO GIA KIET",
-        "candidate_id": "107973",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107973",
-        "action": "created",
-        "source": "CV gửi từ email: hang.bui@hr1vietnam.com",
-        "file_name": "Nguyen_Vo_Gia_Kiet_Sales_Assistant_Samurai.pdf",
-        "status": "success"
-      },
-      {
-        "time": "16:21:56",
-        "timestamp": "2026-11-13T16:21:56.576530+07:00",
-        "candidate_name": "DHARMARAJ DEIVASIGAMANI",
-        "candidate_id": "107969",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107969",
-        "action": "created",
-        "source": "CV gửi từ email: cuong@hr1vietnam.com",
-        "file_name": "DHARMARAJ DEIVASIGAMANI_Senior.docx",
-        "status": "success"
-      },
-      {
-        "time": "16:08:22",
-        "timestamp": "2026-11-13T16:08:22.702169+07:00",
-        "candidate_name": "HOANG VAN HUNG",
-        "candidate_id": "100273",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100273",
-        "action": "updated",
-        "source": "CV gửi từ email: thu.nguyen@hr1vietnam.com",
-        "file_name": "CV_Production_Engineer_Hoang_Van_Hung.pdf",
-        "status": "success"
-      },
-      {
-        "time": "16:07:15",
-        "timestamp": "2026-11-13T16:07:15.554610+07:00",
-        "candidate_name": "NGUYEN THI MAI PHUONG",
-        "candidate_id": "107968",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107968",
-        "action": "updated",
-        "source": "Ứng viên submit CV",
-        "file_name": "cv-nguyen-thi-mai-phuong-quality-management.pdf",
-        "status": "success"
-      },
-      {
-        "time": "16:05:30",
-        "timestamp": "2026-11-13T16:05:30.029560+07:00",
-        "candidate_name": "DAO NGUYEN CUONG",
-        "candidate_id": "97808",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/97808",
-        "action": "updated",
-        "source": "CV gửi từ email: thu.nguyen@hr1vietnam.com",
-        "file_name": "CV-Cuong Dao-Updated6.pdf",
-        "status": "success"
-      },
-      {
-        "time": "15:06:54",
-        "timestamp": "2026-11-13T15:06:54.349953+07:00",
-        "candidate_name": "NGUYEN MINH DUC",
-        "candidate_id": "73963",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/73963",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "encv-hrm-nguyenminhduc.pdf",
-        "status": "success"
-      },
-      {
-        "time": "14:07:02",
-        "timestamp": "2026-11-13T14:07:02.535678+07:00",
-        "candidate_name": "NGUYEN THI DAO UYEN",
-        "candidate_id": "107964",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107964",
-        "action": "created",
-        "source": "CV gửi từ email: ha.nguyen@hr1vietnam.com",
-        "file_name": "NGUYEN THI DAO UYEN 1993.docx",
-        "status": "success"
-      },
-      {
-        "time": "14:01:28",
-        "timestamp": "2026-11-13T14:01:28.562638+07:00",
-        "candidate_name": "TRAN THI NGOC QUYEN",
-        "candidate_id": "107960",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107960",
-        "action": "updated",
-        "source": "CV gửi từ email: thach.nguyen@hr1vietnam.com",
-        "file_name": "TRẦN THỊ NGỌC QUYỀN -B2B sales, Apply BASE.pdf",
-        "status": "success"
-      },
-      {
-        "time": "13:59:51",
-        "timestamp": "2026-11-13T13:59:51.166098+07:00",
-        "candidate_name": "CHAU PHUONG UYEN",
-        "candidate_id": "55590",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/55590",
-        "action": "updated",
-        "source": "CV gửi từ email: quyen.nguyen@hr1vietnam.com",
-        "file_name": "Chau Phuong Uyen_Sales Admin, Sales Operation.pdf",
-        "status": "success"
-      },
-      {
-        "time": "13:48:48",
-        "timestamp": "2026-11-13T13:48:48.990561+07:00",
-        "candidate_name": "LE HAI THIEN",
-        "candidate_id": "107963",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107963",
-        "action": "updated",
-        "source": "CV gửi từ email: linh.do@hr1vietnam.com",
-        "file_name": "Le Hai Thien CV_EN_2610-Manager.pdf",
-        "status": "success"
-      },
-      {
-        "time": "13:21:29",
-        "timestamp": "2026-11-13T13:21:29.817922+07:00",
-        "candidate_name": "HUYNH XUAN HUY",
-        "candidate_id": "107962",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107962",
-        "action": "created",
-        "source": "CV gửi từ email: duc.lam@hr1vietnam.com",
-        "file_name": "Huynh_Xuan_Huy_Sales_Business_Development_Manager_Resume.pdf",
-        "status": "success"
-      },
-      {
-        "time": "11:24:51",
-        "timestamp": "2026-11-13T11:24:51.115341+07:00",
-        "candidate_name": "THAI PHUONG THUY LINH",
-        "candidate_id": "107961",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107961",
-        "action": "created",
-        "source": "CV gửi từ email: hang.bui@hr1vietnam.com",
-        "file_name": "Thái Phương Thùy Linh _CV Sales Admin.pdf",
-        "status": "success"
-      },
-      {
-        "time": "10:48:32",
-        "timestamp": "2026-11-13T10:48:32.440756+07:00",
-        "candidate_name": "HUYNH ANH VU",
-        "candidate_id": "107958",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107958",
-        "action": "created",
-        "source": "CV gửi từ email: my.tra@hr1vietnam.com",
-        "file_name": "Digital_Marketing_Freelancer_Huynh_Anh_Vu_36C4BBB2_1784697852.pdf",
-        "status": "success"
-      },
-      {
-        "time": "10:28:43",
-        "timestamp": "2026-11-13T10:28:43.212736+07:00",
-        "candidate_name": "DAM THI THU",
-        "candidate_id": "107955",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107955",
-        "action": "updated",
-        "source": "CV gửi từ email: huy.nguyen@hr1vietnam.com",
-        "file_name": "DAM_THI_THU_Office_Admin_CV_7.26.pdf",
-        "status": "success"
-      },
-      {
-        "time": "10:13:29",
-        "timestamp": "2026-11-13T10:13:29.526019+07:00",
-        "candidate_name": "PHAM DAC TOAN",
-        "candidate_id": "107953",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107953",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "ux-ui-phamdactoan.pdf",
-        "status": "success"
-      },
-      {
-        "time": "09:47:22",
-        "timestamp": "2026-11-13T09:47:22.704615+07:00",
-        "candidate_name": "NGUYEN THI KIEU CHINH",
-        "candidate_id": "107951",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107951",
-        "action": "created",
-        "source": "CV gửi từ email: phuong.vuong@hr1vietnam.com",
-        "file_name": "13112026 CV-NGUYEN THI KIEU CHINH_eng.pdf",
-        "status": "success"
-      },
-      {
-        "time": "09:46:55",
-        "timestamp": "2026-11-13T09:46:55.246515+07:00",
-        "candidate_name": "LE QUOC HIEN",
-        "candidate_id": "107950",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107950",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "eng-cv-le-quoc-hien-senior-trade-new-pdf.pdf",
-        "status": "success"
-      },
-      {
-        "time": "08:42:20",
-        "timestamp": "2026-11-13T08:42:20.415152+07:00",
-        "candidate_name": "YEN PHAM THI THU",
-        "candidate_id": "107949",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/107949",
-        "action": "updated",
-        "source": "CV gửi từ email: nam.chu@hr1vietnam.com",
-        "file_name": "CURRICULUM VITAE_Yen Pham Thi Thu_Senior Legal Counsel.pdf",
-        "status": "success"
-      }
-    ]
+    "candidates": []
   },
   "backlog": {
-    "total": 20485,
+    "total": 20523,
     "completed": 20485,
-    "remaining": 0,
+    "remaining": 38,
     "errors": 707,
-    "completion_percentage": 100.0,
-    "crm_pool_audited": 73843,
+    "completion_percentage": 99.8,
+    "crm_pool_audited": 74343,
     "recent_enriched": [
       {
         "candidate_id": "30400",
@@ -3613,12 +3316,12 @@
     }
   ],
   "system": {
-    "daemon_status": "RUNNING",
+    "daemon_status": "STALE",
     "daemon_pid": 34063,
-    "current_task": "backlog_batch_finished",
+    "current_task": "replenish_2020-H1_p56",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 0.7,
+    "last_heartbeat_seconds_ago": 320.1,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
