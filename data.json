@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-13 09:00:48",
+    "last_updated": "2026-11-13 09:01:18",
     "today_date": "2026-11-13",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -9,11 +9,11 @@
   "today": {
     "date": "2026-11-13",
     "date_display": "Hôm nay, 13/11/2026",
-    "total_processed": 1115,
+    "total_processed": 1116,
     "realtime_count": 1,
     "realtime_created": 0,
     "realtime_updated": 1,
-    "backlog_count": 1114,
+    "backlog_count": 1115,
     "target_daily": 300,
     "completion_rate_pct": 100.0,
     "current_mode": "NORMAL_HOURS",
@@ -25,7 +25,7 @@
       {
         "key": "morning",
         "label": "Ca Sáng (08:30 - 11:59)",
-        "count": 41,
+        "count": 42,
         "status": "in_progress",
         "badge": "Đang chạy"
       },
@@ -58,28 +58,28 @@
       },
       {
         "hour": "09:00",
-        "count": 1
+        "count": 2
       }
     ],
     "sources": {
       "Consultants": 1,
       "Website": 0,
-      "CRM Backlog": 1114
+      "CRM Backlog": 1115
     }
   },
   "totals": {
     "all_time_realtime": 453,
     "all_time_created": 96,
     "all_time_updated": 350,
-    "all_time_backlog_done": 19254,
-    "total_system_processed": 19707,
+    "all_time_backlog_done": 19255,
+    "total_system_processed": 19708,
     "backlog_target": 19302,
-    "backlog_remaining": 48,
+    "backlog_remaining": 47,
     "backlog_completion_percentage": 99.8,
     "crm_pool_audited": 69344,
     "admin_pre_inputted": 61607,
-    "ai_total_processed": 19707,
-    "total_standardized": 81314,
+    "ai_total_processed": 19708,
+    "total_standardized": 81315,
     "total_crm_candidates": 105924,
     "standardized_percentage": 76.77
   },
@@ -87,23 +87,23 @@
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 318670650,
+    "total_tokens": 318694394,
     "total_tokens_formatted": "318.7M",
-    "prompt_tokens": 241469346,
-    "output_tokens": 77201304,
-    "total_cost_usd": 221.74,
-    "total_cost_usd_formatted": "$221.74",
-    "total_cost_vnd": 5643249,
-    "total_cost_vnd_formatted": "₫5,643,249",
+    "prompt_tokens": 241487737,
+    "output_tokens": 77206657,
+    "total_cost_usd": 221.76,
+    "total_cost_usd_formatted": "$221.76",
+    "total_cost_vnd": 5643699,
+    "total_cost_vnd_formatted": "₫5,643,699",
     "initial_prepay_vnd": 6000000.0,
     "initial_prepay_vnd_formatted": "₫6,000,000",
-    "remaining_budget_vnd": 356751.0,
-    "remaining_budget_vnd_formatted": "₫356,751",
-    "remaining_budget_usd": 14.02,
+    "remaining_budget_vnd": 356301.0,
+    "remaining_budget_vnd_formatted": "₫356,301",
+    "remaining_budget_usd": 14.0,
     "budget_used_pct": 94.1,
     "cost_per_cv_vnd": 286.4,
     "cost_per_cv_usd": 0.0113,
-    "tokens_per_cv": 16170,
+    "tokens_per_cv": 16171,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -164,12 +164,24 @@
   },
   "backlog": {
     "total": 19302,
-    "completed": 19254,
-    "remaining": 48,
+    "completed": 19255,
+    "remaining": 47,
     "errors": 608,
     "completion_percentage": 99.8,
     "crm_pool_audited": 69344,
     "recent_enriched": [
+      {
+        "candidate_id": "35119",
+        "candidate_name": "PHAM TRUNG DONG",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/35119",
+        "experiences": 4,
+        "educations": 1,
+        "detail_summary": "+4 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-13 09:01:15"
+      },
       {
         "candidate_id": "35120",
         "candidate_name": "AVINASH KABILAN",
@@ -3157,18 +3169,6 @@
         "educations": 1,
         "detail_summary": "+2 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-13 06:16:54"
-      },
-      {
-        "candidate_id": "35704",
-        "candidate_name": "PHUNG HIEP",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/35704",
-        "experiences": 4,
-        "educations": 1,
-        "detail_summary": "+4 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-13 06:16:25"
       }
     ]
   },
@@ -3178,8 +3178,8 @@
       "total_realtime": 1,
       "created": 0,
       "updated": 1,
-      "backlog_count": 1114,
-      "grand_total": 1115
+      "backlog_count": 1115,
+      "grand_total": 1116
     },
     {
       "date": "2026-11-12",
@@ -3325,7 +3325,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Live)",
       "description": "Chuyển đổi thành công sang Google Gemini API Paid 1 (Prepay ₫500.000, Auto-reload Off); khai thông Google Search Grounding tốc độ 2.5s; xuất bản Executive Dashboard trực tuyến trên GitHub Pages để BOD theo dõi.",
-      "metrics": "Đạt mốc 19707+ hồ sơ toàn hệ thống (890 backlog + 453 real-time)."
+      "metrics": "Đạt mốc 19708+ hồ sơ toàn hệ thống (890 backlog + 453 real-time)."
     },
     {
       "phase": "Giai đoạn 5: Về Đích 100% Backlog & Tối Ưu Hóa AI Toàn Diện",
@@ -3339,10 +3339,10 @@
   "system": {
     "daemon_status": "RUNNING",
     "daemon_pid": 74781,
-    "current_task": "processing_backlog",
+    "current_task": "backlog_batch_finished",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 23.9,
+    "last_heartbeat_seconds_ago": 0.8,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 1 (Prepay Active)",
