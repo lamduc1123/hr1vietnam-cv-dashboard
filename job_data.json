@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-17T08:56:48.525478+07:00",
+    "last_updated": "2026-11-17T09:48:13.296340+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 95,
+    "grand_total_processed": 105,
     "total_jobs_created": 35,
     "today_jobs_count": 0,
-    "today_backlog_count": 20,
-    "today_total_count": 20,
+    "today_backlog_count": 30,
+    "today_total_count": 30,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 3,
@@ -21,19 +21,19 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 513,
-      "open_full_pct": 59.51,
+      "open_full_current": 523,
+      "open_full_pct": 60.67,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 60,
-      "remaining_backlog_jobs": 349,
-      "backlog_progress_pct": 14.67,
-      "total_full_all_statuses": 1567,
-      "total_bypass_all_statuses": 760,
+      "completed_backlog_jobs": 70,
+      "remaining_backlog_jobs": 339,
+      "backlog_progress_pct": 17.11,
+      "total_full_all_statuses": 1577,
+      "total_bypass_all_statuses": 750,
       "batch_size": 10,
       "total_batches": 41,
-      "completed_batches": 6,
-      "current_next_batch": 7,
-      "mode_status": "ĐANG TRIỂN KHAI BATCH #07 (10 JOB/MẺ)"
+      "completed_batches": 7,
+      "current_next_batch": 8,
+      "mode_status": "ĐANG TRIỂN KHAI BATCH #08 (10 JOB/MẺ)"
     },
     "system_status": {
       "daemon": "ONLINE (LaunchAgent 24/7)",
@@ -755,7 +755,7 @@
       "job_count": 10,
       "job_id_range": "#15452 → #15401",
       "date_range": "10/07/2026 → 22/06/2026",
-      "status": "ready_for_qc",
+      "status": "completed",
       "job_ids": [
         "15452",
         "15436",
@@ -768,7 +768,7 @@
         "15415",
         "15401"
       ],
-      "completed_count": 0
+      "completed_count": 10
     },
     {
       "batch_id": 8,
@@ -776,7 +776,7 @@
       "job_count": 10,
       "job_id_range": "#15387 → #15272",
       "date_range": "16/06/2026 → 14/05/2026",
-      "status": "queued",
+      "status": "ready_for_qc",
       "job_ids": [
         "15387",
         "15375",
@@ -2984,9 +2984,7 @@
       "ben_len_after": 99,
       "skills_added": "ISO 9001, Quality Management, Lean Manufacturing, Six Sigma, APQP, FMEA, Problem Solving",
       "note_added": "Quản lý: 2 Staff; Quy trình phỏng vấn: 1 vòng rưỡi: Phone with HR + Online với Hong Kong Headquarter"
-    }
-  ],
-  "pending_backlog_jobs": [
+    },
     {
       "seq": 61,
       "batch_id": 7,
@@ -3003,7 +3001,14 @@
       "req_preview": "Xem JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/3847/15452",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:45:17.515977+07:00",
+      "desc_len_after": 4812,
+      "desc_len_before": 6,
+      "req_len_after": 1462,
+      "ben_len_after": 167,
+      "skills_added": "Information Security, Cyber Security, IT Risk, IT Governance, Regulatory Compliance, Stakeholder Management",
+      "note_added": "[Cập nhật AH]: [(Urgent)- Job Order _ SUMITOMO] *\tSalary: 35M- 50M + 13th + Bonus"
     },
     {
       "seq": 62,
@@ -3021,7 +3026,14 @@
       "req_preview": "Bachelor’s degree in food technology, Food Science, Chemistry, or a related disc",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8604/15436",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:45:38.531982+07:00",
+      "desc_len_after": 2394,
+      "desc_len_before": 12,
+      "req_len_after": 659,
+      "ben_len_after": 275,
+      "skills_added": "Product Development, R&D, Beverage Formulation, Coconut Based Products, UHT/HTST, Food Technology",
+      "note_added": "1 Headcount - INNOVATION MANAGER (R&D MANAGER) for BU_Yezilla_Coconut\n1.\tLocated: TTC building, Ben "
     },
     {
       "seq": 63,
@@ -3039,7 +3051,14 @@
       "req_preview": "Bachelor’s degree in Food technology, Food Science , Chemistry , or a related di",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8604/15435",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:46:02.112631+07:00",
+      "desc_len_after": 2184,
+      "desc_len_before": 12,
+      "req_len_after": 842,
+      "ben_len_after": 254,
+      "skills_added": "Product Development, Spices and Seasonings, Food Formulation, Flavor Creation, Project Management",
+      "note_added": "1 Headcount - INNOVATION MANAGER (R&D MANAGER) for BU_Private Label Spices\n1.\tLocated: Tien Nga, Bie"
     },
     {
       "seq": 64,
@@ -3057,7 +3076,14 @@
       "req_preview": "Minimum 5 years of relevant working experience in Accounting in Multi Culture Ma",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8604/15434",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:46:23.557864+07:00",
+      "desc_len_after": 1670,
+      "desc_len_before": 12,
+      "req_len_after": 524,
+      "ben_len_after": 287,
+      "skills_added": "Chief Accountant, Accounting, Manufacturing Accounting, SAP, ERP, Financial Analysis, English",
+      "note_added": "1.Headcount - Chief Accountant (Accounting Manager) for Tiến Nga\n-\tLocated: B06, Tien Nga Warehouse,"
     },
     {
       "seq": 65,
@@ -3075,7 +3101,14 @@
       "req_preview": "Minimum 5 years of relevant working experience in Accounting in Multi Culture Ma",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8604/15433",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:46:41.782568+07:00",
+      "desc_len_after": 2360,
+      "desc_len_before": 12,
+      "req_len_after": 519,
+      "ben_len_after": 270,
+      "skills_added": "Accounting Manager, Chief Accountant, SAP, Financial Statements, Internal Control, Budgeting & Forecasting, Auditing",
+      "note_added": "1\tHeadcount_Chief Accountant (Accounting Manager) for Edible Nuts (OVFP – Long Thanh)\n-\tLocated: Lot"
     },
     {
       "seq": 66,
@@ -3093,7 +3126,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8593/15430",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:46:54.202293+07:00",
+      "desc_len_after": 1355,
+      "desc_len_before": 2,
+      "req_len_after": 582,
+      "ben_len_after": 423,
+      "skills_added": "HSE, An toàn lao động, Môi trường, PCCC, Tiếng Trung",
+      "note_added": "Quy trình tuyển dụng: 02 vòng phỏng vấn (Vòng 1: Chủ quản người Trung, Vòng 2: Tổng giám đốc người T"
     },
     {
       "seq": 67,
@@ -3111,7 +3151,14 @@
       "req_preview": "Minimum of 7 years of accounting experience ( factory/manufacturing experience i",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6246/15423",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:47:16.339308+07:00",
+      "desc_len_after": 1609,
+      "desc_len_before": 12,
+      "req_len_after": 494,
+      "ben_len_after": 106,
+      "skills_added": "MISA, Tax Compliance, Financial Reporting, Accounting, English, Manufacturing Accounting",
+      "note_added": "Quy trình phỏng vấn: 1 vòng rưỡi (Phone with HR + Online với Hong Kong Headquarter). Yêu cầu ứng viê"
     },
     {
       "seq": 68,
@@ -3129,7 +3176,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8593/15419",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:47:29.693369+07:00",
+      "desc_len_after": 2952,
+      "desc_len_before": 2,
+      "req_len_after": 459,
+      "ben_len_after": 486,
+      "skills_added": "Tiếng Trung, Quản lý thu mua, Quản lý đội ngũ, SOP, Quản lý nhà cung cấp",
+      "note_added": "Quy trình tuyển dụng: 02 vòng phỏng vấn (Vòng 1: Chủ quản người Trung, Vòng 2: Tổng giám đốc người T"
     },
     {
       "seq": 69,
@@ -3147,7 +3201,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7613/15415",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:47:58.241110+07:00",
+      "desc_len_after": 2682,
+      "desc_len_before": 12,
+      "req_len_after": 283,
+      "ben_len_after": 781,
+      "skills_added": "Quản lý nhân sự, Tuyển dụng, Đào tạo, C&B, Hành chính văn phòng, Tiếng Anh",
+      "note_added": "Thời gian làm việc: 08:00-17:00, từ thứ 2 đến thứ 6; 1 tháng đi làm ½ ngày thứ 7 (vào buổi sáng)\n[Cậ"
     },
     {
       "seq": 70,
@@ -3165,8 +3226,17 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8588/15401",
-      "backlog_status": "pending"
-    },
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:48:13.288032+07:00",
+      "desc_len_after": 2435,
+      "desc_len_before": 2,
+      "req_len_after": 1366,
+      "ben_len_after": 447,
+      "skills_added": "Engineering Design, Technical Management, CAD, DFM/DFA, NPI, Automotive/Electronics Manufacturing",
+      "note_added": "Quy trình tuyển dụng: 1 or 2 Rounds Depending on the position and the candidate (Online or offline d"
+    }
+  ],
+  "pending_backlog_jobs": [
     {
       "seq": 71,
       "batch_id": 8,
@@ -10487,7 +10557,9 @@
       "req_preview": "Xem JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/3847/15452",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:45:17.515977+07:00",
+      "desc_len_after": 4812
     },
     {
       "seq": 62,
@@ -10505,7 +10577,9 @@
       "req_preview": "Bachelor’s degree in food technology, Food Science, Chemistry, or a related disc",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8604/15436",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:45:38.531982+07:00",
+      "desc_len_after": 2394
     },
     {
       "seq": 63,
@@ -10523,7 +10597,9 @@
       "req_preview": "Bachelor’s degree in Food technology, Food Science , Chemistry , or a related di",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8604/15435",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:46:02.112631+07:00",
+      "desc_len_after": 2184
     },
     {
       "seq": 64,
@@ -10541,7 +10617,9 @@
       "req_preview": "Minimum 5 years of relevant working experience in Accounting in Multi Culture Ma",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8604/15434",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:46:23.557864+07:00",
+      "desc_len_after": 1670
     },
     {
       "seq": 65,
@@ -10559,7 +10637,9 @@
       "req_preview": "Minimum 5 years of relevant working experience in Accounting in Multi Culture Ma",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8604/15433",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:46:41.782568+07:00",
+      "desc_len_after": 2360
     },
     {
       "seq": 66,
@@ -10577,7 +10657,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8593/15430",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:46:54.202293+07:00",
+      "desc_len_after": 1355
     },
     {
       "seq": 67,
@@ -10595,7 +10677,9 @@
       "req_preview": "Minimum of 7 years of accounting experience ( factory/manufacturing experience i",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6246/15423",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:47:16.339308+07:00",
+      "desc_len_after": 1609
     },
     {
       "seq": 68,
@@ -10613,7 +10697,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8593/15419",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:47:29.693369+07:00",
+      "desc_len_after": 2952
     },
     {
       "seq": 69,
@@ -10631,7 +10717,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7613/15415",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:47:58.241110+07:00",
+      "desc_len_after": 2682
     },
     {
       "seq": 70,
@@ -10649,7 +10737,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8588/15401",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T09:48:13.288032+07:00",
+      "desc_len_after": 2435
     },
     {
       "seq": 71,
