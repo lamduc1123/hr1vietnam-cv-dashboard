@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-17T09:48:13.296340+07:00",
+    "last_updated": "2026-11-17T10:33:08.905362+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 105,
+    "grand_total_processed": 115,
     "total_jobs_created": 35,
     "today_jobs_count": 0,
-    "today_backlog_count": 30,
-    "today_total_count": 30,
+    "today_backlog_count": 40,
+    "today_total_count": 40,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 3,
@@ -21,19 +21,19 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 523,
-      "open_full_pct": 60.67,
+      "open_full_current": 533,
+      "open_full_pct": 61.83,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 70,
-      "remaining_backlog_jobs": 339,
-      "backlog_progress_pct": 17.11,
-      "total_full_all_statuses": 1577,
-      "total_bypass_all_statuses": 750,
+      "completed_backlog_jobs": 80,
+      "remaining_backlog_jobs": 329,
+      "backlog_progress_pct": 19.56,
+      "total_full_all_statuses": 1587,
+      "total_bypass_all_statuses": 740,
       "batch_size": 10,
       "total_batches": 41,
-      "completed_batches": 7,
-      "current_next_batch": 8,
-      "mode_status": "ĐANG TRIỂN KHAI BATCH #08 (10 JOB/MẺ)"
+      "completed_batches": 8,
+      "current_next_batch": 9,
+      "mode_status": "ĐANG TRIỂN KHAI BATCH #09 (10 JOB/MẺ)"
     },
     "system_status": {
       "daemon": "ONLINE (LaunchAgent 24/7)",
@@ -776,7 +776,7 @@
       "job_count": 10,
       "job_id_range": "#15387 → #15272",
       "date_range": "16/06/2026 → 14/05/2026",
-      "status": "ready_for_qc",
+      "status": "completed",
       "job_ids": [
         "15387",
         "15375",
@@ -789,7 +789,7 @@
         "15273",
         "15272"
       ],
-      "completed_count": 0
+      "completed_count": 10
     },
     {
       "batch_id": 9,
@@ -797,7 +797,7 @@
       "job_count": 10,
       "job_id_range": "#15262 → #15234",
       "date_range": "12/05/2026 → 06/05/2026",
-      "status": "queued",
+      "status": "ready_for_qc",
       "job_ids": [
         "15262",
         "15261",
@@ -3234,9 +3234,7 @@
       "ben_len_after": 447,
       "skills_added": "Engineering Design, Technical Management, CAD, DFM/DFA, NPI, Automotive/Electronics Manufacturing",
       "note_added": "Quy trình tuyển dụng: 1 or 2 Rounds Depending on the position and the candidate (Online or offline d"
-    }
-  ],
-  "pending_backlog_jobs": [
+    },
     {
       "seq": 71,
       "batch_id": 8,
@@ -3253,7 +3251,14 @@
       "req_preview": "Key requirements: Proficiency in .NET/ASP.NET ecosystem, Azure cloud-native Expe",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7880/15387",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:30:19.550504+07:00",
+      "desc_len_after": 2581,
+      "desc_len_before": 12,
+      "req_len_after": 1284,
+      "ben_len_after": 912,
+      "skills_added": ".NET, ASP.NET, Azure, Microservices, ReactJS, SQL Server, CI/CD",
+      "note_added": "Dear anh Trung,\nWe are currently seeking 01 Team Lead, Software Development, that need your support "
     },
     {
       "seq": 72,
@@ -3271,7 +3276,14 @@
       "req_preview": "At least 8 years experience in Accounting , with 3 years same role from Manufact",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5774/15375",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:30:43.518284+07:00",
+      "desc_len_after": 1843,
+      "desc_len_before": 12,
+      "req_len_after": 709,
+      "ben_len_after": 256,
+      "skills_added": "IFRS, Cost Accounting, Tax Compliance, Financial Consolidation, ERP, Leadership",
+      "note_added": "Hi anh Trung,\nEm gửi anh JD vị trí Head of Finance & Accounting\n•\tPackage vị trí này tầm 90 – 120 (v"
     },
     {
       "seq": 73,
@@ -3289,7 +3301,14 @@
       "req_preview": "- From 3–5 years of experience in EMS/PCBA environment as Program Manager / Key ",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/104/15351",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:31:04.268260+07:00",
+      "desc_len_after": 2396,
+      "desc_len_before": 12,
+      "req_len_after": 896,
+      "ben_len_after": 181,
+      "skills_added": "Program Management, Customer Service, EMS, PCBA, Supply Chain",
+      "note_added": "[Spartronics VN] Job Description - Program Manager Position\nDear Trung,\nNhư trao đổi, Chị share Em J"
     },
     {
       "seq": 74,
@@ -3307,7 +3326,14 @@
       "req_preview": "At least 5 years of experience in executive sales or operations management withi",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/254/15320",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:31:24.032650+07:00",
+      "desc_len_after": 1834,
+      "desc_len_before": 12,
+      "req_len_after": 1166,
+      "ben_len_after": 99,
+      "skills_added": "Executive Sales, Operations Management, Multi-site Management, Business Strategy, Leadership",
+      "note_added": ""
     },
     {
       "seq": 75,
@@ -3325,7 +3351,14 @@
       "req_preview": "Background in designing/developing IT systems and planning IT implementation; ha",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/254/15319",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:31:36.775862+07:00",
+      "desc_len_after": 2330,
+      "desc_len_before": 12,
+      "req_len_after": 1298,
+      "ben_len_after": 97,
+      "skills_added": "ERP, CRM, IT Management, Project Management, Business Intelligence, AI Transformation",
+      "note_added": ""
     },
     {
       "seq": 76,
@@ -3343,7 +3376,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8540/15306",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:31:48.339374+07:00",
+      "desc_len_after": 2589,
+      "desc_len_before": 2,
+      "req_len_after": 1499,
+      "ben_len_after": 324,
+      "skills_added": "Kế toán tổng hợp, Báo cáo tài chính, Kế toán xây dựng, Quản lý tài chính, Lập kế hoạch",
+      "note_added": "Độ tuổi phù hợp: 7x-8x.\n[Cập nhật AH]: [NEW ORDER_THĂNG LONG INVEST GROUP –PHÓ PHÒNG KẾ TOÁN] Lương:"
     },
     {
       "seq": 77,
@@ -3361,7 +3401,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/104/15302",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:31:59.175267+07:00",
+      "desc_len_after": 3017,
+      "desc_len_before": 12,
+      "req_len_after": 949,
+      "ben_len_after": 106,
+      "skills_added": "PCBA, Quality Assurance, IPC-A-610, ISO 9001, 8D, FMEA, English",
+      "note_added": "[Cập nhật AH]: [[URGENT]-QA Engineer & QA Leader | Spartronics Vietnam] *- Lương: *Thoả thuận & Open"
     },
     {
       "seq": 78,
@@ -3379,7 +3426,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/104/15301",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:32:09.795798+07:00",
+      "desc_len_after": 3554,
+      "desc_len_before": 12,
+      "req_len_after": 1071,
+      "ben_len_after": 106,
+      "skills_added": "EMS, PCBA, ISO 9001, FMEA, DFMEA, PFMEA, 8D, PPAP",
+      "note_added": "Yêu cầu bắt buộc kinh nghiệm mảng PCBA (EMS) + Tiếng Anh Fluent.\n[Cập nhật AH]: [[URGENT]-QA Enginee"
     },
     {
       "seq": 79,
@@ -3397,7 +3451,14 @@
       "req_preview": "Tối thiểu 10 năm kinh nghiệm trong lĩnh vực ngân hàng đầu tư, tài chính doanh ng",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2183/15273",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:32:39.158814+07:00",
+      "desc_len_after": 2554,
+      "desc_len_before": 12,
+      "req_len_after": 1580,
+      "ben_len_after": 325,
+      "skills_added": "Investment Banking, ECM, DCM, M&A, Corporate Finance, Financial Advisory",
+      "note_added": "Dear anh Trung,\nNhư thông tin em có trao đổi với anh\nEm gửi thông tin các vị trí tuyển dụng:\nB. Head"
     },
     {
       "seq": 80,
@@ -3415,8 +3476,17 @@
       "req_preview": "· Approximately 15 years of experience in financial IT or securities firms / fin",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2183/15272",
-      "backlog_status": "pending"
-    },
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:33:08.898983+07:00",
+      "desc_len_after": 3899,
+      "desc_len_before": 12,
+      "req_len_after": 2102,
+      "ben_len_after": 252,
+      "skills_added": "CTO, Financial IT, Securities IT, MTS/WTS Platform, Infrastructure Operations, AI and Blockchain, Information Security",
+      "note_added": "Dear anh Trung,\nNhư thông tin em có trao đổi với anh\nEm gửi thông tin các vị trí tuyển dụng:\nA. Chie"
+    }
+  ],
+  "pending_backlog_jobs": [
     {
       "seq": 81,
       "batch_id": 9,
@@ -10757,7 +10827,9 @@
       "req_preview": "Key requirements: Proficiency in .NET/ASP.NET ecosystem, Azure cloud-native Expe",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7880/15387",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:30:19.550504+07:00",
+      "desc_len_after": 2581
     },
     {
       "seq": 72,
@@ -10775,7 +10847,9 @@
       "req_preview": "At least 8 years experience in Accounting , with 3 years same role from Manufact",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5774/15375",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:30:43.518284+07:00",
+      "desc_len_after": 1843
     },
     {
       "seq": 73,
@@ -10793,7 +10867,9 @@
       "req_preview": "- From 3–5 years of experience in EMS/PCBA environment as Program Manager / Key ",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/104/15351",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:31:04.268260+07:00",
+      "desc_len_after": 2396
     },
     {
       "seq": 74,
@@ -10811,7 +10887,9 @@
       "req_preview": "At least 5 years of experience in executive sales or operations management withi",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/254/15320",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:31:24.032650+07:00",
+      "desc_len_after": 1834
     },
     {
       "seq": 75,
@@ -10829,7 +10907,9 @@
       "req_preview": "Background in designing/developing IT systems and planning IT implementation; ha",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/254/15319",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:31:36.775862+07:00",
+      "desc_len_after": 2330
     },
     {
       "seq": 76,
@@ -10847,7 +10927,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8540/15306",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:31:48.339374+07:00",
+      "desc_len_after": 2589
     },
     {
       "seq": 77,
@@ -10865,7 +10947,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/104/15302",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:31:59.175267+07:00",
+      "desc_len_after": 3017
     },
     {
       "seq": 78,
@@ -10883,7 +10967,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/104/15301",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:32:09.795798+07:00",
+      "desc_len_after": 3554
     },
     {
       "seq": 79,
@@ -10901,7 +10987,9 @@
       "req_preview": "Tối thiểu 10 năm kinh nghiệm trong lĩnh vực ngân hàng đầu tư, tài chính doanh ng",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2183/15273",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:32:39.158814+07:00",
+      "desc_len_after": 2554
     },
     {
       "seq": 80,
@@ -10919,7 +11007,9 @@
       "req_preview": "· Approximately 15 years of experience in financial IT or securities firms / fin",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2183/15272",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T10:33:08.898983+07:00",
+      "desc_len_after": 3899
     },
     {
       "seq": 81,
