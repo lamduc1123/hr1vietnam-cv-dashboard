@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-17T11:17:05.751825+07:00",
+    "last_updated": "2026-11-17T13:32:54.336855+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 126,
+    "grand_total_processed": 136,
     "total_jobs_created": 36,
     "today_jobs_count": 1,
-    "today_backlog_count": 50,
-    "today_total_count": 51,
+    "today_backlog_count": 60,
+    "today_total_count": 61,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 3,
@@ -21,19 +21,19 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 543,
-      "open_full_pct": 62.99,
+      "open_full_current": 553,
+      "open_full_pct": 64.15,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 90,
-      "remaining_backlog_jobs": 319,
-      "backlog_progress_pct": 22.0,
-      "total_full_all_statuses": 1597,
-      "total_bypass_all_statuses": 730,
+      "completed_backlog_jobs": 100,
+      "remaining_backlog_jobs": 309,
+      "backlog_progress_pct": 24.45,
+      "total_full_all_statuses": 1607,
+      "total_bypass_all_statuses": 720,
       "batch_size": 10,
       "total_batches": 41,
-      "completed_batches": 9,
-      "current_next_batch": 10,
-      "mode_status": "ĐANG TRIỂN KHAI BATCH #10 (10 JOB/MẺ)"
+      "completed_batches": 10,
+      "current_next_batch": 11,
+      "mode_status": "ĐANG TRIỂN KHAI BATCH #11 (10 JOB/MẺ)"
     },
     "system_status": {
       "daemon": "ONLINE (LaunchAgent 24/7)",
@@ -835,7 +835,7 @@
       "job_count": 10,
       "job_id_range": "#15222 → #15124",
       "date_range": "28/04/2026 → 25/03/2026",
-      "status": "ready_for_qc",
+      "status": "completed",
       "job_ids": [
         "15222",
         "15221",
@@ -848,7 +848,7 @@
         "15149",
         "15124"
       ],
-      "completed_count": 0
+      "completed_count": 10
     },
     {
       "batch_id": 11,
@@ -856,7 +856,7 @@
       "job_count": 10,
       "job_id_range": "#15123 → #15022",
       "date_range": "25/03/2026 → 25/02/2026",
-      "status": "queued",
+      "status": "ready_for_qc",
       "job_ids": [
         "15123",
         "15114",
@@ -3751,9 +3751,7 @@
       "ben_len_after": 683,
       "skills_added": "8D, APQP, Supplier Quality Management, FMEA, PPAP, ISO 9001, Connector Assembly",
       "note_added": "Quy trình phỏng vấn: 2 vòng MAX. Lưu ý: Không hiển thị/đề cập mức lương khi post jobs.\n[Cập nhật AH]"
-    }
-  ],
-  "pending_backlog_jobs": [
+    },
     {
       "seq": 91,
       "batch_id": 10,
@@ -3770,7 +3768,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5287/15222",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:30:05.900864+07:00",
+      "desc_len_after": 2310,
+      "desc_len_before": 2,
+      "req_len_after": 1368,
+      "ben_len_after": 247,
+      "skills_added": "KYC, KYB, EDD, Sanctions, Team Leadership, Financial Crime Operations",
+      "note_added": "Địa điểm: Tòa nhà Detech Số 8 Tôn Thất Thuyết, Phường Mỹ Đình 2, Quận Nam Từ Liêm, Hà Nội. Lương: te"
     },
     {
       "seq": 92,
@@ -3788,7 +3793,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5287/15221",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:30:20.534456+07:00",
+      "desc_len_after": 3577,
+      "desc_len_before": 2,
+      "req_len_after": 1341,
+      "ben_len_after": 304,
+      "skills_added": "KYC, KYB, CDD, EDD, Sanctions Screening, Transaction Monitoring, AML",
+      "note_added": "Lương: team lead $1600 gross max, staffs $800 gross max, tỷ giá trên 26,000 VNĐ một xíu. Hình thức l"
     },
     {
       "seq": 93,
@@ -3806,7 +3818,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/15220",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:30:28.313508+07:00",
+      "desc_len_after": 1363,
+      "desc_len_before": 2,
+      "req_len_after": 1182,
+      "ben_len_after": 257,
+      "skills_added": "Production Management, Chemistry, SAP, ERP, English",
+      "note_added": "Deal lương: Trao đổi trực tiếp với ứng viên\n[Cập nhật AH]: [NEW ORDER - MAXIHUB_ĐỒNG NAI]  *Lương:* "
     },
     {
       "seq": 94,
@@ -3824,7 +3843,14 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/15219",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:30:34.079049+07:00",
+      "desc_len_after": 1266,
+      "desc_len_before": 2,
+      "req_len_after": 372,
+      "ben_len_after": 305,
+      "skills_added": "ERP, PLC, Chemical Engineering, MS Office, Production Planning",
+      "note_added": "Thời gian làm việc: Thứ hai – thứ sáu, thứ bảy cách tuần (47.5h-48h/tuần). Ký HĐ với pháp nhân CÔNG "
     },
     {
       "seq": 95,
@@ -3842,7 +3868,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/15218",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:30:41.973973+07:00",
+      "desc_len_after": 780,
+      "desc_len_before": 2,
+      "req_len_after": 347,
+      "ben_len_after": 300,
+      "skills_added": "Chemical Analysis, Laboratory Testing, ISO 9001, ISO 17025, Lubricants",
+      "note_added": "Deal lương: Trao đổi trực tiếp với ứng viên. Thời gian làm việc: Thứ hai - thứ bảy (08:00 – 17:00). "
     },
     {
       "seq": 96,
@@ -3860,7 +3893,14 @@
       "req_preview": "Minimum of 05 years of experience in a System Administrator or similar role. Pre",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2183/15211",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:31:02.165218+07:00",
+      "desc_len_after": 1103,
+      "desc_len_before": 12,
+      "req_len_after": 1942,
+      "ben_len_after": 172,
+      "skills_added": "VMWARE, Linux, Windows Server, Zabbix, Scripting, Docker, Kubernetes",
+      "note_added": "Company ID: 2183. Working location: 20F, 54A Nguyen Chi Thanh, Dong Da, Hanoi.\n[Cập nhật AH]: [RE: ["
     },
     {
       "seq": 97,
@@ -3878,7 +3918,14 @@
       "req_preview": "Như trong JD Có từ 5- 10 năm kinh nghiệm ở vị trí Phát triển Khách hàng Tổ chức ",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2183/15196",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:31:11.899495+07:00",
+      "desc_len_after": 2020,
+      "desc_len_before": 12,
+      "req_len_after": 1280,
+      "ben_len_after": 229,
+      "skills_added": "Phát triển Khách hàng Tổ chức, Institutional Sales, Quản lý Tài sản, Thị trường Tài chính - Chứng khoán, Tiếng Anh",
+      "note_added": "[Cập nhật AH]: [[NEW ORDER-2 Headcounts]: Chuyên viên Phát triển Khách hàng Tổ chức-PINETREE SECURIT"
     },
     {
       "seq": 98,
@@ -3896,7 +3943,14 @@
       "req_preview": "Bachelor’s degree in Finance, Accounting, or a related field; • Minimum 5 years ",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8505/15182",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:31:27.561153+07:00",
+      "desc_len_after": 1267,
+      "desc_len_before": 12,
+      "req_len_after": 488,
+      "ben_len_after": 194,
+      "skills_added": "Financial Management, Accounting, Taxation, SAP, English",
+      "note_added": "Lấy uv Kinh nghiệm Retail hoặc FMCG, có kn hàng miễn thuế (Duty Free thì quá tốt)\nTuổi & giới tính k"
     },
     {
       "seq": 99,
@@ -3914,7 +3968,14 @@
       "req_preview": "Film Industry experience is a Must",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7542/15149",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:31:45.832765+07:00",
+      "desc_len_after": 3376,
+      "desc_len_before": 12,
+      "req_len_after": 617,
+      "ben_len_after": 99,
+      "skills_added": "Marketing Strategy, Team Management, Brand Management, Digital Marketing, Crisis Management, Media Planning",
+      "note_added": "Anh Trung ơi, bên em oper vị trí Senior Marketing Manager mảng phát hành phim, anh Trung hỗ trợ em n"
     },
     {
       "seq": 100,
@@ -3932,8 +3993,17 @@
       "req_preview": "5+ years’ professional experience in software development role with in-depth kno",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7880/15124",
-      "backlog_status": "pending"
-    },
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:32:54.327225+07:00",
+      "desc_len_after": 2058,
+      "desc_len_before": 12,
+      "req_len_after": 1705,
+      "ben_len_after": 915,
+      "skills_added": "Python, C#, .NET, AI/ML, Docker, Azure, REST APIs",
+      "note_added": "Dear anh Trung,\nWe are currently seeking 01 Senior AI Engineer and 01 Senior Backend Developer. We w"
+    }
+  ],
+  "pending_backlog_jobs": [
     {
       "seq": 101,
       "batch_id": 11,
@@ -11314,7 +11384,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5287/15222",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:30:05.900864+07:00",
+      "desc_len_after": 2310
     },
     {
       "seq": 92,
@@ -11332,7 +11404,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5287/15221",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:30:20.534456+07:00",
+      "desc_len_after": 3577
     },
     {
       "seq": 93,
@@ -11350,7 +11424,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/15220",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:30:28.313508+07:00",
+      "desc_len_after": 1363
     },
     {
       "seq": 94,
@@ -11368,7 +11444,9 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/15219",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:30:34.079049+07:00",
+      "desc_len_after": 1266
     },
     {
       "seq": 95,
@@ -11386,7 +11464,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/15218",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:30:41.973973+07:00",
+      "desc_len_after": 780
     },
     {
       "seq": 96,
@@ -11404,7 +11484,9 @@
       "req_preview": "Minimum of 05 years of experience in a System Administrator or similar role. Pre",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2183/15211",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:31:02.165218+07:00",
+      "desc_len_after": 1103
     },
     {
       "seq": 97,
@@ -11422,7 +11504,9 @@
       "req_preview": "Như trong JD Có từ 5- 10 năm kinh nghiệm ở vị trí Phát triển Khách hàng Tổ chức ",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2183/15196",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:31:11.899495+07:00",
+      "desc_len_after": 2020
     },
     {
       "seq": 98,
@@ -11440,7 +11524,9 @@
       "req_preview": "Bachelor’s degree in Finance, Accounting, or a related field; • Minimum 5 years ",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8505/15182",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:31:27.561153+07:00",
+      "desc_len_after": 1267
     },
     {
       "seq": 99,
@@ -11458,7 +11544,9 @@
       "req_preview": "Film Industry experience is a Must",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7542/15149",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:31:45.832765+07:00",
+      "desc_len_after": 3376
     },
     {
       "seq": 100,
@@ -11476,7 +11564,9 @@
       "req_preview": "5+ years’ professional experience in software development role with in-depth kno",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7880/15124",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T13:32:54.327225+07:00",
+      "desc_len_after": 2058
     },
     {
       "seq": 101,
