@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-17T11:13:31.946621+07:00",
+    "last_updated": "2026-11-17T11:17:05.751825+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 116,
+    "grand_total_processed": 126,
     "total_jobs_created": 36,
     "today_jobs_count": 1,
-    "today_backlog_count": 40,
-    "today_total_count": 41,
+    "today_backlog_count": 50,
+    "today_total_count": 51,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 3,
@@ -21,19 +21,19 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 533,
-      "open_full_pct": 61.83,
+      "open_full_current": 543,
+      "open_full_pct": 62.99,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 80,
-      "remaining_backlog_jobs": 329,
-      "backlog_progress_pct": 19.56,
-      "total_full_all_statuses": 1587,
-      "total_bypass_all_statuses": 740,
+      "completed_backlog_jobs": 90,
+      "remaining_backlog_jobs": 319,
+      "backlog_progress_pct": 22.0,
+      "total_full_all_statuses": 1597,
+      "total_bypass_all_statuses": 730,
       "batch_size": 10,
       "total_batches": 41,
-      "completed_batches": 8,
-      "current_next_batch": 9,
-      "mode_status": "ĐANG TRIỂN KHAI BATCH #09 (10 JOB/MẺ)"
+      "completed_batches": 9,
+      "current_next_batch": 10,
+      "mode_status": "ĐANG TRIỂN KHAI BATCH #10 (10 JOB/MẺ)"
     },
     "system_status": {
       "daemon": "ONLINE (LaunchAgent 24/7)",
@@ -814,7 +814,7 @@
       "job_count": 10,
       "job_id_range": "#15262 → #15234",
       "date_range": "12/05/2026 → 06/05/2026",
-      "status": "ready_for_qc",
+      "status": "completed",
       "job_ids": [
         "15262",
         "15261",
@@ -827,7 +827,7 @@
         "15235",
         "15234"
       ],
-      "completed_count": 0
+      "completed_count": 10
     },
     {
       "batch_id": 10,
@@ -835,7 +835,7 @@
       "job_count": 10,
       "job_id_range": "#15222 → #15124",
       "date_range": "28/04/2026 → 25/03/2026",
-      "status": "queued",
+      "status": "ready_for_qc",
       "job_ids": [
         "15222",
         "15221",
@@ -3501,9 +3501,7 @@
       "ben_len_after": 252,
       "skills_added": "CTO, Financial IT, Securities IT, MTS/WTS Platform, Infrastructure Operations, AI and Blockchain, Information Security",
       "note_added": "Dear anh Trung,\nNhư thông tin em có trao đổi với anh\nEm gửi thông tin các vị trí tuyển dụng:\nA. Chie"
-    }
-  ],
-  "pending_backlog_jobs": [
+    },
     {
       "seq": 81,
       "batch_id": 9,
@@ -3520,7 +3518,14 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8540/15262",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:15:09.489844+07:00",
+      "desc_len_after": 2359,
+      "desc_len_before": 2,
+      "req_len_after": 995,
+      "ben_len_after": 106,
+      "skills_added": "Đấu thầu, Dự toán, Quản lý hợp đồng, Bóc tách khối lượng, AutoCAD, Quản lý dự án",
+      "note_added": "Điều kiện làm việc: Điều kiện văn phòng tiêu chuẩn (Thường xuyên).\n[Cập nhật AH]: [Re: NEW ORDER_THĂ"
     },
     {
       "seq": 82,
@@ -3538,7 +3543,14 @@
       "req_preview": "Education · Mechanical/ Mechatronics Engineering or related background Experienc",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2258/15261",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:15:23.414124+07:00",
+      "desc_len_after": 1600,
+      "desc_len_before": 12,
+      "req_len_after": 768,
+      "ben_len_after": 683,
+      "skills_added": "Mechanical Engineering, Mechatronics, NPI, CAD, NX, Manufacturing Process",
+      "note_added": "Quy trình phỏng vấn: 2 vòng MAX. Không hiển thị mức lương khi post jobs.\n[Cập nhật AH]: [[1 more New"
     },
     {
       "seq": 83,
@@ -3556,7 +3568,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/15260",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:15:29.794596+07:00",
+      "desc_len_after": 536,
+      "desc_len_before": 2,
+      "req_len_after": 286,
+      "ben_len_after": 106,
+      "skills_added": "HSE, Safety, Chemical Management, PCCC, Risk Assessment",
+      "note_added": ""
     },
     {
       "seq": 84,
@@ -3574,7 +3593,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8539/15258",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:15:42.365485+07:00",
+      "desc_len_after": 971,
+      "desc_len_before": 2,
+      "req_len_after": 415,
+      "ben_len_after": 156,
+      "skills_added": "QC, IQC, IPQC, FQC/OQC, Wood Manufacturing, Quality Control, Chinese, English",
+      "note_added": "Quản lý: 2-3 nhân viên\n[Cập nhật AH]: [NEW ORDER_ HRM BACKYARD CRAFT VIETNAM_] Quản lý: 2-3 nhân viê"
     },
     {
       "seq": 85,
@@ -3592,7 +3618,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8539/15257",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:15:53.465426+07:00",
+      "desc_len_after": 1454,
+      "desc_len_before": 2,
+      "req_len_after": 1236,
+      "ben_len_after": 99,
+      "skills_added": "Supply Chain Planning, Production Planning, Supplier Management, Excel, English",
+      "note_added": "Quản lý: 2-3 nhân viên\n[Cập nhật AH]: [NEW ORDER_ HRM BACKYARD CRAFT VIETNAM_] Quản lý: 2-3 nhân viê"
     },
     {
       "seq": 86,
@@ -3610,7 +3643,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8539/15256",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:16:07.214626+07:00",
+      "desc_len_after": 1445,
+      "desc_len_before": 2,
+      "req_len_after": 715,
+      "ben_len_after": 106,
+      "skills_added": "Sourcing, Procurement, Negotiation, Supply Chain, Engineering Background, CAD",
+      "note_added": "[Cập nhật AH]: [Re: NEW CLIENT_ BACKYARD CRAFT VIETNAM_ĐỒNG NAI] > *- *Tuổi: Không giới hạn (1 headh"
     },
     {
       "seq": 87,
@@ -3628,7 +3668,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8539/15255",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:16:18.282145+07:00",
+      "desc_len_after": 2435,
+      "desc_len_before": 2,
+      "req_len_after": 1298,
+      "ben_len_after": 265,
+      "skills_added": "Finance Management, US GAAP, CAS, Vietnamese Tax Law, Budgeting & Forecasting, ERP (SAP/Oracle), Mandarin Chinese",
+      "note_added": "Quản lý: 2-3 nhân viên. Yêu cầu ngoại ngữ: Thành thạo tiếng Trung và tiếng Anh (giao tiếp với ban lã"
     },
     {
       "seq": 88,
@@ -3646,7 +3693,14 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8538/15247",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:16:30.162850+07:00",
+      "desc_len_after": 1875,
+      "desc_len_before": 2,
+      "req_len_after": 738,
+      "ben_len_after": 573,
+      "skills_added": "Adobe Premiere Pro, After Effects, Photoshop, CapCut, Videography, Photography, Video Editing",
+      "note_added": "Working hours: 5 days a week from Monday to Friday, 7.5 hours per day.\n[Cập nhật AH]: [RE: Update - "
     },
     {
       "seq": 89,
@@ -3664,7 +3718,14 @@
       "req_preview": "o 5+ years in quality o 3+ years in supplier quality management · Preferred: Con",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2258/15235",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:16:49.782119+07:00",
+      "desc_len_after": 1184,
+      "desc_len_before": 12,
+      "req_len_after": 707,
+      "ben_len_after": 711,
+      "skills_added": "Customs, Liquidation, SAP, ERP, ECUS, EPE, Supply Chain",
+      "note_added": "Quy trình phỏng vấn: 2 vòng MAX. Lưu ý: Không để lương khi post jobs.\n[Cập nhật AH]: [[New Client]: "
     },
     {
       "seq": 90,
@@ -3682,8 +3743,17 @@
       "req_preview": "Experience · Required: Minimum 6 years’ experience · Preferred: Experience in EP",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2258/15234",
-      "backlog_status": "pending"
-    },
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:17:05.745197+07:00",
+      "desc_len_after": 1218,
+      "desc_len_before": 12,
+      "req_len_after": 768,
+      "ben_len_after": 683,
+      "skills_added": "8D, APQP, Supplier Quality Management, FMEA, PPAP, ISO 9001, Connector Assembly",
+      "note_added": "Quy trình phỏng vấn: 2 vòng MAX. Lưu ý: Không hiển thị/đề cập mức lương khi post jobs.\n[Cập nhật AH]"
+    }
+  ],
+  "pending_backlog_jobs": [
     {
       "seq": 91,
       "batch_id": 10,
@@ -11044,7 +11114,9 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8540/15262",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:15:09.489844+07:00",
+      "desc_len_after": 2359
     },
     {
       "seq": 82,
@@ -11062,7 +11134,9 @@
       "req_preview": "Education · Mechanical/ Mechatronics Engineering or related background Experienc",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2258/15261",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:15:23.414124+07:00",
+      "desc_len_after": 1600
     },
     {
       "seq": 83,
@@ -11080,7 +11154,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/15260",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:15:29.794596+07:00",
+      "desc_len_after": 536
     },
     {
       "seq": 84,
@@ -11098,7 +11174,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8539/15258",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:15:42.365485+07:00",
+      "desc_len_after": 971
     },
     {
       "seq": 85,
@@ -11116,7 +11194,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8539/15257",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:15:53.465426+07:00",
+      "desc_len_after": 1454
     },
     {
       "seq": 86,
@@ -11134,7 +11214,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8539/15256",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:16:07.214626+07:00",
+      "desc_len_after": 1445
     },
     {
       "seq": 87,
@@ -11152,7 +11234,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8539/15255",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:16:18.282145+07:00",
+      "desc_len_after": 2435
     },
     {
       "seq": 88,
@@ -11170,7 +11254,9 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8538/15247",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:16:30.162850+07:00",
+      "desc_len_after": 1875
     },
     {
       "seq": 89,
@@ -11188,7 +11274,9 @@
       "req_preview": "o 5+ years in quality o 3+ years in supplier quality management · Preferred: Con",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2258/15235",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:16:49.782119+07:00",
+      "desc_len_after": 1184
     },
     {
       "seq": 90,
@@ -11206,7 +11294,9 @@
       "req_preview": "Experience · Required: Minimum 6 years’ experience · Preferred: Experience in EP",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2258/15234",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-17T11:17:05.745197+07:00",
+      "desc_len_after": 1218
     },
     {
       "seq": 91,
