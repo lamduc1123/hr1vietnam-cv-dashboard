@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-18 17:55:06",
+    "last_updated": "2026-11-18 18:45:57",
     "today_date": "2026-11-18",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -9,16 +9,16 @@
   "today": {
     "date": "2026-11-18",
     "date_display": "Hôm nay, 18/11/2026",
-    "total_processed": 141,
+    "total_processed": 143,
     "realtime_count": 17,
     "realtime_created": 6,
     "realtime_updated": 11,
-    "backlog_count": 124,
+    "backlog_count": 126,
     "target_daily": 300,
-    "completion_rate_pct": 47.0,
-    "current_mode": "PAUSED_CRM_MAINTENANCE",
-    "mode_badge": "🛑 CRM Đang Lỗi / Bảo Trì (Tạm Ngưng Luồng)",
-    "mode_desc": "CRM phản hồi HTTPSConnectionPool(host='crm.hr1vietnam.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='crm.hr1vietnam.com', port=443): Failed to resolve 'crm.hr1vietnam.com' ([Errno 8] nodename nor servname provided, or not known)\")). Đã tạm dừng 100% tiến trình tự động theo chỉ đạo để chờ thông báo mới.",
+    "completion_rate_pct": 47.7,
+    "current_mode": "OVERNIGHT_MODE",
+    "mode_badge": "🌙 Cày Đêm Tự Động (Overnight Turbo Active)",
+    "mode_desc": "Vận hành cày backlog xuyên đêm khi mở máy: Mẻ 20 CVs • Chu kỳ 30s",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
@@ -46,7 +46,7 @@
       {
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
-        "count": 30,
+        "count": 32,
         "status": "in_progress",
         "badge": "Đang cày đêm"
       }
@@ -91,54 +91,58 @@
       {
         "hour": "17:00",
         "count": 64
+      },
+      {
+        "hour": "18:00",
+        "count": 2
       }
     ],
     "sources": {
       "Consultants": 11,
       "Website": 6,
-      "CRM Backlog": 124
+      "CRM Backlog": 126
     }
   },
   "totals": {
     "all_time_realtime": 559,
     "all_time_created": 132,
     "all_time_updated": 420,
-    "all_time_backlog_done": 21209,
-    "total_system_processed": 21768,
+    "all_time_backlog_done": 21211,
+    "total_system_processed": 21770,
     "backlog_target": 27001,
-    "backlog_remaining": 5792,
-    "backlog_completion_percentage": 78.5,
+    "backlog_remaining": 5790,
+    "backlog_completion_percentage": 78.6,
     "crm_pool_audited": 103377,
-    "admin_pre_inputted": 76377,
-    "ai_total_processed": 21768,
+    "admin_pre_inputted": 76375,
+    "ai_total_processed": 21770,
     "total_standardized": 98145,
-    "total_crm_candidates": 105937,
-    "standardized_percentage": 92.64
+    "total_crm_candidates": 106029,
+    "standardized_percentage": 92.56
   },
   "ai_usage": {
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 402422716,
-    "total_tokens_formatted": "402.4M",
-    "prompt_tokens": 307052775,
-    "output_tokens": 95369941,
-    "total_cost_usd": 264.42,
-    "total_cost_usd_formatted": "$264.42",
-    "total_cost_vnd": 6729514,
-    "total_cost_vnd_formatted": "₫6,729,514",
+    "total_tokens": 402457877,
+    "total_tokens_formatted": "402.5M",
+    "prompt_tokens": 307078435,
+    "output_tokens": 95379442,
+    "total_cost_usd": 264.44,
+    "total_cost_usd_formatted": "$264.44",
+    "total_cost_vnd": 6730014,
+    "total_cost_vnd_formatted": "₫6,730,014",
     "job_spend_vnd": 50966,
     "job_spend_vnd_formatted": "₫50,966",
-    "billing_deducted_vnd": 7551573,
-    "billing_deducted_vnd_formatted": "₫7,551,573",
-    "billing_deducted_usd": 296.72,
+    "billing_deducted_vnd": 7552073,
+    "billing_deducted_vnd_formatted": "₫7,552,073",
+    "billing_deducted_usd": 296.74,
     "other_projects_and_tax_vnd": 771093,
     "other_projects_and_tax_formatted": "₫771,093",
     "initial_prepay_vnd": 10000000.0,
     "initial_prepay_vnd_formatted": "₫10,000,000",
-    "remaining_budget_vnd": 2448427,
-    "remaining_budget_vnd_formatted": "₫2,448,427",
-    "remaining_budget_usd": 96.21,
+    "remaining_budget_vnd": 2447927,
+    "remaining_budget_vnd_formatted": "₫2,447,927",
+    "remaining_budget_usd": 96.19,
     "budget_used_pct": 67.3,
     "billing_used_pct": 75.52,
     "cost_per_cv_vnd": 309.1,
@@ -380,12 +384,36 @@
   },
   "backlog": {
     "total": 27001,
-    "completed": 21209,
-    "remaining": 5792,
+    "completed": 21211,
+    "remaining": 5790,
     "errors": 821,
-    "completion_percentage": 78.5,
+    "completion_percentage": 78.6,
     "crm_pool_audited": 103377,
     "recent_enriched": [
+      {
+        "candidate_id": "105999",
+        "candidate_name": "VO K*** M*** H***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/105999",
+        "experiences": 10,
+        "educations": 1,
+        "detail_summary": "+10 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-18 18:45:43"
+      },
+      {
+        "candidate_id": "61180",
+        "candidate_name": "PHAM N*** B***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/61180",
+        "experiences": 4,
+        "educations": 1,
+        "detail_summary": "+4 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-18 18:45:30"
+      },
       {
         "candidate_id": "87662",
         "candidate_name": "NGUYEN L*** N***",
@@ -3361,30 +3389,6 @@
         "educations": 2,
         "detail_summary": "+4 kinh nghiệm, +2 học vấn",
         "processed_at": "2026-11-14 07:52:24"
-      },
-      {
-        "candidate_id": "21389",
-        "candidate_name": "DUONG H*** P***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/21389",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "+1 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-14 07:44:09"
-      },
-      {
-        "candidate_id": "21391",
-        "candidate_name": "NGUYEN T*** T***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/21391",
-        "experiences": 5,
-        "educations": 0,
-        "detail_summary": "+5 kinh nghiệm, +0 học vấn",
-        "processed_at": "2026-11-14 07:43:52"
       }
     ]
   },
@@ -3394,8 +3398,8 @@
       "total_realtime": 18,
       "created": 6,
       "updated": 12,
-      "backlog_count": 124,
-      "grand_total": 142
+      "backlog_count": 126,
+      "grand_total": 144
     },
     {
       "date": "2026-11-17",
@@ -3581,7 +3585,7 @@
       "status": "completed",
       "badge": "Hoàn thành 100%",
       "description": "Quét rà soát toàn diện 100% kho dữ liệu lịch sử CRM (2013 – 2026); dùng AI bóc tách và làm giàu thành công toàn bộ 21,085 hồ sơ Backlog thiếu thông tin; làm sạch các bản ghi lỗi/ảo và ra mắt Module 3: Báo Cáo Chiến Lược BOD (#bod).",
-      "metrics": "Hoàn tất 100% Backlog (21,209 hồ sơ AI + 76,377 hồ sơ Admin = 98,145/105,937 hồ sơ hoàn chỉnh)."
+      "metrics": "Hoàn tất 100% Backlog (21,211 hồ sơ AI + 76,375 hồ sơ Admin = 98,145/106,029 hồ sơ hoàn chỉnh)."
     },
     {
       "phase": "Giai đoạn 5: Chế Độ Ưu Tiên 100% Luồng Real-Time & Vận Hành Liên Tục",
@@ -3589,19 +3593,19 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Real-Time 100%)",
       "description": "Luồng Backlog chính thức hoàn tất 100% và chuyển sang chế độ Standby. Toàn bộ tài nguyên hệ thống tập trung 100% cho Luồng Real-Time: đón nhận CV mới từ Consultant & Website 24/7, tự động hóa bóc tách, đồng bộ CRM, gửi email xác nhận và cập nhật trực tiếp lên 3 Module Dashboard.",
-      "metrics": "Đã xử lý 559 hồ sơ Real-time (132 tạo mới • 420 cập nhật) | Tổng lũy kế AI: 21,768+ hồ sơ."
+      "metrics": "Đã xử lý 559 hồ sơ Real-time (132 tạo mới • 420 cập nhật) | Tổng lũy kế AI: 21,770+ hồ sơ."
     }
   ],
   "system": {
-    "daemon_status": "PAUSED",
-    "daemon_pid": null,
-    "current_task": "Tạm dừng luồng tự động (Chờ CRM khôi phục)",
+    "daemon_status": "RUNNING",
+    "daemon_pid": 9840,
+    "current_task": "scan_cycle_start",
     "system_mode": "BACKLOG_ACTIVE",
     "backlog_status": "IN_PROGRESS",
-    "crm_online": false,
-    "crm_error": "HTTPSConnectionPool(host='crm.hr1vietnam.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='crm.hr1vietnam.com', port=443): Failed to resolve 'crm.hr1vietnam.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
-    "last_heartbeat_seconds_ago": 278.9,
-    "supervisor_running": false,
+    "crm_online": true,
+    "crm_error": "",
+    "last_heartbeat_seconds_ago": 61.6,
+    "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 2 (Prepay Active)",
     "search_grounding": "ONLINE (Google Search Grounding Active)"
