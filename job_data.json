@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-18T10:42:39.135210+07:00",
+    "last_updated": "2026-11-18T11:17:52.795960+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 217,
+    "grand_total_processed": 227,
     "total_jobs_created": 37,
     "today_jobs_count": 0,
-    "today_backlog_count": 30,
-    "today_total_count": 30,
+    "today_backlog_count": 40,
+    "today_total_count": 40,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 3,
@@ -21,19 +21,19 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 633,
-      "open_full_pct": 73.43,
+      "open_full_current": 643,
+      "open_full_pct": 74.59,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 180,
-      "remaining_backlog_jobs": 229,
-      "backlog_progress_pct": 44.01,
-      "total_full_all_statuses": 1687,
-      "total_bypass_all_statuses": 640,
+      "completed_backlog_jobs": 190,
+      "remaining_backlog_jobs": 219,
+      "backlog_progress_pct": 46.45,
+      "total_full_all_statuses": 1697,
+      "total_bypass_all_statuses": 630,
       "batch_size": 10,
       "total_batches": 41,
-      "completed_batches": 18,
-      "current_next_batch": 19,
-      "mode_status": "ĐANG TRIỂN KHAI BATCH #19 (10 JOB/MẺ)"
+      "completed_batches": 19,
+      "current_next_batch": 20,
+      "mode_status": "ĐANG TRIỂN KHAI BATCH #20 (10 JOB/MẺ)"
     },
     "system_status": {
       "daemon": "ONLINE (LaunchAgent 24/7)",
@@ -1041,7 +1041,7 @@
       "job_count": 10,
       "job_id_range": "#14665 → #14617",
       "date_range": "14/10/2025 → 26/09/2025",
-      "status": "ready_for_qc",
+      "status": "completed",
       "job_ids": [
         "14665",
         "14664",
@@ -1054,7 +1054,7 @@
         "14624",
         "14617"
       ],
-      "completed_count": 0
+      "completed_count": 10
     },
     {
       "batch_id": 20,
@@ -1062,7 +1062,7 @@
       "job_count": 10,
       "job_id_range": "#14614 → #14578",
       "date_range": "25/09/2025 → 12/09/2025",
-      "status": "queued",
+      "status": "ready_for_qc",
       "job_ids": [
         "14614",
         "14613",
@@ -6018,9 +6018,7 @@
       "ben_len_after": 106,
       "skills_added": "Quản lý đại lý, Phát triển mạng lưới, Phân tích dữ liệu, CSKH, Kế hoạch kinh doanh",
       "note_added": "Quy trình tuyển dụng: 2 vòng phỏng vấn. Quy mô hệ thống đại lý phụ trách toàn quốc hơn 60 đại lý. Ch"
-    }
-  ],
-  "pending_backlog_jobs": [
+    },
     {
       "seq": 181,
       "batch_id": 19,
@@ -6037,7 +6035,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1833/14665",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:15:26.901217+07:00",
+      "desc_len_after": 858,
+      "desc_len_before": 12,
+      "req_len_after": 1946,
+      "ben_len_after": 320,
+      "skills_added": "Vendor Acquisition, Business Development, Korean Speaking, English Speaking, E-commerce, Key Account Management, B2B Sales",
+      "note_added": "Highlight\n-\tChinese: HSK5 and above\n-\tKorean: Topik II (lv5 up or business Korean)\n-\tNgoài việc tiến"
     },
     {
       "seq": 182,
@@ -6055,7 +6060,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1833/14664",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:15:57.396610+07:00",
+      "desc_len_after": 936,
+      "desc_len_before": 12,
+      "req_len_after": 1931,
+      "ben_len_after": 287,
+      "skills_added": "Vendor Acquisition, Business Development, Chinese speaking, E-commerce, Sales Negotiation, Key Account Management",
+      "note_added": "Highlight\n-\tChinese: HSK5 and above\n-\tKorean: Topik II (lv5 up or business Korean)\n-\tNgoài việc tiến"
     },
     {
       "seq": 183,
@@ -6073,7 +6085,14 @@
       "req_preview": "5+ years of hands-on experience in Python development. Proficiency in Python and",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5428/14658",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:16:04.475621+07:00",
+      "desc_len_after": 428,
+      "desc_len_before": 16,
+      "req_len_after": 444,
+      "ben_len_after": 299,
+      "skills_added": "Python, Django, Flask, PostgreSQL, SQL Alchemy",
+      "note_added": "Salary fix at 1,350 USD (35 million VND Gross), however, can be negotiable higher if candidate has >"
     },
     {
       "seq": 184,
@@ -6091,7 +6110,14 @@
       "req_preview": ".",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2089/14653",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:16:12.164837+07:00",
+      "desc_len_after": 1143,
+      "desc_len_before": 80,
+      "req_len_after": 1206,
+      "ben_len_after": 265,
+      "skills_added": "Printing Technology, Screen Printing, Color Matching, Quality Control, Garment Printing Operations",
+      "note_added": ".\nThe company provides accommodation and meals at the factory for employees from other provinces, al"
     },
     {
       "seq": 185,
@@ -6109,7 +6135,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1241/14638",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:16:23.059172+07:00",
+      "desc_len_after": 456,
+      "desc_len_before": 2,
+      "req_len_after": 258,
+      "ben_len_after": 236,
+      "skills_added": "Sales Logistics, Tiếng Trung, Báo giá, Đàm phán hợp đồng, Phát triển khách hàng",
+      "note_added": "Quy trình phỏng vấn: 1 vòng duy nhất tại văn phòng. Thời gian làm việc: T2 – T7, 8h00 – 17h00.\n[Cập "
     },
     {
       "seq": 186,
@@ -6127,7 +6160,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5738/14636",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:16:43.752086+07:00",
+      "desc_len_after": 1929,
+      "desc_len_before": 12,
+      "req_len_after": 596,
+      "ben_len_after": 281,
+      "skills_added": "Medical Writing, Medical Communications, Content Editing, Scientific Publishing, English, Medical Terminology",
+      "note_added": "Job Title: Senior Medical Writer.\nWork Experience: At least 5 years of experience as a medical write"
     },
     {
       "seq": 187,
@@ -6145,7 +6185,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1502/14634",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:17:05.294971+07:00",
+      "desc_len_after": 2237,
+      "desc_len_before": 12,
+      "req_len_after": 821,
+      "ben_len_after": 150,
+      "skills_added": "QA Management, ISO9001, LEAN, Six Sigma, Printing and Packaging QA, Continuous Improvement",
+      "note_added": "vị trí này làm ở nhà máy Mỹ Phước\nquản QA/ QC bắc và nam\nteam size South + North: 115\nreporting line"
     },
     {
       "seq": 188,
@@ -6163,7 +6210,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/14633",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:17:14.011141+07:00",
+      "desc_len_after": 833,
+      "desc_len_before": 2,
+      "req_len_after": 459,
+      "ben_len_after": 338,
+      "skills_added": "Lubricant formulation, Chemical Engineering, R&D, Chinese, English",
+      "note_added": "Thời gian làm việc: Thứ Hai đến Thứ Bảy (nghỉ cách tuần vào ngày Thứ Bảy), từ 08:00 đến 17:00. Địa đ"
     },
     {
       "seq": 189,
@@ -6181,7 +6235,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2224/14624",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:17:46.635627+07:00",
+      "desc_len_after": 677,
+      "desc_len_before": 2,
+      "req_len_after": 477,
+      "ben_len_after": 150,
+      "skills_added": "AutoCAD, Rhinoceros, Adobe Illustrator, Kỹ thuật, Thiết kế",
+      "note_added": "[Cập nhật AH]: [FW: UPDATE JOBs: OKIA OPTICAL] *\tLương: 22 – 25 triệu Gross; *\tLương: 20 – 25 triệu "
     },
     {
       "seq": 190,
@@ -6199,8 +6260,17 @@
       "req_preview": ".",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8103/14617",
-      "backlog_status": "pending"
-    },
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:17:52.787194+07:00",
+      "desc_len_after": 1437,
+      "desc_len_before": 1,
+      "req_len_after": 347,
+      "ben_len_after": 99,
+      "skills_added": "Human Resources Management, Chinese, English, Labor Law, Recruitment, Payroll",
+      "note_added": "."
+    }
+  ],
+  "pending_backlog_jobs": [
     {
       "seq": 191,
       "batch_id": 20,
@@ -13761,7 +13831,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1833/14665",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:15:26.901217+07:00",
+      "desc_len_after": 858
     },
     {
       "seq": 182,
@@ -13779,7 +13851,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1833/14664",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:15:57.396610+07:00",
+      "desc_len_after": 936
     },
     {
       "seq": 183,
@@ -13797,7 +13871,9 @@
       "req_preview": "5+ years of hands-on experience in Python development. Proficiency in Python and",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5428/14658",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:16:04.475621+07:00",
+      "desc_len_after": 428
     },
     {
       "seq": 184,
@@ -13815,7 +13891,9 @@
       "req_preview": ".",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2089/14653",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:16:12.164837+07:00",
+      "desc_len_after": 1143
     },
     {
       "seq": 185,
@@ -13833,7 +13911,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1241/14638",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:16:23.059172+07:00",
+      "desc_len_after": 456
     },
     {
       "seq": 186,
@@ -13851,7 +13931,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5738/14636",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:16:43.752086+07:00",
+      "desc_len_after": 1929
     },
     {
       "seq": 187,
@@ -13869,7 +13951,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1502/14634",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:17:05.294971+07:00",
+      "desc_len_after": 2237
     },
     {
       "seq": 188,
@@ -13887,7 +13971,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/14633",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:17:14.011141+07:00",
+      "desc_len_after": 833
     },
     {
       "seq": 189,
@@ -13905,7 +13991,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2224/14624",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:17:46.635627+07:00",
+      "desc_len_after": 677
     },
     {
       "seq": 190,
@@ -13923,7 +14011,9 @@
       "req_preview": ".",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8103/14617",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T11:17:52.787194+07:00",
+      "desc_len_after": 1437
     },
     {
       "seq": 191,
