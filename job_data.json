@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-18T16:01:21.210674+07:00",
+    "last_updated": "2026-11-18T16:18:39.137693+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 350,
+    "grand_total_processed": 357,
     "total_jobs_created": 40,
     "today_jobs_count": 3,
-    "today_backlog_count": 160,
-    "today_total_count": 163,
+    "today_backlog_count": 167,
+    "today_total_count": 170,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 4,
@@ -21,14 +21,14 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 763,
-      "open_full_pct": 88.52,
+      "open_full_current": 770,
+      "open_full_pct": 89.33,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 310,
-      "remaining_backlog_jobs": 99,
-      "backlog_progress_pct": 75.79,
-      "total_full_all_statuses": 1817,
-      "total_bypass_all_statuses": 510,
+      "completed_backlog_jobs": 317,
+      "remaining_backlog_jobs": 92,
+      "backlog_progress_pct": 77.51,
+      "total_full_all_statuses": 1824,
+      "total_bypass_all_statuses": 503,
       "batch_size": 10,
       "total_batches": 41,
       "completed_batches": 31,
@@ -1373,7 +1373,7 @@
       "job_count": 10,
       "job_id_range": "#13999 → #13978",
       "date_range": "16/04/2025 → 11/04/2025",
-      "status": "ready_for_qc",
+      "status": "in_progress",
       "job_ids": [
         "13999",
         "13998",
@@ -1386,7 +1386,7 @@
         "13979",
         "13978"
       ],
-      "completed_count": 0
+      "completed_count": 7
     },
     {
       "batch_id": 33,
@@ -9327,9 +9327,7 @@
       "ben_len_after": 749,
       "skills_added": "Product Marketing, Market Research, Pricing Strategy, Product Launch, Hardware/Industrial Durables, Retail Channels",
       "note_added": "Agreed & Signing Recruitment Fee rate: 23% Annum Gross Salary X 13 months\nQuy trình phỏng vấn: 3 vòn"
-    }
-  ],
-  "pending_backlog_jobs": [
+    },
     {
       "seq": 311,
       "batch_id": 32,
@@ -9346,7 +9344,14 @@
       "req_preview": "As per in the JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/432/13999",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:13:43.986868+07:00",
+      "desc_len_after": 1847,
+      "desc_len_before": 16,
+      "req_len_after": 2711,
+      "ben_len_after": 106,
+      "skills_added": "SQL, Python, Azure, ETL, Power BI, Data Engineering",
+      "note_added": "\"Hi anh,\nem gửi anh đính kèm vị trí bên em đang cần tuyển nhe:\n-\tDept: Technology Solutions\n-\tReport"
     },
     {
       "seq": 312,
@@ -9364,8 +9369,142 @@
       "req_preview": "Trình độ học vấn, chuyên môn và Yêu cầu về kinh nghiệm làm việc: • Hơn 5 năm kin",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7542/13998",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:13:54.863185+07:00",
+      "desc_len_after": 2778,
+      "desc_len_before": 12,
+      "req_len_after": 837,
+      "ben_len_after": 99,
+      "skills_added": "Strategic Planning, Distribution Strategy, Film Market Knowledge, Team Management, Budget Management, Business Negotiation",
+      "note_added": "\"Ko lấy người của đối thủ như CGV, LOTTE CINEMA...á anh\"\nEx-cựu thì rất OK, đang thì ko được phép nè"
     },
+    {
+      "seq": 315,
+      "batch_id": 32,
+      "job_id": "13988",
+      "company_id": "6841",
+      "company_name": "AFTD company",
+      "job_title": "CMO/Head of marketing",
+      "created_at": "14/04/2025 17:23",
+      "status_crm": "Open - Urgent",
+      "ah_name": "Duong Vu Xuan Mai",
+      "consultant": "Duong Vu Xuan Mai",
+      "jd_filename": "jd-cmo.pdf",
+      "desc_preview": "Mạnh Digital MKT, quản lý đội sales Rành công nghệ MKT, update xu hướng MKT mới ",
+      "req_preview": "Updating",
+      "quality_tier": "2B_Partial_Dummy",
+      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6841/13988",
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:14:50.595784+07:00",
+      "desc_len_after": 1029,
+      "desc_len_before": 80,
+      "req_len_after": 767,
+      "ben_len_after": 289,
+      "skills_added": "CMO, Head of Marketing, Digital Marketing, Performance Marketing, Martech, SEO, CRM, Strategy",
+      "note_added": "Quy trình phỏng vấn: 2 vòng, gồm 1 vòng HRM và 1 vòng CEO (người Việt).\n[Cập nhật AH]: [NEW JOB ORDE"
+    },
+    {
+      "seq": 317,
+      "batch_id": 32,
+      "job_id": "13986",
+      "company_id": "1949",
+      "company_name": "AIZAKI VIETNAM CO., LTD.",
+      "job_title": "TRƯƠNG BAN SẢN XUẤT",
+      "created_at": "14/04/2025 16:46",
+      "status_crm": "Open - Urgent",
+      "ah_name": "Nguyễn Thị Hà",
+      "consultant": "Nguyễn Thị Hà",
+      "jd_filename": "thong-tin-tuyen-dung-truong-ban-san-xuat.docx",
+      "desc_preview": "JD",
+      "req_preview": "JD",
+      "quality_tier": "2A_Both_Dummy_With_File",
+      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1949/13986",
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:17:58.122806+07:00",
+      "desc_len_after": 489,
+      "desc_len_before": 2,
+      "req_len_after": 370,
+      "ben_len_after": 106,
+      "skills_added": "Quản lý sản xuất, Cơ khí chính xác, CNC, Tiếng Nhật",
+      "note_added": "Quy mô quản lý: 30 nhân sự bao gồm kỹ thuật set máy, tổ trưởng và công nhân. Thời gian làm việc: hàn"
+    },
+    {
+      "seq": 318,
+      "batch_id": 32,
+      "job_id": "13984",
+      "company_id": "2445",
+      "company_name": "Công ty Fujitsu Việt Nam",
+      "job_title": "Technical Engineer",
+      "created_at": "14/04/2025 14:58",
+      "status_crm": "Open - Urgent",
+      "ah_name": "Nguyen Quoc Huy",
+      "consultant": "Nguyen Quoc Huy",
+      "jd_filename": "jd-natv-it-fujitsu.doc",
+      "desc_preview": ".",
+      "req_preview": ".",
+      "quality_tier": "2A_Both_Dummy_With_File",
+      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2445/13984",
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:18:06.374931+07:00",
+      "desc_len_after": 1025,
+      "desc_len_before": 1,
+      "req_len_after": 1931,
+      "ben_len_after": 106,
+      "skills_added": "Support Engineer, Windows Server, Network, Cloud, IT Helpdesk",
+      "note_added": "Functional Title:\tSupport Engineer\nLooking for people who have good management, IT and language skil"
+    },
+    {
+      "seq": 319,
+      "batch_id": 32,
+      "job_id": "13979",
+      "company_id": "6929",
+      "company_name": "COGNEX CORPORATION",
+      "job_title": "Logistics & Purchasing Manager",
+      "created_at": "14/04/2025 11:10",
+      "status_crm": "Open - Urgent",
+      "ah_name": "Nguyễn Thị Hà",
+      "consultant": "Nguyễn Thị Hà",
+      "jd_filename": "logistics-purchasing-manager.docx",
+      "desc_preview": "JD",
+      "req_preview": "JD",
+      "quality_tier": "2A_Both_Dummy_With_File",
+      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6929/13979",
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:18:23.394872+07:00",
+      "desc_len_after": 1750,
+      "desc_len_before": 2,
+      "req_len_after": 661,
+      "ben_len_after": 99,
+      "skills_added": "Logistics, Purchasing, SAP/ERP, Import-Export, Supply Chain",
+      "note_added": "[Cập nhật AH]: [RE: MORITEX (COGNEX CORPORATION) - Logistics & Purchasing Manager 13979- Bắc Ninh] -"
+    },
+    {
+      "seq": 320,
+      "batch_id": 32,
+      "job_id": "13978",
+      "company_id": "6564",
+      "company_name": "J&T Express",
+      "job_title": "KẾ TOÁN THUẾ",
+      "created_at": "11/04/2025 14:26",
+      "status_crm": "Open - Urgent",
+      "ah_name": "Nguyễn Thị Hà",
+      "consultant": "Nguyễn Thị Hà",
+      "jd_filename": "jd-branch-tax-accountant-2025-1-1.docx",
+      "desc_preview": "jd",
+      "req_preview": "JD",
+      "quality_tier": "2A_Both_Dummy_With_File",
+      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6564/13978",
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:18:39.132683+07:00",
+      "desc_len_after": 1342,
+      "desc_len_before": 2,
+      "req_len_after": 571,
+      "ben_len_after": 203,
+      "skills_added": "Kế toán thuế, Kê khai thuế, Quyết toán thuế, Báo cáo thuế, Phần mềm kê khai thuế",
+      "note_added": "Quy trình tuyển dụng: Vòng 1 test (kiến thức thuế), đạt test sẽ phỏng vấn vòng 2 trực tiếp tại VP\n[C"
+    }
+  ],
+  "pending_backlog_jobs": [
     {
       "seq": 313,
       "batch_id": 32,
@@ -9403,24 +9542,6 @@
       "backlog_status": "pending"
     },
     {
-      "seq": 315,
-      "batch_id": 32,
-      "job_id": "13988",
-      "company_id": "6841",
-      "company_name": "AFTD company",
-      "job_title": "CMO/Head of marketing",
-      "created_at": "14/04/2025 17:23",
-      "status_crm": "Open - Urgent",
-      "ah_name": "Duong Vu Xuan Mai",
-      "consultant": "Duong Vu Xuan Mai",
-      "jd_filename": "jd-cmo.pdf",
-      "desc_preview": "Mạnh Digital MKT, quản lý đội sales Rành công nghệ MKT, update xu hướng MKT mới ",
-      "req_preview": "Updating",
-      "quality_tier": "2B_Partial_Dummy",
-      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6841/13988",
-      "backlog_status": "pending"
-    },
-    {
       "seq": 316,
       "batch_id": 32,
       "job_id": "13987",
@@ -9436,78 +9557,6 @@
       "req_preview": "Updating",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6841/13987",
-      "backlog_status": "pending"
-    },
-    {
-      "seq": 317,
-      "batch_id": 32,
-      "job_id": "13986",
-      "company_id": "1949",
-      "company_name": "AIZAKI VIETNAM CO., LTD.",
-      "job_title": "TRƯƠNG BAN SẢN XUẤT",
-      "created_at": "14/04/2025 16:46",
-      "status_crm": "Open - Urgent",
-      "ah_name": "Nguyễn Thị Hà",
-      "consultant": "Nguyễn Thị Hà",
-      "jd_filename": "thong-tin-tuyen-dung-truong-ban-san-xuat.docx",
-      "desc_preview": "JD",
-      "req_preview": "JD",
-      "quality_tier": "2A_Both_Dummy_With_File",
-      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1949/13986",
-      "backlog_status": "pending"
-    },
-    {
-      "seq": 318,
-      "batch_id": 32,
-      "job_id": "13984",
-      "company_id": "2445",
-      "company_name": "Công ty Fujitsu Việt Nam",
-      "job_title": "Technical Engineer",
-      "created_at": "14/04/2025 14:58",
-      "status_crm": "Open - Urgent",
-      "ah_name": "Nguyen Quoc Huy",
-      "consultant": "Nguyen Quoc Huy",
-      "jd_filename": "jd-natv-it-fujitsu.doc",
-      "desc_preview": ".",
-      "req_preview": ".",
-      "quality_tier": "2A_Both_Dummy_With_File",
-      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2445/13984",
-      "backlog_status": "pending"
-    },
-    {
-      "seq": 319,
-      "batch_id": 32,
-      "job_id": "13979",
-      "company_id": "6929",
-      "company_name": "COGNEX CORPORATION",
-      "job_title": "Logistics & Purchasing Manager",
-      "created_at": "14/04/2025 11:10",
-      "status_crm": "Open - Urgent",
-      "ah_name": "Nguyễn Thị Hà",
-      "consultant": "Nguyễn Thị Hà",
-      "jd_filename": "logistics-purchasing-manager.docx",
-      "desc_preview": "JD",
-      "req_preview": "JD",
-      "quality_tier": "2A_Both_Dummy_With_File",
-      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6929/13979",
-      "backlog_status": "pending"
-    },
-    {
-      "seq": 320,
-      "batch_id": 32,
-      "job_id": "13978",
-      "company_id": "6564",
-      "company_name": "J&T Express",
-      "job_title": "KẾ TOÁN THUẾ",
-      "created_at": "11/04/2025 14:26",
-      "status_crm": "Open - Urgent",
-      "ah_name": "Nguyễn Thị Hà",
-      "consultant": "Nguyễn Thị Hà",
-      "jd_filename": "jd-branch-tax-accountant-2025-1-1.docx",
-      "desc_preview": "jd",
-      "req_preview": "JD",
-      "quality_tier": "2A_Both_Dummy_With_File",
-      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6564/13978",
       "backlog_status": "pending"
     },
     {
@@ -17330,7 +17379,9 @@
       "req_preview": "As per in the JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/432/13999",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:13:43.986868+07:00",
+      "desc_len_after": 1847
     },
     {
       "seq": 312,
@@ -17348,7 +17399,9 @@
       "req_preview": "Trình độ học vấn, chuyên môn và Yêu cầu về kinh nghiệm làm việc: • Hơn 5 năm kin",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7542/13998",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:13:54.863185+07:00",
+      "desc_len_after": 2778
     },
     {
       "seq": 313,
@@ -17402,7 +17455,9 @@
       "req_preview": "Updating",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6841/13988",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:14:50.595784+07:00",
+      "desc_len_after": 1029
     },
     {
       "seq": 316,
@@ -17438,7 +17493,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1949/13986",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:17:58.122806+07:00",
+      "desc_len_after": 489
     },
     {
       "seq": 318,
@@ -17456,7 +17513,9 @@
       "req_preview": ".",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/2445/13984",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:18:06.374931+07:00",
+      "desc_len_after": 1025
     },
     {
       "seq": 319,
@@ -17474,7 +17533,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6929/13979",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:18:23.394872+07:00",
+      "desc_len_after": 1750
     },
     {
       "seq": 320,
@@ -17492,7 +17553,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6564/13978",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T16:18:39.132683+07:00",
+      "desc_len_after": 1342
     },
     {
       "seq": 321,
