@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-18T13:52:07.703432+07:00",
+    "last_updated": "2026-11-18T14:08:01.582756+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 268,
+    "grand_total_processed": 278,
     "total_jobs_created": 38,
     "today_jobs_count": 1,
-    "today_backlog_count": 80,
-    "today_total_count": 81,
+    "today_backlog_count": 90,
+    "today_total_count": 91,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 4,
@@ -21,19 +21,19 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 683,
-      "open_full_pct": 79.23,
+      "open_full_current": 693,
+      "open_full_pct": 80.39,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 230,
-      "remaining_backlog_jobs": 179,
-      "backlog_progress_pct": 56.23,
-      "total_full_all_statuses": 1737,
-      "total_bypass_all_statuses": 590,
+      "completed_backlog_jobs": 240,
+      "remaining_backlog_jobs": 169,
+      "backlog_progress_pct": 58.68,
+      "total_full_all_statuses": 1747,
+      "total_bypass_all_statuses": 580,
       "batch_size": 10,
       "total_batches": 41,
-      "completed_batches": 23,
-      "current_next_batch": 24,
-      "mode_status": "ĐANG TRIỂN KHAI BATCH #24 (10 JOB/MẺ)"
+      "completed_batches": 24,
+      "current_next_batch": 25,
+      "mode_status": "ĐANG TRIỂN KHAI BATCH #25 (10 JOB/MẺ)"
     },
     "system_status": {
       "daemon": "ONLINE (LaunchAgent 24/7)",
@@ -1171,7 +1171,7 @@
       "job_count": 10,
       "job_id_range": "#14415 → #14372",
       "date_range": "28/07/2025 → 11/07/2025",
-      "status": "ready_for_qc",
+      "status": "completed",
       "job_ids": [
         "14415",
         "14397",
@@ -1184,7 +1184,7 @@
         "14373",
         "14372"
       ],
-      "completed_count": 0
+      "completed_count": 10
     },
     {
       "batch_id": 25,
@@ -1192,7 +1192,7 @@
       "job_count": 10,
       "job_id_range": "#14371 → #14308",
       "date_range": "11/07/2025 → 26/06/2025",
-      "status": "queued",
+      "status": "ready_for_qc",
       "job_ids": [
         "14371",
         "14368",
@@ -7293,9 +7293,7 @@
       "ben_len_after": 523,
       "skills_added": "Overseas Sales, Logistics, Forwarding, Import Export, Tiếng Anh giao tiếp",
       "note_added": "Thời gian làm việc: Từ Thứ 2 đến Thứ 6: sáng 8h00 – 12h00, chiều 13h30 – 17h30. Thứ 7 làm việc buổi "
-    }
-  ],
-  "pending_backlog_jobs": [
+    },
     {
       "seq": 231,
       "batch_id": 24,
@@ -7312,7 +7310,14 @@
       "req_preview": "Xem JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/3891/14415",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:05:45.515210+07:00",
+      "desc_len_after": 1363,
+      "desc_len_before": 6,
+      "req_len_after": 710,
+      "ben_len_after": 319,
+      "skills_added": "C&B, HRIS, Compensation and Benefits, Payroll, Salary Structure",
+      "note_added": "Thời gian làm việc: Thứ 2 đến thứ 7 (nghỉ cách tuần Thứ Bảy), Giờ làm việc: 08:00 – 17:15. Có xe đưa"
     },
     {
       "seq": 232,
@@ -7330,7 +7335,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7951/14397",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:05:53.431442+07:00",
+      "desc_len_after": 690,
+      "desc_len_before": 2,
+      "req_len_after": 939,
+      "ben_len_after": 343,
+      "skills_added": "FPGA, Verilog, VHDL, RTL, Vivado, Digital Signal Processing",
+      "note_added": "Thời gian làm việc: Monday – Friday (8:30 AM – 5:30 PM). Địa điểm làm việc: BT5- B31, Bac An Khanh, "
     },
     {
       "seq": 233,
@@ -7348,7 +7360,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7947/14391",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:06:08.176654+07:00",
+      "desc_len_after": 1021,
+      "desc_len_before": 12,
+      "req_len_after": 608,
+      "ben_len_after": 409,
+      "skills_added": "HR Management, Labor Law, Payroll & C&B, Recruitment, Leadership, Administration",
+      "note_added": "Quản lý: HR Team khoảng 4 người. Quy trình tuyển dụng: 2 vòng => Offer.\n[Cập nhật AH]: [URGENT/NEW C"
     },
     {
       "seq": 234,
@@ -7366,7 +7385,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1296/14388",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:06:27.272154+07:00",
+      "desc_len_after": 1123,
+      "desc_len_before": 12,
+      "req_len_after": 1197,
+      "ben_len_after": 99,
+      "skills_added": "DFT, ASIC, MBIST, Scan Logic, Shell, Perl, Tcl",
+      "note_added": "Phí tuyển dụng: 2,5 tháng lương Gross/ứng viên thành công\nAnh @Ngoc Trung ơi,\nEm cập nhật thông tin "
     },
     {
       "seq": 235,
@@ -7384,7 +7410,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1296/14387",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:06:45.804758+07:00",
+      "desc_len_after": 986,
+      "desc_len_before": 12,
+      "req_len_after": 1325,
+      "ben_len_after": 99,
+      "skills_added": "Synthesis, STA, ASIC design, Formal Verification, Perl/Python, TCL, Verilog/System Verilog",
+      "note_added": "Phí tuyển dụng: 2,5 tháng lương Gross/ứng viên thành công\nAnh @Ngoc Trung ơi,\nEm cập nhật thông tin "
     },
     {
       "seq": 236,
@@ -7402,7 +7435,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1296/14386",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:06:57.838236+07:00",
+      "desc_len_after": 1386,
+      "desc_len_before": 12,
+      "req_len_after": 1829,
+      "ben_len_after": 106,
+      "skills_added": "Physical Design, Synthesis, STA, Synopsys, Cadence, Tcl/Perl/Python",
+      "note_added": "Phí tuyển dụng: 2,5 tháng lương Gross/ứng viên thành công\nAnh @Ngoc Trung ơi,\nEm cập nhật thông tin "
     },
     {
       "seq": 237,
@@ -7420,7 +7460,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1296/14385",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:07:11.517405+07:00",
+      "desc_len_after": 707,
+      "desc_len_before": 12,
+      "req_len_after": 971,
+      "ben_len_after": 160,
+      "skills_added": "Design Verification, SoC, SystemVerilog, UVM, ARM, AXI/APB/AHB, Leadership",
+      "note_added": "Phí tuyển dụng: 2,5 tháng lương Gross/ứng viên thành công\nAnh @Ngoc Trung ơi,\nEm cập nhật thông tin "
     },
     {
       "seq": 238,
@@ -7438,7 +7485,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1502/14379",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:07:34.599063+07:00",
+      "desc_len_after": 1504,
+      "desc_len_before": 12,
+      "req_len_after": 2040,
+      "ben_len_after": 187,
+      "skills_added": "Legal Compliance, Contract Review, Legal Drafting, Government Relations, Manufacturing Legal Experience",
+      "note_added": "\"a ơi, look around giùm e vị trí Legal Manager nha, under HR, team có 1 bạn Executive, làm Vsip2, t2"
     },
     {
       "seq": 239,
@@ -7456,7 +7510,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7914/14373",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:07:43.215408+07:00",
+      "desc_len_after": 1525,
+      "desc_len_before": 2,
+      "req_len_after": 595,
+      "ben_len_after": 106,
+      "skills_added": "Business Development, Sales, Market Analysis, Relationship Management, Strategic Planning",
+      "note_added": "Laos local only."
     },
     {
       "seq": 240,
@@ -7474,8 +7535,17 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7914/14372",
-      "backlog_status": "pending"
-    },
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:08:01.571437+07:00",
+      "desc_len_after": 2586,
+      "desc_len_before": 2,
+      "req_len_after": 393,
+      "ben_len_after": 104,
+      "skills_added": "Strategic HR, Organizational Design, Talent Acquisition, Performance Management, Compensation and Benefits, HR Leadership",
+      "note_added": "Laos local only."
+    }
+  ],
+  "pending_backlog_jobs": [
     {
       "seq": 241,
       "batch_id": 25,
@@ -15136,7 +15206,9 @@
       "req_preview": "Xem JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/3891/14415",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:05:45.515210+07:00",
+      "desc_len_after": 1363
     },
     {
       "seq": 232,
@@ -15154,7 +15226,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7951/14397",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:05:53.431442+07:00",
+      "desc_len_after": 690
     },
     {
       "seq": 233,
@@ -15172,7 +15246,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7947/14391",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:06:08.176654+07:00",
+      "desc_len_after": 1021
     },
     {
       "seq": 234,
@@ -15190,7 +15266,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1296/14388",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:06:27.272154+07:00",
+      "desc_len_after": 1123
     },
     {
       "seq": 235,
@@ -15208,7 +15286,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1296/14387",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:06:45.804758+07:00",
+      "desc_len_after": 986
     },
     {
       "seq": 236,
@@ -15226,7 +15306,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1296/14386",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:06:57.838236+07:00",
+      "desc_len_after": 1386
     },
     {
       "seq": 237,
@@ -15244,7 +15326,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1296/14385",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:07:11.517405+07:00",
+      "desc_len_after": 707
     },
     {
       "seq": 238,
@@ -15262,7 +15346,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1502/14379",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:07:34.599063+07:00",
+      "desc_len_after": 1504
     },
     {
       "seq": 239,
@@ -15280,7 +15366,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7914/14373",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:07:43.215408+07:00",
+      "desc_len_after": 1525
     },
     {
       "seq": 240,
@@ -15298,7 +15386,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7914/14372",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:08:01.571437+07:00",
+      "desc_len_after": 2586
     },
     {
       "seq": 241,
