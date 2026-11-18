@@ -2281,6 +2281,8 @@
         if (el) el.innerText = `${countdownSec}s`;
         if (countdownSec <= 0) {
           fetchData();
+          loadJobData();
+          if (typeof loadBodData === 'function') loadBodData();
         }
       }, 1000);
     }
@@ -2486,22 +2488,25 @@
     function populateBacklogBatchFilter(batches, defaultBatchId) {
       const sel = document.getElementById('job-backlog-batch-filter');
       if (!sel || !batches || batches.length === 0) return;
-      const prevVal = sel.dataset.initialized ? sel.value : 'all';
+      const prevVal = sel.value || 'all';
       const remainingCount = globalJobData?.summary?.backlog?.remaining_backlog_jobs || 369;
-      sel.innerHTML = `<option value="all">Xem tất cả các Batch đang chờ (${remainingCount} Jobs)</option>`;
       const nextBatch = globalJobData?.summary?.backlog?.current_next_batch || 5;
-      batches.forEach(b => {
-        const isDone = b.status === 'completed' || b.batch_id < nextBatch;
-        if (!isDone) {
-          const isNext = b.batch_id === nextBatch;
-          const opt = document.createElement('option');
-          opt.value = String(b.batch_id);
-          opt.textContent = `${isNext ? '⚡' : '⏳'} ${b.batch_label}${isNext ? ' [MẺ KẾ TIẾP]' : ''} (${b.job_count} Job: ${b.job_id_range})`;
-          sel.appendChild(opt);
-        }
-      });
-      sel.value = prevVal;
-      sel.dataset.initialized = '1';
+      const lastNextBatch = sel.dataset.lastNextBatch;
+      if (lastNextBatch !== String(nextBatch)) {
+        sel.innerHTML = `<option value="all">Xem tất cả các Batch đang chờ (${remainingCount} Jobs)</option>`;
+        batches.forEach(b => {
+          const isDone = b.status === 'completed' || b.batch_id < nextBatch;
+          if (!isDone) {
+            const isNext = b.batch_id === nextBatch;
+            const opt = document.createElement('option');
+            opt.value = String(b.batch_id);
+            opt.textContent = `${isNext ? '⚡' : '⏳'} ${b.batch_label}${isNext ? ' [MẺ KẾ TIẾP]' : ''} (${b.job_count} Job: ${b.job_id_range})`;
+            sel.appendChild(opt);
+          }
+        });
+        sel.value = prevVal;
+        sel.dataset.lastNextBatch = String(nextBatch);
+      }
     }
 
     function renderJobCharts(analytics) {
@@ -2716,17 +2721,22 @@
 
       const enrichedList = globalJobData.completed_backlog_jobs || (globalJobData.backlog_jobs || []).filter(j => j.backlog_status === 'enriched');
 
-      if (compBatchesSel && !compBatchesSel.dataset.initialized) {
+      if (compBatchesSel) {
+        const curVal = compBatchesSel.value || 'all';
         const uniqueBatches = Array.from(new Set(enrichedList.map(j => j.batch_id).filter(Boolean))).sort((a,b) => a - b);
-        compBatchesSel.innerHTML = `<option value="all">Tất cả Batch đã xử lý (${enrichedList.length} Jobs)</option>`;
-        uniqueBatches.forEach(bId => {
-          const bJobsCount = enrichedList.filter(j => j.batch_id === bId).length;
-          const opt = document.createElement('option');
-          opt.value = String(bId);
-          opt.textContent = `Batch #${String(bId).padStart(2, '0')} (${bJobsCount} Jobs đã chuẩn hóa)`;
-          compBatchesSel.appendChild(opt);
-        });
-        compBatchesSel.dataset.initialized = '1';
+        const lastCount = compBatchesSel.dataset.lastCount;
+        if (lastCount !== String(enrichedList.length)) {
+          compBatchesSel.innerHTML = `<option value="all">Tất cả Batch đã xử lý (${enrichedList.length} Jobs)</option>`;
+          uniqueBatches.forEach(bId => {
+            const bJobsCount = enrichedList.filter(j => j.batch_id === bId).length;
+            const opt = document.createElement('option');
+            opt.value = String(bId);
+            opt.textContent = `Batch #${String(bId).padStart(2, '0')} (${bJobsCount} Jobs đã chuẩn hóa)`;
+            compBatchesSel.appendChild(opt);
+          });
+          compBatchesSel.value = curVal;
+          compBatchesSel.dataset.lastCount = String(enrichedList.length);
+        }
       }
 
       if (compAhSel && !compAhSel.dataset.initialized) {
