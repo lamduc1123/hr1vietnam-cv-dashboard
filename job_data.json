@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-18T10:11:57.514329+07:00",
+    "last_updated": "2026-11-18T10:15:17.574386+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 197,
+    "grand_total_processed": 206,
     "total_jobs_created": 37,
     "today_jobs_count": 0,
-    "today_backlog_count": 10,
-    "today_total_count": 10,
+    "today_backlog_count": 19,
+    "today_total_count": 19,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 3,
@@ -21,14 +21,14 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 613,
-      "open_full_pct": 71.11,
+      "open_full_current": 622,
+      "open_full_pct": 72.16,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 160,
-      "remaining_backlog_jobs": 249,
-      "backlog_progress_pct": 39.12,
-      "total_full_all_statuses": 1667,
-      "total_bypass_all_statuses": 660,
+      "completed_backlog_jobs": 169,
+      "remaining_backlog_jobs": 240,
+      "backlog_progress_pct": 41.32,
+      "total_full_all_statuses": 1676,
+      "total_bypass_all_statuses": 651,
       "batch_size": 10,
       "total_batches": 41,
       "completed_batches": 16,
@@ -999,7 +999,7 @@
       "job_count": 10,
       "job_id_range": "#14775 → #14722",
       "date_range": "17/11/2025 → 30/10/2025",
-      "status": "ready_for_qc",
+      "status": "in_progress",
       "job_ids": [
         "14775",
         "14774",
@@ -1012,7 +1012,7 @@
         "14723",
         "14722"
       ],
-      "completed_count": 0
+      "completed_count": 9
     },
     {
       "batch_id": 18,
@@ -5518,9 +5518,7 @@
       "ben_len_after": 99,
       "skills_added": "Valuation, Team Management, RICS, IVS, Financial Modeling, Real Estate",
       "note_added": "Quy trình phỏng vấn: 2 vòng. Quản lý: Team Valuation khoảng hơn 10 người với các cấp bậc/levels khác"
-    }
-  ],
-  "pending_backlog_jobs": [
+    },
     {
       "seq": 161,
       "batch_id": 17,
@@ -5537,7 +5535,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/347/14775",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:12:32.789748+07:00",
+      "desc_len_after": 1890,
+      "desc_len_before": 12,
+      "req_len_after": 1529,
+      "ben_len_after": 106,
+      "skills_added": "Valuation, RICS, IVS, Real Estate Market, Team Management, Financial Modeling, Business Development",
+      "note_added": "Quản lý: Team Valuation khoảng hơn 10 người với các cấp bậc/levels khác nhau. Phỏng vấn: 2 vòng.\n[Cậ"
     },
     {
       "seq": 162,
@@ -5555,7 +5560,14 @@
       "req_preview": "Qualifications: 1. No gender restrictions, 30-45 years old. 2. Bachelor's degree",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8215/14774",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:13:13.834483+07:00",
+      "desc_len_after": 1474,
+      "desc_len_before": 12,
+      "req_len_after": 877,
+      "ben_len_after": 351,
+      "skills_added": "Logistics Management, Customs Clearance, Import Export, Chinese Speaking, EPE Experience, Supply Chain",
+      "note_added": "Quy trình phỏng vấn: Tối đa 2 vòng. Vòng 1 phỏng vấn với Sếp người Hong Kong/Trung Quốc qua WeChat. "
     },
     {
       "seq": 163,
@@ -5573,25 +5585,14 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/14767",
-      "backlog_status": "pending"
-    },
-    {
-      "seq": 164,
-      "batch_id": 17,
-      "job_id": "14766",
-      "company_id": "14633",
-      "company_name": "",
-      "job_title": "GIÁM ĐỐC / PHÓ GIÁM ĐỐC BỒN CHỨA",
-      "created_at": "13/11/2025 14:46",
-      "status_crm": "Open - Urgent",
-      "ah_name": "Chưa gán AH",
-      "consultant": "Nguyễn Thị Hà",
-      "jd_filename": "giam-doc-bon-chua.docx",
-      "desc_preview": "JD",
-      "req_preview": "JD",
-      "quality_tier": "2A_Both_Dummy_With_File",
-      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/14633/14766",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:13:20.857879+07:00",
+      "desc_len_after": 461,
+      "desc_len_before": 2,
+      "req_len_after": 347,
+      "ben_len_after": 254,
+      "skills_added": "Tank Farm Operation, Port Management, Warehouse Management, Customs Operations, Chinese",
+      "note_added": "Dự kiến bắt đầu làm việc từ ngày 01/01/2026 tại nhà máy KCN Ông Kèo, xã Đại Phước, tỉnh Đồng Nai. Vị"
     },
     {
       "seq": 165,
@@ -5609,7 +5610,14 @@
       "req_preview": "..",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/861/14739",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:13:27.676188+07:00",
+      "desc_len_after": 2027,
+      "desc_len_before": 2,
+      "req_len_after": 743,
+      "ben_len_after": 106,
+      "skills_added": "HRBP, Workforce Planning, Change Management, Talent Management, Employee Relations, HR Analytics",
+      "note_added": "Làm việc tại NHÀ MÁY THỨC ĂN THỦY SẢN JAPFA COMFEED VIỆT NAM - CN LONG AN (Ấp 2, xã Nhựt Chánh, huyệ"
     },
     {
       "seq": 166,
@@ -5627,7 +5635,14 @@
       "req_preview": "Snack Bento",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8163/14734",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:13:38.710789+07:00",
+      "desc_len_after": 447,
+      "desc_len_before": 3,
+      "req_len_after": 656,
+      "ben_len_after": 265,
+      "skills_added": "R&D, Product Development, Snack Bento, Food Technology, Formulation, FMCG",
+      "note_added": "R&D Product Development Expert: vị trí này chưa có JD, nhưng em brief  là cần tìm chuyên gia ở Thái "
     },
     {
       "seq": 167,
@@ -5645,7 +5660,14 @@
       "req_preview": "Bachelor’s/Master’s in Science, Engineering , or related fields. 8-10 years of e",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8163/14733",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:13:48.606328+07:00",
+      "desc_len_after": 1782,
+      "desc_len_before": 12,
+      "req_len_after": 905,
+      "ben_len_after": 99,
+      "skills_added": "Technology Scouting, Open Innovation, R&D, Patent Analysis, External Partnership, HPC",
+      "note_added": ""
     },
     {
       "seq": 168,
@@ -5663,7 +5685,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/4079/14728",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:14:17.506578+07:00",
+      "desc_len_after": 369,
+      "desc_len_before": 2,
+      "req_len_after": 357,
+      "ben_len_after": 106,
+      "skills_added": "Accounting, ERP, MES, Manufacturing Cost Control, Chinese",
+      "note_added": "Phỏng vấn: 1-2 vòng (có ít nhất 1 vòng tại nhà máy). Ký HĐ với pháp nhân FUNING PRECISION COMPONENT,"
     },
     {
       "seq": 169,
@@ -5681,7 +5710,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/4079/14723",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:14:46.405391+07:00",
+      "desc_len_after": 460,
+      "desc_len_before": 2,
+      "req_len_after": 325,
+      "ben_len_after": 106,
+      "skills_added": "Project Management, PMP, Chinese, English, Non-standard Automation Equipment",
+      "note_added": "JD\nQuy trình phỏng vấn: 1-2 vòng (có ít nhất 1 vòng tại nhà máy). Ký hợp đồng với pháp nhân tại Bắc "
     },
     {
       "seq": 170,
@@ -5699,6 +5735,33 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/4079/14722",
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:15:17.563216+07:00",
+      "desc_len_after": 706,
+      "desc_len_before": 2,
+      "req_len_after": 423,
+      "ben_len_after": 86,
+      "skills_added": "AutoCAD, SolidWorks, Creo, Assembly, Mechanical Design",
+      "note_added": "Quy trình tuyển dụng: Phỏng vấn 1-2 vòng (có ít nhất 1 vòng tại nhà máy). Pháp nhân: Công ty TNHH Fu"
+    }
+  ],
+  "pending_backlog_jobs": [
+    {
+      "seq": 164,
+      "batch_id": 17,
+      "job_id": "14766",
+      "company_id": "14633",
+      "company_name": "",
+      "job_title": "GIÁM ĐỐC / PHÓ GIÁM ĐỐC BỒN CHỨA",
+      "created_at": "13/11/2025 14:46",
+      "status_crm": "Open - Urgent",
+      "ah_name": "Chưa gán AH",
+      "consultant": "Nguyễn Thị Hà",
+      "jd_filename": "giam-doc-bon-chua.docx",
+      "desc_preview": "JD",
+      "req_preview": "JD",
+      "quality_tier": "2A_Both_Dummy_With_File",
+      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/14633/14766",
       "backlog_status": "pending"
     },
     {
@@ -13221,7 +13284,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/347/14775",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:12:32.789748+07:00",
+      "desc_len_after": 1890
     },
     {
       "seq": 162,
@@ -13239,7 +13304,9 @@
       "req_preview": "Qualifications: 1. No gender restrictions, 30-45 years old. 2. Bachelor's degree",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8215/14774",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:13:13.834483+07:00",
+      "desc_len_after": 1474
     },
     {
       "seq": 163,
@@ -13257,7 +13324,9 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5934/14767",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:13:20.857879+07:00",
+      "desc_len_after": 461
     },
     {
       "seq": 164,
@@ -13293,7 +13362,9 @@
       "req_preview": "..",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/861/14739",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:13:27.676188+07:00",
+      "desc_len_after": 2027
     },
     {
       "seq": 166,
@@ -13311,7 +13382,9 @@
       "req_preview": "Snack Bento",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8163/14734",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:13:38.710789+07:00",
+      "desc_len_after": 447
     },
     {
       "seq": 167,
@@ -13329,7 +13402,9 @@
       "req_preview": "Bachelor’s/Master’s in Science, Engineering , or related fields. 8-10 years of e",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/8163/14733",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:13:48.606328+07:00",
+      "desc_len_after": 1782
     },
     {
       "seq": 168,
@@ -13347,7 +13422,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/4079/14728",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:14:17.506578+07:00",
+      "desc_len_after": 369
     },
     {
       "seq": 169,
@@ -13365,7 +13442,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/4079/14723",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:14:46.405391+07:00",
+      "desc_len_after": 460
     },
     {
       "seq": 170,
@@ -13383,7 +13462,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/4079/14722",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:15:17.563216+07:00",
+      "desc_len_after": 706
     },
     {
       "seq": 171,
