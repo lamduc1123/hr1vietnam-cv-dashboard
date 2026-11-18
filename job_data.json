@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-18T10:15:17.574386+07:00",
+    "last_updated": "2026-11-18T10:16:09.141776+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 206,
+    "grand_total_processed": 207,
     "total_jobs_created": 37,
     "today_jobs_count": 0,
-    "today_backlog_count": 19,
-    "today_total_count": 19,
+    "today_backlog_count": 20,
+    "today_total_count": 20,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 3,
@@ -21,19 +21,19 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 622,
-      "open_full_pct": 72.16,
+      "open_full_current": 623,
+      "open_full_pct": 72.27,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 169,
-      "remaining_backlog_jobs": 240,
-      "backlog_progress_pct": 41.32,
-      "total_full_all_statuses": 1676,
-      "total_bypass_all_statuses": 651,
+      "completed_backlog_jobs": 170,
+      "remaining_backlog_jobs": 239,
+      "backlog_progress_pct": 41.56,
+      "total_full_all_statuses": 1677,
+      "total_bypass_all_statuses": 650,
       "batch_size": 10,
       "total_batches": 41,
-      "completed_batches": 16,
-      "current_next_batch": 17,
-      "mode_status": "ĐANG TRIỂN KHAI BATCH #17 (10 JOB/MẺ)"
+      "completed_batches": 17,
+      "current_next_batch": 18,
+      "mode_status": "ĐANG TRIỂN KHAI BATCH #18 (10 JOB/MẺ)"
     },
     "system_status": {
       "daemon": "ONLINE (LaunchAgent 24/7)",
@@ -999,7 +999,7 @@
       "job_count": 10,
       "job_id_range": "#14775 → #14722",
       "date_range": "17/11/2025 → 30/10/2025",
-      "status": "in_progress",
+      "status": "completed",
       "job_ids": [
         "14775",
         "14774",
@@ -1012,7 +1012,7 @@
         "14723",
         "14722"
       ],
-      "completed_count": 9
+      "completed_count": 10
     },
     {
       "batch_id": 18,
@@ -1020,7 +1020,7 @@
       "job_count": 10,
       "job_id_range": "#14715 → #14666",
       "date_range": "29/10/2025 → 14/10/2025",
-      "status": "queued",
+      "status": "ready_for_qc",
       "job_ids": [
         "14715",
         "14710",
@@ -5595,6 +5595,31 @@
       "note_added": "Dự kiến bắt đầu làm việc từ ngày 01/01/2026 tại nhà máy KCN Ông Kèo, xã Đại Phước, tỉnh Đồng Nai. Vị"
     },
     {
+      "seq": 164,
+      "batch_id": 17,
+      "job_id": "14766",
+      "company_id": "14633",
+      "company_name": "",
+      "job_title": "GIÁM ĐỐC / PHÓ GIÁM ĐỐC BỒN CHỨA",
+      "created_at": "13/11/2025 14:46",
+      "status_crm": "Open - Urgent",
+      "ah_name": "Chưa gán AH",
+      "consultant": "Nguyễn Thị Hà",
+      "jd_filename": "giam-doc-bon-chua.docx",
+      "desc_preview": "JD",
+      "req_preview": "JD",
+      "quality_tier": "2A_Both_Dummy_With_File",
+      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/14633/14766",
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:16:09.136667+07:00",
+      "desc_len_after": 568,
+      "desc_len_before": 2,
+      "req_len_after": 356,
+      "ben_len_after": 234,
+      "skills_added": "Tank Operation, Tank Farm, Port Management, Warehouse Management, Customs Operations, Chinese",
+      "note_added": "Dự kiến bắt đầu làm việc từ ngày 01/01/2026. Làm việc tại nhà máy KCN Ông Kèo, Xã Đại Phước, Tỉnh Đồ"
+    },
+    {
       "seq": 165,
       "batch_id": 17,
       "job_id": "14739",
@@ -5746,24 +5771,6 @@
     }
   ],
   "pending_backlog_jobs": [
-    {
-      "seq": 164,
-      "batch_id": 17,
-      "job_id": "14766",
-      "company_id": "14633",
-      "company_name": "",
-      "job_title": "GIÁM ĐỐC / PHÓ GIÁM ĐỐC BỒN CHỨA",
-      "created_at": "13/11/2025 14:46",
-      "status_crm": "Open - Urgent",
-      "ah_name": "Chưa gán AH",
-      "consultant": "Nguyễn Thị Hà",
-      "jd_filename": "giam-doc-bon-chua.docx",
-      "desc_preview": "JD",
-      "req_preview": "JD",
-      "quality_tier": "2A_Both_Dummy_With_File",
-      "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/14633/14766",
-      "backlog_status": "pending"
-    },
     {
       "seq": 171,
       "batch_id": 18,
@@ -13344,7 +13351,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/14633/14766",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T10:16:09.136667+07:00",
+      "desc_len_after": 568
     },
     {
       "seq": 165,
