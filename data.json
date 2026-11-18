@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-18 11:59:43",
+    "last_updated": "2026-11-18 12:01:01",
     "today_date": "2026-11-18",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -16,9 +16,9 @@
     "backlog_count": 0,
     "target_daily": 300,
     "completion_rate_pct": 3.7,
-    "current_mode": "NORMAL_HOURS",
-    "mode_badge": "⚡ Ca Làm Việc (08:30 - 17:30)",
-    "mode_desc": "Ưu tiên phản hồi Real-time 60s • Xử lý Backlog khi rảnh",
+    "current_mode": "TURBO_LUNCH",
+    "mode_badge": "☀️ Turbo Nghỉ Trưa (12:00 - 13:00)",
+    "mode_desc": "Tối đa công suất Backlog: Mẻ 25 CVs • Chu kỳ 15s",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
@@ -26,15 +26,15 @@
         "key": "morning",
         "label": "Ca Sáng (08:30 - 11:59)",
         "count": 9,
-        "status": "in_progress",
-        "badge": "Đang chạy"
+        "status": "completed",
+        "badge": "Đã hoàn tất"
       },
       {
         "key": "lunch",
         "label": "Ca Trưa Turbo (12:00 - 13:00)",
         "count": 0,
-        "status": "upcoming",
-        "badge": "Sắp diễn ra"
+        "status": "in_progress",
+        "badge": "Đang tăng tốc"
       },
       {
         "key": "afternoon",
@@ -67,6 +67,10 @@
       {
         "hour": "11:00",
         "count": 3
+      },
+      {
+        "hour": "12:00",
+        "count": 0
       }
     ],
     "sources": {
@@ -95,10 +99,10 @@
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 394071872,
-    "total_tokens_formatted": "394.1M",
-    "prompt_tokens": 300682060,
-    "output_tokens": 93389812,
+    "total_tokens": 394250862,
+    "total_tokens_formatted": "394.3M",
+    "prompt_tokens": 300820794,
+    "output_tokens": 93430068,
     "total_cost_usd": 227.9,
     "total_cost_usd_formatted": "$227.90",
     "total_cost_vnd": 5800117,
@@ -117,7 +121,7 @@
     "billing_used_pct": 80.71,
     "cost_per_cv_vnd": 268.1,
     "cost_per_cv_usd": 0.0105,
-    "tokens_per_cv": 18212,
+    "tokens_per_cv": 18220,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -3508,7 +3512,7 @@
     "backlog_status": "HOÀN TẤT 100% (STANDBY)",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 64.4,
+    "last_heartbeat_seconds_ago": 20.0,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 2 (Prepay Active)",
