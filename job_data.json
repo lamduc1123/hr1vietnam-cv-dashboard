@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-18T15:16:23.160805+07:00",
+    "last_updated": "2026-11-18T15:31:14.806916+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 319,
+    "grand_total_processed": 329,
     "total_jobs_created": 39,
     "today_jobs_count": 2,
-    "today_backlog_count": 130,
-    "today_total_count": 132,
+    "today_backlog_count": 140,
+    "today_total_count": 142,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 4,
@@ -21,19 +21,19 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 733,
-      "open_full_pct": 85.03,
+      "open_full_current": 743,
+      "open_full_pct": 86.19,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 280,
-      "remaining_backlog_jobs": 129,
-      "backlog_progress_pct": 68.46,
-      "total_full_all_statuses": 1787,
-      "total_bypass_all_statuses": 540,
+      "completed_backlog_jobs": 290,
+      "remaining_backlog_jobs": 119,
+      "backlog_progress_pct": 70.9,
+      "total_full_all_statuses": 1797,
+      "total_bypass_all_statuses": 530,
       "batch_size": 10,
       "total_batches": 41,
-      "completed_batches": 28,
-      "current_next_batch": 29,
-      "mode_status": "ĐANG TRIỂN KHAI BATCH #29 (10 JOB/MẺ)"
+      "completed_batches": 29,
+      "current_next_batch": 30,
+      "mode_status": "ĐANG TRIỂN KHAI BATCH #30 (10 JOB/MẺ)"
     },
     "system_status": {
       "daemon": "ONLINE (LaunchAgent 24/7)",
@@ -1293,7 +1293,7 @@
       "job_count": 10,
       "job_id_range": "#14164 → #14135",
       "date_range": "23/05/2025 → 16/05/2025",
-      "status": "ready_for_qc",
+      "status": "completed",
       "job_ids": [
         "14164",
         "14160",
@@ -1306,7 +1306,7 @@
         "14146",
         "14135"
       ],
-      "completed_count": 0
+      "completed_count": 10
     },
     {
       "batch_id": 30,
@@ -1314,7 +1314,7 @@
       "job_count": 10,
       "job_id_range": "#14133 → #14093",
       "date_range": "16/05/2025 → 09/05/2025",
-      "status": "queued",
+      "status": "ready_for_qc",
       "job_ids": [
         "14133",
         "14127",
@@ -8560,9 +8560,7 @@
       "ben_len_after": 220,
       "skills_added": "Tiếng Trung, Quản lý cải tiến, Process Improvement, Manufacturing, Leadership",
       "note_added": "Quy trình phỏng vấn: Tối đa 2 vòng. Lương thỏa thuận, từ VND 60 Mil Gross/month trở lên tùy theo kin"
-    }
-  ],
-  "pending_backlog_jobs": [
+    },
     {
       "seq": 281,
       "batch_id": 29,
@@ -8579,7 +8577,14 @@
       "req_preview": ".",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7683/14164",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:28:33.359052+07:00",
+      "desc_len_after": 3185,
+      "desc_len_before": 1,
+      "req_len_after": 1818,
+      "ben_len_after": 316,
+      "skills_added": "Account Management, Business Development, CRM, B2B Sales, Project Management, Leadership",
+      "note_added": "Pháp lý hợp đồng lao động DNA.\n[Cập nhật AH]: [[Update Job] List Job 02/06/2025 BD Team] • Lương: up"
     },
     {
       "seq": 282,
@@ -8597,7 +8602,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/3978/14160",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:28:44.888299+07:00",
+      "desc_len_after": 804,
+      "desc_len_before": 2,
+      "req_len_after": 971,
+      "ben_len_after": 100,
+      "skills_added": "Business Analysis, Data Analysis, SQL, Power BI, Tableau, Data Warehousing, ETL",
+      "note_added": ""
     },
     {
       "seq": 283,
@@ -8615,7 +8627,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/3978/14159",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:28:55.808737+07:00",
+      "desc_len_after": 919,
+      "desc_len_before": 2,
+      "req_len_after": 1530,
+      "ben_len_after": 269,
+      "skills_added": "Business Analysis, Data Migration, Data Warehouse, SQL, ETL, Business Intelligence",
+      "note_added": ""
     },
     {
       "seq": 284,
@@ -8633,7 +8652,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1338/14154",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:29:09.801647+07:00",
+      "desc_len_after": 1316,
+      "desc_len_before": 12,
+      "req_len_after": 861,
+      "ben_len_after": 726,
+      "skills_added": "HR Strategy, HR Business Partnering, Compensation and Benefits, HR Analytics, Learning and Development",
+      "note_added": "o\tLấy người: “Khá đặc thù á nha anh. Gồm 3 cái”\n1/: Lấy các Background các cty Tư vấn nhân sự lớn ra"
     },
     {
       "seq": 285,
@@ -8651,7 +8677,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/3433/14152",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:29:21.243731+07:00",
+      "desc_len_after": 908,
+      "desc_len_before": 12,
+      "req_len_after": 176,
+      "ben_len_after": 200,
+      "skills_added": "IE, Cân bằng chuyền, May mặc, Cải tiến sản xuất, Quản lý năng suất",
+      "note_added": "Thời gian làm việc: Từ 8:00 sáng đến 5:00 chiều (nghỉ trưa 1 tiếng), làm việc từ Thứ Hai đến Thứ Bảy"
     },
     {
       "seq": 286,
@@ -8669,7 +8702,14 @@
       "req_preview": "As per in the JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6914/14151",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:29:44.218887+07:00",
+      "desc_len_after": 2659,
+      "desc_len_before": 16,
+      "req_len_after": 1102,
+      "ben_len_after": 106,
+      "skills_added": "Business Development, Sales, Renewable Energy, C&I Market, Account Management, Networking",
+      "note_added": "Lấy uv từ:\n- Background in energy,\n- Engineering\n- Real estate\n- Industrial services targeting C&I s"
     },
     {
       "seq": 287,
@@ -8687,7 +8727,14 @@
       "req_preview": "• Tối thiểu 7 năm kinh nghiệm trong lĩnh vực phát triển thị trường hoặc mở rộng ",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/125/14149",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:29:50.698027+07:00",
+      "desc_len_after": 2344,
+      "desc_len_before": 12,
+      "req_len_after": 1131,
+      "ben_len_after": 106,
+      "skills_added": "Business Development, Market Expansion, Strategic Planning, Project Management, International Relations",
+      "note_added": "Tổng quan: Có kinh nghiệm mở rộng thị trường quốc tế, đặc biệt tại Đông Nam Á (ưu tiên Indonesia và "
     },
     {
       "seq": 288,
@@ -8705,7 +8752,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7665/14147",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:30:18.273472+07:00",
+      "desc_len_after": 2283,
+      "desc_len_before": 12,
+      "req_len_after": 925,
+      "ben_len_after": 248,
+      "skills_added": "HSE, Safety Inspection, Environmental Management, Audit, ISO",
+      "note_added": "\"Hi anh Trung. Em đang cần Headhunt hỗ trợ tuyển 2 vị trí HR Manager và HSE Manager, sơ lược chân du"
     },
     {
       "seq": 289,
@@ -8723,7 +8777,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7665/14146",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:30:43.202133+07:00",
+      "desc_len_after": 1937,
+      "desc_len_before": 12,
+      "req_len_after": 462,
+      "ben_len_after": 309,
+      "skills_added": "Human Resources, Recruitment, C&B, Labor Relations, Social Audit, English, Chinese",
+      "note_added": "\"Hi anh Trung. Em đang cần Headhunt hỗ trợ tuyển 2 vị trí HR Manager và HSE Manager, sơ lược chân du"
     },
     {
       "seq": 290,
@@ -8741,8 +8802,17 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1833/14135",
-      "backlog_status": "pending"
-    },
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:31:14.799732+07:00",
+      "desc_len_after": 3350,
+      "desc_len_before": 12,
+      "req_len_after": 1674,
+      "ben_len_after": 106,
+      "skills_added": "Software Engineering Leadership, DevOps, Quality Control, Cloud Infrastructure, AI/ML Mindset, Agile/Scrum, Stakeholder Management",
+      "note_added": "\"OnPoint x HR1 _ Tech Recruitment\nDear anh Trung,\nEm bên team tuyển dụng nhé ạ.\nNhư chia sẽ cùng anh"
+    }
+  ],
+  "pending_backlog_jobs": [
     {
       "seq": 291,
       "batch_id": 30,
@@ -16503,7 +16573,9 @@
       "req_preview": ".",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7683/14164",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:28:33.359052+07:00",
+      "desc_len_after": 3185
     },
     {
       "seq": 282,
@@ -16521,7 +16593,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/3978/14160",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:28:44.888299+07:00",
+      "desc_len_after": 804
     },
     {
       "seq": 283,
@@ -16539,7 +16613,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/3978/14159",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:28:55.808737+07:00",
+      "desc_len_after": 919
     },
     {
       "seq": 284,
@@ -16557,7 +16633,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1338/14154",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:29:09.801647+07:00",
+      "desc_len_after": 1316
     },
     {
       "seq": 285,
@@ -16575,7 +16653,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/3433/14152",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:29:21.243731+07:00",
+      "desc_len_after": 908
     },
     {
       "seq": 286,
@@ -16593,7 +16673,9 @@
       "req_preview": "As per in the JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6914/14151",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:29:44.218887+07:00",
+      "desc_len_after": 2659
     },
     {
       "seq": 287,
@@ -16611,7 +16693,9 @@
       "req_preview": "• Tối thiểu 7 năm kinh nghiệm trong lĩnh vực phát triển thị trường hoặc mở rộng ",
       "quality_tier": "2B_Partial_Dummy",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/125/14149",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:29:50.698027+07:00",
+      "desc_len_after": 2344
     },
     {
       "seq": 288,
@@ -16629,7 +16713,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7665/14147",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:30:18.273472+07:00",
+      "desc_len_after": 2283
     },
     {
       "seq": 289,
@@ -16647,7 +16733,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7665/14146",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:30:43.202133+07:00",
+      "desc_len_after": 1937
     },
     {
       "seq": 290,
@@ -16665,7 +16753,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1833/14135",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T15:31:14.799732+07:00",
+      "desc_len_after": 3350
     },
     {
       "seq": 291,
