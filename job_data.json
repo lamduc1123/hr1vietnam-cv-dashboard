@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-18T11:39:55.207409+07:00",
+    "last_updated": "2026-11-18T13:32:16.329114+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 238,
+    "grand_total_processed": 248,
     "total_jobs_created": 38,
     "today_jobs_count": 1,
-    "today_backlog_count": 50,
-    "today_total_count": 51,
+    "today_backlog_count": 60,
+    "today_total_count": 61,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 4,
@@ -21,19 +21,19 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 653,
-      "open_full_pct": 75.75,
+      "open_full_current": 663,
+      "open_full_pct": 76.91,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 200,
-      "remaining_backlog_jobs": 209,
-      "backlog_progress_pct": 48.9,
-      "total_full_all_statuses": 1707,
-      "total_bypass_all_statuses": 620,
+      "completed_backlog_jobs": 210,
+      "remaining_backlog_jobs": 199,
+      "backlog_progress_pct": 51.34,
+      "total_full_all_statuses": 1717,
+      "total_bypass_all_statuses": 610,
       "batch_size": 10,
       "total_batches": 41,
-      "completed_batches": 20,
-      "current_next_batch": 21,
-      "mode_status": "ĐANG TRIỂN KHAI BATCH #21 (10 JOB/MẺ)"
+      "completed_batches": 21,
+      "current_next_batch": 22,
+      "mode_status": "ĐANG TRIỂN KHAI BATCH #22 (10 JOB/MẺ)"
     },
     "system_status": {
       "daemon": "ONLINE (LaunchAgent 24/7)",
@@ -1108,7 +1108,7 @@
       "job_count": 10,
       "job_id_range": "#14573 → #14518",
       "date_range": "12/09/2025 → 22/08/2025",
-      "status": "ready_for_qc",
+      "status": "completed",
       "job_ids": [
         "14573",
         "14569",
@@ -1121,7 +1121,7 @@
         "14519",
         "14518"
       ],
-      "completed_count": 0
+      "completed_count": 10
     },
     {
       "batch_id": 22,
@@ -1129,7 +1129,7 @@
       "job_count": 10,
       "job_id_range": "#14516 → #14454",
       "date_range": "21/08/2025 → 08/08/2025",
-      "status": "queued",
+      "status": "ready_for_qc",
       "job_ids": [
         "14516",
         "14515",
@@ -6543,9 +6543,7 @@
       "ben_len_after": 287,
       "skills_added": "Quản lý nhân sự, Tiếng Trung, Luật lao động, Kỹ năng lãnh đạo, Sản xuất",
       "note_added": "Ký HĐ với pháp nhân FULIAN, làm việc tại KCN Quang Châu, Bắc Giang. Lương upto 28 triệu gross cơ bản"
-    }
-  ],
-  "pending_backlog_jobs": [
+    },
     {
       "seq": 201,
       "batch_id": 21,
@@ -6562,7 +6560,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1296/14573",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:30:34.667802+07:00",
+      "desc_len_after": 670,
+      "desc_len_before": 12,
+      "req_len_after": 1297,
+      "ben_len_after": 99,
+      "skills_added": "ADAS, Embedded, C/C++, Linux, DSP, ARM, Image Processing",
+      "note_added": "Quản lý: Làm việc độc lập, hoặc có thể up to 2 staff là Max (hiện có luôn rồi).\n[Cập nhật AH]: [URGE"
     },
     {
       "seq": 202,
@@ -6580,7 +6585,14 @@
       "req_preview": "Xem JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1102/14569",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:30:42.539098+07:00",
+      "desc_len_after": 3725,
+      "desc_len_before": 6,
+      "req_len_after": 617,
+      "ben_len_after": 101,
+      "skills_added": "Regulatory Compliance, Risk Management, Banking Law, SBV Liaison, Policy Management, Legal Advisory",
+      "note_added": "Salary: AVP: 70M – 85M. VP: 85M-100M (có thể lên 120M tùy thuộc vào năng lực ứng viên). Urgent Job O"
     },
     {
       "seq": 203,
@@ -6598,7 +6610,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5844/14567",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:30:53.826522+07:00",
+      "desc_len_after": 478,
+      "desc_len_before": 2,
+      "req_len_after": 216,
+      "ben_len_after": 205,
+      "skills_added": "AutoCAD, Thiết kế 2D, Thiết kế 3D, Thiết kế khuôn mẫu, BOM",
+      "note_added": "[Cập nhật AH]: [[New job / ICH Cube] 14567 - NHÂN VIÊN AUTOCAD - Based in BẮC GIANG] *- Số lương: 1 "
     },
     {
       "seq": 204,
@@ -6616,7 +6635,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7699/14547",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:31:00.912820+07:00",
+      "desc_len_after": 613,
+      "desc_len_before": 2,
+      "req_len_after": 520,
+      "ben_len_after": 327,
+      "skills_added": "Quản lý tài chính, Kế toán trưởng, Quản trị thuế, Lập chiến lược tài chính, Quản lý ngân sách",
+      "note_added": "Thời gian làm việc: Thứ 2 – Thứ 7 (Nguyễn Chí Thanh, Hà Nội)\n[Cập nhật AH]: [NEW ORDER - KẾ TOÁN TỔN"
     },
     {
       "seq": 205,
@@ -6634,7 +6660,14 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7699/14546",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:31:09.330420+07:00",
+      "desc_len_after": 489,
+      "desc_len_before": 2,
+      "req_len_after": 361,
+      "ben_len_after": 265,
+      "skills_added": "Kế toán tổng hợp, Báo cáo tài chính, Báo cáo thuế, Phần mềm kế toán, Excel",
+      "note_added": "Thời gian làm việc: Thứ 2 – Thứ 7\n[Cập nhật AH]: [NEW ORDER - KẾ TOÁN TỔNG HỢP- PHÓ TỔNG GIÁM ĐỐC (P"
     },
     {
       "seq": 206,
@@ -6652,7 +6685,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5738/14534",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:31:29.635635+07:00",
+      "desc_len_after": 2166,
+      "desc_len_before": 12,
+      "req_len_after": 721,
+      "ben_len_after": 198,
+      "skills_added": "Commercial Management, P&L Ownership, FMCG Marketing & Sales, Consumer Health, Omnichannel Strategy, Leadership",
+      "note_added": "em gửi anh JD vị trí Commercial Director bên em nha anh\nVị trí này sẽ report cho 1 trong 3 anh Co-fo"
     },
     {
       "seq": 207,
@@ -6670,7 +6710,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6087/14530",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:31:44.770684+07:00",
+      "desc_len_after": 2903,
+      "desc_len_before": 12,
+      "req_len_after": 1819,
+      "ben_len_after": 167,
+      "skills_added": "Learning and Development, Talent Management, Organizational Development, Project Management, Training & Facilitation, HR Analytics",
+      "note_added": "Quy trình phỏng vấn: Phỏng vấn 2 vòng, trong đó có vòng present in English nhen. Vị trí Individual C"
     },
     {
       "seq": 208,
@@ -6688,7 +6735,14 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6087/14529",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:31:58.196020+07:00",
+      "desc_len_after": 2448,
+      "desc_len_before": 12,
+      "req_len_after": 1941,
+      "ben_len_after": 106,
+      "skills_added": "Talent Management, HR Program Implementation, Organizational Development, Project Management, Leadership Development, Change Management",
+      "note_added": "Quy trình phỏng vấn: Phỏng vấn 2 vòng, trong đó có vòng present in English. Vị trí Individual Contri"
     },
     {
       "seq": 209,
@@ -6706,7 +6760,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6642/14519",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:32:08.124209+07:00",
+      "desc_len_after": 942,
+      "desc_len_before": 2,
+      "req_len_after": 454,
+      "ben_len_after": 106,
+      "skills_added": "Fruit Purchasing, Agricultural Sourcing, Negotiation, Supplier Management, Supply Chain",
+      "note_added": "[Cập nhật AH]: [NEW ORDER - AGRO EXIM- Fruits Purchasing Staff+Internal Accountant (HCM BASE)] Lương"
     },
     {
       "seq": 210,
@@ -6724,8 +6785,17 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6642/14518",
-      "backlog_status": "pending"
-    },
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:32:16.319701+07:00",
+      "desc_len_after": 1376,
+      "desc_len_before": 2,
+      "req_len_after": 187,
+      "ben_len_after": 99,
+      "skills_added": "Internal Accounting, Financial Reporting, Reconciliation, Inventory Management, English",
+      "note_added": "HCM base\n[Cập nhật AH]: [NEW ORDER - AGRO EXIM- Fruits Purchasing Staff+Internal Accountant (HCM BAS"
+    }
+  ],
+  "pending_backlog_jobs": [
     {
       "seq": 211,
       "batch_id": 22,
@@ -14326,7 +14396,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1296/14573",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:30:34.667802+07:00",
+      "desc_len_after": 670
     },
     {
       "seq": 202,
@@ -14344,7 +14416,9 @@
       "req_preview": "Xem JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1102/14569",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:30:42.539098+07:00",
+      "desc_len_after": 3725
     },
     {
       "seq": 203,
@@ -14362,7 +14436,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5844/14567",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:30:53.826522+07:00",
+      "desc_len_after": 478
     },
     {
       "seq": 204,
@@ -14380,7 +14456,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7699/14547",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:31:00.912820+07:00",
+      "desc_len_after": 613
     },
     {
       "seq": 205,
@@ -14398,7 +14476,9 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7699/14546",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:31:09.330420+07:00",
+      "desc_len_after": 489
     },
     {
       "seq": 206,
@@ -14416,7 +14496,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/5738/14534",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:31:29.635635+07:00",
+      "desc_len_after": 2166
     },
     {
       "seq": 207,
@@ -14434,7 +14516,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6087/14530",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:31:44.770684+07:00",
+      "desc_len_after": 2903
     },
     {
       "seq": 208,
@@ -14452,7 +14536,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6087/14529",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:31:58.196020+07:00",
+      "desc_len_after": 2448
     },
     {
       "seq": 209,
@@ -14470,7 +14556,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6642/14519",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:32:08.124209+07:00",
+      "desc_len_after": 942
     },
     {
       "seq": 210,
@@ -14488,7 +14576,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6642/14518",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T13:32:16.319701+07:00",
+      "desc_len_after": 1376
     },
     {
       "seq": 211,
