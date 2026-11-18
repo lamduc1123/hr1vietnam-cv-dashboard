@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-11-18T14:23:37.506203+07:00",
+    "last_updated": "2026-11-18T14:25:04.315073+07:00",
     "module_name": "HR1VIETNAM - INPUT JOB CRM AUTO (DUAL-STREAM: REAL-TIME & BACKLOG)",
     "version": "3.0-DualStream",
     "timezone": "Asia/Ho_Chi_Minh"
   },
   "summary": {
-    "grand_total_processed": 286,
+    "grand_total_processed": 289,
     "total_jobs_created": 39,
     "today_jobs_count": 2,
-    "today_backlog_count": 97,
-    "today_total_count": 99,
+    "today_backlog_count": 100,
+    "today_total_count": 102,
     "success_rate": 100.0,
     "avg_processing_time_seconds": 52.4,
     "active_requesters_count": 4,
@@ -21,19 +21,19 @@
       "total_crm_jobs_2025_2026": 2327,
       "total_open_jobs": 862,
       "open_full_initial": 453,
-      "open_full_current": 700,
-      "open_full_pct": 81.21,
+      "open_full_current": 703,
+      "open_full_pct": 81.55,
       "total_open_bypass_target": 409,
-      "completed_backlog_jobs": 247,
-      "remaining_backlog_jobs": 162,
-      "backlog_progress_pct": 60.39,
-      "total_full_all_statuses": 1754,
-      "total_bypass_all_statuses": 573,
+      "completed_backlog_jobs": 250,
+      "remaining_backlog_jobs": 159,
+      "backlog_progress_pct": 61.12,
+      "total_full_all_statuses": 1757,
+      "total_bypass_all_statuses": 570,
       "batch_size": 10,
       "total_batches": 41,
-      "completed_batches": 24,
-      "current_next_batch": 25,
-      "mode_status": "ĐANG TRIỂN KHAI BATCH #25 (10 JOB/MẺ)"
+      "completed_batches": 25,
+      "current_next_batch": 26,
+      "mode_status": "ĐANG TRIỂN KHAI BATCH #26 (10 JOB/MẺ)"
     },
     "system_status": {
       "daemon": "ONLINE (LaunchAgent 24/7)",
@@ -1209,7 +1209,7 @@
       "job_count": 10,
       "job_id_range": "#14371 → #14308",
       "date_range": "11/07/2025 → 26/06/2025",
-      "status": "in_progress",
+      "status": "completed",
       "job_ids": [
         "14371",
         "14368",
@@ -1222,7 +1222,7 @@
         "14310",
         "14308"
       ],
-      "completed_count": 7
+      "completed_count": 10
     },
     {
       "batch_id": 26,
@@ -1230,7 +1230,7 @@
       "job_count": 10,
       "job_id_range": "#14300 → #14223",
       "date_range": "24/06/2025 → 05/06/2025",
-      "status": "queued",
+      "status": "ready_for_qc",
       "job_ids": [
         "14300",
         "14295",
@@ -7735,9 +7735,7 @@
       "ben_len_after": 342,
       "skills_added": "Automotive Management, Dealer Network Management, Sales Operation, Strategic Planning, Market Research",
       "note_added": "Độ tuổi ứng viên: Sinh năm 1979 - 8x. Mức lương tối đa: 130 triệu Gross. Địa bàn phụ trách và quản l"
-    }
-  ],
-  "pending_backlog_jobs": [
+    },
     {
       "seq": 248,
       "batch_id": 25,
@@ -7754,7 +7752,14 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7875/14327",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:23:44.438153+07:00",
+      "desc_len_after": 2444,
+      "desc_len_before": 2,
+      "req_len_after": 560,
+      "ben_len_after": 99,
+      "skills_added": "Sales Management, Marketing Strategy, Automotive Industry, Dealer Management, Leadership",
+      "note_added": "Quản lý các đại lý toàn quốc, hơn 60 đại lý. Yêu cầu kinh nghiệm vị trí tương đương trong ngành ô tô"
     },
     {
       "seq": 249,
@@ -7772,7 +7777,14 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6128/14310",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:24:40.335078+07:00",
+      "desc_len_after": 1108,
+      "desc_len_before": 2,
+      "req_len_after": 883,
+      "ben_len_after": 243,
+      "skills_added": "Safety Management, Fire Protection, Environmental Engineering, Risk Control, OSHA",
+      "note_added": "Ký HĐ với pháp nhân FULIAN - FOXCONN, làm việc tại Bắc Giang. Đóng bảo hiểm ở mức lương cơ bản (chưa"
     },
     {
       "seq": 250,
@@ -7790,8 +7802,17 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1502/14308",
-      "backlog_status": "pending"
-    },
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:25:04.308175+07:00",
+      "desc_len_after": 2634,
+      "desc_len_before": 12,
+      "req_len_after": 583,
+      "ben_len_after": 296,
+      "skills_added": "Financial Analysis, Cost Control, SAP, ERP, CAPEX & OPEX",
+      "note_added": "[Cập nhật AH]: [[RE-URGENT]: FINANCE MANAGER-VND 120 Mil Gross/month Max, R-PAC\nINTERNATIONAL VIETNA"
+    }
+  ],
+  "pending_backlog_jobs": [
     {
       "seq": 251,
       "batch_id": 26,
@@ -15612,7 +15633,9 @@
       "req_preview": "jd",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/7875/14327",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:23:44.438153+07:00",
+      "desc_len_after": 2444
     },
     {
       "seq": 249,
@@ -15630,7 +15653,9 @@
       "req_preview": "JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/6128/14310",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:24:40.335078+07:00",
+      "desc_len_after": 1108
     },
     {
       "seq": 250,
@@ -15648,7 +15673,9 @@
       "req_preview": "Như trong JD",
       "quality_tier": "2A_Both_Dummy_With_File",
       "crm_url": "https://crm.hr1vietnam.com/vi/crm/mass/company/job/1502/14308",
-      "backlog_status": "pending"
+      "backlog_status": "enriched",
+      "enriched_at": "2026-11-18T14:25:04.308175+07:00",
+      "desc_len_after": 2634
     },
     {
       "seq": 251,
