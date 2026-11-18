@@ -596,12 +596,12 @@
               <i data-lucide="wallet" class="w-4 h-4 text-sky-600"></i>
             </div>
             <div class="mt-3 flex items-baseline space-x-2">
-              <span id="ai-cost-vnd" class="text-3xl font-black text-sky-600 whitespace-nowrap">₫5,720,710</span>
-              <span id="ai-cost-usd" class="text-xs text-slate-500 whitespace-nowrap">($224.78)</span>
+              <span id="ai-cost-vnd" class="text-3xl font-black text-sky-600 whitespace-nowrap">₫6,697,373</span>
+              <span id="ai-cost-usd" class="text-xs text-slate-500 whitespace-nowrap">($263.16)</span>
             </div>
             <div class="mt-2 text-[11px] text-sky-700 flex items-center justify-between whitespace-nowrap">
               <span>Tổng trừ Billing (CV+Job+Thuế):</span>
-              <span id="ai-budget-used-pct" class="font-bold">₫6,377,471</span>
+              <span id="ai-budget-used-pct" class="font-bold">₫7,498,154</span>
             </div>
           </div>
 
@@ -1184,8 +1184,8 @@
               <span class="text-[11px] text-amber-700 uppercase font-bold">Hiệu Quả Chi Phí (ROI)</span>
               <span class="px-1.5 py-0.5 rounded text-[10px] bg-amber-500/20 text-amber-700 font-extrabold">-98.4% Chi phí</span>
             </div>
-            <div id="bod-kpi-roi-save" class="text-2xl font-black text-amber-600 mt-2">~₫382.5 Tr</div>
-            <div id="bod-kpi-roi-sub" class="text-[11px] text-slate-700 mt-1">Chi CV: ₫5,720,710 (~₫265/CV) • Dư: ₫1,622,529</div>
+            <div id="bod-kpi-roi-save" class="text-2xl font-black text-amber-600 mt-2">~₫382.8 Tr</div>
+            <div id="bod-kpi-roi-sub" class="text-[11px] text-slate-700 mt-1">Chi CV: ₫6,697,373 (~₫309/CV) • Dư: ₫501,846</div>
           </div>
         </div>
       </div>
@@ -1714,7 +1714,7 @@
         // Hero Card Ô 4
         if (grandCost) grandCost.innerText = ai.remaining_budget_vnd_formatted || '--';
         if (grandTokens) {
-          grandTokens.innerText = `Tổng nạp: ${ai.initial_prepay_vnd_formatted || '₫8,000,000'} • Chi CV: ${ai.total_cost_vnd_formatted || '₫5,720,710'}`;
+          grandTokens.innerText = `Tổng nạp: ${ai.initial_prepay_vnd_formatted || '₫8,000,000'} • Chi CV: ${ai.total_cost_vnd_formatted || '₫6,697,373'}`;
         }
 
         // Alert handling (< 50,000đ)
@@ -1788,12 +1788,13 @@
 
         const budgetSummary = document.getElementById('ai-budget-summary-text');
         if (budgetSummary) {
-          const otherTax = ai.other_projects_and_tax_formatted ? ` • Job Auto & Thuế: ${ai.other_projects_and_tax_formatted}` : '';
-          budgetSummary.innerText = `Chi Input CV: ${ai.total_cost_vnd_formatted || '₫5,720,710'}${otherTax} • Số dư còn lại: ${ai.remaining_budget_vnd_formatted || '₫1,622,529'}`;
+          const jobPart = ai.job_spend_vnd_formatted ? ` • Input Job: ${ai.job_spend_vnd_formatted}` : ' • Input Job: ₫50,966';
+          const otherTax = ai.other_projects_and_tax_formatted ? ` • Tổng Job & Thuế: ${ai.other_projects_and_tax_formatted}` : '';
+          budgetSummary.innerText = `Chi Input CV: ${ai.total_cost_vnd_formatted || '₫6,697,373'}${jobPart}${otherTax} • Số dư còn lại: ${ai.remaining_budget_vnd_formatted || '₫501,846'}`;
         }
 
         const budgetPctLabel = document.getElementById('ai-budget-pct-label');
-        if (budgetPctLabel) budgetPctLabel.innerText = `Input CV ${ai.budget_used_pct || 71.5}% (Tổng trừ Billing ${usedBarPct}%)`;
+        if (budgetPctLabel) budgetPctLabel.innerText = `Input CV ${ai.budget_used_pct || 83.7}% (Tổng trừ Billing ${usedBarPct}%)`;
 
         const remNote = document.getElementById('ai-budget-rem-note');
         if (remNote && ai.remaining_budget_vnd) {
@@ -2974,10 +2975,10 @@
       setTxt('bod-kpi-hours', `${Number(hoursSaved).toLocaleString()} Giờ`);
       setTxt('bod-kpi-hours-sub', `~${Number(daysSaved).toLocaleString()} ngày công (~${yrsSaved} năm nhân sự)`);
 
-      const aiSpendFmt = m1Ai.total_cost_vnd_formatted || roi.ai_spend_formatted || '₫5,720,710';
-      const remBudgetFmt = m1Ai.remaining_budget_vnd_formatted || roi.remaining_credit_formatted || '₫1,622,529';
-      const unitCostVnd = Math.round(m1Ai.cost_per_cv_vnd || roi.cost_per_cv_vnd || 265);
-      const netSavM = (((aiProc * 18000) - (m1Ai.total_cost_vnd || roi.ai_spend_vnd || 5720710)) / 1_000_000).toFixed(1);
+      const aiSpendFmt = m1Ai.total_cost_vnd_formatted || roi.ai_spend_formatted || '₫6,697,373';
+      const remBudgetFmt = m1Ai.remaining_budget_vnd_formatted || roi.remaining_credit_formatted || '₫501,846';
+      const unitCostVnd = Math.round(m1Ai.cost_per_cv_vnd || roi.cost_per_cv_vnd || 309);
+      const netSavM = (((aiProc * 18000) - (m1Ai.total_cost_vnd || roi.ai_spend_vnd || 6697373)) / 1_000_000).toFixed(1);
       setTxt('bod-kpi-roi-save', `~₫${netSavM} Tr`);
       setTxt('bod-kpi-roi-sub', `Chi CV: ${aiSpendFmt} (~₫${unitCostVnd}/CV) • Dư: ${remBudgetFmt}`);
     }
