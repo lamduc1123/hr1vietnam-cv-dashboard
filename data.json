@@ -1,10 +1,10 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-18 08:29:23",
+    "last_updated": "2026-11-18 08:30:21",
     "today_date": "2026-11-18",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
-    "is_working_hours": false
+    "is_working_hours": true
   },
   "today": {
     "date": "2026-11-18",
@@ -16,9 +16,9 @@
     "backlog_count": 0,
     "target_daily": 300,
     "completion_rate_pct": 0.7,
-    "current_mode": "OVERNIGHT_MODE",
-    "mode_badge": "🌙 Cày Đêm Tự Động (Overnight Turbo Active)",
-    "mode_desc": "Vận hành cày backlog xuyên đêm khi mở máy: Mẻ 20 CVs • Chu kỳ 30s",
+    "current_mode": "NORMAL_HOURS",
+    "mode_badge": "⚡ Ca Làm Việc (08:30 - 17:30)",
+    "mode_desc": "Ưu tiên phản hồi Real-time 60s • Xử lý Backlog khi rảnh",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
@@ -47,8 +47,8 @@
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
         "count": 2,
-        "status": "in_progress",
-        "badge": "Đang cày đêm"
+        "status": "upcoming",
+        "badge": "Sẵn sàng (Khi mở máy đêm)"
       }
     ],
     "hourly_chart": [
@@ -83,10 +83,10 @@
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 370451312,
+    "total_tokens": 370539845,
     "total_tokens_formatted": "370.5M",
-    "prompt_tokens": 282296981,
-    "output_tokens": 88154331,
+    "prompt_tokens": 282367933,
+    "output_tokens": 88171912,
     "total_cost_usd": 227.59,
     "total_cost_usd_formatted": "$227.59",
     "total_cost_vnd": 5792120,
@@ -105,7 +105,7 @@
     "billing_used_pct": 80.61,
     "cost_per_cv_vnd": 267.8,
     "cost_per_cv_usd": 0.0105,
-    "tokens_per_cv": 17128,
+    "tokens_per_cv": 17132,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -3397,7 +3397,7 @@
     "backlog_status": "HOÀN TẤT 100% (STANDBY)",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 20.9,
+    "last_heartbeat_seconds_ago": 17.9,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 2 (Prepay Active)",
