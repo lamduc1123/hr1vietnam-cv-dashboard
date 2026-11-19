@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-19 10:45:18",
+    "last_updated": "2026-11-19 10:46:42",
     "today_date": "2026-11-19",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -9,13 +9,13 @@
   "today": {
     "date": "2026-11-19",
     "date_display": "Hôm nay, 19/11/2026",
-    "total_processed": 174,
-    "realtime_count": 4,
-    "realtime_created": 0,
+    "total_processed": 175,
+    "realtime_count": 5,
+    "realtime_created": 1,
     "realtime_updated": 4,
     "backlog_count": 170,
     "target_daily": 300,
-    "completion_rate_pct": 58.0,
+    "completion_rate_pct": 58.3,
     "current_mode": "NORMAL_HOURS",
     "mode_badge": "⚡ Ca Làm Việc (08:30 - 17:30)",
     "mode_desc": "Ưu tiên phản hồi Real-time 60s • Xử lý Backlog khi rảnh",
@@ -25,7 +25,7 @@
       {
         "key": "morning",
         "label": "Ca Sáng (08:30 - 11:59)",
-        "count": 150,
+        "count": 151,
         "status": "in_progress",
         "badge": "Đang chạy"
       },
@@ -62,57 +62,57 @@
       },
       {
         "hour": "10:00",
-        "count": 31
+        "count": 32
       }
     ],
     "sources": {
-      "Consultants": 4,
+      "Consultants": 5,
       "Website": 0,
       "CRM Backlog": 170
     }
   },
   "totals": {
-    "all_time_realtime": 564,
-    "all_time_created": 132,
+    "all_time_realtime": 565,
+    "all_time_created": 133,
     "all_time_updated": 425,
     "all_time_backlog_done": 22542,
-    "total_system_processed": 23106,
+    "total_system_processed": 23107,
     "backlog_target": 27001,
     "backlog_remaining": 4459,
     "backlog_completion_percentage": 83.5,
     "crm_pool_audited": 103377,
     "admin_pre_inputted": 75044,
-    "ai_total_processed": 23106,
-    "total_standardized": 98150,
-    "total_crm_candidates": 106035,
+    "ai_total_processed": 23107,
+    "total_standardized": 98151,
+    "total_crm_candidates": 106036,
     "standardized_percentage": 92.56
   },
   "ai_usage": {
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 425237093,
-    "total_tokens_formatted": "425.2M",
-    "prompt_tokens": 324091716,
-    "output_tokens": 101145377,
-    "total_cost_usd": 277.7,
-    "total_cost_usd_formatted": "$277.70",
-    "total_cost_vnd": 7067577,
-    "total_cost_vnd_formatted": "₫7,067,577",
+    "total_tokens": 425252497,
+    "total_tokens_formatted": "425.3M",
+    "prompt_tokens": 324103828,
+    "output_tokens": 101148669,
+    "total_cost_usd": 277.75,
+    "total_cost_usd_formatted": "$277.75",
+    "total_cost_vnd": 7068718,
+    "total_cost_vnd_formatted": "₫7,068,718",
     "job_spend_vnd": 50966,
     "job_spend_vnd_formatted": "₫50,966",
-    "billing_deducted_vnd": 7889636,
-    "billing_deducted_vnd_formatted": "₫7,889,636",
-    "billing_deducted_usd": 310.01,
+    "billing_deducted_vnd": 7890776,
+    "billing_deducted_vnd_formatted": "₫7,890,776",
+    "billing_deducted_usd": 310.05,
     "other_projects_and_tax_vnd": 771093,
     "other_projects_and_tax_formatted": "₫771,093",
     "initial_prepay_vnd": 10000000.0,
     "initial_prepay_vnd_formatted": "₫10,000,000",
-    "remaining_budget_vnd": 2110364,
-    "remaining_budget_vnd_formatted": "₫2,110,364",
-    "remaining_budget_usd": 82.92,
-    "budget_used_pct": 70.68,
-    "billing_used_pct": 78.9,
+    "remaining_budget_vnd": 2109224,
+    "remaining_budget_vnd_formatted": "₫2,109,224",
+    "remaining_budget_usd": 82.88,
+    "budget_used_pct": 70.69,
+    "billing_used_pct": 78.91,
     "cost_per_cv_vnd": 305.9,
     "cost_per_cv_usd": 0.012,
     "tokens_per_cv": 18404,
@@ -151,16 +151,27 @@
     ]
   },
   "realtime": {
-    "total_today": 4,
-    "created_today": 0,
+    "total_today": 5,
+    "created_today": 1,
     "updated_today": 4,
     "pending_inbox": 0,
     "sources": {
-      "Consultants": 4,
+      "Consultants": 5,
       "Website": 0,
       "Other": 0
     },
     "candidates": [
+      {
+        "time": "10:46:37",
+        "timestamp": "2026-11-19T10:46:37.701343+07:00",
+        "candidate_name": "LA T*** A***",
+        "candidate_id": "108065",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/108065",
+        "action": "created",
+        "source": "CV gửi từ email: my***@hr1vietnam.com",
+        "file_name": "Sales Engineer_La_TaI_ANH.pdf",
+        "status": "success"
+      },
       {
         "time": "10:39:48",
         "timestamp": "2026-11-19T10:39:48.856961+07:00",
@@ -3220,11 +3231,11 @@
   "daily_history": [
     {
       "date": "2026-11-19",
-      "total_realtime": 4,
-      "created": 0,
+      "total_realtime": 5,
+      "created": 1,
       "updated": 4,
       "backlog_count": 170,
-      "grand_total": 174
+      "grand_total": 175
     },
     {
       "date": "2026-11-18",
@@ -3418,7 +3429,7 @@
       "status": "completed",
       "badge": "Hoàn thành 100%",
       "description": "Quét rà soát toàn diện 100% kho dữ liệu lịch sử CRM (2013 – 2026); dùng AI bóc tách và làm giàu thành công toàn bộ 21,085 hồ sơ Backlog thiếu thông tin; làm sạch các bản ghi lỗi/ảo và ra mắt Module 3: Báo Cáo Chiến Lược BOD (#bod).",
-      "metrics": "Hoàn tất 100% Backlog (22,542 hồ sơ AI + 75,044 hồ sơ Admin = 98,150/106,035 hồ sơ hoàn chỉnh)."
+      "metrics": "Hoàn tất 100% Backlog (22,542 hồ sơ AI + 75,044 hồ sơ Admin = 98,151/106,036 hồ sơ hoàn chỉnh)."
     },
     {
       "phase": "Giai đoạn 5: Chế Độ Ưu Tiên 100% Luồng Real-Time & Vận Hành Liên Tục",
@@ -3426,18 +3437,18 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Real-Time 100%)",
       "description": "Luồng Backlog chính thức hoàn tất 100% và chuyển sang chế độ Standby. Toàn bộ tài nguyên hệ thống tập trung 100% cho Luồng Real-Time: đón nhận CV mới từ Consultant & Website 24/7, tự động hóa bóc tách, đồng bộ CRM, gửi email xác nhận và cập nhật trực tiếp lên 3 Module Dashboard.",
-      "metrics": "Đã xử lý 564 hồ sơ Real-time (132 tạo mới • 425 cập nhật) | Tổng lũy kế AI: 23,106+ hồ sơ."
+      "metrics": "Đã xử lý 565 hồ sơ Real-time (133 tạo mới • 425 cập nhật) | Tổng lũy kế AI: 23,107+ hồ sơ."
     }
   ],
   "system": {
     "daemon_status": "RUNNING",
     "daemon_pid": 26802,
-    "current_task": "b2_batch_finished",
+    "current_task": "processing_realtime_cv",
     "system_mode": "BACKLOG_ACTIVE",
     "backlog_status": "IN_PROGRESS",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 0.8,
+    "last_heartbeat_seconds_ago": 24.2,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 2 (Prepay Active)",
