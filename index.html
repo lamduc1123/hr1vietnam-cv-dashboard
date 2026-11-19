@@ -2408,8 +2408,14 @@
       if (closedTotalEl) closedTotalEl.innerText = ((bl.total_crm_jobs_2025_2026 || 2327) - (bl.total_open_jobs || 862)).toLocaleString('en-US');
 
       const modePill = document.getElementById('job-backlog-mode-pill');
+      const isAllDone = (bl.completed_backlog_jobs || 0) >= (bl.total_open_bypass_target || 409);
       if (modePill && bl.mode_status) {
-        modePill.innerHTML = `<i data-lucide="layers" class="w-3.5 h-3.5 mr-1.5 text-indigo-600"></i> Luồng 2 Backlog: ${bl.mode_status}`;
+        if (isAllDone) {
+          modePill.className = "inline-flex items-center px-3 py-1.5 rounded-xl bg-emerald-500/10 text-emerald-700 border border-emerald-500/20 text-xs font-bold whitespace-nowrap";
+          modePill.innerHTML = `<i data-lucide="check-check" class="w-3.5 h-3.5 mr-1.5 text-emerald-600"></i> Luồng 2 Backlog: ${bl.mode_status}`;
+        } else {
+          modePill.innerHTML = `<i data-lucide="layers" class="w-3.5 h-3.5 mr-1.5 text-indigo-600"></i> Luồng 2 Backlog: ${bl.mode_status}`;
+        }
       }
 
       // Card 1: Real-time
@@ -2431,7 +2437,11 @@
 
       const blSubEl = document.getElementById('job-backlog-sub');
       if (blSubEl) {
-        blSubEl.innerText = `Còn ${bl.remaining_backlog_jobs ?? 409} vị trí chờ chuẩn hóa (${bl.backlog_progress_pct ?? 0}%)`;
+        if (isAllDone) {
+          blSubEl.innerText = `Đã chuẩn hóa 100% (0 vị trí chờ)`;
+        } else {
+          blSubEl.innerText = `Còn ${bl.remaining_backlog_jobs ?? 409} vị trí chờ chuẩn hóa (${bl.backlog_progress_pct ?? 0}%)`;
+        }
       }
 
       // Card 3: Open Std / Total Open
@@ -2454,15 +2464,29 @@
       const nextBatchObj = batches.find(b => b.batch_id === nextBatchNum) || batches[0];
       const batchBadgeEl = document.getElementById('job-batch-badge');
       if (batchBadgeEl) {
-        batchBadgeEl.innerText = (bl.completed_backlog_jobs || 0) === 0 ? 'Chờ lệnh QC' : `Đang chạy`;
+        if (isAllDone) {
+          batchBadgeEl.className = "px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-800 border border-emerald-500/30";
+          batchBadgeEl.innerText = 'Hoàn tất 100%';
+        } else {
+          batchBadgeEl.className = "px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-800 border border-amber-500/30";
+          batchBadgeEl.innerText = (bl.completed_backlog_jobs || 0) === 0 ? 'Chờ lệnh QC' : `Đang chạy`;
+        }
       }
       const nextBatchTitleEl = document.getElementById('job-next-batch-title');
-      if (nextBatchTitleEl && nextBatchObj) {
-        nextBatchTitleEl.innerText = `${nextBatchObj.batch_label} (${nextBatchObj.job_count} Jobs)`;
+      if (nextBatchTitleEl) {
+        if (isAllDone) {
+          nextBatchTitleEl.innerText = 'Hoàn tất 41/41 Batches';
+        } else if (nextBatchObj) {
+          nextBatchTitleEl.innerText = `${nextBatchObj.batch_label} (${nextBatchObj.job_count} Jobs)`;
+        }
       }
       const nextBatchSubEl = document.getElementById('job-next-batch-sub');
-      if (nextBatchSubEl && nextBatchObj) {
-        nextBatchSubEl.innerText = `Mã ${nextBatchObj.job_id_range} • Đã xong: ${bl.completed_batches || 0}/${bl.total_batches || 41} Batch`;
+      if (nextBatchSubEl) {
+        if (isAllDone) {
+          nextBatchSubEl.innerText = `Toàn bộ 409/409 Jobs đã chuẩn hóa đạt chuẩn QC`;
+        } else if (nextBatchObj) {
+          nextBatchSubEl.innerText = `Mã ${nextBatchObj.job_id_range} • Đã xong: ${bl.completed_batches || 0}/${bl.total_batches || 41} Batch`;
+        }
       }
 
       // Subtab badges
