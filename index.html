@@ -896,17 +896,17 @@
         <!-- Sub-Tab Switcher -->
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-200">
           <div class="flex flex-wrap items-center gap-2 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
-            <button id="btn-job-subtab-realtime" onclick="switchJobSubTab('realtime')" class="px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2 bg-emerald-600 text-white shadow-sm">
+            <button id="btn-job-subtab-realtime" onclick="switchJobSubTab('realtime')" class="px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2 text-slate-700 hover:text-slate-900 hover:bg-white">
               <i data-lucide="zap" class="w-3.5 h-3.5"></i>
-              <span>Luồng 1: Real-Time (<span id="subtab-rt-count">66</span>)</span>
+              <span>Luồng 1: Real-Time (<span id="subtab-rt-count">40</span>)</span>
             </button>
-            <button id="btn-job-subtab-completed" onclick="switchJobSubTab('completed')" class="px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2 text-slate-700 hover:text-slate-900 hover:bg-white">
-              <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-blue-600"></i>
-              <span>✅ Backlog ĐÃ XỬ LÝ (<span id="subtab-bl-done-count">21</span> Jobs QC)</span>
+            <button id="btn-job-subtab-completed" onclick="switchJobSubTab('completed')" class="px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2 bg-blue-600 text-white shadow-sm">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
+              <span>✅ Backlog ĐÃ XỬ LÝ (<span id="subtab-bl-done-count">409</span> Jobs QC)</span>
             </button>
             <button id="btn-job-subtab-backlog" onclick="switchJobSubTab('backlog')" class="px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2 text-slate-700 hover:text-slate-900 hover:bg-white">
               <i data-lucide="layers" class="w-3.5 h-3.5 text-indigo-600"></i>
-              <span>⏳ Hàng Đợi Chờ Chạy (<span id="subtab-bl-remain-count">388</span> Jobs)</span>
+              <span>⏳ Hàng Đợi Chờ Chạy (<span id="subtab-bl-remain-count">0</span> Jobs)</span>
             </button>
           </div>
 
@@ -2491,11 +2491,11 @@
 
       // Subtab badges
       const rtCountEl = document.getElementById('subtab-rt-count');
-      if (rtCountEl) rtCountEl.innerText = s.total_jobs_created || jobs.length;
+      if (rtCountEl) rtCountEl.innerText = s.total_jobs_created ?? (jobs ? jobs.length : 0);
       const blDoneCountEl = document.getElementById('subtab-bl-done-count');
-      if (blDoneCountEl) blDoneCountEl.innerText = bl.completed_backlog_jobs || 21;
+      if (blDoneCountEl) blDoneCountEl.innerText = bl.completed_backlog_jobs ?? 409;
       const blRemainCountEl = document.getElementById('subtab-bl-remain-count');
-      if (blRemainCountEl) blRemainCountEl.innerText = bl.remaining_backlog_jobs || 388;
+      if (blRemainCountEl) blRemainCountEl.innerText = bl.remaining_backlog_jobs ?? 0;
 
       // Populate batch and completed filters
       populateBacklogBatchFilter(batches, nextBatchNum);
@@ -2514,11 +2514,15 @@
       const sel = document.getElementById('job-backlog-batch-filter');
       if (!sel || !batches || batches.length === 0) return;
       const prevVal = sel.value || 'all';
-      const remainingCount = globalJobData?.summary?.backlog?.remaining_backlog_jobs || 369;
-      const nextBatch = globalJobData?.summary?.backlog?.current_next_batch || 5;
+      const remainingCount = globalJobData?.summary?.backlog?.remaining_backlog_jobs ?? 0;
+      const nextBatch = globalJobData?.summary?.backlog?.current_next_batch ?? 41;
       const lastNextBatch = sel.dataset.lastNextBatch;
       if (lastNextBatch !== String(nextBatch)) {
-        sel.innerHTML = `<option value="all">Xem tất cả các Batch đang chờ (${remainingCount} Jobs)</option>`;
+        if (remainingCount === 0) {
+          sel.innerHTML = `<option value="all">🎉 Đã hoàn tất 100% tất cả 41 Batches (0 Jobs chờ)</option>`;
+        } else {
+          sel.innerHTML = `<option value="all">Xem tất cả các Batch đang chờ (${remainingCount} Jobs)</option>`;
+        }
         batches.forEach(b => {
           const isDone = b.status === 'completed' || b.batch_id < nextBatch;
           if (!isDone) {
@@ -2705,7 +2709,12 @@
       tbody.innerHTML = '';
 
       if (!jobs || jobs.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="11" class="py-8 text-center text-slate-400 font-medium">Không tìm thấy Job Backlog đang chờ phù hợp với bộ lọc.</td></tr>';
+        const isAllDone = (globalJobData?.summary?.backlog?.remaining_backlog_jobs ?? 0) === 0;
+        if (isAllDone) {
+          tbody.innerHTML = '<tr><td colspan="11" class="py-12 text-center text-emerald-700 bg-emerald-50/50 rounded-xl font-bold"><div class="flex flex-col items-center justify-center space-y-2"><span class="text-3xl">🎉</span><span class="text-base font-black text-emerald-800">100% TOÀN BỘ 409/409 BACKLOG OPEN JOBS ĐÃ ĐƯỢC CHUẨN HÓA!</span><span class="text-xs text-emerald-600 font-medium">Hàng đợi trống (0 Jobs chờ). Vui lòng chuyển sang tab "✅ Backlog ĐÃ XỬ LÝ (409 Jobs QC)" để đối soát dữ liệu CRM.</span></div></td></tr>';
+        } else {
+          tbody.innerHTML = '<tr><td colspan="11" class="py-8 text-center text-slate-400 font-medium">Không tìm thấy Job Backlog đang chờ phù hợp với bộ lọc.</td></tr>';
+        }
         return;
       }
 
