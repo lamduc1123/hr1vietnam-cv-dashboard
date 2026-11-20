@@ -900,11 +900,11 @@
         <!-- Sub-Tab Switcher -->
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-200">
           <div class="flex flex-wrap items-center gap-2 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
-            <button id="btn-job-subtab-realtime" onclick="switchJobSubTab('realtime')" class="px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2 text-slate-700 hover:text-slate-900 hover:bg-white">
+            <button id="btn-job-subtab-realtime" onclick="switchJobSubTab('realtime')" class="px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2 bg-emerald-600 text-white shadow-sm">
               <i data-lucide="zap" class="w-3.5 h-3.5"></i>
-              <span>Luồng 1: Real-Time (<span id="subtab-rt-count">40</span>)</span>
+              <span>Luồng 1: Real-Time (<span id="subtab-rt-count">45</span>)</span>
             </button>
-            <button id="btn-job-subtab-completed" onclick="switchJobSubTab('completed')" class="px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2 bg-blue-600 text-white shadow-sm">
+            <button id="btn-job-subtab-completed" onclick="switchJobSubTab('completed')" class="px-4 py-2 rounded-lg text-xs font-bold transition flex items-center space-x-2 text-slate-700 hover:text-slate-900 hover:bg-white">
               <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
               <span>✅ Backlog ĐÃ XỬ LÝ (<span id="subtab-bl-done-count">409</span> Jobs QC)</span>
             </button>
@@ -1646,7 +1646,12 @@
     function getQcCrmBase() {
       try {
         const val = (localStorage.getItem('hr1_qc_crm_base') || '').trim().replace(/\/+$/, '');
-        return val.startsWith('https://') ? val : '';
+        if (!val.startsWith('https://')) return '';
+        try {
+          return new URL(val).origin;
+        } catch (err) {
+          return val;
+        }
       } catch (e) {
         return '';
       }
@@ -1697,7 +1702,7 @@
       if (!base || !jobId) {
         return `<span class="inline-flex items-center space-x-1 px-2 py-1 rounded-lg bg-slate-100 text-slate-400 border border-slate-200 text-[11px] font-medium whitespace-nowrap" title="Bật Admin QC để mở link CRM"><i data-lucide="lock" class="w-3 h-3"></i><span>QC</span></span>`;
       }
-      const path = companyId ? `/vi/crm/company/job/${companyId}/${jobId}` : `/vi/crm/job/edit/${jobId}`;
+      const path = companyId ? `/vi/crm/mass/company/job/${companyId}/${jobId}` : `/vi/crm/mass/job/edit/${jobId}`;
       return `<a href="${base}${path}" target="_blank" rel="noopener noreferrer" class="${linkClass}"><span>${label}</span><i data-lucide="external-link" class="w-3 h-3"></i></a>`;
     }
 
@@ -2379,6 +2384,8 @@
       if (mod === 'job') {
         if (jobView) jobView.classList.remove('hidden');
         if (jobBtn) jobBtn.className = `${baseBtn} bg-emerald-600 text-white shadow-sm shadow-emerald-600/25`;
+        currentJobSubTab = 'realtime';
+        switchJobSubTab('realtime');
         loadJobData();
         history.replaceState(null, '', '#job');
       } else if (mod === 'bod') {
@@ -2405,7 +2412,7 @@
       }
     }
 
-    let currentJobSubTab = 'completed';
+    let currentJobSubTab = 'realtime';
 
     function switchJobSubTab(tab) {
       currentJobSubTab = tab;
