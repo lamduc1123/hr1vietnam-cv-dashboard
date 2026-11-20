@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-20 08:33:30",
+    "last_updated": "2026-11-20 08:37:45",
     "today_date": "2026-11-20",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -9,11 +9,11 @@
   "today": {
     "date": "2026-11-20",
     "date_display": "Hôm nay, 20/11/2026",
-    "total_processed": 1124,
+    "total_processed": 1125,
     "realtime_count": 0,
     "realtime_created": 0,
     "realtime_updated": 0,
-    "backlog_count": 1124,
+    "backlog_count": 1125,
     "target_daily": 300,
     "completion_rate_pct": 100.0,
     "current_mode": "NORMAL_HOURS",
@@ -25,7 +25,7 @@
       {
         "key": "morning",
         "label": "Ca Sáng (08:30 - 11:59)",
-        "count": 16,
+        "count": 17,
         "status": "in_progress",
         "badge": "Đang chạy"
       },
@@ -54,27 +54,27 @@
     "hourly_chart": [
       {
         "hour": "08:00",
-        "count": 38
+        "count": 39
       }
     ],
     "sources": {
       "Consultants": 0,
       "Website": 0,
-      "CRM Backlog": 1124
+      "CRM Backlog": 1125
     }
   },
   "totals": {
     "all_time_realtime": 592,
     "all_time_created": 144,
     "all_time_updated": 441,
-    "all_time_backlog_done": 25352,
-    "total_system_processed": 25944,
+    "all_time_backlog_done": 25353,
+    "total_system_processed": 25945,
     "backlog_target": 27001,
-    "backlog_remaining": 1649,
+    "backlog_remaining": 1648,
     "backlog_completion_percentage": 93.9,
     "crm_pool_audited": 103377,
-    "admin_pre_inputted": 72234,
-    "ai_total_processed": 25944,
+    "admin_pre_inputted": 72233,
+    "ai_total_processed": 25945,
     "total_standardized": 98178,
     "total_crm_candidates": 106059,
     "standardized_percentage": 92.57
@@ -83,26 +83,26 @@
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 469886535,
+    "total_tokens": 469903482,
     "total_tokens_formatted": "469.9M",
-    "prompt_tokens": 358671468,
-    "output_tokens": 111215067,
-    "total_cost_usd": 301.83,
-    "total_cost_usd_formatted": "$301.83",
-    "total_cost_vnd": 7681683,
-    "total_cost_vnd_formatted": "₫7,681,683",
+    "prompt_tokens": 358684870,
+    "output_tokens": 111218612,
+    "total_cost_usd": 301.84,
+    "total_cost_usd_formatted": "$301.84",
+    "total_cost_vnd": 7681913,
+    "total_cost_vnd_formatted": "₫7,681,913",
     "job_spend_vnd": 72981,
     "job_spend_vnd_formatted": "₫72,981",
-    "billing_deducted_vnd": 8606711,
-    "billing_deducted_vnd_formatted": "₫8,606,711",
-    "billing_deducted_usd": 338.18,
+    "billing_deducted_vnd": 8606941,
+    "billing_deducted_vnd_formatted": "₫8,606,941",
+    "billing_deducted_usd": 338.19,
     "other_projects_and_tax_vnd": 852047,
     "other_projects_and_tax_formatted": "₫852,047",
     "initial_prepay_vnd": 10000000.0,
     "initial_prepay_vnd_formatted": "₫10,000,000",
-    "remaining_budget_vnd": 1393289,
-    "remaining_budget_vnd_formatted": "₫1,393,289",
-    "remaining_budget_usd": 54.75,
+    "remaining_budget_vnd": 1393059,
+    "remaining_budget_vnd_formatted": "₫1,393,059",
+    "remaining_budget_usd": 54.74,
     "budget_used_pct": 76.82,
     "billing_used_pct": 86.07,
     "cost_per_cv_vnd": 296.1,
@@ -156,12 +156,24 @@
   },
   "backlog": {
     "total": 27001,
-    "completed": 25352,
-    "remaining": 1649,
+    "completed": 25353,
+    "remaining": 1648,
     "errors": 819,
     "completion_percentage": 93.9,
     "crm_pool_audited": 103377,
     "recent_enriched": [
+      {
+        "candidate_id": "55491",
+        "candidate_name": "HUYNH H*** D***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/55491",
+        "experiences": 6,
+        "educations": 1,
+        "detail_summary": "+6 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-20 08:37:35"
+      },
       {
         "candidate_id": "97809",
         "candidate_name": "NGUYEN T*** T*** L***",
@@ -3149,18 +3161,6 @@
         "educations": 1,
         "detail_summary": "+2 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-20 06:10:26"
-      },
-      {
-        "candidate_id": "100111",
-        "candidate_name": "NGUYEN Q*** H***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/100111",
-        "experiences": 2,
-        "educations": 1,
-        "detail_summary": "+2 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-20 06:10:17"
       }
     ]
   },
@@ -3365,7 +3365,7 @@
       "status": "completed",
       "badge": "Hoàn thành 100%",
       "description": "Quét rà soát toàn diện 100% kho dữ liệu lịch sử CRM (2013 – 2026); dùng AI bóc tách và làm giàu thành công toàn bộ 21,085 hồ sơ Backlog thiếu thông tin; làm sạch các bản ghi lỗi/ảo và ra mắt Module 3: Báo Cáo Chiến Lược BOD (#bod).",
-      "metrics": "Hoàn tất 100% Backlog (25,352 hồ sơ AI + 72,234 hồ sơ Admin = 98,178/106,059 hồ sơ hoàn chỉnh)."
+      "metrics": "Hoàn tất 100% Backlog (25,353 hồ sơ AI + 72,233 hồ sơ Admin = 98,178/106,059 hồ sơ hoàn chỉnh)."
     },
     {
       "phase": "Giai đoạn 5: Chế Độ Ưu Tiên 100% Luồng Real-Time & Vận Hành Liên Tục",
@@ -3373,7 +3373,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Real-Time 100%)",
       "description": "Luồng Backlog chính thức hoàn tất 100% và chuyển sang chế độ Standby. Toàn bộ tài nguyên hệ thống tập trung 100% cho Luồng Real-Time: đón nhận CV mới từ Consultant & Website 24/7, tự động hóa bóc tách, đồng bộ CRM, gửi email xác nhận và cập nhật trực tiếp lên 3 Module Dashboard.",
-      "metrics": "Đã xử lý 592 hồ sơ Real-time (144 tạo mới • 441 cập nhật) | Tổng lũy kế AI: 25,944+ hồ sơ."
+      "metrics": "Đã xử lý 592 hồ sơ Real-time (144 tạo mới • 441 cập nhật) | Tổng lũy kế AI: 25,945+ hồ sơ."
     }
   ],
   "system": {
