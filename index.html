@@ -118,6 +118,10 @@
             <i data-lucide="clock" class="w-3.5 h-3.5 text-blue-600"></i>
             <span>08:30 - 17:30 VN</span>
           </div>
+          <button id="btn-qc-unlock" onclick="toggleAdminQcMode()" title="Bật/Tắt chế độ Admin QC để mở khóa liên kết CRM 1-click" class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 border border-slate-200 text-slate-700 transition whitespace-nowrap">
+            <i data-lucide="shield" class="w-3.5 h-3.5 text-slate-500"></i>
+            <span id="qc-unlock-label">Admin QC</span>
+          </button>
 
           <div class="flex items-center space-x-1.5 bg-slate-100 border border-slate-200 rounded-xl p-1 whitespace-nowrap">
             <button id="refresh-btn" onclick="fetchData(true)" class="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white transition active:scale-95 shadow-sm shadow-blue-600/20 whitespace-nowrap">
@@ -923,7 +927,7 @@
                 <i data-lucide="list-ordered" class="w-5 h-5 text-emerald-600"></i>
                 <span>Danh Sách Vị Trí Tuyển Dụng (Real-Time Job Stream)</span>
               </h3>
-              <p class="text-xs text-slate-500 mt-1">Cập nhật tức thời các vị trí vừa được bóc tách từ email <code>input4@hr1vietnam.com</code> và tạo mới trên CRM</p>
+              <p class="text-xs text-slate-500 mt-1">Cập nhật tức thời các vị trí vừa được bóc tách từ hòm thư nội bộ và tạo mới trên CRM</p>
             </div>
 
             <div class="flex items-center space-x-3">
@@ -1636,6 +1640,70 @@
     let countdownSec = 30;
     let countdownInterval = null;
 
+    // ==================== ADMIN QC UNLOCK (LOCAL BROWSER ONLY) ====================
+    // Keeps internal CRM domain completely out of public GitHub HTML/JSON files.
+    // Admin QC enters the company CRM base URL once; saved only in local browser storage.
+    function getQcCrmBase() {
+      try {
+        const val = (localStorage.getItem('hr1_qc_crm_base') || '').trim().replace(/\/+$/, '');
+        return val.startsWith('https://') ? val : '';
+      } catch (e) {
+        return '';
+      }
+    }
+
+    function updateQcButtonState() {
+      const btn = document.getElementById('btn-qc-unlock');
+      const lbl = document.getElementById('qc-unlock-label');
+      if (!btn || !lbl) return;
+      if (getQcCrmBase()) {
+        btn.className = 'inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 text-emerald-700 transition whitespace-nowrap';
+        lbl.textContent = 'Admin QC: ON';
+      } else {
+        btn.className = 'inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 border border-slate-200 text-slate-700 transition whitespace-nowrap';
+        lbl.textContent = 'Admin QC';
+      }
+    }
+
+    function toggleAdminQcMode() {
+      if (getQcCrmBase()) {
+        if (confirm('Tắt chế độ Admin QC và ẩn toàn bộ liên kết CRM trên trình duyệt này?')) {
+          localStorage.removeItem('hr1_qc_crm_base');
+          location.reload();
+        }
+        return;
+      }
+      const input = prompt('🔐 Chế độ Admin QC (lưu cục bộ trên trình duyệt của bạn)\nNhập địa chỉ gốc CRM nội bộ (bắt đầu bằng https://):');
+      if (!input) return;
+      const cleaned = input.trim().replace(/\/+$/, '');
+      if (!cleaned.startsWith('https://')) {
+        alert('Địa chỉ CRM phải bắt đầu bằng https://');
+        return;
+      }
+      localStorage.setItem('hr1_qc_crm_base', cleaned);
+      location.reload();
+    }
+
+    function renderCrmMemberLink(cid, label, linkClass) {
+      const base = getQcCrmBase();
+      if (!base || !cid) {
+        return `<span class="inline-flex items-center space-x-1 font-mono text-slate-400 text-[11px] whitespace-nowrap" title="Chỉ khả dụng ở chế độ Admin QC"><span>#${cid || '--'}</span><i data-lucide="lock" class="w-3 h-3"></i></span>`;
+      }
+      return `<a href="${base}/vi/crm/customers/member/${cid}" target="_blank" rel="noopener noreferrer" class="${linkClass}"><span>${label}</span><i data-lucide="external-link" class="w-3 h-3"></i></a>`;
+    }
+
+    function renderCrmJobLink(companyId, jobId, label, linkClass) {
+      const base = getQcCrmBase();
+      if (!base || !jobId) {
+        return `<span class="inline-flex items-center space-x-1 px-2 py-1 rounded-lg bg-slate-100 text-slate-400 border border-slate-200 text-[11px] font-medium whitespace-nowrap" title="Bật Admin QC để mở link CRM"><i data-lucide="lock" class="w-3 h-3"></i><span>QC</span></span>`;
+      }
+      const path = companyId ? `/vi/crm/company/job/${companyId}/${jobId}` : `/vi/crm/job/edit/${jobId}`;
+      return `<a href="${base}${path}" target="_blank" rel="noopener noreferrer" class="${linkClass}"><span>${label}</span><i data-lucide="external-link" class="w-3 h-3"></i></a>`;
+    }
+
+    document.addEventListener('DOMContentLoaded', updateQcButtonState);
+    // ==============================================================================
+
     // Fetch live metrics from data.json
     async function fetchData(manual = false) {
       const refreshIcon = document.getElementById('refresh-icon');
@@ -1979,10 +2047,7 @@
             <td class="py-3.5 px-6 font-mono text-slate-500 whitespace-nowrap">${c.time || '--'}</td>
             <td class="py-3.5 px-6 font-semibold text-slate-900 whitespace-nowrap">${c.candidate_name}</td>
             <td class="py-3.5 px-6 whitespace-nowrap">
-              <a href="${c.crm_url}" target="_blank" class="inline-flex items-center space-x-1 font-mono text-blue-600 hover:text-blue-700 hover:underline whitespace-nowrap">
-                <span>#${c.candidate_id}</span>
-                <i data-lucide="external-link" class="w-3 h-3"></i>
-              </a>
+              ${renderCrmMemberLink(c.candidate_id, '#' + c.candidate_id, 'inline-flex items-center space-x-1 font-mono text-blue-600 hover:text-blue-700 hover:underline whitespace-nowrap')}
             </td>
             <td class="py-3.5 px-6 whitespace-nowrap">${actionBadge}</td>
             <td class="py-3.5 px-6 text-slate-500 whitespace-nowrap">${sourceLabel}</td>
@@ -2145,10 +2210,7 @@
             </td>
             <td class="py-3.5 px-6 text-slate-500 font-mono whitespace-nowrap">${b.processed_at || '--'}</td>
             <td class="py-3.5 px-6 text-right whitespace-nowrap">
-              <a href="${b.crm_url}" target="_blank" class="inline-flex items-center space-x-1 text-xs text-blue-600 hover:text-blue-700 hover:underline font-medium whitespace-nowrap">
-                <span>Xem CRM</span>
-                <i data-lucide="external-link" class="w-3 h-3"></i>
-              </a>
+              ${renderCrmMemberLink(b.candidate_id, 'Xem CRM', 'inline-flex items-center space-x-1 text-xs text-blue-600 hover:text-blue-700 hover:underline font-medium whitespace-nowrap')}
             </td>
           </tr>
         `).join('');
@@ -2669,10 +2731,7 @@
           <td class="py-2.5 px-3 text-center whitespace-nowrap w-28">${statusBadge}</td>
           <td class="py-2.5 px-3 font-mono text-slate-500 text-[11px] whitespace-nowrap text-center w-28">${timeStr}</td>
           <td class="py-2.5 px-3 text-center whitespace-nowrap w-24">
-            <a href="${j.crm_link}" target="_blank" class="inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-blue-600/20 hover:bg-blue-600 text-blue-600 hover:text-white border border-blue-500/30 text-[11px] font-bold transition">
-              <span>Xem CRM</span>
-              <i data-lucide="external-link" class="w-3 h-3"></i>
-            </a>
+            ${renderCrmJobLink(j.company_id, j.job_id, 'Xem CRM', 'inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-blue-600/20 hover:bg-blue-600 text-blue-600 hover:text-white border border-blue-500/30 text-[11px] font-bold transition')}
           </td>
         `;
         tbody.appendChild(tr);
@@ -2738,10 +2797,7 @@
           <td class="py-2.5 px-3 font-mono text-[11px] text-rose-600 max-w-[120px] truncate" title="${(j.desc_preview || '').replace(/"/g, '&quot;')}">"${dummyTxt}"</td>
           <td class="py-2.5 px-3 text-[11px] text-slate-500 max-w-[140px] truncate" title="${j.jd_filename}">${jdFile}</td>
           <td class="py-2.5 px-3 text-center whitespace-nowrap w-20">
-            <a href="${j.crm_url}" target="_blank" class="inline-flex items-center space-x-1 px-2 py-1 rounded-lg bg-indigo-600/10 hover:bg-indigo-600 text-indigo-700 hover:text-white border border-indigo-500/20 text-[11px] font-bold transition">
-              <span>CRM</span>
-              <i data-lucide="external-link" class="w-3 h-3"></i>
-            </a>
+            ${renderCrmJobLink(j.company_id, j.job_id, 'CRM', 'inline-flex items-center space-x-1 px-2 py-1 rounded-lg bg-indigo-600/10 hover:bg-indigo-600 text-indigo-700 hover:text-white border border-indigo-500/20 text-[11px] font-bold transition')}
           </td>
         `;
         tbody.appendChild(tr);
@@ -2822,10 +2878,7 @@
             <span class="text-slate-800 font-medium">${noteTxt}</span>
           </td>
           <td class="py-2.5 px-3 text-center whitespace-nowrap w-24">
-            <a href="${j.crm_url}" target="_blank" class="inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-blue-600 hover:bg-blue-700 text-white border border-blue-500/30 text-[11px] font-bold shadow-sm transition">
-              <span>Xem CRM</span>
-              <i data-lucide="external-link" class="w-3 h-3"></i>
-            </a>
+            ${renderCrmJobLink(j.company_id, j.job_id, 'Xem CRM', 'inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-blue-600 hover:bg-blue-700 text-white border border-blue-500/30 text-[11px] font-bold shadow-sm transition')}
           </td>
         `;
         tbody.appendChild(tr);
@@ -3783,10 +3836,7 @@
               </span>
             </td>
             <td class="py-3 px-4 text-right whitespace-nowrap">
-              <a href="https://crm.hr1vietnam.com/vi/crm/customers/member/${item.id}" target="_blank" class="inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-blue-600/20 hover:bg-blue-600 text-blue-600 hover:text-white border border-blue-500/30 text-[11px] font-bold transition">
-                <span>Mở CRM</span>
-                <i data-lucide="external-link" class="w-3 h-3"></i>
-              </a>
+              ${renderCrmMemberLink(item.id, 'Mở CRM', 'inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-blue-600/20 hover:bg-blue-600 text-blue-600 hover:text-white border border-blue-500/30 text-[11px] font-bold transition')}
             </td>
           </tr>
         `;
