@@ -72,15 +72,15 @@
 </head>
 <body class="bg-slate-100/80 text-slate-900 min-h-screen antialiased flex flex-col selection:bg-blue-600 selection:text-white">
 
-  <!-- TOP EXECUTIVE NAVBAR (LIGHT MODE, EVENLY DIVIDED 3-MODULE SWITCHER) -->
+  <!-- TOP EXECUTIVE NAVBAR (LIGHT MODE, FULL-WIDTH CLEAN FLEX LAYOUT) -->
   <header class="bg-white/95 backdrop-blur-md border-b border-slate-200/90 sticky top-0 z-50 shadow-sm">
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col lg:flex-row items-center justify-between gap-3 py-3">
+    <div class="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap xl:flex-nowrap items-center justify-between gap-3 py-3">
         
         <!-- Left: Logo & Brand Title -->
-        <div class="flex items-center space-x-3.5 shrink-0 w-full lg:w-auto justify-between lg:justify-start">
-          <div class="flex items-center space-x-3.5">
-            <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-blue-700 via-indigo-600 to-sky-500 flex items-center justify-center shadow-md shadow-blue-600/20 text-white font-extrabold text-lg tracking-wider shrink-0">
+        <div class="flex items-center space-x-3 shrink-0">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-700 via-indigo-600 to-sky-500 flex items-center justify-center shadow-md shadow-blue-600/20 text-white font-extrabold text-base tracking-wider shrink-0">
               HR1
             </div>
             <div>
@@ -95,26 +95,26 @@
           </div>
         </div>
 
-        <!-- Center: EVENLY DIVIDED 3-COLUMN MODULE MENU (grid-cols-3) -->
-        <nav aria-label="Module Navigation" class="grid grid-cols-3 gap-1.5 bg-slate-100 p-1.5 rounded-2xl border border-slate-200/90 shadow-inner w-full lg:max-w-[620px] xl:max-w-[660px]">
-          <button id="nav-btn-cv" onclick="switchGlobalModule('cv')" class="w-full justify-center whitespace-nowrap py-2.5 px-3 rounded-xl text-xs font-bold transition flex items-center space-x-2 bg-blue-600 text-white shadow-sm shadow-blue-600/25">
+        <!-- Center: AUTO-SIZED 3-MODULE MENU (NEVER OVERFLOWS) -->
+        <nav aria-label="Module Navigation" class="inline-flex flex-wrap sm:flex-nowrap items-center justify-center gap-1.5 bg-slate-100 p-1.5 rounded-2xl border border-slate-200/90 shadow-inner shrink-0">
+          <button id="nav-btn-cv" onclick="switchGlobalModule('cv')" class="shrink-0 justify-center whitespace-nowrap py-2 px-3.5 rounded-xl text-xs font-bold transition flex items-center space-x-2 bg-blue-600 text-white shadow-sm shadow-blue-600/25">
             <i data-lucide="file-user" class="w-4 h-4 shrink-0"></i>
             <span>Module 1: Input CV</span>
           </button>
-          <button id="nav-btn-job" onclick="switchGlobalModule('job')" class="w-full justify-center whitespace-nowrap py-2.5 px-3 rounded-xl text-xs font-bold transition flex items-center space-x-2 text-slate-600 hover:text-slate-900 hover:bg-white">
+          <button id="nav-btn-job" onclick="switchGlobalModule('job')" class="shrink-0 justify-center whitespace-nowrap py-2 px-3.5 rounded-xl text-xs font-bold transition flex items-center space-x-2 text-slate-600 hover:text-slate-900 hover:bg-white">
             <i data-lucide="briefcase" class="w-4 h-4 text-emerald-600 shrink-0"></i>
             <span>Module 2: Input Job</span>
           </button>
-          <button id="nav-btn-bod" onclick="switchGlobalModule('bod')" class="w-full justify-center whitespace-nowrap py-2.5 px-3 rounded-xl text-xs font-bold transition flex items-center space-x-1.5 text-amber-900 hover:text-slate-950 bg-amber-50/90 hover:bg-amber-100/80 border border-amber-300/80">
+          <button id="nav-btn-bod" onclick="switchGlobalModule('bod')" class="shrink-0 justify-center whitespace-nowrap py-2 px-3.5 rounded-xl text-xs font-bold transition flex items-center space-x-1.5 text-amber-900 hover:text-slate-950 bg-amber-50/90 hover:bg-amber-100/80 border border-amber-300/80">
             <i data-lucide="bar-chart-3" class="w-4 h-4 text-amber-600 shrink-0"></i>
             <span>Module 3: BOD Report</span>
-            <span class="inline-flex items-center px-1.5 py-0.5 rounded-md text-[10px] font-extrabold bg-amber-500/20 text-amber-800 border border-amber-500/30">BOD</span>
+            <span class="inline-flex items-center px-1.5 py-0.5 rounded-md text-[10px] font-extrabold bg-amber-500/20 text-amber-800 border border-amber-500/30 shrink-0">BOD</span>
           </button>
         </nav>
 
-        <!-- Right: Working Hours & Refresh Controls -->
-        <div class="flex items-center space-x-2.5 shrink-0 self-end lg:self-auto">
-          <div class="hidden xl:flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-semibold bg-slate-100 border border-slate-200 text-slate-600 whitespace-nowrap">
+        <!-- Right: Working Hours, Admin QC & Refresh Controls -->
+        <div class="flex items-center space-x-2 shrink-0">
+          <div class="hidden 2xl:flex items-center space-x-1.5 px-2.5 py-2 rounded-xl text-xs font-semibold bg-slate-100 border border-slate-200 text-slate-600 whitespace-nowrap">
             <i data-lucide="clock" class="w-3.5 h-3.5 text-blue-600"></i>
             <span>08:30 - 17:30 VN</span>
           </div>
@@ -128,7 +128,7 @@
               <i id="refresh-icon" data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
               <span>Làm mới</span>
             </button>
-            <div class="px-2.5 text-xs text-slate-600 font-mono font-bold" id="countdown-timer">30s</div>
+            <div class="px-2 text-xs text-slate-600 font-mono font-bold" id="countdown-timer">30s</div>
           </div>
         </div>
 
@@ -136,8 +136,8 @@
     </div>
   </header>
 
-  <!-- MAIN CONTAINER -->
-  <main class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-8">
+  <!-- MAIN CONTAINER (FULL-WIDTH RESPONSIVE) -->
+  <main class="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 space-y-8">
 
     <!-- ========================================== -->
     <!-- MODULE 1: INPUT CV CRM DASHBOARD           -->
@@ -1623,7 +1623,7 @@
 
   <!-- FOOTER -->
   <footer class="border-t border-slate-200 py-6 glass-card mt-auto text-xs text-slate-500">
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
+    <div class="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
       <div class="flex items-center space-x-2">
         <span class="w-2 h-2 rounded-full bg-blue-500"></span>
         <span class="text-slate-500 font-medium">HR1Vietnam Holding & Headhunting Technology</span>
@@ -2364,9 +2364,9 @@
       const jobBtn = document.getElementById('nav-btn-job');
       const bodBtn = document.getElementById('nav-btn-bod');
 
-      const baseBtn = 'w-full justify-center whitespace-nowrap py-2.5 px-3 rounded-xl text-xs font-bold transition flex items-center space-x-2';
+      const baseBtn = 'shrink-0 justify-center whitespace-nowrap py-2 px-3.5 rounded-xl text-xs font-bold transition flex items-center space-x-2';
       const inactiveClass = `${baseBtn} text-slate-600 hover:text-slate-900 hover:bg-white`;
-      const inactiveBodClass = 'w-full justify-center whitespace-nowrap py-2.5 px-3 rounded-xl text-xs font-bold transition flex items-center space-x-1.5 text-amber-900 hover:text-slate-950 bg-amber-50/90 hover:bg-amber-100/80 border border-amber-300/80';
+      const inactiveBodClass = 'shrink-0 justify-center whitespace-nowrap py-2 px-3.5 rounded-xl text-xs font-bold transition flex items-center space-x-1.5 text-amber-900 hover:text-slate-950 bg-amber-50/90 hover:bg-amber-100/80 border border-amber-300/80';
 
       if (cvView) cvView.classList.add('hidden');
       if (jobView) jobView.classList.add('hidden');
@@ -2383,7 +2383,7 @@
         history.replaceState(null, '', '#job');
       } else if (mod === 'bod') {
         if (bodView) bodView.classList.remove('hidden');
-        if (bodBtn) bodBtn.className = 'w-full justify-center whitespace-nowrap py-2.5 px-3 rounded-xl text-xs font-extrabold transition flex items-center space-x-1.5 bg-gradient-to-r from-amber-500 to-orange-500 text-slate-900 shadow-md shadow-amber-500/25';
+        if (bodBtn) bodBtn.className = 'shrink-0 justify-center whitespace-nowrap py-2 px-3.5 rounded-xl text-xs font-extrabold transition flex items-center space-x-1.5 bg-gradient-to-r from-amber-500 to-orange-500 text-slate-900 shadow-md shadow-amber-500/25';
         loadBodData();
         history.replaceState(null, '', '#bod');
       } else {
@@ -2717,11 +2717,11 @@
         tr.innerHTML = `
           <td class="py-2.5 px-3 text-center font-mono text-slate-500 w-12">${idx + 1}</td>
           <td class="py-2.5 px-3 font-bold text-slate-900 font-mono whitespace-nowrap w-20">#${j.job_id}</td>
-          <td class="py-2.5 px-3 font-semibold text-slate-800 max-w-[210px] truncate" title="${(j.job_title || '').replace(/"/g, '&quot;')}">${j.job_title}</td>
+          <td class="py-2.5 px-3 font-semibold text-slate-800 max-w-[340px] truncate" title="${(j.job_title || '').replace(/"/g, '&quot;')}">${j.job_title}</td>
           <td class="py-2.5 px-3 font-mono font-bold text-indigo-700 text-xs whitespace-nowrap w-20">${cid}</td>
-          <td class="py-2.5 px-3 text-slate-700 max-w-[220px] truncate" title="${(j.company_name || '').replace(/"/g, '&quot;')}">${j.company_name}</td>
+          <td class="py-2.5 px-3 text-slate-700 max-w-[300px] truncate" title="${(j.company_name || '').replace(/"/g, '&quot;')}">${j.company_name}</td>
           <td class="py-2.5 px-3 text-slate-700 whitespace-nowrap">
-            <div class="flex items-center space-x-1.5 max-w-[150px] truncate" title="${j.requester_name || j.ah_name || 'Người yêu cầu'}">
+            <div class="flex items-center space-x-1.5 max-w-[200px] truncate" title="${j.requester_name || j.ah_name || 'Người yêu cầu'}">
               <span class="w-5 h-5 rounded-full bg-slate-100 text-[10px] font-bold text-sky-600 flex items-center justify-center border border-slate-300 flex-shrink-0" title="Người yêu cầu">
                 <i data-lucide="user" class="w-3 h-3 text-sky-600"></i>
               </span>
@@ -2790,12 +2790,12 @@
           <td class="py-2.5 px-3 text-center whitespace-nowrap w-16"><span class="px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 font-bold text-[10px]">#${String(j.batch_id).padStart(2, '0')}</span></td>
           <td class="py-2.5 px-3 font-bold text-slate-900 font-mono whitespace-nowrap w-20">#${j.job_id}</td>
           <td class="py-2.5 px-3 font-mono text-slate-500 text-[11px] whitespace-nowrap w-24">${(j.created_at || '').split(' ')[0]}</td>
-          <td class="py-2.5 px-3 font-semibold text-slate-800 max-w-[210px] truncate" title="${(j.job_title || '').replace(/"/g, '&quot;')}">${j.job_title}</td>
+          <td class="py-2.5 px-3 font-semibold text-slate-800 max-w-[300px] truncate" title="${(j.job_title || '').replace(/"/g, '&quot;')}">${j.job_title}</td>
           <td class="py-2.5 px-3 font-mono font-bold text-indigo-700 text-xs whitespace-nowrap w-20">${cid}</td>
-          <td class="py-2.5 px-3 text-slate-700 max-w-[190px] truncate" title="${(j.company_name || '').replace(/"/g, '&quot;')}">${j.company_name}</td>
-          <td class="py-2.5 px-3 text-slate-700 max-w-[120px] truncate whitespace-nowrap" title="${(j.ah_name || '').replace(/"/g, '&quot;')}">${j.ah_name}</td>
-          <td class="py-2.5 px-3 font-mono text-[11px] text-rose-600 max-w-[120px] truncate" title="${(j.desc_preview || '').replace(/"/g, '&quot;')}">"${dummyTxt}"</td>
-          <td class="py-2.5 px-3 text-[11px] text-slate-500 max-w-[140px] truncate" title="${j.jd_filename}">${jdFile}</td>
+          <td class="py-2.5 px-3 text-slate-700 max-w-[260px] truncate" title="${(j.company_name || '').replace(/"/g, '&quot;')}">${j.company_name}</td>
+          <td class="py-2.5 px-3 text-slate-700 max-w-[160px] truncate whitespace-nowrap" title="${(j.ah_name || '').replace(/"/g, '&quot;')}">${j.ah_name}</td>
+          <td class="py-2.5 px-3 font-mono text-[11px] text-rose-600 max-w-[160px] truncate" title="${(j.desc_preview || '').replace(/"/g, '&quot;')}">"${dummyTxt}"</td>
+          <td class="py-2.5 px-3 text-[11px] text-slate-500 max-w-[160px] truncate" title="${j.jd_filename}">${jdFile}</td>
           <td class="py-2.5 px-3 text-center whitespace-nowrap w-20">
             ${renderCrmJobLink(j.company_id, j.job_id, 'CRM', 'inline-flex items-center space-x-1 px-2 py-1 rounded-lg bg-indigo-600/10 hover:bg-indigo-600 text-indigo-700 hover:text-white border border-indigo-500/20 text-[11px] font-bold transition')}
           </td>
@@ -2866,15 +2866,15 @@
           <td class="py-2.5 px-3 text-center font-mono text-slate-500 w-12">${idx + 1}</td>
           <td class="py-2.5 px-3 text-center whitespace-nowrap w-16">${batchBadge}</td>
           <td class="py-2.5 px-3 font-bold text-slate-900 font-mono whitespace-nowrap w-20">#${j.job_id}</td>
-          <td class="py-2.5 px-3 font-semibold text-slate-900 max-w-[210px] truncate" title="${(j.job_title || '').replace(/"/g, '&quot;')}">${j.job_title}</td>
+          <td class="py-2.5 px-3 font-semibold text-slate-900 max-w-[300px] truncate" title="${(j.job_title || '').replace(/"/g, '&quot;')}">${j.job_title}</td>
           <td class="py-2.5 px-3 font-mono font-bold text-indigo-700 text-xs whitespace-nowrap w-20">${cid}</td>
-          <td class="py-2.5 px-3 text-slate-700 max-w-[200px] truncate" title="${(j.company_name || '').replace(/"/g, '&quot;')}">${j.company_name}</td>
-          <td class="py-2.5 px-3 text-slate-700 max-w-[130px] truncate whitespace-nowrap" title="${(j.ah_name || '').replace(/"/g, '&quot;')}">${j.ah_name}</td>
+          <td class="py-2.5 px-3 text-slate-700 max-w-[260px] truncate" title="${(j.company_name || '').replace(/"/g, '&quot;')}">${j.company_name}</td>
+          <td class="py-2.5 px-3 text-slate-700 max-w-[160px] truncate whitespace-nowrap" title="${(j.ah_name || '').replace(/"/g, '&quot;')}">${j.ah_name}</td>
           <td class="py-2.5 px-3 text-center font-mono text-[11px] whitespace-nowrap w-28">
             <span class="text-rose-600 line-through mr-1">${dBefore}</span>
             <span class="text-emerald-700 font-bold">→ ${dAfter}</span>
           </td>
-          <td class="py-2.5 px-3 text-xs text-slate-700 max-w-[250px] truncate" title="${(j.note_added || '').replace(/"/g, '&quot;')}">
+          <td class="py-2.5 px-3 text-xs text-slate-700 max-w-[360px] truncate" title="${(j.note_added || '').replace(/"/g, '&quot;')}">
             <span class="text-slate-800 font-medium">${noteTxt}</span>
           </td>
           <td class="py-2.5 px-3 text-center whitespace-nowrap w-24">
