@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-20 08:16:54",
+    "last_updated": "2026-11-20 08:20:53",
     "today_date": "2026-11-20",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -9,11 +9,11 @@
   "today": {
     "date": "2026-11-20",
     "date_display": "Hôm nay, 20/11/2026",
-    "total_processed": 1086,
+    "total_processed": 1088,
     "realtime_count": 0,
     "realtime_created": 0,
     "realtime_updated": 0,
-    "backlog_count": 1086,
+    "backlog_count": 1088,
     "target_daily": 300,
     "completion_rate_pct": 100.0,
     "current_mode": "OVERNIGHT_MODE",
@@ -46,7 +46,7 @@
       {
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
-        "count": 1086,
+        "count": 1088,
         "status": "in_progress",
         "badge": "Đang cày đêm"
       }
@@ -54,27 +54,27 @@
     "hourly_chart": [
       {
         "hour": "08:00",
-        "count": 0
+        "count": 2
       }
     ],
     "sources": {
       "Consultants": 0,
       "Website": 0,
-      "CRM Backlog": 1086
+      "CRM Backlog": 1088
     }
   },
   "totals": {
     "all_time_realtime": 592,
     "all_time_created": 144,
     "all_time_updated": 441,
-    "all_time_backlog_done": 25314,
-    "total_system_processed": 25906,
+    "all_time_backlog_done": 25316,
+    "total_system_processed": 25908,
     "backlog_target": 27001,
-    "backlog_remaining": 1687,
+    "backlog_remaining": 1685,
     "backlog_completion_percentage": 93.8,
     "crm_pool_audited": 103377,
-    "admin_pre_inputted": 72272,
-    "ai_total_processed": 25906,
+    "admin_pre_inputted": 72270,
+    "ai_total_processed": 25908,
     "total_standardized": 98178,
     "total_crm_candidates": 106059,
     "standardized_percentage": 92.57
@@ -83,31 +83,31 @@
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 469100387,
-    "total_tokens_formatted": "469.1M",
-    "prompt_tokens": 358072236,
-    "output_tokens": 111028151,
-    "total_cost_usd": 306.12,
-    "total_cost_usd_formatted": "$306.12",
-    "total_cost_vnd": 7790736,
-    "total_cost_vnd_formatted": "₫7,790,736",
-    "job_spend_vnd": 50966,
-    "job_spend_vnd_formatted": "₫50,966",
-    "billing_deducted_vnd": 8612795,
-    "billing_deducted_vnd_formatted": "₫8,612,795",
-    "billing_deducted_usd": 338.42,
-    "other_projects_and_tax_vnd": 771093,
-    "other_projects_and_tax_formatted": "₫771,093",
+    "total_tokens": 469181798,
+    "total_tokens_formatted": "469.2M",
+    "prompt_tokens": 358144623,
+    "output_tokens": 111037175,
+    "total_cost_usd": 301.51,
+    "total_cost_usd_formatted": "$301.51",
+    "total_cost_vnd": 7673381,
+    "total_cost_vnd_formatted": "₫7,673,381",
+    "job_spend_vnd": 72981,
+    "job_spend_vnd_formatted": "₫72,981",
+    "billing_deducted_vnd": 8598409,
+    "billing_deducted_vnd_formatted": "₫8,598,409",
+    "billing_deducted_usd": 337.85,
+    "other_projects_and_tax_vnd": 852047,
+    "other_projects_and_tax_formatted": "₫852,047",
     "initial_prepay_vnd": 10000000.0,
     "initial_prepay_vnd_formatted": "₫10,000,000",
-    "remaining_budget_vnd": 1387205,
-    "remaining_budget_vnd_formatted": "₫1,387,205",
-    "remaining_budget_usd": 54.51,
-    "budget_used_pct": 77.91,
-    "billing_used_pct": 86.13,
-    "cost_per_cv_vnd": 300.7,
-    "cost_per_cv_usd": 0.0118,
-    "tokens_per_cv": 18108,
+    "remaining_budget_vnd": 1401591,
+    "remaining_budget_vnd_formatted": "₫1,401,591",
+    "remaining_budget_usd": 55.07,
+    "budget_used_pct": 76.73,
+    "billing_used_pct": 85.98,
+    "cost_per_cv_vnd": 296.2,
+    "cost_per_cv_usd": 0.0116,
+    "tokens_per_cv": 18110,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -116,7 +116,7 @@
       "message": "",
       "threshold_vnd": 50000.0,
       "threshold_formatted": "₫50,000",
-      "verified_at": "2026-11-18 15:55:00"
+      "verified_at": "2026-11-20 08:20:00"
     },
     "cycles": [
       {
@@ -156,12 +156,36 @@
   },
   "backlog": {
     "total": 27001,
-    "completed": 25314,
-    "remaining": 1687,
+    "completed": 25316,
+    "remaining": 1685,
     "errors": 819,
     "completion_percentage": 93.8,
     "crm_pool_audited": 103377,
     "recent_enriched": [
+      {
+        "candidate_id": "53544",
+        "candidate_name": "DINH T*** K*** N***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/53544",
+        "experiences": 3,
+        "educations": 2,
+        "detail_summary": "+3 kinh nghiệm, +2 học vấn",
+        "processed_at": "2026-11-20 08:20:34"
+      },
+      {
+        "candidate_id": "40021",
+        "candidate_name": "NGUYEN H*** T***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/40021",
+        "experiences": 9,
+        "educations": 1,
+        "detail_summary": "+9 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-20 08:20:08"
+      },
       {
         "candidate_id": "63828",
         "candidate_name": "VU T*** D***",
@@ -3137,30 +3161,6 @@
         "educations": 1,
         "detail_summary": "+3 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-20 05:55:21"
-      },
-      {
-        "candidate_id": "61299",
-        "candidate_name": "LUU H*** M*** G***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/61299",
-        "experiences": 2,
-        "educations": 1,
-        "detail_summary": "+2 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-20 05:55:11"
-      },
-      {
-        "candidate_id": "90936",
-        "candidate_name": "A B*** D***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "https://crm.hr1vietnam.com/vi/crm/customers/member/90936",
-        "experiences": 3,
-        "educations": 1,
-        "detail_summary": "+3 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-20 05:55:02"
       }
     ]
   },
@@ -3365,7 +3365,7 @@
       "status": "completed",
       "badge": "Hoàn thành 100%",
       "description": "Quét rà soát toàn diện 100% kho dữ liệu lịch sử CRM (2013 – 2026); dùng AI bóc tách và làm giàu thành công toàn bộ 21,085 hồ sơ Backlog thiếu thông tin; làm sạch các bản ghi lỗi/ảo và ra mắt Module 3: Báo Cáo Chiến Lược BOD (#bod).",
-      "metrics": "Hoàn tất 100% Backlog (25,314 hồ sơ AI + 72,272 hồ sơ Admin = 98,178/106,059 hồ sơ hoàn chỉnh)."
+      "metrics": "Hoàn tất 100% Backlog (25,316 hồ sơ AI + 72,270 hồ sơ Admin = 98,178/106,059 hồ sơ hoàn chỉnh)."
     },
     {
       "phase": "Giai đoạn 5: Chế Độ Ưu Tiên 100% Luồng Real-Time & Vận Hành Liên Tục",
@@ -3373,18 +3373,18 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Real-Time 100%)",
       "description": "Luồng Backlog chính thức hoàn tất 100% và chuyển sang chế độ Standby. Toàn bộ tài nguyên hệ thống tập trung 100% cho Luồng Real-Time: đón nhận CV mới từ Consultant & Website 24/7, tự động hóa bóc tách, đồng bộ CRM, gửi email xác nhận và cập nhật trực tiếp lên 3 Module Dashboard.",
-      "metrics": "Đã xử lý 592 hồ sơ Real-time (144 tạo mới • 441 cập nhật) | Tổng lũy kế AI: 25,906+ hồ sơ."
+      "metrics": "Đã xử lý 592 hồ sơ Real-time (144 tạo mới • 441 cập nhật) | Tổng lũy kế AI: 25,908+ hồ sơ."
     }
   ],
   "system": {
     "daemon_status": "RUNNING",
     "daemon_pid": 64696,
-    "current_task": "b2_backlog_54033",
+    "current_task": "b2_backlog_88945",
     "system_mode": "BACKLOG_ACTIVE",
     "backlog_status": "IN_PROGRESS",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 30.8,
+    "last_heartbeat_seconds_ago": 8.3,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 2 (Prepay Active)",
