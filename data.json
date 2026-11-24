@@ -1,150 +1,110 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-23 18:00:27",
-    "today_date": "2026-11-23",
+    "last_updated": "2026-11-24 08:51:02",
+    "today_date": "2026-11-24",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
-    "is_working_hours": false
+    "is_working_hours": true
   },
   "today": {
-    "date": "2026-11-23",
-    "date_display": "Hôm nay, 23/11/2026",
-    "total_processed": 996,
-    "realtime_count": 38,
-    "realtime_created": 18,
-    "realtime_updated": 20,
-    "backlog_count": 958,
+    "date": "2026-11-24",
+    "date_display": "Hôm nay, 24/11/2026",
+    "total_processed": 1,
+    "realtime_count": 1,
+    "realtime_created": 0,
+    "realtime_updated": 1,
+    "backlog_count": 0,
     "target_daily": 300,
-    "completion_rate_pct": 100.0,
-    "current_mode": "OVERNIGHT_MODE",
-    "mode_badge": "🌙 Cày Đêm Tự Động (Overnight Turbo Active)",
-    "mode_desc": "Vận hành cày backlog xuyên đêm khi mở máy: Mẻ 20 CVs • Chu kỳ 30s",
+    "completion_rate_pct": 0.3,
+    "current_mode": "NORMAL_HOURS",
+    "mode_badge": "⚡ Ca Làm Việc (08:30 - 17:30)",
+    "mode_desc": "Ưu tiên phản hồi Real-time 60s • Xử lý Backlog khi rảnh",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
       {
         "key": "morning",
         "label": "Ca Sáng (08:30 - 11:59)",
-        "count": 261,
-        "status": "completed",
-        "badge": "Đã hoàn tất"
+        "count": 1,
+        "status": "in_progress",
+        "badge": "Đang chạy"
       },
       {
         "key": "lunch",
         "label": "Ca Trưa Turbo (12:00 - 13:00)",
-        "count": 234,
-        "status": "completed",
-        "badge": "Đã kết thúc"
+        "count": 0,
+        "status": "upcoming",
+        "badge": "Sắp diễn ra"
       },
       {
         "key": "afternoon",
         "label": "Ca Chiều (13:00 - 17:30)",
-        "count": 323,
-        "status": "completed",
-        "badge": "Đã hoàn tất"
+        "count": 0,
+        "status": "upcoming",
+        "badge": "Sắp diễn ra"
       },
       {
         "key": "overnight",
         "label": "Ca Đêm Tự Động (17:30 - 08:30)",
-        "count": 178,
-        "status": "in_progress",
-        "badge": "Đang cày đêm"
+        "count": 0,
+        "status": "upcoming",
+        "badge": "Sẵn sàng (Khi mở máy đêm)"
       }
     ],
     "hourly_chart": [
       {
         "hour": "08:00",
-        "count": 85
-      },
-      {
-        "hour": "09:00",
-        "count": 78
-      },
-      {
-        "hour": "10:00",
-        "count": 66
-      },
-      {
-        "hour": "11:00",
-        "count": 70
-      },
-      {
-        "hour": "12:00",
-        "count": 234
-      },
-      {
-        "hour": "13:00",
-        "count": 84
-      },
-      {
-        "hour": "14:00",
-        "count": 71
-      },
-      {
-        "hour": "15:00",
-        "count": 71
-      },
-      {
-        "hour": "16:00",
-        "count": 65
-      },
-      {
-        "hour": "17:00",
-        "count": 172
-      },
-      {
-        "hour": "18:00",
-        "count": 0
+        "count": 1
       }
     ],
     "sources": {
-      "Consultants": 25,
-      "Website": 13,
-      "CRM Backlog": 958
+      "Consultants": 0,
+      "Website": 1,
+      "CRM Backlog": 0
     }
   },
   "totals": {
-    "all_time_realtime": 649,
+    "all_time_realtime": 650,
     "all_time_created": 173,
-    "all_time_updated": 469,
+    "all_time_updated": 470,
     "all_time_backlog_done": 27001,
-    "total_system_processed": 27650,
+    "total_system_processed": 27651,
     "backlog_target": 27001,
     "backlog_remaining": 0,
     "backlog_completion_percentage": 100.0,
     "crm_pool_audited": 103377,
     "admin_pre_inputted": 70585,
-    "ai_total_processed": 27650,
-    "total_standardized": 98235,
-    "total_crm_candidates": 106126,
+    "ai_total_processed": 27651,
+    "total_standardized": 98236,
+    "total_crm_candidates": 106127,
     "standardized_percentage": 92.56
   },
   "ai_usage": {
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 496489124,
+    "total_tokens": 496506861,
     "total_tokens_formatted": "496.5M",
-    "prompt_tokens": 379642812,
-    "output_tokens": 116846312,
-    "total_cost_usd": 319.18,
-    "total_cost_usd_formatted": "$319.18",
-    "total_cost_vnd": 8123187,
-    "total_cost_vnd_formatted": "₫8,123,187",
+    "prompt_tokens": 379655723,
+    "output_tokens": 116851138,
+    "total_cost_usd": 319.23,
+    "total_cost_usd_formatted": "$319.23",
+    "total_cost_vnd": 8124308,
+    "total_cost_vnd_formatted": "₫8,124,308",
     "job_spend_vnd": 72981,
     "job_spend_vnd_formatted": "₫72,981",
-    "billing_deducted_vnd": 9048215,
-    "billing_deducted_vnd_formatted": "₫9,048,215",
-    "billing_deducted_usd": 355.53,
+    "billing_deducted_vnd": 9049336,
+    "billing_deducted_vnd_formatted": "₫9,049,336",
+    "billing_deducted_usd": 355.57,
     "other_projects_and_tax_vnd": 852047,
     "other_projects_and_tax_formatted": "₫852,047",
     "initial_prepay_vnd": 10000000.0,
     "initial_prepay_vnd_formatted": "₫10,000,000",
-    "remaining_budget_vnd": 951785,
-    "remaining_budget_vnd_formatted": "₫951,785",
-    "remaining_budget_usd": 37.4,
-    "budget_used_pct": 81.23,
-    "billing_used_pct": 90.48,
+    "remaining_budget_vnd": 950664,
+    "remaining_budget_vnd_formatted": "₫950,664",
+    "remaining_budget_usd": 37.35,
+    "budget_used_pct": 81.24,
+    "billing_used_pct": 90.49,
     "cost_per_cv_vnd": 293.8,
     "cost_per_cv_usd": 0.0115,
     "tokens_per_cv": 17956,
@@ -183,432 +143,25 @@
     ]
   },
   "realtime": {
-    "total_today": 38,
-    "created_today": 18,
-    "updated_today": 20,
+    "total_today": 1,
+    "created_today": 0,
+    "updated_today": 1,
     "pending_inbox": 0,
     "sources": {
-      "Consultants": 25,
-      "Website": 13,
+      "Consultants": 0,
+      "Website": 1,
       "Other": 0
     },
     "candidates": [
       {
-        "time": "17:19:03",
-        "timestamp": "2026-11-23T17:19:03.793531+07:00",
-        "candidate_name": "LE D*** V***",
-        "candidate_id": "108156",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV Apply Job Website",
-        "file_name": "le-dinh-vuong-khanh-hoa.pdf",
-        "status": "success"
-      },
-      {
-        "time": "17:04:15",
-        "timestamp": "2026-11-23T17:04:15.734777+07:00",
-        "candidate_name": "DANG M*** T***",
-        "candidate_id": "108155",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: tr***@hr1vietnam.com",
-        "file_name": "CV - Thu Dang - PO.pdf.pdf",
-        "status": "success"
-      },
-      {
-        "time": "16:54:52",
-        "timestamp": "2026-11-23T16:54:52.467967+07:00",
-        "candidate_name": "MANH N***",
-        "candidate_id": "108154",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: da***@hr1vietnam.com",
-        "file_name": "Manh's Resume.pdf",
-        "status": "success"
-      },
-      {
-        "time": "16:46:26",
-        "timestamp": "2026-11-23T16:46:26.298729+07:00",
-        "candidate_name": "KIET T*** V*** A***",
-        "candidate_id": "108152",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: my***@hr1vietnam.com",
-        "file_name": "Kiet_Tran_Vo_Anh_ASM_Euvipharma.pdf",
-        "status": "success"
-      },
-      {
-        "time": "16:45:47",
-        "timestamp": "2026-11-23T16:45:47.714147+07:00",
-        "candidate_name": "PHAM G*** K***",
-        "candidate_id": "108151",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: my***@hr1vietnam.com",
-        "file_name": "CV-Phạm Gia Khiêm.pdf",
-        "status": "success"
-      },
-      {
-        "time": "16:21:23",
-        "timestamp": "2026-11-23T16:21:23.192131+07:00",
-        "candidate_name": "VU T*** N*** N***",
-        "candidate_id": "49753",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV gửi từ email: cu***@hr1vietnam.com",
-        "file_name": "VU THỊ NGỌC HÂN.pdf",
-        "status": "success"
-      },
-      {
-        "time": "16:17:02",
-        "timestamp": "2026-11-23T16:17:02.470427+07:00",
-        "candidate_name": "NGO T*** T*** D***",
-        "candidate_id": "108150",
+        "time": "08:51:02",
+        "timestamp": "2026-11-24T08:51:02.245719+07:00",
+        "candidate_name": "PHAN T*** Y*** N***",
+        "candidate_id": "108157",
         "crm_url": "",
         "action": "updated",
         "source": "CV Apply Job Website",
-        "file_name": "cv-ngothithudieu-storemanager-en.pdf",
-        "status": "success"
-      },
-      {
-        "time": "15:47:39",
-        "timestamp": "2026-11-23T15:47:39.277509+07:00",
-        "candidate_name": "DUONG T*** K***",
-        "candidate_id": "108148",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV Apply Job Website",
-        "file_name": "cv-duong-tam-kha-nelson.pdf",
-        "status": "success"
-      },
-      {
-        "time": "15:16:46",
-        "timestamp": "2026-11-23T15:16:46.852543+07:00",
-        "candidate_name": "MALLA P*** P***",
-        "candidate_id": "108147",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "prathap-cv.pdf",
-        "status": "success"
-      },
-      {
-        "time": "14:51:09",
-        "timestamp": "2026-11-23T14:51:09.362463+07:00",
-        "candidate_name": "HA L*** K***",
-        "candidate_id": "108146",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV Apply Job Website",
-        "file_name": "ha-linh-khoi-ats-cv-nonenergy-general.docx",
-        "status": "success"
-      },
-      {
-        "time": "14:49:41",
-        "timestamp": "2026-11-23T14:49:41.378920+07:00",
-        "candidate_name": "LE X*** T***",
-        "candidate_id": "108145",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: th***@hr1vietnam.com",
-        "file_name": "CV - LE XUAN TRUONG - TECHNICAL SALES.pdf",
-        "status": "success"
-      },
-      {
-        "time": "14:39:53",
-        "timestamp": "2026-11-23T14:39:53.762881+07:00",
-        "candidate_name": "MAI T*** T***",
-        "candidate_id": "108144",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV gửi từ email: to***@hr1vietnam.com",
-        "file_name": "Mai Thị Thúy - Sourcing and Purchasing Leader - Ha Noi.pdf",
-        "status": "success"
-      },
-      {
-        "time": "14:09:23",
-        "timestamp": "2026-11-23T14:09:23.389304+07:00",
-        "candidate_name": "PHAM V*** D***",
-        "candidate_id": "108143",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: th***@hr1vietnam.com",
-        "file_name": "CV Phạm Văn Đào - MEP.pdf",
-        "status": "success"
-      },
-      {
-        "time": "13:31:13",
-        "timestamp": "2026-11-23T13:31:13.570381+07:00",
-        "candidate_name": "LE T*** L***",
-        "candidate_id": "108142",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: tr***@hr1vietnam.com",
-        "file_name": "SƠ YẾU LÝ LỊCH- TV.pdf",
-        "status": "success"
-      },
-      {
-        "time": "13:25:57",
-        "timestamp": "2026-11-23T13:25:57.814652+07:00",
-        "candidate_name": "NGUYEN B*** N*** B***",
-        "candidate_id": "108141",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: tr***@hr1vietnam.com",
-        "file_name": "Nguyen_Bui_Ninh_Binh_CV_Entobel_FPA_Manager.pdf",
-        "status": "success"
-      },
-      {
-        "time": "12:14:29",
-        "timestamp": "2026-11-23T12:14:29.765426+07:00",
-        "candidate_name": "HEMANT K***",
-        "candidate_id": "108124",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV gửi từ email: cu***@hr1vietnam.com",
-        "file_name": "HEMANT RESUME NEW.pdf",
-        "status": "success"
-      },
-      {
-        "time": "12:07:17",
-        "timestamp": "2026-11-23T12:07:17.017856+07:00",
-        "candidate_name": "NAM P*** S***",
-        "candidate_id": "108140",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: cu***@hr1vietnam.com",
-        "file_name": "Copy of Nam_Pham_Steven_MKT_BD_CV_202611.docx",
-        "status": "success"
-      },
-      {
-        "time": "11:38:58",
-        "timestamp": "2026-11-23T11:38:58.274854+07:00",
-        "candidate_name": "TRAN C*** H***",
-        "candidate_id": "49991",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV gửi từ email: tr***@hr1vietnam.com",
-        "file_name": "NHaN_VIeN_KHO_Warehouse_Staff_TRaN_CHi_HaO_3778C471_1795408502.pdf",
-        "status": "success"
-      },
-      {
-        "time": "11:30:17",
-        "timestamp": "2026-11-23T11:30:17.726943+07:00",
-        "candidate_name": "KORM M*** I***",
-        "candidate_id": "108138",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: ph***@hr1vietnam.com",
-        "file_name": "2. HR & Admin Specialist CV -Masika KORN.pdf",
-        "status": "success"
-      },
-      {
-        "time": "11:01:43",
-        "timestamp": "2026-11-23T11:01:43.903604+07:00",
-        "candidate_name": "LE D*** T***",
-        "candidate_id": "108137",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV gửi từ email: to***@hr1vietnam.com",
-        "file_name": "Le Duong Toi - Head of Sourcing - ha noi - manufacturing and trading.pdf",
-        "status": "success"
-      },
-      {
-        "time": "10:54:24",
-        "timestamp": "2026-11-23T10:54:24.259643+07:00",
-        "candidate_name": "QUOC C***",
-        "candidate_id": "108080",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV gửi từ email: hu***@hr1vietnam.com",
-        "file_name": "Profile (9).pdf",
-        "status": "success"
-      },
-      {
-        "time": "10:46:57",
-        "timestamp": "2026-11-23T10:46:57.006842+07:00",
-        "candidate_name": "NGUYEN V*** S***",
-        "candidate_id": "15779",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV gửi từ email: ha***@hr1vietnam.com",
-        "file_name": "HR1_NGUYEN VAN SON_NHÂN VIÊN KHO_ QUICKPACK.docx",
-        "status": "success"
-      },
-      {
-        "time": "10:46:19",
-        "timestamp": "2026-11-23T10:46:19.686857+07:00",
-        "candidate_name": "NGUYEN H*** L***",
-        "candidate_id": "15777",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV gửi từ email: ha***@hr1vietnam.com",
-        "file_name": "HR1_NGUYEN HOAI LUAN_WAREHOUSE STAFF_QUICKPACK.docx",
-        "status": "success"
-      },
-      {
-        "time": "10:45:41",
-        "timestamp": "2026-11-23T10:45:41.003716+07:00",
-        "candidate_name": "NGUYEN D*** T***",
-        "candidate_id": "15778",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV gửi từ email: ha***@hr1vietnam.com",
-        "file_name": "HR1_NGUYEN DINH TOAN_NHÂN VIÊN KHO_ QUICKPACK.docx",
-        "status": "success"
-      },
-      {
-        "time": "10:45:04",
-        "timestamp": "2026-11-23T10:45:04.266108+07:00",
-        "candidate_name": "DAO H*** T***",
-        "candidate_id": "15838",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV gửi từ email: ha***@hr1vietnam.com",
-        "file_name": "HR1_Dao Huu Tuong_Nhân viên kho _ Quickpack.docx",
-        "status": "success"
-      },
-      {
-        "time": "10:42:10",
-        "timestamp": "2026-11-23T10:42:10.607855+07:00",
-        "candidate_name": "HOANG T*** Q***",
-        "candidate_id": "108136",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: hu***@hr1vietnam.com",
-        "file_name": "CV- HOANG TRUC QUYNH Documentation Intern Logistics Sales Executive\r\n BACH VIET LOGISTICS UNITED EXPRESS INTERNATIONAL FREIGHT FORWARDER.pdf",
-        "status": "success"
-      },
-      {
-        "time": "10:09:55",
-        "timestamp": "2026-11-23T10:09:55.983813+07:00",
-        "candidate_name": "TRUONG D***",
-        "candidate_id": "108134",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "cv-truongdinh-androiddeveloper.pdf",
-        "status": "success"
-      },
-      {
-        "time": "09:47:30",
-        "timestamp": "2026-11-23T09:47:30.335911+07:00",
-        "candidate_name": "TRAN V*** T***",
-        "candidate_id": "108126",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV gửi từ email: hu***@hr1vietnam.com",
-        "file_name": "CV_Tran_Van_Tai.pdf",
-        "status": "success"
-      },
-      {
-        "time": "09:44:27",
-        "timestamp": "2026-11-23T09:44:27.339159+07:00",
-        "candidate_name": "NGUYEN B*** T***",
-        "candidate_id": "108132",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: ha***@hr1vietnam.com",
-        "file_name": "Nguyen Bao Trung CV 10.2026.pdf",
-        "status": "success"
-      },
-      {
-        "time": "09:04:21",
-        "timestamp": "2026-11-23T09:04:21.207249+07:00",
-        "candidate_name": "HAN V***",
-        "candidate_id": "108128",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: ph***@hr1vietnam.com",
-        "file_name": "Han Visal - HRCV.pdf",
-        "status": "success"
-      },
-      {
-        "time": "09:03:48",
-        "timestamp": "2026-11-23T09:03:48.932766+07:00",
-        "candidate_name": "HONG C***",
-        "candidate_id": "108127",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV gửi từ email: ph***@hr1vietnam.com",
-        "file_name": "CURRICULUM VITAE For 啊猪.pdf",
-        "status": "success"
-      },
-      {
-        "time": "08:20:28",
-        "timestamp": "2026-11-23T08:20:28.874391+07:00",
-        "candidate_name": "TRAN C*** H***",
-        "candidate_id": "78558",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "portfolio-ca-nhan-tran-cong-hung-15-12-2025.docx",
-        "status": "success"
-      },
-      {
-        "time": "08:19:38",
-        "timestamp": "2026-11-23T08:19:38.018354+07:00",
-        "candidate_name": "LUCKY C***",
-        "candidate_id": "108123",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "my-cv-updated.docx",
-        "status": "success"
-      },
-      {
-        "time": "08:19:06",
-        "timestamp": "2026-11-23T08:19:06.045462+07:00",
-        "candidate_name": "KARAVITAGE D*** A*** P***",
-        "candidate_id": "108122",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "asanka-premarathna-ie-manager-cv.pdf",
-        "status": "success"
-      },
-      {
-        "time": "08:18:13",
-        "timestamp": "2026-11-23T08:18:13.082905+07:00",
-        "candidate_name": "DINH T*** V***",
-        "candidate_id": "108125",
-        "crm_url": "",
-        "action": "created",
-        "source": "CV Apply Job Website",
-        "file_name": "cv-dinh-tha-i-vinh-telesales-team-leader.pdf",
-        "status": "success"
-      },
-      {
-        "time": "08:17:29",
-        "timestamp": "2026-11-23T08:17:29.766947+07:00",
-        "candidate_name": "PHAM N*** T*** T***",
-        "candidate_id": "60363",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "cv-pham-nguyen-thu-thuy-procurement-manager-designed.pdf",
-        "status": "success"
-      },
-      {
-        "time": "08:16:50",
-        "timestamp": "2026-11-23T08:16:50.765336+07:00",
-        "candidate_name": "NGUYEN T*** B*** N***",
-        "candidate_id": "108121",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "cv-ngoc-nguyen-customer-service-executive-en-docx.pdf",
-        "status": "success"
-      },
-      {
-        "time": "08:16:13",
-        "timestamp": "2026-11-23T08:16:13.378163+07:00",
-        "candidate_name": "NHUNG N***",
-        "candidate_id": "108120",
-        "crm_url": "",
-        "action": "updated",
-        "source": "CV Apply Job Website",
-        "file_name": "resume-nguyen-nhung.pdf",
+        "file_name": "231829mkt-manager-phan-thi-y-nhi.pdf",
         "status": "success"
       }
     ]
@@ -3625,6 +3178,14 @@
   },
   "daily_history": [
     {
+      "date": "2026-11-24",
+      "total_realtime": 1,
+      "created": 0,
+      "updated": 1,
+      "backlog_count": null,
+      "grand_total": 1
+    },
+    {
       "date": "2026-11-23",
       "total_realtime": 39,
       "created": 18,
@@ -3840,7 +3401,7 @@
       "status": "completed",
       "badge": "Hoàn thành 100%",
       "description": "Quét rà soát toàn diện 100% kho dữ liệu lịch sử CRM (2013 – 2026); dùng AI bóc tách và làm giàu thành công toàn bộ 21,085 hồ sơ Backlog thiếu thông tin; làm sạch các bản ghi lỗi/ảo và ra mắt Module 3: Báo Cáo Chiến Lược BOD (#bod).",
-      "metrics": "Hoàn tất 100% Backlog (27,001 hồ sơ AI + 70,585 hồ sơ Admin = 98,235/106,126 hồ sơ hoàn chỉnh)."
+      "metrics": "Hoàn tất 100% Backlog (27,001 hồ sơ AI + 70,585 hồ sơ Admin = 98,236/106,127 hồ sơ hoàn chỉnh)."
     },
     {
       "phase": "Giai đoạn 5: Chế Độ Ưu Tiên 100% Luồng Real-Time & Vận Hành Liên Tục",
@@ -3848,7 +3409,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Real-Time 100%)",
       "description": "Luồng Backlog chính thức hoàn tất 100% và chuyển sang chế độ Standby. Toàn bộ tài nguyên hệ thống tập trung 100% cho Luồng Real-Time: đón nhận CV mới từ Consultant & Website 24/7, tự động hóa bóc tách, đồng bộ CRM, gửi email xác nhận và cập nhật trực tiếp lên 3 Module Dashboard.",
-      "metrics": "Đã xử lý 649 hồ sơ Real-time (173 tạo mới • 469 cập nhật) | Tổng lũy kế AI: 27,650+ hồ sơ."
+      "metrics": "Đã xử lý 650 hồ sơ Real-time (173 tạo mới • 470 cập nhật) | Tổng lũy kế AI: 27,651+ hồ sơ."
     }
   ],
   "system": {
@@ -3859,7 +3420,7 @@
     "backlog_status": "HOÀN TẤT 100% (STANDBY)",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 24.4,
+    "last_heartbeat_seconds_ago": 21.7,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 2 (Prepay Active)",
