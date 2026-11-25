@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-25 14:52:53",
+    "last_updated": "2026-11-25 14:54:19",
     "today_date": "2026-11-25",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -9,13 +9,13 @@
   "today": {
     "date": "2026-11-25",
     "date_display": "Hôm nay, 25/11/2026",
-    "total_processed": 283,
-    "realtime_count": 15,
-    "realtime_created": 7,
+    "total_processed": 293,
+    "realtime_count": 16,
+    "realtime_created": 8,
     "realtime_updated": 8,
-    "backlog_count": 268,
+    "backlog_count": 277,
     "target_daily": 300,
-    "completion_rate_pct": 94.3,
+    "completion_rate_pct": 97.7,
     "current_mode": "NORMAL_HOURS",
     "mode_badge": "⚡ Ca Làm Việc (08:30 - 17:30)",
     "mode_desc": "Ưu tiên phản hồi Real-time 60s • Xử lý Backlog khi rảnh",
@@ -39,7 +39,7 @@
       {
         "key": "afternoon",
         "label": "Ca Chiều (13:00 - 17:30)",
-        "count": 270,
+        "count": 280,
         "status": "in_progress",
         "badge": "Đang chạy"
       },
@@ -78,60 +78,60 @@
       },
       {
         "hour": "14:00",
-        "count": 254
+        "count": 264
       }
     ],
     "sources": {
-      "Consultants": 9,
+      "Consultants": 10,
       "Website": 6,
-      "CRM Backlog": 268
+      "CRM Backlog": 277
     }
   },
   "totals": {
-    "all_time_realtime": 667,
-    "all_time_created": 181,
+    "all_time_realtime": 668,
+    "all_time_created": 182,
     "all_time_updated": 479,
-    "all_time_backlog_done": 28397,
-    "total_system_processed": 29064,
-    "backlog_target": 28397,
+    "all_time_backlog_done": 28406,
+    "total_system_processed": 29074,
+    "backlog_target": 28406,
     "backlog_remaining": 0,
     "backlog_completion_percentage": 100.0,
     "crm_pool_audited": 103377,
-    "admin_pre_inputted": 69433,
-    "ai_total_processed": 29064,
-    "total_standardized": 98497,
-    "total_crm_candidates": 106141,
+    "admin_pre_inputted": 69424,
+    "ai_total_processed": 29074,
+    "total_standardized": 98498,
+    "total_crm_candidates": 106142,
     "standardized_percentage": 92.8
   },
   "ai_usage": {
     "status": "Paid 2 (Prepay Active)",
     "tier_badge": "Google Gemini Paid 2",
     "search_grounding": "Search Grounding ON",
-    "total_tokens": 521322366,
-    "total_tokens_formatted": "521.3M",
-    "prompt_tokens": 399213433,
-    "output_tokens": 122108933,
-    "total_cost_usd": 332.62,
-    "total_cost_usd_formatted": "$332.62",
-    "total_cost_vnd": 8465289,
-    "total_cost_vnd_formatted": "₫8,465,289",
+    "total_tokens": 521473384,
+    "total_tokens_formatted": "521.5M",
+    "prompt_tokens": 399333427,
+    "output_tokens": 122139957,
+    "total_cost_usd": 332.75,
+    "total_cost_usd_formatted": "$332.75",
+    "total_cost_vnd": 8468486,
+    "total_cost_vnd_formatted": "₫8,468,486",
     "job_spend_vnd": 72981,
     "job_spend_vnd_formatted": "₫72,981",
-    "billing_deducted_vnd": 9390317,
-    "billing_deducted_vnd_formatted": "₫9,390,317",
-    "billing_deducted_usd": 368.97,
+    "billing_deducted_vnd": 9393514,
+    "billing_deducted_vnd_formatted": "₫9,393,514",
+    "billing_deducted_usd": 369.1,
     "other_projects_and_tax_vnd": 852047,
     "other_projects_and_tax_formatted": "₫852,047",
     "initial_prepay_vnd": 10000000.0,
     "initial_prepay_vnd_formatted": "₫10,000,000",
-    "remaining_budget_vnd": 609683,
-    "remaining_budget_vnd_formatted": "₫609,683",
-    "remaining_budget_usd": 23.96,
-    "budget_used_pct": 84.65,
-    "billing_used_pct": 93.9,
+    "remaining_budget_vnd": 606486,
+    "remaining_budget_vnd_formatted": "₫606,486",
+    "remaining_budget_usd": 23.83,
+    "budget_used_pct": 84.68,
+    "billing_used_pct": 93.94,
     "cost_per_cv_vnd": 291.3,
     "cost_per_cv_usd": 0.0114,
-    "tokens_per_cv": 17937,
+    "tokens_per_cv": 17936,
     "alert": {
       "level": "HEALTHY",
       "is_critical_low": false,
@@ -167,16 +167,27 @@
     ]
   },
   "realtime": {
-    "total_today": 15,
-    "created_today": 7,
+    "total_today": 16,
+    "created_today": 8,
     "updated_today": 8,
     "pending_inbox": 0,
     "sources": {
-      "Consultants": 9,
+      "Consultants": 10,
       "Website": 6,
       "Other": 0
     },
     "candidates": [
+      {
+        "time": "14:54:15",
+        "timestamp": "2026-11-25T14:54:15.191595+07:00",
+        "candidate_name": "NGUYEN C*** H***",
+        "candidate_id": "108173",
+        "crm_url": "",
+        "action": "created",
+        "source": "CV gửi từ email: ta***@hr1vietnam.com",
+        "file_name": "Nguyen Chi Huy_HR1 (1).pdf",
+        "status": "success"
+      },
       {
         "time": "14:02:45",
         "timestamp": "2026-11-25T14:02:45.902759+07:00",
@@ -345,13 +356,121 @@
     ]
   },
   "backlog": {
-    "total": 28397,
-    "completed": 28397,
+    "total": 28406,
+    "completed": 28406,
     "remaining": 0,
     "errors": 596,
     "completion_percentage": 100.0,
     "crm_pool_audited": 103377,
     "recent_enriched": [
+      {
+        "candidate_id": "12396",
+        "candidate_name": "PHAM T*** H***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "",
+        "experiences": 2,
+        "educations": 2,
+        "detail_summary": "+2 kinh nghiệm, +2 học vấn",
+        "processed_at": "2026-11-25 14:54:15"
+      },
+      {
+        "candidate_id": "12825",
+        "candidate_name": "NGHIEM X*** K***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "",
+        "experiences": 2,
+        "educations": 1,
+        "detail_summary": "+2 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-25 14:54:06"
+      },
+      {
+        "candidate_id": "12924",
+        "candidate_name": "NGUYEN V*** T***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "",
+        "experiences": 2,
+        "educations": 1,
+        "detail_summary": "+2 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-25 14:53:57"
+      },
+      {
+        "candidate_id": "13096",
+        "candidate_name": "NGUYEN N*** T***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "",
+        "experiences": 2,
+        "educations": 1,
+        "detail_summary": "+2 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-25 14:53:50"
+      },
+      {
+        "candidate_id": "13384",
+        "candidate_name": "NGUYEN T*** P*** T***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "",
+        "experiences": 2,
+        "educations": 1,
+        "detail_summary": "+2 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-25 14:53:41"
+      },
+      {
+        "candidate_id": "13410",
+        "candidate_name": "NGUYEN N*** A*** M***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "",
+        "experiences": 2,
+        "educations": 6,
+        "detail_summary": "+2 kinh nghiệm, +6 học vấn",
+        "processed_at": "2026-11-25 14:53:32"
+      },
+      {
+        "candidate_id": "14578",
+        "candidate_name": "CHIEN A*** L***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "",
+        "experiences": 2,
+        "educations": 2,
+        "detail_summary": "+2 kinh nghiệm, +2 học vấn",
+        "processed_at": "2026-11-25 14:53:15"
+      },
+      {
+        "candidate_id": "14948",
+        "candidate_name": "DO T*** T***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "",
+        "experiences": 2,
+        "educations": 1,
+        "detail_summary": "+2 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-25 14:53:06"
+      },
+      {
+        "candidate_id": "15276",
+        "candidate_name": "TRUONG P*** T***",
+        "type": "Backlog",
+        "action": "Chuẩn hóa",
+        "status": "done",
+        "crm_url": "",
+        "experiences": 2,
+        "educations": 1,
+        "detail_summary": "+2 kinh nghiệm, +1 học vấn",
+        "processed_at": "2026-11-25 14:52:54"
+      },
       {
         "candidate_id": "15878",
         "candidate_name": "LE A*** N***",
@@ -3243,125 +3362,17 @@
         "educations": 1,
         "detail_summary": "+5 kinh nghiệm, +1 học vấn",
         "processed_at": "2026-11-25 14:01:46"
-      },
-      {
-        "candidate_id": "56275",
-        "candidate_name": "SENIOR A*** B*** M***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "",
-        "experiences": 2,
-        "educations": 1,
-        "detail_summary": "+2 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-25 14:01:37"
-      },
-      {
-        "candidate_id": "56276",
-        "candidate_name": "KHA P***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "",
-        "experiences": 4,
-        "educations": 1,
-        "detail_summary": "+4 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-25 14:01:27"
-      },
-      {
-        "candidate_id": "56278",
-        "candidate_name": "DAO N*** T*** V***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "",
-        "experiences": 7,
-        "educations": 1,
-        "detail_summary": "+7 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-25 14:01:21"
-      },
-      {
-        "candidate_id": "56280",
-        "candidate_name": "NGHI D***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "",
-        "experiences": 1,
-        "educations": 1,
-        "detail_summary": "+1 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-25 14:01:08"
-      },
-      {
-        "candidate_id": "56290",
-        "candidate_name": "NGUYEN T*** H***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "",
-        "experiences": 2,
-        "educations": 1,
-        "detail_summary": "+2 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-25 14:01:02"
-      },
-      {
-        "candidate_id": "56294",
-        "candidate_name": "ANNABEL N***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "",
-        "experiences": 7,
-        "educations": 2,
-        "detail_summary": "+7 kinh nghiệm, +2 học vấn",
-        "processed_at": "2026-11-25 14:00:52"
-      },
-      {
-        "candidate_id": "56296",
-        "candidate_name": "NGAN N***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "",
-        "experiences": 8,
-        "educations": 2,
-        "detail_summary": "+8 kinh nghiệm, +2 học vấn",
-        "processed_at": "2026-11-25 14:00:42"
-      },
-      {
-        "candidate_id": "56297",
-        "candidate_name": "VY H***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "",
-        "experiences": 4,
-        "educations": 2,
-        "detail_summary": "+4 kinh nghiệm, +2 học vấn",
-        "processed_at": "2026-11-25 14:00:30"
-      },
-      {
-        "candidate_id": "56298",
-        "candidate_name": "VY T***",
-        "type": "Backlog",
-        "action": "Chuẩn hóa",
-        "status": "done",
-        "crm_url": "",
-        "experiences": 4,
-        "educations": 1,
-        "detail_summary": "+4 kinh nghiệm, +1 học vấn",
-        "processed_at": "2026-11-25 14:00:22"
       }
     ]
   },
   "daily_history": [
     {
       "date": "2026-11-25",
-      "total_realtime": 15,
-      "created": 7,
+      "total_realtime": 16,
+      "created": 8,
       "updated": 8,
-      "backlog_count": 268,
-      "grand_total": 283
+      "backlog_count": 277,
+      "grand_total": 293
     },
     {
       "date": "2026-11-24",
@@ -3587,7 +3598,7 @@
       "status": "completed",
       "badge": "Hoàn thành 100%",
       "description": "Quét rà soát toàn diện 100% kho dữ liệu lịch sử CRM (2013 – 2026); dùng AI bóc tách và làm giàu thành công toàn bộ 21,085 hồ sơ Backlog thiếu thông tin; làm sạch các bản ghi lỗi/ảo và ra mắt Module 3: Báo Cáo Chiến Lược BOD (#bod).",
-      "metrics": "Hoàn tất 100% Backlog (28,397 hồ sơ AI + 69,433 hồ sơ Admin = 98,497/106,141 hồ sơ hoàn chỉnh)."
+      "metrics": "Hoàn tất 100% Backlog (28,406 hồ sơ AI + 69,424 hồ sơ Admin = 98,498/106,142 hồ sơ hoàn chỉnh)."
     },
     {
       "phase": "Giai đoạn 5: Chế Độ Ưu Tiên 100% Luồng Real-Time & Vận Hành Liên Tục",
@@ -3595,7 +3606,7 @@
       "status": "in_progress",
       "badge": "Đang vận hành (Real-Time 100%)",
       "description": "Luồng Backlog chính thức hoàn tất 100% và chuyển sang chế độ Standby. Toàn bộ tài nguyên hệ thống tập trung 100% cho Luồng Real-Time: đón nhận CV mới từ Consultant & Website 24/7, tự động hóa bóc tách, đồng bộ CRM, gửi email xác nhận và cập nhật trực tiếp lên 3 Module Dashboard.",
-      "metrics": "Đã xử lý 667 hồ sơ Real-time (181 tạo mới • 479 cập nhật) | Tổng lũy kế AI: 29,064+ hồ sơ."
+      "metrics": "Đã xử lý 668 hồ sơ Real-time (182 tạo mới • 479 cập nhật) | Tổng lũy kế AI: 29,074+ hồ sơ."
     }
   ],
   "system": {
@@ -3606,7 +3617,7 @@
     "backlog_status": "HOÀN TẤT 100% (STANDBY)",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 11.2,
+    "last_heartbeat_seconds_ago": 24.1,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 2 (Prepay Active)",
