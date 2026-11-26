@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-26 18:08:50",
+    "last_updated": "2026-11-26 18:10:39",
     "today_date": "2026-11-26",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": false
@@ -16,9 +16,9 @@
     "backlog_count": 31,
     "target_daily": 300,
     "completion_rate_pct": 21.0,
-    "current_mode": "OVERNIGHT_MODE",
-    "mode_badge": "🌙 Cày Đêm Tự Động (Overnight Turbo Active)",
-    "mode_desc": "Vận hành cày backlog xuyên đêm khi mở máy: Mẻ 20 CVs • Chu kỳ 30s",
+    "current_mode": "PAUSED_CRM_MAINTENANCE",
+    "mode_badge": "🛑 CRM Đang Lỗi / Bảo Trì (Tạm Ngưng Luồng)",
+    "mode_desc": "CRM phản hồi HTTPSConnectionPool(host='crm.hr1vietnam.com', port=443): Read timed out. (read timeout=3.0). Đã tạm dừng 100% tiến trình tự động theo chỉ đạo để chờ thông báo mới.",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
@@ -3810,15 +3810,15 @@
     }
   ],
   "system": {
-    "daemon_status": "RUNNING",
+    "daemon_status": "PAUSED",
     "daemon_pid": null,
-    "current_task": "Ưu tiên Real-time 100% (Sẵn sàng tuần mới)",
+    "current_task": "Tạm dừng luồng tự động (Chờ CRM khôi phục)",
     "system_mode": "REALTIME_PRIORITY",
     "backlog_status": "HOÀN TẤT 100% (STANDBY)",
-    "crm_online": true,
-    "crm_error": "",
-    "last_heartbeat_seconds_ago": 12.5,
-    "supervisor_running": true,
+    "crm_online": false,
+    "crm_error": "HTTPSConnectionPool(host='crm.hr1vietnam.com', port=443): Read timed out. (read timeout=3.0)",
+    "last_heartbeat_seconds_ago": 47.9,
+    "supervisor_running": false,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 2 (Prepay Active)",
     "search_grounding": "ONLINE (Google Search Grounding Active)"
