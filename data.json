@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "HR1Vietnam CV & CRM Automation Executive Dashboard",
-    "last_updated": "2026-11-26 12:59:41",
+    "last_updated": "2026-11-26 13:01:22",
     "today_date": "2026-11-26",
     "timezone": "Asia/Ho_Chi_Minh (VN Time)",
     "is_working_hours": true
@@ -16,9 +16,9 @@
     "backlog_count": 31,
     "target_daily": 300,
     "completion_rate_pct": 17.0,
-    "current_mode": "TURBO_LUNCH",
-    "mode_badge": "☀️ Turbo Nghỉ Trưa (12:00 - 13:00)",
-    "mode_desc": "Tối đa công suất Backlog: Mẻ 25 CVs • Chu kỳ 15s",
+    "current_mode": "NORMAL_HOURS",
+    "mode_badge": "⚡ Ca Làm Việc (08:30 - 17:30)",
+    "mode_desc": "Ưu tiên phản hồi Real-time 60s • Xử lý Backlog khi rảnh",
     "average_speed_seconds": 2.8,
     "quality_rate_pct": 100.0,
     "shifts": [
@@ -33,15 +33,15 @@
         "key": "lunch",
         "label": "Ca Trưa Turbo (12:00 - 13:00)",
         "count": 2,
-        "status": "in_progress",
-        "badge": "Đang tăng tốc"
+        "status": "completed",
+        "badge": "Đã kết thúc"
       },
       {
         "key": "afternoon",
         "label": "Ca Chiều (13:00 - 17:30)",
         "count": 0,
-        "status": "upcoming",
-        "badge": "Sắp diễn ra"
+        "status": "in_progress",
+        "badge": "Đang chạy"
       },
       {
         "key": "overnight",
@@ -71,6 +71,10 @@
       {
         "hour": "12:00",
         "count": 2
+      },
+      {
+        "hour": "13:00",
+        "count": 0
       }
     ],
     "sources": {
@@ -3661,7 +3665,7 @@
     "backlog_status": "HOÀN TẤT 100% (STANDBY)",
     "crm_online": true,
     "crm_error": "",
-    "last_heartbeat_seconds_ago": 52.3,
+    "last_heartbeat_seconds_ago": 12.7,
     "supervisor_running": true,
     "supervisor_healthy": true,
     "api_tier": "Google Gemini Paid 2 (Prepay Active)",
